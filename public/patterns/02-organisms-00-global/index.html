@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style Guide for a Specific Pattern Sub-Type</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
+    <link rel="stylesheet" href="../../css/style.css" media="all" />
+</head>
+<body>
+
+<!--Style Guide Main Content-->
+<div class="sg-main" role="main">
+
+	<!--Patterns-->
+	<div id="patterns">
+			<div class="sg-pattern">
+				<h2 class="sg-head sg-sub" ><a href="../../patterns/02-organisms-00-global-00-header/02-organisms-00-global-00-header.html" class="patternLink" data-patternpartial="organisms-header">Header</a></h2>
+				<!-- Begin .header -->
+<header class="header cf" role="banner">
+	<a href="/"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+	<nav id="nav" class="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav><!--end .nav-->
+	<form action="#" method="post" class="inline-form search-form">           
+	    <fieldset>
+		    <legend class="is-vishidden">Search</legend>
+		    <label for="search-field" class="is-vishidden">Search</label>
+		    <input type="search" placeholder="Search" id="search-field" class="search-field" />
+		    <button class="search-submit">
+		    	<span class="icon-search" aria-hidden="true"></span>
+		    	<span class="is-vishidden">Search</span>
+		    </button>
+	    </fieldset>
+	</form></header>
+<!-- End .header -->
+			</div>
+			<div class="sg-pattern">
+				<h2 class="sg-head sg-sub" ><a href="../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.html" class="patternLink" data-patternpartial="organisms-footer">Footer</a></h2>
+				<!-- Begin Footer -->
+<footer class="footer" role="contentinfo">
+	<div class="lc">
+		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+	</div>
+</footer>
+<!-- End Footer -->
+			</div>
+	</div> <!--end #patterns-->
+	
+</div><!--end .sg-main-->
+<script>
+	
+	// alert the iframe parent that the pattern has loaded. for page follow.
+	if (self != top) {
+		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+		parent.postMessage( { "patternpartial": "viewall-organisms-global", "path": window.location.toString() }, targetOrigin);
+	}
+	
+	var body = document.getElementsByTagName('body');
+	body[0].onclick = function() {
+		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+		parent.postMessage( { "bodyclick":"bodyclick" }, targetOrigin)
+	};
+	
+	var els = document.getElementsByClassName("patternLink");
+	for (i in els) {
+		els[i].onclick = function() {
+			if (self != top) {
+				var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+				parent.postMessage( { "patternpartial": this.getAttribute("data-patternpartial"), "path": "foo" }, targetOrigin);
+				return false;
+			}
+		}
+	}
+	
+	// watch the iframe source so that it can be sent back to everyone else.
+	function receiveIframeMessage(event) {
+		
+		// does the origin sending the message match the current host? if not dev/null the request
+		if ((window.location.protocol != "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
+			return;
+		}
+		
+		if (event.data.path != undefined) {
+			var re   = /patterns\/(.*)$/;
+			var path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+event.data.path;
+			window.location.replace(path);
+		} else if (event.data.reload != undefined) {
+			window.location.reload();
+		}
+		
+	}
+	window.addEventListener("message", receiveIframeMessage, false);
+	
+</script>
+</body>
+</html>

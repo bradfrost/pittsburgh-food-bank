@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html id="pattern-frame">
+<head>
+	<title>Pattern Lab Pattern</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	
+	<!--
+		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
+		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
+	-->
+	
+	<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
+	<link rel="stylesheet" href="../../css/style.css" media="all" />
+</head>
+<body>
+	
+	<!-- Start of Pattern -->
+<div class="carousel-list-carousel">
+	<div class="carousel-container">
+		<div class="block block-inset">
+		    <a href="#" class="inner">
+				<div class="b-thumb">
+			<img src="../../images/fpo_4x3.png" alt="4x3 Image" />				</div>
+				<div class="b-text">
+					<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
+				</div>
+			</a>
+		</div>	<div>
+	<div class="carousel-controls">
+		<a href="#" class="carousel-prev">&larr;</a>
+		<div class="carousel-pagination">1/5</div>
+		<a href="#" class="carousel-next">&rarr;</a>
+	</div>
+</div>
+	<!-- End of Pattern -->
+	
+	<!--
+		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
+		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
+	-->
+	
+	<!-- DO NOT MODIFY -->
+	<script>
+		
+		// alert the iframe parent that the pattern has loaded. for page follow.
+		if (self != top) {
+			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+			parent.postMessage( { "patternpartial": "organisms-carousel", "path": window.location.toString() }, targetOrigin);
+		}
+		
+		// if there are clicks on the iframe make sure the nav in the iframe parent closes
+		var body = document.getElementsByTagName('body');
+		body[0].onclick = function() {
+			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+			parent.postMessage( { "bodyclick": "bodyclick" }, targetOrigin)
+		};
+		
+		// watch the iframe source so that it can be sent back to everyone else.
+		function receiveIframeMessage(event) {
+			
+			// does the origin sending the message match the current host? if not dev/null the request
+			if ((window.location.protocol != "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
+				return;
+			}
+			
+			if (event.data.path != undefined) {
+				var re   = /patterns\/(.*)$/;
+				var path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+event.data.path;
+				window.location.replace(path);
+			} else if (event.data.reload != undefined) {
+				window.location.reload();
+			}
+			
+		}
+		window.addEventListener("message", receiveIframeMessage, false);
+	</script>
+	<!-- /DO NOT MODIFY -->
+	
+</body>
+</html>

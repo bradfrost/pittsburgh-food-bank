@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html id="pattern-frame">
+<head>
+	<title>Pattern Lab Pattern</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	
+	<!--
+		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
+		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
+	-->
+	
+	<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
+	<link rel="stylesheet" href="../../css/style.css" media="all" />
+</head>
+<body>
+	
+	<!-- Start of Pattern -->
+	<fieldset>
+    <div class="field-container"><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></div>
+    <div class="field-container"><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></div>
+    <div class="field-container"><label for="ir">Range input</label> <input type="range" id="ir" value="10"></div>
+    <div class="field-container"><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></div>
+    <div class="field-container"><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></div>
+    <div class="field-container"><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></div>
+    <div class="field-container"><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></div>
+    <div class="field-container"><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></div>
+</fieldset>
+	<!-- End of Pattern -->
+	
+	<!--
+		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
+		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
+	-->
+	
+	<!-- DO NOT MODIFY -->
+	<script>
+		
+		// alert the iframe parent that the pattern has loaded. for page follow.
+		if (self != top) {
+			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+			parent.postMessage( { "patternpartial": "atoms-html5-inputs", "path": window.location.toString() }, targetOrigin);
+		}
+		
+		// if there are clicks on the iframe make sure the nav in the iframe parent closes
+		var body = document.getElementsByTagName('body');
+		body[0].onclick = function() {
+			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+			parent.postMessage( { "bodyclick": "bodyclick" }, targetOrigin)
+		};
+		
+		// watch the iframe source so that it can be sent back to everyone else.
+		function receiveIframeMessage(event) {
+			
+			// does the origin sending the message match the current host? if not dev/null the request
+			if ((window.location.protocol != "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
+				return;
+			}
+			
+			if (event.data.path != undefined) {
+				var re   = /patterns\/(.*)$/;
+				var path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+event.data.path;
+				window.location.replace(path);
+			} else if (event.data.reload != undefined) {
+				window.location.reload();
+			}
+			
+		}
+		window.addEventListener("message", receiveIframeMessage, false);
+	</script>
+	<!-- /DO NOT MODIFY -->
+	
+</body>
+</html>
