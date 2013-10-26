@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## About the PHP Version of Pattern Lab
 
 The PHP version of Pattern Lab is, at its core, a static site generator. It combines platform-agnostic assets, like the [Mustache](http://mustache.github.io/)-based patterns and the JavaScript-based viewer, with a PHP-based "builder" that transforms and dynamically builds the Pattern Lab site. By making it a static site generator, the PHP version of Pattern Lab strongly separates patterns, data, and presentation from build logic. The PHP version should be seen as a reference for other developers to improve upon as they build their own Pattern Lab Builders in their language of choice.
@@ -46,3 +47,9 @@ By default, the Pattern Lab assets can be manually generated and the Pattern Lab
 * [Watching for Changes and Auto-Regenerating Patterns](https://github.com/pattern-lab/patternlab-php/wiki/Watching-for-Changes-and-Auto-Regenerating-Patterns)
 * [Auto-Reloading the Browser Window When Changes Are Made](https://github.com/pattern-lab/patternlab-php/wiki/Auto-Reloading-the-Browser-Window-When-Changes-Are-Made)
 * [Multi-browser & Multi-device Testing with Page Follow](https://github.com/pattern-lab/patternlab-php/wiki/Multi-browser-&-Multi-device-Testing-with-Page-Follow)
+=======
+pittsburgh-food-bank
+====================
+
+Pittsburgh Food Bank Website Redesign
+>>>>>>> 891f78629e8993d36e60fee98d43f830cbc785dc
