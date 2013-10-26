@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html id="patternlab-html">
+<head id="patternlab-head">
     <title>Style Guide</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
     <link rel="stylesheet" href="../../css/style.css" media="all" />
 </head>
-<body>
+<body id="patternlab-body">
 
 <!--Style Guide Main Content-->
 <div class="sg-main" role="main">
@@ -23,26 +23,28 @@
 </div> <!--end #patterns-->
 </div><!--End Style Guide Main Content-->
 <script>
-
+	
+	// alert the iframe parent that the pattern has loaded. for page follow.
 	if (self != top) {
 		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
 		parent.postMessage( { "patternpartial": "all", "path": window.location.toString() }, targetOrigin);
 	}
 	
-	var body = document.getElementsByTagName('body');
+	// if there are clicks on the iframe make sure the nav in the iframe parent closes
+	var body = document.getElementsByTagName("body");
 	body[0].onclick = function() {
 		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
 		parent.postMessage( { "bodyclick": "bodyclick" }, targetOrigin)
 	};
 	
-	var els = document.getElementsByClassName("patternLink");
-	for (i in els) {
-		els[i].onclick = function() {
-			if (self != top) {
-				var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-				parent.postMessage( { "patternpartial": this.getAttribute("data-patternpartial"), "path": "foo" }, targetOrigin);
-				return false;
-			}
+	// find all links and add an onclick handler for replacing the iframe address so the history works
+	if (self != top) {
+		var aTags = document.getElementsByTagName("a");
+		for (a in aTags) {
+			aTags[a].onclick = function(e) {
+				e.preventDefault();
+				window.location.replace(this.getAttribute("href"));
+			};
 		}
 	}
 	

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="pattern-frame">
+<html>
 <head>
 	<title>Pattern Lab Pattern</title>
 	<meta charset="UTF-8">
@@ -9,9 +9,8 @@
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
 		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
 	-->
-	
-	<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
 	<link rel="stylesheet" href="../../css/style.css" media="all" />
+	
 </head>
 <body>
 	
@@ -180,7 +179,7 @@
 		// alert the iframe parent that the pattern has loaded. for page follow.
 		if (self != top) {
 			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-			parent.postMessage( { "patternpartial": "pages-homepage", "path": window.location.toString() }, targetOrigin);
+			parent.postMessage( { "patternpartial": "pages-homepage", "path": window.location.toString(), "lineage": ["organisms-header","molecules-block-hero","molecules-inset-block","molecules-media-block","organisms-recent-tweets","organisms-footer"] }, targetOrigin);
 		}
 		
 		// if there are clicks on the iframe make sure the nav in the iframe parent closes
@@ -189,6 +188,15 @@
 			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
 			parent.postMessage( { "bodyclick": "bodyclick" }, targetOrigin)
 		};
+		
+		// find all links and add an onclick handler for replacing the iframe address so the history works
+		var aTags = document.getElementsByTagName('a');
+		for (a in aTags) {
+			aTags[a].onclick = function(e) {
+				e.preventDefault();
+				window.location.replace(this.getAttribute("href"));
+			};
+		}
 		
 		// watch the iframe source so that it can be sent back to everyone else.
 		function receiveIframeMessage(event) {
@@ -209,6 +217,8 @@
 		}
 		window.addEventListener("message", receiveIframeMessage, false);
 	</script>
+	<script src="../../data/annotations.js"></script>
+	<script src="../../styleguide/js/annotations-pattern.js"></script>
 	<!-- /DO NOT MODIFY -->
 	
 </body>

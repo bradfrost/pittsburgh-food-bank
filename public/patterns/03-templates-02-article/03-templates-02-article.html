@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="pattern-frame">
+<html>
 <head>
 	<title>Pattern Lab Pattern</title>
 	<meta charset="UTF-8">
@@ -9,9 +9,8 @@
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
 		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
 	-->
-	
-	<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
 	<link rel="stylesheet" href="../../css/style.css" media="all" />
+	
 </head>
 <body>
 	
@@ -130,17 +129,10 @@
 		</form>						<ul class="comment-list">
 				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/nature" alt="Avatar" />						<h4 class="comment-name"><a href="#">Siguror Hanigan</a></h4>
+		<img src="http://placeimg.com/100/100/any/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Jacobus Sneiders</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.</p>
-					</div>
-				</li>				<li class="comment-container">
-					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/tech/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Plinius Sloane</a></h4>
-					</div>
-					<div class="comment-text">
-						<p>The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migrate? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!</p>
+						<p>I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.</p>
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
@@ -151,17 +143,24 @@
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/arch" alt="Avatar" />						<h4 class="comment-name"><a href="#">Fergus Althuis</a></h4>
+		<img src="http://placeimg.com/100/100/people/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Frans Keegan</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Beats all you've ever saw, been in trouble with the law since the day they was born. Straight'nin' the curve, flat'nin' the hills. Someday the mountain might get 'em, but the law never will. Makin' their way, the only way they know how, that's just a little bit more than the law will allow. Just good ol' boys, wouldn't change if they could, fightin' the system like a true modern day Robin Hood.</p>
+						<p>Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.</p>
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/people" alt="Avatar" />						<h4 class="comment-name"><a href="#">Junius Koolen</a></h4>
+		<img src="http://placeimg.com/100/100/nature" alt="Avatar" />						<h4 class="comment-name"><a href="#">Siguror Hanigan</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Fizzle crazy tortor. Sed rizzle. Ass pimpin' dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo' vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.</p>
+						<p>Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.</p>
+					</div>
+				</li>				<li class="comment-container">
+					<div class="comment-meta">
+		<img src="http://placeimg.com/100/100/people/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Aquila Achterkamp</a></h4>
+					</div>
+					<div class="comment-text">
+						<p>Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.</p>
 					</div>
 				</li>						</ul>
 					</div>
@@ -220,7 +219,7 @@
 		// alert the iframe parent that the pattern has loaded. for page follow.
 		if (self != top) {
 			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-			parent.postMessage( { "patternpartial": "templates-article", "path": window.location.toString() }, targetOrigin);
+			parent.postMessage( { "patternpartial": "templates-article", "path": window.location.toString(), "lineage": ["organisms-header","molecules-byline-author-time","organisms-article-body","molecules-social-share","organisms-comment-thread","organisms-related-posts","organisms-recent-tweets","organisms-footer"] }, targetOrigin);
 		}
 		
 		// if there are clicks on the iframe make sure the nav in the iframe parent closes
@@ -229,6 +228,15 @@
 			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
 			parent.postMessage( { "bodyclick": "bodyclick" }, targetOrigin)
 		};
+		
+		// find all links and add an onclick handler for replacing the iframe address so the history works
+		var aTags = document.getElementsByTagName('a');
+		for (a in aTags) {
+			aTags[a].onclick = function(e) {
+				e.preventDefault();
+				window.location.replace(this.getAttribute("href"));
+			};
+		}
 		
 		// watch the iframe source so that it can be sent back to everyone else.
 		function receiveIframeMessage(event) {
@@ -249,6 +257,8 @@
 		}
 		window.addEventListener("message", receiveIframeMessage, false);
 	</script>
+	<script src="../../data/annotations.js"></script>
+	<script src="../../styleguide/js/annotations-pattern.js"></script>
 	<!-- /DO NOT MODIFY -->
 	
 </body>

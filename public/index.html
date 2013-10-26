@@ -1,236 +1,247 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title id="title">Pattern Lab</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="styleguide/css/styleguide.css" media="all" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="styleguide/js/jquery.js"><\/script>')</script>
-	</head>
-	<body>
-		<!--Style Guide Header-->
-		<header class="sg-header" role="banner">
-			<a href="#sg-nav-container" class="sg-nav-toggle">Menu</a>
-			<div class="sg-nav-container" id="sg-nav-container">
-				<ol class="sg-nav">
-						<li class="sg-nav-atoms"><a class="sg-acc-handle">Atoms</a><ol class="sg-acc-panel">
-							<li class="sg-nav-global"><a class="sg-acc-handle">Global</a><ol class="sg-acc-panel">
-								<li><a href="patterns/00-atoms-00-global-00-colors/00-atoms-00-global-00-colors.html" class="sg-pop" data-patternpartial="atoms-colors">Colors</a></li>
-								<li><a href="patterns/00-atoms-00-global-01-fonts/00-atoms-00-global-01-fonts.html" class="sg-pop" data-patternpartial="atoms-fonts">Fonts</a></li>
-								<li><a href="patterns/00-atoms-00-global-02-animations/00-atoms-00-global-02-animations.html" class="sg-pop" data-patternpartial="atoms-animations">Animations</a></li>
-								<li><a href="patterns/00-atoms-00-global-03-visibility/00-atoms-00-global-03-visibility.html" class="sg-pop" data-patternpartial="atoms-visibility">Visibility</a></li>
-								<li><a href="patterns/00-atoms-00-global/index.html" class="sg-pop" data-patternpartial="viewall-atoms-global">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-text"><a class="sg-acc-handle">Text</a><ol class="sg-acc-panel">
-								<li><a href="patterns/00-atoms-01-text-00-headings/00-atoms-01-text-00-headings.html" class="sg-pop" data-patternpartial="atoms-headings">Headings</a></li>
-								<li><a href="patterns/00-atoms-01-text-01-subheadings/00-atoms-01-text-01-subheadings.html" class="sg-pop" data-patternpartial="atoms-subheadings">Subheadings</a></li>
-								<li><a href="patterns/00-atoms-01-text-02-headings-with-links/00-atoms-01-text-02-headings-with-links.html" class="sg-pop" data-patternpartial="atoms-headings-with-links">Headings With Links</a></li>
-								<li><a href="patterns/00-atoms-01-text-03-paragraph/00-atoms-01-text-03-paragraph.html" class="sg-pop" data-patternpartial="atoms-paragraph">Paragraph</a></li>
-								<li><a href="patterns/00-atoms-01-text-04-blockquote/00-atoms-01-text-04-blockquote.html" class="sg-pop" data-patternpartial="atoms-blockquote">Blockquote</a></li>
-								<li><a href="patterns/00-atoms-01-text-05-inline-elements/00-atoms-01-text-05-inline-elements.html" class="sg-pop" data-patternpartial="atoms-inline-elements">Inline Elements</a></li>
-								<li><a href="patterns/00-atoms-01-text-06-time/00-atoms-01-text-06-time.html" class="sg-pop" data-patternpartial="atoms-time">Time</a></li>
-								<li><a href="patterns/00-atoms-01-text-07-preformatted-text/00-atoms-01-text-07-preformatted-text.html" class="sg-pop" data-patternpartial="atoms-preformatted-text">Preformatted Text</a></li>
-								<li><a href="patterns/00-atoms-01-text-08-emphasis-colors/00-atoms-01-text-08-emphasis-colors.html" class="sg-pop" data-patternpartial="atoms-emphasis-colors">Emphasis Colors</a></li>
-								<li><a href="patterns/00-atoms-01-text-09-hr/00-atoms-01-text-09-hr.html" class="sg-pop" data-patternpartial="atoms-hr">Hr</a></li>
-								<li><a href="patterns/00-atoms-01-text-10-caption/00-atoms-01-text-10-caption.html" class="sg-pop" data-patternpartial="atoms-caption">Caption</a></li>
-								<li><a href="patterns/00-atoms-01-text/index.html" class="sg-pop" data-patternpartial="viewall-atoms-text">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-lists"><a class="sg-acc-handle">Lists</a><ol class="sg-acc-panel">
-								<li><a href="patterns/00-atoms-02-lists-00-unordered/00-atoms-02-lists-00-unordered.html" class="sg-pop" data-patternpartial="atoms-unordered">Unordered</a></li>
-								<li><a href="patterns/00-atoms-02-lists-01-ordered/00-atoms-02-lists-01-ordered.html" class="sg-pop" data-patternpartial="atoms-ordered">Ordered</a></li>
-								<li><a href="patterns/00-atoms-02-lists-02-definition/00-atoms-02-lists-02-definition.html" class="sg-pop" data-patternpartial="atoms-definition">Definition</a></li>
-								<li><a href="patterns/00-atoms-02-lists/index.html" class="sg-pop" data-patternpartial="viewall-atoms-lists">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-images"><a class="sg-acc-handle">Images</a><ol class="sg-acc-panel">
-								<li><a href="patterns/00-atoms-03-images-00-logo/00-atoms-03-images-00-logo.html" class="sg-pop" data-patternpartial="atoms-logo">Logo</a></li>
-								<li><a href="patterns/00-atoms-03-images-01-landscape-4x3/00-atoms-03-images-01-landscape-4x3.html" class="sg-pop" data-patternpartial="atoms-landscape-4x3">Landscape 4x3</a></li>
-								<li><a href="patterns/00-atoms-03-images-02-landscape-16x9/00-atoms-03-images-02-landscape-16x9.html" class="sg-pop" data-patternpartial="atoms-landscape-16x9">Landscape 16x9</a></li>
-								<li><a href="patterns/00-atoms-03-images-03-square/00-atoms-03-images-03-square.html" class="sg-pop" data-patternpartial="atoms-square">Square</a></li>
-								<li><a href="patterns/00-atoms-03-images-04-avatar/00-atoms-03-images-04-avatar.html" class="sg-pop" data-patternpartial="atoms-avatar">Avatar</a></li>
-								<li><a href="patterns/00-atoms-03-images-05-icons/00-atoms-03-images-05-icons.html" class="sg-pop" data-patternpartial="atoms-icons">Icons</a></li>
-								<li><a href="patterns/00-atoms-03-images-06-loading-icon/00-atoms-03-images-06-loading-icon.html" class="sg-pop" data-patternpartial="atoms-loading-icon">Loading Icon</a></li>
-								<li><a href="patterns/00-atoms-03-images-07-favicon/00-atoms-03-images-07-favicon.html" class="sg-pop" data-patternpartial="atoms-favicon">Favicon</a></li>
-								<li><a href="patterns/00-atoms-03-images/index.html" class="sg-pop" data-patternpartial="viewall-atoms-images">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-forms"><a class="sg-acc-handle">Forms</a><ol class="sg-acc-panel">
-								<li><a href="patterns/00-atoms-04-forms-00-text-fields/00-atoms-04-forms-00-text-fields.html" class="sg-pop" data-patternpartial="atoms-text-fields">Text Fields</a></li>
-								<li><a href="patterns/00-atoms-04-forms-01-select-menu/00-atoms-04-forms-01-select-menu.html" class="sg-pop" data-patternpartial="atoms-select-menu">Select Menu</a></li>
-								<li><a href="patterns/00-atoms-04-forms-02-checkbox/00-atoms-04-forms-02-checkbox.html" class="sg-pop" data-patternpartial="atoms-checkbox">Checkbox</a></li>
-								<li><a href="patterns/00-atoms-04-forms-03-radio-buttons/00-atoms-04-forms-03-radio-buttons.html" class="sg-pop" data-patternpartial="atoms-radio-buttons">Radio Buttons</a></li>
-								<li><a href="patterns/00-atoms-04-forms-04-html5-inputs/00-atoms-04-forms-04-html5-inputs.html" class="sg-pop" data-patternpartial="atoms-html5-inputs">Html5 Inputs</a></li>
-								<li><a href="patterns/00-atoms-04-forms/index.html" class="sg-pop" data-patternpartial="viewall-atoms-forms">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-buttons"><a class="sg-acc-handle">Buttons</a><ol class="sg-acc-panel">
-								<li><a href="patterns/00-atoms-05-buttons-00-buttons/00-atoms-05-buttons-00-buttons.html" class="sg-pop" data-patternpartial="atoms-buttons">Buttons</a></li>
-								<li><a href="patterns/00-atoms-05-buttons/index.html" class="sg-pop" data-patternpartial="viewall-atoms-buttons">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-tables"><a class="sg-acc-handle">Tables</a><ol class="sg-acc-panel">
-								<li><a href="patterns/00-atoms-06-tables-00-table/00-atoms-06-tables-00-table.html" class="sg-pop" data-patternpartial="atoms-table">Table</a></li>
-								<li><a href="patterns/00-atoms-06-tables/index.html" class="sg-pop" data-patternpartial="viewall-atoms-tables">View All</a></li>
-							</ol></li>
+<html id="patternlab-html">
+<head id="patternlab-head">
+	<title id="title">Pattern Lab</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="styleguide/css/styleguide.css" media="all" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="styleguide/js/jquery.js"><\/script>')</script>
+</head>
+<body  id="patternlab-body">>
+	<!--Style Guide Header-->
+	<header class="sg-header" role="banner">
+		<a href="#sg-nav-container" class="sg-nav-toggle">Menu</a>
+		<div class="sg-nav-container" id="sg-nav-container">
+			<ol class="sg-nav">
+					<li class="sg-nav-atoms"><a class="sg-acc-handle">Atoms</a><ol class="sg-acc-panel">
+						<li class="sg-nav-global"><a class="sg-acc-handle">Global</a><ol class="sg-acc-panel">
+							<li><a href="patterns/00-atoms-00-global-00-colors/00-atoms-00-global-00-colors.html" class="sg-pop" data-patternpartial="atoms-colors">Colors</a></li>
+							<li><a href="patterns/00-atoms-00-global-01-fonts/00-atoms-00-global-01-fonts.html" class="sg-pop" data-patternpartial="atoms-fonts">Fonts</a></li>
+							<li><a href="patterns/00-atoms-00-global-02-animations/00-atoms-00-global-02-animations.html" class="sg-pop" data-patternpartial="atoms-animations">Animations</a></li>
+							<li><a href="patterns/00-atoms-00-global-03-visibility/00-atoms-00-global-03-visibility.html" class="sg-pop" data-patternpartial="atoms-visibility">Visibility</a></li>
+							<li><a href="patterns/00-atoms-00-global/index.html" class="sg-pop" data-patternpartial="viewall-atoms-global">View All</a></li>
 						</ol></li>
-						<li class="sg-nav-molecules"><a class="sg-acc-handle">Molecules</a><ol class="sg-acc-panel">
-							<li class="sg-nav-text"><a class="sg-acc-handle">Text</a><ol class="sg-acc-panel">
-								<li><a href="patterns/01-molecules-00-text-00-byline-author-only/01-molecules-00-text-00-byline-author-only.html" class="sg-pop" data-patternpartial="molecules-byline-author-only">Byline Author Only</a></li>
-								<li><a href="patterns/01-molecules-00-text-01-byline-author-time/01-molecules-00-text-01-byline-author-time.html" class="sg-pop" data-patternpartial="molecules-byline-author-time">Byline Author Time</a></li>
-								<li><a href="patterns/01-molecules-00-text-02-address/01-molecules-00-text-02-address.html" class="sg-pop" data-patternpartial="molecules-address">Address</a></li>
-								<li><a href="patterns/01-molecules-00-text-03-heading-group/01-molecules-00-text-03-heading-group.html" class="sg-pop" data-patternpartial="molecules-heading-group">Heading Group</a></li>
-								<li><a href="patterns/01-molecules-00-text-04-blockquote-with-citation/01-molecules-00-text-04-blockquote-with-citation.html" class="sg-pop" data-patternpartial="molecules-blockquote-with-citation">Blockquote With Citation</a></li>
-								<li><a href="patterns/01-molecules-00-text-05-intro-text/01-molecules-00-text-05-intro-text.html" class="sg-pop" data-patternpartial="molecules-intro-text">Intro Text</a></li>
-								<li><a href="patterns/01-molecules-00-text-06-pullquote/01-molecules-00-text-06-pullquote.html" class="sg-pop" data-patternpartial="molecules-pullquote">Pullquote</a></li>
-								<li><a href="patterns/01-molecules-00-text/index.html" class="sg-pop" data-patternpartial="viewall-molecules-text">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-layout"><a class="sg-acc-handle">Layout</a><ol class="sg-acc-panel">
-								<li><a href="patterns/01-molecules-01-layout-00-one-up/01-molecules-01-layout-00-one-up.html" class="sg-pop" data-patternpartial="molecules-one-up">One Up</a></li>
-								<li><a href="patterns/01-molecules-01-layout-01-two-up/01-molecules-01-layout-01-two-up.html" class="sg-pop" data-patternpartial="molecules-two-up">Two Up</a></li>
-								<li><a href="patterns/01-molecules-01-layout-02-three-up/01-molecules-01-layout-02-three-up.html" class="sg-pop" data-patternpartial="molecules-three-up">Three Up</a></li>
-								<li><a href="patterns/01-molecules-01-layout-03-four-up/01-molecules-01-layout-03-four-up.html" class="sg-pop" data-patternpartial="molecules-four-up">Four Up</a></li>
-								<li><a href="patterns/01-molecules-01-layout/index.html" class="sg-pop" data-patternpartial="viewall-molecules-layout">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-blocks"><a class="sg-acc-handle">Blocks</a><ol class="sg-acc-panel">
-								<li><a href="patterns/01-molecules-02-blocks-00-media-block/01-molecules-02-blocks-00-media-block.html" class="sg-pop" data-patternpartial="molecules-media-block">Media Block</a></li>
-								<li><a href="patterns/01-molecules-02-blocks-01-headline-byline/01-molecules-02-blocks-01-headline-byline.html" class="sg-pop" data-patternpartial="molecules-headline-byline">Headline Byline</a></li>
-								<li><a href="patterns/01-molecules-02-blocks-02-block-hero/01-molecules-02-blocks-02-block-hero.html" class="sg-pop" data-patternpartial="molecules-block-hero">Block Hero</a></li>
-								<li><a href="patterns/01-molecules-02-blocks-03-block-thumb-headline/01-molecules-02-blocks-03-block-thumb-headline.html" class="sg-pop" data-patternpartial="molecules-block-thumb-headline">Block Thumb Headline</a></li>
-								<li><a href="patterns/01-molecules-02-blocks-04-headline-only/01-molecules-02-blocks-04-headline-only.html" class="sg-pop" data-patternpartial="molecules-headline-only">Headline Only</a></li>
-								<li><a href="patterns/01-molecules-02-blocks-05-inset-block/01-molecules-02-blocks-05-inset-block.html" class="sg-pop" data-patternpartial="molecules-inset-block">Inset Block</a></li>
-								<li><a href="patterns/01-molecules-02-blocks/index.html" class="sg-pop" data-patternpartial="viewall-molecules-blocks">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-media"><a class="sg-acc-handle">Media</a><ol class="sg-acc-panel">
-								<li><a href="patterns/01-molecules-03-media-00-figure-with-caption/01-molecules-03-media-00-figure-with-caption.html" class="sg-pop" data-patternpartial="molecules-figure-with-caption">Figure With Caption</a></li>
-								<li><a href="patterns/01-molecules-03-media/index.html" class="sg-pop" data-patternpartial="viewall-molecules-media">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-forms"><a class="sg-acc-handle">Forms</a><ol class="sg-acc-panel">
-								<li><a href="patterns/01-molecules-04-forms-00-search/01-molecules-04-forms-00-search.html" class="sg-pop" data-patternpartial="molecules-search">Search</a></li>
-								<li><a href="patterns/01-molecules-04-forms-01-comment-form/01-molecules-04-forms-01-comment-form.html" class="sg-pop" data-patternpartial="molecules-comment-form">Comment Form</a></li>
-								<li><a href="patterns/01-molecules-04-forms-02-newsletter/01-molecules-04-forms-02-newsletter.html" class="sg-pop" data-patternpartial="molecules-newsletter">Newsletter</a></li>
-								<li><a href="patterns/01-molecules-04-forms/index.html" class="sg-pop" data-patternpartial="viewall-molecules-forms">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-navigation"><a class="sg-acc-handle">Navigation</a><ol class="sg-acc-panel">
-								<li><a href="patterns/01-molecules-05-navigation-00-primary-nav/01-molecules-05-navigation-00-primary-nav.html" class="sg-pop" data-patternpartial="molecules-primary-nav">Primary Nav</a></li>
-								<li><a href="patterns/01-molecules-05-navigation-01-footer-nav/01-molecules-05-navigation-01-footer-nav.html" class="sg-pop" data-patternpartial="molecules-footer-nav">Footer Nav</a></li>
-								<li><a href="patterns/01-molecules-05-navigation-02-breadcrumbs/01-molecules-05-navigation-02-breadcrumbs.html" class="sg-pop" data-patternpartial="molecules-breadcrumbs">Breadcrumbs</a></li>
-								<li><a href="patterns/01-molecules-05-navigation-03-pagination/01-molecules-05-navigation-03-pagination.html" class="sg-pop" data-patternpartial="molecules-pagination">Pagination</a></li>
-								<li><a href="patterns/01-molecules-05-navigation-04-tabs/01-molecules-05-navigation-04-tabs.html" class="sg-pop" data-patternpartial="molecules-tabs">Tabs</a></li>
-								<li><a href="patterns/01-molecules-05-navigation/index.html" class="sg-pop" data-patternpartial="viewall-molecules-navigation">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-components"><a class="sg-acc-handle">Components</a><ol class="sg-acc-panel">
-								<li><a href="patterns/01-molecules-06-components-00-social-share/01-molecules-06-components-00-social-share.html" class="sg-pop" data-patternpartial="molecules-social-share">Social Share</a></li>
-								<li><a href="patterns/01-molecules-06-components-01-accordion/01-molecules-06-components-01-accordion.html" class="sg-pop" data-patternpartial="molecules-accordion">Accordion</a></li>
-								<li><a href="patterns/01-molecules-06-components-02-single-comment/01-molecules-06-components-02-single-comment.html" class="sg-pop" data-patternpartial="molecules-single-comment">Single Comment</a></li>
-								<li><a href="patterns/01-molecules-06-components/index.html" class="sg-pop" data-patternpartial="viewall-molecules-components">View All</a></li>
-							</ol></li>
+						<li class="sg-nav-text"><a class="sg-acc-handle">Text</a><ol class="sg-acc-panel">
+							<li><a href="patterns/00-atoms-01-text-00-headings/00-atoms-01-text-00-headings.html" class="sg-pop" data-patternpartial="atoms-headings">Headings</a></li>
+							<li><a href="patterns/00-atoms-01-text-01-subheadings/00-atoms-01-text-01-subheadings.html" class="sg-pop" data-patternpartial="atoms-subheadings">Subheadings</a></li>
+							<li><a href="patterns/00-atoms-01-text-02-headings-with-links/00-atoms-01-text-02-headings-with-links.html" class="sg-pop" data-patternpartial="atoms-headings-with-links">Headings With Links</a></li>
+							<li><a href="patterns/00-atoms-01-text-03-paragraph/00-atoms-01-text-03-paragraph.html" class="sg-pop" data-patternpartial="atoms-paragraph">Paragraph</a></li>
+							<li><a href="patterns/00-atoms-01-text-04-blockquote/00-atoms-01-text-04-blockquote.html" class="sg-pop" data-patternpartial="atoms-blockquote">Blockquote</a></li>
+							<li><a href="patterns/00-atoms-01-text-05-inline-elements/00-atoms-01-text-05-inline-elements.html" class="sg-pop" data-patternpartial="atoms-inline-elements">Inline Elements</a></li>
+							<li><a href="patterns/00-atoms-01-text-06-time/00-atoms-01-text-06-time.html" class="sg-pop" data-patternpartial="atoms-time">Time</a></li>
+							<li><a href="patterns/00-atoms-01-text-07-preformatted-text/00-atoms-01-text-07-preformatted-text.html" class="sg-pop" data-patternpartial="atoms-preformatted-text">Preformatted Text</a></li>
+							<li><a href="patterns/00-atoms-01-text-08-emphasis-colors/00-atoms-01-text-08-emphasis-colors.html" class="sg-pop" data-patternpartial="atoms-emphasis-colors">Emphasis Colors</a></li>
+							<li><a href="patterns/00-atoms-01-text-09-hr/00-atoms-01-text-09-hr.html" class="sg-pop" data-patternpartial="atoms-hr">Hr</a></li>
+							<li><a href="patterns/00-atoms-01-text-10-caption/00-atoms-01-text-10-caption.html" class="sg-pop" data-patternpartial="atoms-caption">Caption</a></li>
+							<li><a href="patterns/00-atoms-01-text/index.html" class="sg-pop" data-patternpartial="viewall-atoms-text">View All</a></li>
 						</ol></li>
-						<li class="sg-nav-organisms"><a class="sg-acc-handle">Organisms</a><ol class="sg-acc-panel">
-							<li class="sg-nav-global"><a class="sg-acc-handle">Global</a><ol class="sg-acc-panel">
-								<li><a href="patterns/02-organisms-00-global-00-header/02-organisms-00-global-00-header.html" class="sg-pop" data-patternpartial="organisms-header">Header</a></li>
-								<li><a href="patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.html" class="sg-pop" data-patternpartial="organisms-footer">Footer</a></li>
-								<li><a href="patterns/02-organisms-00-global/index.html" class="sg-pop" data-patternpartial="viewall-organisms-global">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-article"><a class="sg-acc-handle">Article</a><ol class="sg-acc-panel">
-								<li><a href="patterns/02-organisms-01-article-00-article-body/02-organisms-01-article-00-article-body.html" class="sg-pop" data-patternpartial="organisms-article-body">Article Body</a></li>
-								<li><a href="patterns/02-organisms-01-article/index.html" class="sg-pop" data-patternpartial="viewall-organisms-article">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-comments"><a class="sg-acc-handle">Comments</a><ol class="sg-acc-panel">
-								<li><a href="patterns/02-organisms-02-comments-00-comment-thread/02-organisms-02-comments-00-comment-thread.html" class="sg-pop" data-patternpartial="organisms-comment-thread">Comment Thread</a></li>
-								<li><a href="patterns/02-organisms-02-comments/index.html" class="sg-pop" data-patternpartial="viewall-organisms-comments">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-components"><a class="sg-acc-handle">Components</a><ol class="sg-acc-panel">
-								<li><a href="patterns/02-organisms-03-components-00-carousel/02-organisms-03-components-00-carousel.html" class="sg-pop" data-patternpartial="organisms-carousel">Carousel</a></li>
-								<li><a href="patterns/02-organisms-03-components/index.html" class="sg-pop" data-patternpartial="viewall-organisms-components">View All</a></li>
-							</ol></li>
-							<li class="sg-nav-sections"><a class="sg-acc-handle">Sections</a><ol class="sg-acc-panel">
-								<li><a href="patterns/02-organisms-04-sections-00-latest-posts/02-organisms-04-sections-00-latest-posts.html" class="sg-pop" data-patternpartial="organisms-latest-posts">Latest Posts</a></li>
-								<li><a href="patterns/02-organisms-04-sections-01-recent-tweets/02-organisms-04-sections-01-recent-tweets.html" class="sg-pop" data-patternpartial="organisms-recent-tweets">Recent Tweets</a></li>
-								<li><a href="patterns/02-organisms-04-sections-02-related-posts/02-organisms-04-sections-02-related-posts.html" class="sg-pop" data-patternpartial="organisms-related-posts">Related Posts</a></li>
-								<li><a href="patterns/02-organisms-04-sections/index.html" class="sg-pop" data-patternpartial="viewall-organisms-sections">View All</a></li>
-							</ol></li>
+						<li class="sg-nav-lists"><a class="sg-acc-handle">Lists</a><ol class="sg-acc-panel">
+							<li><a href="patterns/00-atoms-02-lists-00-unordered/00-atoms-02-lists-00-unordered.html" class="sg-pop" data-patternpartial="atoms-unordered">Unordered</a></li>
+							<li><a href="patterns/00-atoms-02-lists-01-ordered/00-atoms-02-lists-01-ordered.html" class="sg-pop" data-patternpartial="atoms-ordered">Ordered</a></li>
+							<li><a href="patterns/00-atoms-02-lists-02-definition/00-atoms-02-lists-02-definition.html" class="sg-pop" data-patternpartial="atoms-definition">Definition</a></li>
+							<li><a href="patterns/00-atoms-02-lists/index.html" class="sg-pop" data-patternpartial="viewall-atoms-lists">View All</a></li>
 						</ol></li>
-						<li class="sg-nav-templates"><a class="sg-acc-handle">Templates</a><ol class="sg-acc-panel">
-							<li><a href="patterns/03-templates-00-homepage/03-templates-00-homepage.html" class="sg-pop" data-patternpartial="templates-homepage">Homepage</a></li>
-							<li><a href="patterns/03-templates-01-blog/03-templates-01-blog.html" class="sg-pop" data-patternpartial="templates-blog">Blog</a></li>
-							<li><a href="patterns/03-templates-02-article/03-templates-02-article.html" class="sg-pop" data-patternpartial="templates-article">Article</a></li>
+						<li class="sg-nav-images"><a class="sg-acc-handle">Images</a><ol class="sg-acc-panel">
+							<li><a href="patterns/00-atoms-03-images-00-logo/00-atoms-03-images-00-logo.html" class="sg-pop" data-patternpartial="atoms-logo">Logo</a></li>
+							<li><a href="patterns/00-atoms-03-images-01-landscape-4x3/00-atoms-03-images-01-landscape-4x3.html" class="sg-pop" data-patternpartial="atoms-landscape-4x3">Landscape 4x3</a></li>
+							<li><a href="patterns/00-atoms-03-images-02-landscape-16x9/00-atoms-03-images-02-landscape-16x9.html" class="sg-pop" data-patternpartial="atoms-landscape-16x9">Landscape 16x9</a></li>
+							<li><a href="patterns/00-atoms-03-images-03-square/00-atoms-03-images-03-square.html" class="sg-pop" data-patternpartial="atoms-square">Square</a></li>
+							<li><a href="patterns/00-atoms-03-images-04-avatar/00-atoms-03-images-04-avatar.html" class="sg-pop" data-patternpartial="atoms-avatar">Avatar</a></li>
+							<li><a href="patterns/00-atoms-03-images-05-icons/00-atoms-03-images-05-icons.html" class="sg-pop" data-patternpartial="atoms-icons">Icons</a></li>
+							<li><a href="patterns/00-atoms-03-images-06-loading-icon/00-atoms-03-images-06-loading-icon.html" class="sg-pop" data-patternpartial="atoms-loading-icon">Loading Icon</a></li>
+							<li><a href="patterns/00-atoms-03-images-07-favicon/00-atoms-03-images-07-favicon.html" class="sg-pop" data-patternpartial="atoms-favicon">Favicon</a></li>
+							<li><a href="patterns/00-atoms-03-images/index.html" class="sg-pop" data-patternpartial="viewall-atoms-images">View All</a></li>
 						</ol></li>
-						<li class="sg-nav-pages"><a class="sg-acc-handle">Pages</a><ol class="sg-acc-panel">
-							<li><a href="patterns/04-pages-00-homepage/04-pages-00-homepage.html" class="sg-pop" data-patternpartial="pages-homepage">Homepage</a></li>
-							<li><a href="patterns/04-pages-01-blog/04-pages-01-blog.html" class="sg-pop" data-patternpartial="pages-blog">Blog</a></li>
-							<li><a href="patterns/04-pages-02-article/04-pages-02-article.html" class="sg-pop" data-patternpartial="pages-article">Article</a></li>
+						<li class="sg-nav-forms"><a class="sg-acc-handle">Forms</a><ol class="sg-acc-panel">
+							<li><a href="patterns/00-atoms-04-forms-00-text-fields/00-atoms-04-forms-00-text-fields.html" class="sg-pop" data-patternpartial="atoms-text-fields">Text Fields</a></li>
+							<li><a href="patterns/00-atoms-04-forms-01-select-menu/00-atoms-04-forms-01-select-menu.html" class="sg-pop" data-patternpartial="atoms-select-menu">Select Menu</a></li>
+							<li><a href="patterns/00-atoms-04-forms-02-checkbox/00-atoms-04-forms-02-checkbox.html" class="sg-pop" data-patternpartial="atoms-checkbox">Checkbox</a></li>
+							<li><a href="patterns/00-atoms-04-forms-03-radio-buttons/00-atoms-04-forms-03-radio-buttons.html" class="sg-pop" data-patternpartial="atoms-radio-buttons">Radio Buttons</a></li>
+							<li><a href="patterns/00-atoms-04-forms-04-html5-inputs/00-atoms-04-forms-04-html5-inputs.html" class="sg-pop" data-patternpartial="atoms-html5-inputs">Html5 Inputs</a></li>
+							<li><a href="patterns/00-atoms-04-forms/index.html" class="sg-pop" data-patternpartial="viewall-atoms-forms">View All</a></li>
 						</ol></li>
-					<li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">All</a></li>
-				</ol>
-				<!--sg-controls-->
-				<div class="sg-controls" id="sg-controls">
-						<div class="sg-control-content">
-							<ul class="sg-control">
-								<li class="sg-size">
-									<div class="sg-current-size">
-										<form id="sg-form">
-											Size <input type="text" class="sg-input sg-size-px" value="320">px / 
-											<input type="text" class="sg-input sg-size-em" value="20">em
-										</form><!--end #sg-form-->
-									</div><!--end #sg-current-size-->
-									<ul class="sg-acc-panel sg-size-options">
-										<li class="sg-quarter"><a href="#" id="sg-size-s">S</a></li> 
-										<li class="sg-quarter"><a href="#" id="sg-size-m">M</a></li>
-										<li class="sg-quarter"><a href="#" id="sg-size-l">L</a></li>
-										<li class="sg-half"><a href="#" id="sg-size-full">Full</a></li>
-										<li class="sg-half"><a href="#" id="sg-size-random">Random</a></li>
-										<li class="sg-half"><a href="#" class="mode-link" id="sg-size-disco">Disco</a></li>
-										<li class="sg-half"><a href="#" class="mode-link" id="sg-size-hay">Hay!</a></li>
-									</ul>
-								</li>
-								<!--
-								<li class="sg-view">
-									<a href="#" class="sg-acc-handle sg-control-trigger sg-icon icon-eye" id="sg-t-toggle"><span class="is-vishidden">View</span></a>
-									<ul class="sg-view sg-acc-panel sg-right sg-checklist" id="sg-view">
-										<li><a href="#" class="sg-checkbox" id="sg-t-annotations">Annotations</a></li>
-										<li><a href="#" class="sg-checkbox" id="sg-t-code">Code</a></li>
-										<li><a href="#" class="sg-checkbox" id="sg-t-clean">Clean</a></li>
-										<li><a href="#" target="_blank">Raw</a></li>
-									</ul>
-								</li>
-								<li class="sg-tools">
-									<a href="#" class="sg-acc-handle sg-tools-toggle sg-icon icon-cog" id="sg-tools-toggle"><span class="is-vishidden">Tools</span></a>
-									<ul class="sg-acc-panel sg-right sg-checklist">
-										<li><a href="#" id="navSyncButton" class="sg-checkbox sg-page-follow" data-state="off">Page Follow</a></li>
-										<li><a href="#" id="contentSyncButton" class="sg-checkbox sg-auto-reload" data-state="off">Auto-reload</a></li>
-									</ul>
-								</li>
-								-->
-							</ul>
-							
-						</div>
-				</div>
-				<!--End #sg-controls-->			</div>
-		</header>
-		<!--End Style Guide Header-->
-
-		<!-- Iframe -->
-		<div id="sg-vp-wrap">
-			<div id="sg-cover"></div>
-			<div id="sg-gen-container">
-				<iframe id="sg-viewport" sandbox="allow-same-origin allow-scripts"></iframe>
-				<div id="sg-rightpull-container">
-					<div id="sg-rightpull"></div>
-				</div>
+						<li class="sg-nav-buttons"><a class="sg-acc-handle">Buttons</a><ol class="sg-acc-panel">
+							<li><a href="patterns/00-atoms-05-buttons-00-buttons/00-atoms-05-buttons-00-buttons.html" class="sg-pop" data-patternpartial="atoms-buttons">Buttons</a></li>
+							<li><a href="patterns/00-atoms-05-buttons/index.html" class="sg-pop" data-patternpartial="viewall-atoms-buttons">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-tables"><a class="sg-acc-handle">Tables</a><ol class="sg-acc-panel">
+							<li><a href="patterns/00-atoms-06-tables-00-table/00-atoms-06-tables-00-table.html" class="sg-pop" data-patternpartial="atoms-table">Table</a></li>
+							<li><a href="patterns/00-atoms-06-tables/index.html" class="sg-pop" data-patternpartial="viewall-atoms-tables">View All</a></li>
+						</ol></li>
+					</ol></li>
+					<li class="sg-nav-molecules"><a class="sg-acc-handle">Molecules</a><ol class="sg-acc-panel">
+						<li class="sg-nav-text"><a class="sg-acc-handle">Text</a><ol class="sg-acc-panel">
+							<li><a href="patterns/01-molecules-00-text-00-byline-author-only/01-molecules-00-text-00-byline-author-only.html" class="sg-pop" data-patternpartial="molecules-byline-author-only">Byline Author Only</a></li>
+							<li><a href="patterns/01-molecules-00-text-01-byline-author-time/01-molecules-00-text-01-byline-author-time.html" class="sg-pop" data-patternpartial="molecules-byline-author-time">Byline Author Time</a></li>
+							<li><a href="patterns/01-molecules-00-text-02-address/01-molecules-00-text-02-address.html" class="sg-pop" data-patternpartial="molecules-address">Address</a></li>
+							<li><a href="patterns/01-molecules-00-text-03-heading-group/01-molecules-00-text-03-heading-group.html" class="sg-pop" data-patternpartial="molecules-heading-group">Heading Group</a></li>
+							<li><a href="patterns/01-molecules-00-text-04-blockquote-with-citation/01-molecules-00-text-04-blockquote-with-citation.html" class="sg-pop" data-patternpartial="molecules-blockquote-with-citation">Blockquote With Citation</a></li>
+							<li><a href="patterns/01-molecules-00-text-05-intro-text/01-molecules-00-text-05-intro-text.html" class="sg-pop" data-patternpartial="molecules-intro-text">Intro Text</a></li>
+							<li><a href="patterns/01-molecules-00-text-06-pullquote/01-molecules-00-text-06-pullquote.html" class="sg-pop" data-patternpartial="molecules-pullquote">Pullquote</a></li>
+							<li><a href="patterns/01-molecules-00-text/index.html" class="sg-pop" data-patternpartial="viewall-molecules-text">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-layout"><a class="sg-acc-handle">Layout</a><ol class="sg-acc-panel">
+							<li><a href="patterns/01-molecules-01-layout-00-one-up/01-molecules-01-layout-00-one-up.html" class="sg-pop" data-patternpartial="molecules-one-up">One Up</a></li>
+							<li><a href="patterns/01-molecules-01-layout-01-two-up/01-molecules-01-layout-01-two-up.html" class="sg-pop" data-patternpartial="molecules-two-up">Two Up</a></li>
+							<li><a href="patterns/01-molecules-01-layout-02-three-up/01-molecules-01-layout-02-three-up.html" class="sg-pop" data-patternpartial="molecules-three-up">Three Up</a></li>
+							<li><a href="patterns/01-molecules-01-layout-03-four-up/01-molecules-01-layout-03-four-up.html" class="sg-pop" data-patternpartial="molecules-four-up">Four Up</a></li>
+							<li><a href="patterns/01-molecules-01-layout/index.html" class="sg-pop" data-patternpartial="viewall-molecules-layout">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-blocks"><a class="sg-acc-handle">Blocks</a><ol class="sg-acc-panel">
+							<li><a href="patterns/01-molecules-02-blocks-00-media-block/01-molecules-02-blocks-00-media-block.html" class="sg-pop" data-patternpartial="molecules-media-block">Media Block</a></li>
+							<li><a href="patterns/01-molecules-02-blocks-01-headline-byline/01-molecules-02-blocks-01-headline-byline.html" class="sg-pop" data-patternpartial="molecules-headline-byline">Headline Byline</a></li>
+							<li><a href="patterns/01-molecules-02-blocks-02-block-hero/01-molecules-02-blocks-02-block-hero.html" class="sg-pop" data-patternpartial="molecules-block-hero">Block Hero</a></li>
+							<li><a href="patterns/01-molecules-02-blocks-03-block-thumb-headline/01-molecules-02-blocks-03-block-thumb-headline.html" class="sg-pop" data-patternpartial="molecules-block-thumb-headline">Block Thumb Headline</a></li>
+							<li><a href="patterns/01-molecules-02-blocks-04-headline-only/01-molecules-02-blocks-04-headline-only.html" class="sg-pop" data-patternpartial="molecules-headline-only">Headline Only</a></li>
+							<li><a href="patterns/01-molecules-02-blocks-05-inset-block/01-molecules-02-blocks-05-inset-block.html" class="sg-pop" data-patternpartial="molecules-inset-block">Inset Block</a></li>
+							<li><a href="patterns/01-molecules-02-blocks/index.html" class="sg-pop" data-patternpartial="viewall-molecules-blocks">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-media"><a class="sg-acc-handle">Media</a><ol class="sg-acc-panel">
+							<li><a href="patterns/01-molecules-03-media-00-figure-with-caption/01-molecules-03-media-00-figure-with-caption.html" class="sg-pop" data-patternpartial="molecules-figure-with-caption">Figure With Caption</a></li>
+							<li><a href="patterns/01-molecules-03-media/index.html" class="sg-pop" data-patternpartial="viewall-molecules-media">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-forms"><a class="sg-acc-handle">Forms</a><ol class="sg-acc-panel">
+							<li><a href="patterns/01-molecules-04-forms-00-search/01-molecules-04-forms-00-search.html" class="sg-pop" data-patternpartial="molecules-search">Search</a></li>
+							<li><a href="patterns/01-molecules-04-forms-01-comment-form/01-molecules-04-forms-01-comment-form.html" class="sg-pop" data-patternpartial="molecules-comment-form">Comment Form</a></li>
+							<li><a href="patterns/01-molecules-04-forms-02-newsletter/01-molecules-04-forms-02-newsletter.html" class="sg-pop" data-patternpartial="molecules-newsletter">Newsletter</a></li>
+							<li><a href="patterns/01-molecules-04-forms/index.html" class="sg-pop" data-patternpartial="viewall-molecules-forms">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-navigation"><a class="sg-acc-handle">Navigation</a><ol class="sg-acc-panel">
+							<li><a href="patterns/01-molecules-05-navigation-00-primary-nav/01-molecules-05-navigation-00-primary-nav.html" class="sg-pop" data-patternpartial="molecules-primary-nav">Primary Nav</a></li>
+							<li><a href="patterns/01-molecules-05-navigation-01-footer-nav/01-molecules-05-navigation-01-footer-nav.html" class="sg-pop" data-patternpartial="molecules-footer-nav">Footer Nav</a></li>
+							<li><a href="patterns/01-molecules-05-navigation-02-breadcrumbs/01-molecules-05-navigation-02-breadcrumbs.html" class="sg-pop" data-patternpartial="molecules-breadcrumbs">Breadcrumbs</a></li>
+							<li><a href="patterns/01-molecules-05-navigation-03-pagination/01-molecules-05-navigation-03-pagination.html" class="sg-pop" data-patternpartial="molecules-pagination">Pagination</a></li>
+							<li><a href="patterns/01-molecules-05-navigation-04-tabs/01-molecules-05-navigation-04-tabs.html" class="sg-pop" data-patternpartial="molecules-tabs">Tabs</a></li>
+							<li><a href="patterns/01-molecules-05-navigation/index.html" class="sg-pop" data-patternpartial="viewall-molecules-navigation">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-components"><a class="sg-acc-handle">Components</a><ol class="sg-acc-panel">
+							<li><a href="patterns/01-molecules-06-components-00-social-share/01-molecules-06-components-00-social-share.html" class="sg-pop" data-patternpartial="molecules-social-share">Social Share</a></li>
+							<li><a href="patterns/01-molecules-06-components-01-accordion/01-molecules-06-components-01-accordion.html" class="sg-pop" data-patternpartial="molecules-accordion">Accordion</a></li>
+							<li><a href="patterns/01-molecules-06-components-02-single-comment/01-molecules-06-components-02-single-comment.html" class="sg-pop" data-patternpartial="molecules-single-comment">Single Comment</a></li>
+							<li><a href="patterns/01-molecules-06-components/index.html" class="sg-pop" data-patternpartial="viewall-molecules-components">View All</a></li>
+						</ol></li>
+					</ol></li>
+					<li class="sg-nav-organisms"><a class="sg-acc-handle">Organisms</a><ol class="sg-acc-panel">
+						<li class="sg-nav-global"><a class="sg-acc-handle">Global</a><ol class="sg-acc-panel">
+							<li><a href="patterns/02-organisms-00-global-00-header/02-organisms-00-global-00-header.html" class="sg-pop" data-patternpartial="organisms-header">Header</a></li>
+							<li><a href="patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.html" class="sg-pop" data-patternpartial="organisms-footer">Footer</a></li>
+							<li><a href="patterns/02-organisms-00-global/index.html" class="sg-pop" data-patternpartial="viewall-organisms-global">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-article"><a class="sg-acc-handle">Article</a><ol class="sg-acc-panel">
+							<li><a href="patterns/02-organisms-01-article-00-article-body/02-organisms-01-article-00-article-body.html" class="sg-pop" data-patternpartial="organisms-article-body">Article Body</a></li>
+							<li><a href="patterns/02-organisms-01-article/index.html" class="sg-pop" data-patternpartial="viewall-organisms-article">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-comments"><a class="sg-acc-handle">Comments</a><ol class="sg-acc-panel">
+							<li><a href="patterns/02-organisms-02-comments-00-comment-thread/02-organisms-02-comments-00-comment-thread.html" class="sg-pop" data-patternpartial="organisms-comment-thread">Comment Thread</a></li>
+							<li><a href="patterns/02-organisms-02-comments/index.html" class="sg-pop" data-patternpartial="viewall-organisms-comments">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-components"><a class="sg-acc-handle">Components</a><ol class="sg-acc-panel">
+							<li><a href="patterns/02-organisms-03-components-00-carousel/02-organisms-03-components-00-carousel.html" class="sg-pop" data-patternpartial="organisms-carousel">Carousel</a></li>
+							<li><a href="patterns/02-organisms-03-components/index.html" class="sg-pop" data-patternpartial="viewall-organisms-components">View All</a></li>
+						</ol></li>
+						<li class="sg-nav-sections"><a class="sg-acc-handle">Sections</a><ol class="sg-acc-panel">
+							<li><a href="patterns/02-organisms-04-sections-00-latest-posts/02-organisms-04-sections-00-latest-posts.html" class="sg-pop" data-patternpartial="organisms-latest-posts">Latest Posts</a></li>
+							<li><a href="patterns/02-organisms-04-sections-01-recent-tweets/02-organisms-04-sections-01-recent-tweets.html" class="sg-pop" data-patternpartial="organisms-recent-tweets">Recent Tweets</a></li>
+							<li><a href="patterns/02-organisms-04-sections-02-related-posts/02-organisms-04-sections-02-related-posts.html" class="sg-pop" data-patternpartial="organisms-related-posts">Related Posts</a></li>
+							<li><a href="patterns/02-organisms-04-sections/index.html" class="sg-pop" data-patternpartial="viewall-organisms-sections">View All</a></li>
+						</ol></li>
+					</ol></li>
+					<li class="sg-nav-templates"><a class="sg-acc-handle">Templates</a><ol class="sg-acc-panel">
+						<li><a href="patterns/03-templates-00-homepage/03-templates-00-homepage.html" class="sg-pop" data-patternpartial="templates-homepage">Homepage</a></li>
+						<li><a href="patterns/03-templates-01-blog/03-templates-01-blog.html" class="sg-pop" data-patternpartial="templates-blog">Blog</a></li>
+						<li><a href="patterns/03-templates-02-article/03-templates-02-article.html" class="sg-pop" data-patternpartial="templates-article">Article</a></li>
+					</ol></li>
+					<li class="sg-nav-pages"><a class="sg-acc-handle">Pages</a><ol class="sg-acc-panel">
+						<li><a href="patterns/04-pages-00-homepage/04-pages-00-homepage.html" class="sg-pop" data-patternpartial="pages-homepage">Homepage</a></li>
+						<li><a href="patterns/04-pages-01-blog/04-pages-01-blog.html" class="sg-pop" data-patternpartial="pages-blog">Blog</a></li>
+						<li><a href="patterns/04-pages-02-article/04-pages-02-article.html" class="sg-pop" data-patternpartial="pages-article">Article</a></li>
+					</ol></li>
+				<li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">All</a></li>
+			</ol>
+			<!--sg-controls-->
+			<div class="sg-controls" id="sg-controls">
+					<div class="sg-control-content">
+						<ul class="sg-control">
+							<li class="sg-size">
+								<div class="sg-current-size">
+									<form id="sg-form">
+										Size <input type="text" class="sg-input sg-size-px" value="320">px / 
+										<input type="text" class="sg-input sg-size-em" value="20">em
+									</form><!--end #sg-form-->
+								</div><!--end #sg-current-size-->
+								<ul class="sg-acc-panel sg-size-options">
+									<li class="sg-quarter"><a href="#" id="sg-size-s">S</a></li> 
+									<li class="sg-quarter"><a href="#" id="sg-size-m">M</a></li>
+									<li class="sg-quarter"><a href="#" id="sg-size-l">L</a></li>
+									<li class="sg-half"><a href="#" id="sg-size-full">Full</a></li>
+									<li class="sg-half"><a href="#" id="sg-size-random">Random</a></li>
+									<li class="sg-half"><a href="#" class="mode-link" id="sg-size-disco">Disco</a></li>
+									<li class="sg-half"><a href="#" class="mode-link" id="sg-size-hay">Hay!</a></li>
+									<li class="sg-half">
+										<a href="#" class="mode-link sg-acc-handle" id="sg-size-mq" title="Media query values found in stylesheet">MQ</a>
+										<ul class="sg-acc-panel sg-right" id="sg-mq">
+												<li><a href="#">10em</a></li>
+												<li><a href="#">24em</a></li>
+												<li><a href="#">29.75em</a></li>
+												<li><a href="#">39.8em</a></li>
+												<li><a href="#">46.8em</a></li>
+												<li><a href="#">48em</a></li>
+												<li><a href="#">50em</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sg-view">
+								<a href="#" class="sg-acc-handle sg-control-trigger sg-icon icon-eye" id="sg-t-toggle"><span class="is-vishidden">View</span></a>
+								<ul class="sg-view sg-acc-panel sg-right sg-checklist" id="sg-view">
+									<li><a href="#" class="sg-checkbox" id="sg-t-annotations">Annotations</a></li>
+									<li><a href="#" class="sg-checkbox" id="sg-t-code">Code</a></li>
+									<li><a href="#" target="_blank" id="sg-raw">Open in New Window</a></li>
+								</ul>
+							</li>
+							<li class="sg-tools">
+								<a href="#" class="sg-acc-handle sg-tools-toggle sg-icon icon-cog" id="sg-tools-toggle"><span class="is-vishidden">Tools</span></a>
+								<ul class="sg-acc-panel sg-right sg-checklist">
+									<li><a href="#" id="navSyncButton" class="sg-checkbox sg-page-follow" data-state="off">Page Follow</a></li>
+									<li><a href="#" id="contentSyncButton" class="sg-checkbox sg-auto-reload" data-state="off">Auto-reload</a></li>
+									<li><a href="http://pattern-lab.info/" target="_blank">Pattern Lab Documentation</a>
+								</ul>
+							</li>
+						</ul>
+						
+					</div>
+			</div>
+			<!--End #sg-controls-->		</div>
+	</header>
+	<!--End Style Guide Header-->
+	
+	<!-- Iframe -->
+	<div id="sg-vp-wrap">
+		<div id="sg-cover"></div>
+		<div id="sg-gen-container">
+			<iframe id="sg-viewport" sandbox="allow-same-origin allow-scripts"></iframe>
+			<div id="sg-rightpull-container">
+				<div id="sg-rightpull"></div>
 			</div>
 		</div>
-		<!--end iFrame-->
+	</div>
+	<!--end iFrame-->
+	
+	<script src="styleguide/js/data-saver.js"></script>
+	<script>
+		var patternPaths = {"atoms":{"colors":"00-atoms\/00-global\/00-colors","fonts":"00-atoms\/00-global\/01-fonts","animations":"00-atoms\/00-global\/02-animations","visibility":"00-atoms\/00-global\/03-visibility","headings":"00-atoms\/01-text\/00-headings","subheadings":"00-atoms\/01-text\/01-subheadings","headings-with-links":"00-atoms\/01-text\/02-headings-with-links","paragraph":"00-atoms\/01-text\/03-paragraph","blockquote":"00-atoms\/01-text\/04-blockquote","inline-elements":"00-atoms\/01-text\/05-inline-elements","time":"00-atoms\/01-text\/06-time","preformatted-text":"00-atoms\/01-text\/07-preformatted-text","emphasis-colors":"00-atoms\/01-text\/08-emphasis-colors","hr":"00-atoms\/01-text\/09-hr","caption":"00-atoms\/01-text\/10-caption","unordered":"00-atoms\/02-lists\/00-unordered","ordered":"00-atoms\/02-lists\/01-ordered","definition":"00-atoms\/02-lists\/02-definition","logo":"00-atoms\/03-images\/00-logo","landscape-4x3":"00-atoms\/03-images\/01-landscape-4x3","landscape-16x9":"00-atoms\/03-images\/02-landscape-16x9","square":"00-atoms\/03-images\/03-square","avatar":"00-atoms\/03-images\/04-avatar","icons":"00-atoms\/03-images\/05-icons","loading-icon":"00-atoms\/03-images\/06-loading-icon","favicon":"00-atoms\/03-images\/07-favicon","text-fields":"00-atoms\/04-forms\/00-text-fields","select-menu":"00-atoms\/04-forms\/01-select-menu","checkbox":"00-atoms\/04-forms\/02-checkbox","radio-buttons":"00-atoms\/04-forms\/03-radio-buttons","html5-inputs":"00-atoms\/04-forms\/04-html5-inputs","buttons":"00-atoms\/05-buttons\/00-buttons","table":"00-atoms\/06-tables\/00-table"},"molecules":{"byline-author-only":"01-molecules\/00-text\/00-byline-author-only","byline-author-time":"01-molecules\/00-text\/01-byline-author-time","address":"01-molecules\/00-text\/02-address","heading-group":"01-molecules\/00-text\/03-heading-group","blockquote-with-citation":"01-molecules\/00-text\/04-blockquote-with-citation","intro-text":"01-molecules\/00-text\/05-intro-text","pullquote":"01-molecules\/00-text\/06-pullquote","one-up":"01-molecules\/01-layout\/00-one-up","two-up":"01-molecules\/01-layout\/01-two-up","three-up":"01-molecules\/01-layout\/02-three-up","four-up":"01-molecules\/01-layout\/03-four-up","media-block":"01-molecules\/02-blocks\/00-media-block","headline-byline":"01-molecules\/02-blocks\/01-headline-byline","block-hero":"01-molecules\/02-blocks\/02-block-hero","block-thumb-headline":"01-molecules\/02-blocks\/03-block-thumb-headline","headline-only":"01-molecules\/02-blocks\/04-headline-only","inset-block":"01-molecules\/02-blocks\/05-inset-block","figure-with-caption":"01-molecules\/03-media\/00-figure-with-caption","search":"01-molecules\/04-forms\/00-search","comment-form":"01-molecules\/04-forms\/01-comment-form","newsletter":"01-molecules\/04-forms\/02-newsletter","primary-nav":"01-molecules\/05-navigation\/00-primary-nav","footer-nav":"01-molecules\/05-navigation\/01-footer-nav","breadcrumbs":"01-molecules\/05-navigation\/02-breadcrumbs","pagination":"01-molecules\/05-navigation\/03-pagination","tabs":"01-molecules\/05-navigation\/04-tabs","social-share":"01-molecules\/06-components\/00-social-share","accordion":"01-molecules\/06-components\/01-accordion","single-comment":"01-molecules\/06-components\/02-single-comment"},"organisms":{"header":"02-organisms\/00-global\/00-header","footer":"02-organisms\/00-global\/01-footer","article-body":"02-organisms\/01-article\/00-article-body","comment-thread":"02-organisms\/02-comments\/00-comment-thread","carousel":"02-organisms\/03-components\/00-carousel","latest-posts":"02-organisms\/04-sections\/00-latest-posts","recent-tweets":"02-organisms\/04-sections\/01-recent-tweets","related-posts":"02-organisms\/04-sections\/02-related-posts"},"templates":{"homepage":"03-templates\/00-homepage","blog":"03-templates\/01-blog","article":"03-templates\/02-article"},"pages":{"homepage":"04-pages\/00-homepage","blog":"04-pages\/01-blog","article":"04-pages\/02-article"}}
+	</script>	<script>
+		var viewAllPaths = {"atoms":{"global":"00-atoms-00-global","text":"00-atoms-01-text","lists":"00-atoms-02-lists","images":"00-atoms-03-images","forms":"00-atoms-04-forms","buttons":"00-atoms-05-buttons","tables":"00-atoms-06-tables"},"molecules":{"text":"01-molecules-00-text","layout":"01-molecules-01-layout","blocks":"01-molecules-02-blocks","media":"01-molecules-03-media","forms":"01-molecules-04-forms","navigation":"01-molecules-05-navigation","components":"01-molecules-06-components"},"organisms":{"global":"02-organisms-00-global","article":"02-organisms-01-article","comments":"02-organisms-02-comments","components":"02-organisms-03-components","sections":"02-organisms-04-sections"}}
+	</script>	<script src="styleguide/js/url-handler.js"></script>
+	<script>
 		
-		<script src="styleguide/js/data-saver.js"></script>
-		<script>
-			var patternPaths = {"atoms":{"colors":"00-atoms\/00-global\/00-colors","fonts":"00-atoms\/00-global\/01-fonts","animations":"00-atoms\/00-global\/02-animations","visibility":"00-atoms\/00-global\/03-visibility","headings":"00-atoms\/01-text\/00-headings","subheadings":"00-atoms\/01-text\/01-subheadings","headings-with-links":"00-atoms\/01-text\/02-headings-with-links","paragraph":"00-atoms\/01-text\/03-paragraph","blockquote":"00-atoms\/01-text\/04-blockquote","inline-elements":"00-atoms\/01-text\/05-inline-elements","time":"00-atoms\/01-text\/06-time","preformatted-text":"00-atoms\/01-text\/07-preformatted-text","emphasis-colors":"00-atoms\/01-text\/08-emphasis-colors","hr":"00-atoms\/01-text\/09-hr","caption":"00-atoms\/01-text\/10-caption","unordered":"00-atoms\/02-lists\/00-unordered","ordered":"00-atoms\/02-lists\/01-ordered","definition":"00-atoms\/02-lists\/02-definition","logo":"00-atoms\/03-images\/00-logo","landscape-4x3":"00-atoms\/03-images\/01-landscape-4x3","landscape-16x9":"00-atoms\/03-images\/02-landscape-16x9","square":"00-atoms\/03-images\/03-square","avatar":"00-atoms\/03-images\/04-avatar","icons":"00-atoms\/03-images\/05-icons","loading-icon":"00-atoms\/03-images\/06-loading-icon","favicon":"00-atoms\/03-images\/07-favicon","text-fields":"00-atoms\/04-forms\/00-text-fields","select-menu":"00-atoms\/04-forms\/01-select-menu","checkbox":"00-atoms\/04-forms\/02-checkbox","radio-buttons":"00-atoms\/04-forms\/03-radio-buttons","html5-inputs":"00-atoms\/04-forms\/04-html5-inputs","buttons":"00-atoms\/05-buttons\/00-buttons","table":"00-atoms\/06-tables\/00-table"},"molecules":{"byline-author-only":"01-molecules\/00-text\/00-byline-author-only","byline-author-time":"01-molecules\/00-text\/01-byline-author-time","address":"01-molecules\/00-text\/02-address","heading-group":"01-molecules\/00-text\/03-heading-group","blockquote-with-citation":"01-molecules\/00-text\/04-blockquote-with-citation","intro-text":"01-molecules\/00-text\/05-intro-text","pullquote":"01-molecules\/00-text\/06-pullquote","one-up":"01-molecules\/01-layout\/00-one-up","two-up":"01-molecules\/01-layout\/01-two-up","three-up":"01-molecules\/01-layout\/02-three-up","four-up":"01-molecules\/01-layout\/03-four-up","media-block":"01-molecules\/02-blocks\/00-media-block","headline-byline":"01-molecules\/02-blocks\/01-headline-byline","block-hero":"01-molecules\/02-blocks\/02-block-hero","block-thumb-headline":"01-molecules\/02-blocks\/03-block-thumb-headline","headline-only":"01-molecules\/02-blocks\/04-headline-only","inset-block":"01-molecules\/02-blocks\/05-inset-block","figure-with-caption":"01-molecules\/03-media\/00-figure-with-caption","search":"01-molecules\/04-forms\/00-search","comment-form":"01-molecules\/04-forms\/01-comment-form","newsletter":"01-molecules\/04-forms\/02-newsletter","primary-nav":"01-molecules\/05-navigation\/00-primary-nav","footer-nav":"01-molecules\/05-navigation\/01-footer-nav","breadcrumbs":"01-molecules\/05-navigation\/02-breadcrumbs","pagination":"01-molecules\/05-navigation\/03-pagination","tabs":"01-molecules\/05-navigation\/04-tabs","social-share":"01-molecules\/06-components\/00-social-share","accordion":"01-molecules\/06-components\/01-accordion","single-comment":"01-molecules\/06-components\/02-single-comment"},"organisms":{"header":"02-organisms\/00-global\/00-header","footer":"02-organisms\/00-global\/01-footer","article-body":"02-organisms\/01-article\/00-article-body","comment-thread":"02-organisms\/02-comments\/00-comment-thread","carousel":"02-organisms\/03-components\/00-carousel","latest-posts":"02-organisms\/04-sections\/00-latest-posts","recent-tweets":"02-organisms\/04-sections\/01-recent-tweets","related-posts":"02-organisms\/04-sections\/02-related-posts"},"templates":{"homepage":"03-templates\/00-homepage","blog":"03-templates\/01-blog","article":"03-templates\/02-article"},"pages":{"homepage":"04-pages\/00-homepage","blog":"04-pages\/01-blog","article":"04-pages\/02-article"}}
-		</script>		<script>
-			var viewAllPaths = {"atoms":{"global":"00-atoms-00-global","text":"00-atoms-01-text","lists":"00-atoms-02-lists","images":"00-atoms-03-images","forms":"00-atoms-04-forms","buttons":"00-atoms-05-buttons","tables":"00-atoms-06-tables"},"molecules":{"text":"01-molecules-00-text","layout":"01-molecules-01-layout","blocks":"01-molecules-02-blocks","media":"01-molecules-03-media","forms":"01-molecules-04-forms","navigation":"01-molecules-05-navigation","components":"01-molecules-06-components"},"organisms":{"global":"02-organisms-00-global","article":"02-organisms-01-article","comments":"02-organisms-02-comments","components":"02-organisms-03-components","sections":"02-organisms-04-sections"}}
-		</script>		<script src="styleguide/js/url-handler.js"></script>
-		<script>
-			
-			var navSyncPort     = 8003;
-			var contentSyncPort = 8002;
-			
-		</script>
-		<script src="listeners/synclisteners.js"></script>
-		<script src="styleguide/js/styleguide.js"></script>
-	</body>
+		var navSyncPort     = 8003;
+		var contentSyncPort = 8002;
+		
+	</script>
+	<script src="listeners/synclisteners.js"></script>
+	<script src="styleguide/js/styleguide.js"></script>
+	<script src="styleguide/js/annotations-viewer.js "></script>
+</body>
 </html>
