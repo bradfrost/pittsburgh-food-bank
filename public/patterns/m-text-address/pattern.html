@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pattern Lab</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="/styleguide/css/styleguide.css" media="all" />
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/modernizr.js"></script>
+</head>
+<body>
+<div class="vcard">
+	<div class="org">Company Name</div>
+	<div class="adr">
+		<div class="street-address">1234 Main St.</div>
+		<span class="locality">Anywhere</span>,
+		<span class="postal-code">101010</span>,
+		<abbr class="region" title="California">CA</abbr>
+		<div class="country-name">U.S.A</div>
+	</div>
+	<div class="tel">+1.888.123.4567</div>
+</div>
+	<script>
+		parent.postMessage(window.location.href,"http://"+window.location.host);
+		
+		var body = document.getElementsByTagName('body');
+		body[0].onclick = function() {
+			parent.postMessage('body-click',"http://"+window.location.host)
+		};
+	</script>
+</body>
+</html>

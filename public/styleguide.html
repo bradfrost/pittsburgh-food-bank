@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/styleguide/css/styleguide.css" media="all" />
+    <link rel="stylesheet" href="/css/style.css" media="all" />
+</head>
+<body>
+
+<!--Style Guide Main Content-->
+<div class="sg-main" role="main">
+
+<!--Patterns-->
+<div id="patterns">
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-buttons-buttons/00-atoms-buttons-buttons.html">Buttons</a></h2>
+			<p><a href="#" class="btn">Button</a></p>
+<p><a href="#" class="btn alt">Alternate Button</a></p>
+<p><a href="#" class="btn disabled">Disabled Button</a></p>
+<p><a href="#" class="text-btn">Text Button</a></p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-forms-checkbox/00-atoms-forms-checkbox.html">Checkbox</a></h2>
+			<form action="#">
+    <fieldset class="options">
+        <legend>Checkbox <abbr title="Required">*</abbr></legend>
+        <ul>
+            <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+            <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+            <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+        </ul>
+    </fieldset>
+</form>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-forms-html5-inputs/00-atoms-forms-html5-inputs.html">Html5 Inputs</a></h2>
+			<fieldset>
+    <div class="field-container"><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></div>
+    <div class="field-container"><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></div>
+    <div class="field-container"><label for="ir">Range input</label> <input type="range" id="ir" value="10"></div>
+    <div class="field-container"><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></div>
+    <div class="field-container"><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></div>
+    <div class="field-container"><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></div>
+    <div class="field-container"><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></div>
+    <div class="field-container"><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></div>
+</fieldset>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-forms-radio-buttons/00-atoms-forms-radio-buttons.html">Radio Buttons</a></h2>
+			<form action="#">
+    <fieldset class="options">
+        <legend>Radio</legend>
+        <ul>
+            <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
+            <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
+            <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
+        </ul>
+    </fieldset>
+</form>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-forms-select-menu/00-atoms-forms-select-menu.html">Select Menu</a></h2>
+			<fieldset>
+    <div class="field-container">
+        <label for="select">Select</label>
+        <select id="select">
+            <optgroup label="Option Group">
+                <option>Option One</option>
+                <option>Option Two</option>
+                <option>Option Three</option>
+            </optgroup>
+        </select>
+    </div>
+</fieldset>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-forms-text-fields/00-atoms-forms-text-fields.html">Text Fields</a></h2>
+			<fieldset>
+    <div class="field-container">
+        <label for="text">Text Input <abbr title="Required">*</abbr></label>
+        <input id="text" type="text" placeholder="Text Input">
+    </div>
+    <div class="field-container">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Type your Password">
+    </div>
+    <div class="field-container">
+        <label for="password">Web Address</label>
+        <input id="password" type="url" placeholder="http://yoursite.com">
+    </div>
+    <div class="field-container">
+        <label for="password">Email Address</label>
+        <input id="password" type="email" placeholder="name@email.com">
+    </div>
+    <div class="field-container">
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="Enter Search Term">
+    </div>
+    <div class="field-container">
+        <label for="text">Number Input <abbr title="Required">*</abbr></label>
+        <input id="text" type="number" placeholder="Enter a Number" pattern="[0-9]*">
+    </div>
+    <div class="field-container">
+        <label for="textarea">Textarea</label>
+        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+    </div>
+    <div class="field-container">
+        <label class="error">Error Input</label>
+        <input class="is-error" type="text" placeholder="Text Input">
+    </div>
+    <div class="field-container">
+        <label  class="valid">Valid</label>
+        <input  class="is-valid" type="text" placeholder="Text Input">
+    </div>
+</fieldset>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-global-animations/00-atoms-global-animations.html">Animations</a></h2>
+			<div class="demo-animate animate-fade"><strong>Fade:</strong> Duration: 0.3s Easing: ease-out (Hover to see effect)</div>
+
+<div class="demo-animate animate-move"><div class="demo-shape"></div><strong>Movement:</strong> Duration: 0.8s  Easing: ease-in-out; (Hover to see effect)</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-global-colors/00-atoms-global-colors.html">Colors</a></h2>
+			<ul class="sg-colors">
+	<li>
+		<span class="sg-swatch" style="background: #ff0000;"></span>
+		<span class="sg-label">#ff0000</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #00ff00;"></span>
+		<span class="sg-label">#00ff00</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #0000ff;"></span>
+		<span class="sg-label">#0000ff</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #ffff00;"></span>
+		<span class="sg-label">#ffff00</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #00ffff;"></span>
+		<span class="sg-label">#00ffff</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #ff00ff;"></span>
+		<span class="sg-label">#ff00ff</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #ffffff;"></span>
+		<span class="sg-label">#ffffff</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #808080;"></span>
+		<span class="sg-label">#808080</span>
+	</li>
+	<li>
+		<span class="sg-swatch" style="background: #000000;"></span>
+		<span class="sg-label">#000000</span>
+	</li>
+</ul>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-global-fonts/00-atoms-global-fonts.html">Fonts</a></h2>
+			<p>Primary font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</p>
+<p><em>Primary font italic: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</em></p>
+<p><strong>Primary font bold: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</strong></p>
+<p class="font-secondary">Secondary font: Georgia, Times, "Times New Roman", serif;</p>
+<p class="font-secondary"><em>Secondary font italic: Georgia, Times, "Times New Roman", serif;</em></p>
+<p class="font-secondary"><strong>Secondary font bold: Georgia, Times, "Times New Roman", serif;</strong></p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-global-visibility/00-atoms-global-visibility.html">Visibility</a></h2>
+			<p class="hide-small">This text is hidden on smaller screens</p>
+
+<p class="hide-med hide-large"><em>This text is only visible on smaller screens</em></p>
+
+<p class="hide-med">This text is hidden on medium screens only</p>
+
+<p class="hide-small hide-large"><em>This text is only visible on medium screens</em></p>
+
+<p class="hide-large">This text is hidden on large screens</p>
+
+<p class="hide-small hide-med"><em>This text is only visible on large screens</em></p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-avatar/00-atoms-images-avatar.html">Avatar</a></h2>
+			<img src="images/fpo_avatar.png" alt="Avatar" />
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-favicon/00-atoms-images-favicon.html">Favicon</a></h2>
+			<img src="images/favicon_16x16.jpg" alt="Favicon 16x16" />
+<img src="images/favicon_32x32.jpg" alt="Favicon 32x32" />
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-icons/00-atoms-images-icons.html">Icons</a></h2>
+			<ul class="icons inline-list">
+	<li class="icon-twitter"></li>
+	<li class="icon-facebook"></li>
+	<li class="icon-stumbleupon"></li>
+	<li class="icon-linkedin"></li>
+	<li class="icon-pinterest"></li>
+	<li class="icon-google-plus"></li>
+	<li class="icon-youtube"></li>
+	<li class="icon-feed"></li>
+	<li class="icon-search"></li>
+	<li class="icon-play"></li>
+</ul>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-landscape-16x9/00-atoms-images-landscape-16x9.html">Landscape 16x9</a></h2>
+			<img src="/images/fpo_16x9.png" alt="" />
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-landscape-4x3/00-atoms-images-landscape-4x3.html">Landscape 4x3</a></h2>
+			<img src="/images/fpo_4x3.png" alt="4x3 Image" />
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-loading-icon/00-atoms-images-loading-icon.html">Loading Icon</a></h2>
+			<img src="images/ajax-loader.gif" alt="Loading" />
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-logo/00-atoms-images-logo.html">Logo</a></h2>
+			<a href="#"><img src="/images/logo.png" class="logo" alt="Logo for a Company" /></a>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-images-square/00-atoms-images-square.html">Square</a></h2>
+			<img src="/images/fpo_square.png" alt="Square Thumbnail" />
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-lists-definition/00-atoms-lists-definition.html">Definition</a></h2>
+			<dl>
+	<dt>Definition List</dt>
+	<dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
+    <dt>This is a term.</dt>
+    <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+    <dt>Here is another term.</dt>
+    <dd>And it gets a definition too, which is this line.</dd>
+    <dt>Here is term that shares a definition with the term below.</dt>
+    <dd>And it gets a definition too, which is this line.</dd>
+</dl>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-lists-ordered/00-atoms-lists-ordered.html">Ordered</a></h2>
+			<div class="text">
+	<ol>
+		<li>This is a list item in an ordered list</li>
+		<li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+		<li>
+			Lists can be nested inside of each other
+			<ol>
+				<li>This is a nested list item</li>
+				<li>This is another nested list item in an ordered list</li>
+			</ol>
+		</li>
+		<li>This is the last list item</li>
+	</ol>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-lists-unordered/00-atoms-lists-unordered.html">Unordered</a></h2>
+			<div class="text">
+	<ul>
+		<li>This is a list item in an unordered list</li>
+		<li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+		<li>
+			Lists can be nested inside of each other
+			<ul>
+				<li>This is a nested list item</li>
+				<li>This is another nested list item in an unordered list</li>
+			</ul>
+		</li>
+		<li>This is the last list item</li>
+	</ul>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-media-audio/00-atoms-media-audio.html">Audio</a></h2>
+			<audio controls="controls">  
+   <source src="#" />  
+   <source src="#" />  
+</audio>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-media-video/00-atoms-media-video.html">Video</a></h2>
+			<video width="640" height="360" controls="">
+	<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+	<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
+	<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg">
+	<img src="" width="640" height="360" alt="Big Buck Bunny" title="No video playback capabilities, please download">
+</video>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-tables-table/00-atoms-tables-table.html">Table</a></h2>
+			<table>
+	<thead>
+		<tr>
+			<th>Table Heading 1</th>
+			<th>Table Heading 2</th>
+			<th>Table Heading 3</th>
+			<th>Table Heading 3</th>
+			<th>Table Heading 4</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Table Footer 1</th>
+			<th>Table Footer 2</th>
+			<th>Table Footer 3</th>
+			<th>Table Footer 3</th>
+			<th>Table Footer 4</th>
+		</tr>
+	</tfoot>
+	<tbody>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+	</tr>
+	<tr>
+		<td>Table Cell 1</td>
+		<td>Table Cell 2</td>
+		<td>Table Cell 3</td>
+		<td>Table Cell 4</td>
+		<td>Table Cell 5</td>
+	</tr>
+	</tbody>
+</table>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-blockquote/00-atoms-text-blockquote.html">Blockquote</a></h2>
+			<blockquote>
+	<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p>
+</blockquote>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-emphasis-colors/00-atoms-text-emphasis-colors.html">Emphasis Colors</a></h2>
+			<p class="error">This is what error text looks like</p>
+<p class="valid">This is what valid text looks like</p>
+<p class="warning">This is what warning text looks like</p>
+<p class="information">This is what information text looks like.</p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-headings-with-links/00-atoms-text-headings-with-links.html">Headings With Links</a></h2>
+			<h1><a href="#">Heading 1 with link</a></h1>
+<h2><a href="#">Heading 2 with link</a></h2>
+<h3><a href="#">Heading 3 with link</a></h3>  
+<h4><a href="#">Heading 4 with link</a></h4>
+<h5><a href="#">Heading 5 with link</a></h5> 
+<h6><a href="#">Heading 6 with link</a></h6>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-headings/00-atoms-text-headings.html">Headings</a></h2>
+			<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>  
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5> 
+<h6>Heading Level 6</h6>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-hr/00-atoms-text-hr.html">Hr</a></h2>
+			<hr />
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-inline-elements/00-atoms-text-inline-elements.html">Inline Elements</a></h2>
+			<div class="text">
+	<p><a href="#">This is a text link</a></p>
+
+	<p><strong>Strong is used to indicate strong importance</strong></p>
+
+	<p><em>This text has added emphasis</em></p>
+
+	<p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+
+	<p>The <i>i element</i> is text that is set off from the normal text</p>
+
+	<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+
+	<p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+
+	<p><s>This text has a strikethrough</s></p>
+
+	<p>Superscript<sup>®</sup></p>
+
+	<p>Subscript for things like H<sub>2</sub>O</p>
+
+	<p><small>This small text is small for for fine print, etc.</small></p>
+
+	<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+
+	<p>Keybord input: <kbd>Cmd</kbd></p>
+
+	<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+
+	<p><cite>This is a citation</cite>
+
+	</p><p>The <dfn>dfn element</dfn> indicates a definition.</p>
+
+	<p>The <mark>mark element</mark> indicates a highlight</p>
+
+	<p><code>This is what inline code looks like.</code></p>
+
+	<p><samp>This is sample output from a computer program</samp></p>
+
+	<p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
+</div><!--end .text-->
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-paragraph/00-atoms-text-paragraph.html">Paragraph</a></h2>
+			<p>A paragraph (from the Greek paragraphos, 'to write beside' or 'written beside') is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. The start of a paragraph is indicated by beginning on a new line.</p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-preformatted-text/00-atoms-text-preformatted-text.html">Preformatted Text</a></h2>
+			<pre>  	
+P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~ 
+</pre>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-subheadings/00-atoms-text-subheadings.html">Subheadings</a></h2>
+			<h1 class="subheading">Subheading Level 1</h1>
+<h2 class="subheading">Subheading Level 2</h2>
+<h3 class="subheading">Subheading Level 3</h3>  
+<h4 class="subheading">Subheading Level 4</h4>
+<h5 class="subheading">Subheading Level 5</h5> 
+<h6 class="subheading">Subheading Level 6</h6>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/00-atoms-text-time/00-atoms-text-time.html">Time</a></h2>
+			<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-blocks-block-hero/01-molecules-blocks-block-hero.html">Block Hero</a></h2>
+			<div class="block block-hero">
+	<a href="" class="inner">
+		<div class="b-thumb">
+		</div>
+		<div class="b-text">
+			<h2 class="headline"></h2>
+		</div>
+	</a>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-blocks-block-thumb-headline/01-molecules-blocks-block-thumb-headline.html">Block Thumb Headline</a></h2>
+			<div class="block block-thumb">
+    <a href="#" class="b-inner">
+		<div class="b-thumb">
+		</div>
+		<div class="b-text">
+			<h2 class="headline">Headline: Lorem Ipsum Dolor Amet Sit</h2>
+		</div>
+	</a>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-blocks-headline-byline/01-molecules-blocks-headline-byline.html">Headline Byline</a></h2>
+			<div class="block block-headline">
+    <a href="#">
+		<h2 class="headline">Headline: Lorem Ipsum Dolor Amet Sit</h2>
+	</a>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-blocks-headline-only/01-molecules-blocks-headline-only.html">Headline Only</a></h2>
+			<div class="block block-headline">
+    <a href="#">
+		<h2 class="headline">Headline: Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+	</a>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-blocks-inset-block/01-molecules-blocks-inset-block.html">Inset Block</a></h2>
+			<div class="block block-inset">
+    <a href="#" class="inner">
+		<div class="b-thumb">
+		</div>
+		<div class="b-text">
+			<h2 class="headline">Headline: Lorem ipsum dolor sit amet, consectetur adipisicing</h2>
+		</div>
+	</a>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-blocks-media-block/01-molecules-blocks-media-block.html">Media Block</a></h2>
+			<div class="block block-thumb">
+    <a href="#" class="b-inner">
+		<div class="b-thumb">
+		</div>
+		<div class="b-text">
+			<h2 class="headline">Headline: Lorem Ipsum Dolor Amet Sit</h2>
+		</div>
+	</a>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-components-accordion/01-molecules-components-accordion.html">Accordion</a></h2>
+			<div class="accordion">
+	<ul>
+		<li>
+			<a href="#" class="acc-handle">Accordion 1</a>
+			<div class="acc-panel">
+			</div>
+		</li>
+		<li>
+			<a href="#" class="acc-handle">Accordion 2</a>
+			<div class="acc-panel">
+			</div>
+		</li>
+		<li>
+			<a href="#" class="acc-handle">Accordion 3</a>
+			<div class="acc-panel">
+			</div>
+		</li>
+	</ul>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-components-single-comment/01-molecules-components-single-comment.html">Single Comment</a></h2>
+			<div class="comment-container">
+	<div class="comment-meta">
+		<h4 class="comment-name"><a href="#">Comment Author</a></h4>
+	</div>
+	<div class="comment-text">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales fringilla arcu a pretium. Aliquam sit amet lacinia felis. Praesent sed nisl eu nunc venenatis imperdiet. Aliquam at ipsum eu justo fringilla pharetra. </p>
+	</div>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-components-social-article/01-molecules-components-social-article.html">Social Article</a></h2>
+			<div class="social-article">
+	<h3>Share this with your friends</h3>
+	<ul class="inline-list social-share-list">
+		<li><a href="#" class="btn btn-small">Like</a></li>
+		<li><a href="#" class="btn btn-small">Tweet</a></li>
+		<li><a href="#" class="btn btn-small">Email</a></li>
+		<li><a href="#" class="btn btn-small">Comment</a></li>
+	</ul>
+</div>
+
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-components-social-share/01-molecules-components-social-share.html">Social Share</a></h2>
+			<div class="social-share">
+	<ul class="social-share-list">
+		<li><a href="#">Like</a></li>
+		<li><a href="#">Tweet</a></li>
+		<li><a href="#">Email</a></li>
+		<li><a href="#">Comment</a></li>
+	</ul>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-forms-comment-form/01-molecules-forms-comment-form.html">Comment Form</a></h2>
+			<form class="comment-form">
+	<fieldset>
+		<div class="field-container">
+			<label for="comment-name">Name</label>
+			<input id="comment-name" type="text" placeholder="Enter Your Name" />
+		</div>
+		<div class="field-container">
+			<label for="comment-email">Email</label>
+			<input id="comment-email" type="email" placeholder="Your email address" />
+		</div>
+		<div class="field-container">
+			<label for="comment-url">URL</label>
+			<input id="comment-url" type="url" placeholder="Website if you got one" />
+		</div>
+		<div class="field-container">
+			<label for="comment-field">Comment</label>
+			<textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
+		</div>
+	</fieldset>
+</form>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-forms-newsletter/01-molecules-forms-newsletter.html">Newsletter</a></h2>
+			<form action="#" method="post" class="inline-form newsletter-form">           
+    <fieldset>
+	    <legend>Sign up for our newsletter</legend>
+	    <label for="newsletter-scope">Sign up for our newsletter</label>
+	    <div class="inline-container">
+	   		<input type="newsletter" placeholder="E-mail address" id="newsletter-field" class="newsletter-field" />
+	    	<button class="newsletter-submit">Sign Me Up</button>
+		</div>
+    </fieldset>
+</form>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-forms-search/01-molecules-forms-search.html">Search</a></h2>
+			<form action="#" method="post" class="inline-form search-form">           
+    <fieldset>
+	    <legend class="is-vishidden">Search</legend>
+	    <label for="search-field" class="is-vishidden">Search</label>
+	    <input type="search" placeholder="Search" id="search-field" class="search-field" />
+	    <button class="search-submit">
+	    	<span class="icon-search" aria-hidden="true"></span>
+	    	<span class="is-vishidden">Search</span>
+	    </button>
+    </fieldset>
+</form>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-layouts-four-up/01-molecules-layouts-four-up.html">Four Up</a></h2>
+			<div class="demo">
+	<!--Grid 4up-->
+	<div class="g g-4up">
+		<div class="gi">1/4</div>
+		<div class="gi">1/4</div>
+		<div class="gi">1/4</div>
+		<div class="gi">1/4</div>
+	</div>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-layouts-one-up/01-molecules-layouts-one-up.html">One Up</a></h2>
+			<div class="demo">
+	<!--Grid 1up-->
+	<div class="g g-1up">
+		<div class="gi">1/1</div>
+	</div>
+	<!--End Grid 1up-->		
+</div><!--end .demo-->
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-layouts-three-up/01-molecules-layouts-three-up.html">Three Up</a></h2>
+			<div class="demo">
+	<!--Grid 3up-->
+	<div class="g g-3up">
+		<div class="gi">1/3</div>
+		<div class="gi">1/3</div>
+		<div class="gi">1/3</div>
+	</div>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-layouts-two-up/01-molecules-layouts-two-up.html">Two Up</a></h2>
+			<div class="demo">
+	<!--Grid 2up-->
+	<div class="g g-2up">
+		<div class="gi">1/2</div>
+		<div class="gi">1/2</div>
+	</div>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-media-figure-with-caption/01-molecules-media-figure-with-caption.html">Figure With Caption</a></h2>
+			<figure>
+	<figcaption>This is an example of an image with a caption. Photo captions, also known as cutlines, are a few lines of text used to explain or elaborate on published photographs.</figcaption>
+</figure>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-navigation-breadcrumbs/01-molecules-navigation-breadcrumbs.html">Breadcrumbs</a></h2>
+			<ul class="breadcrumbs">
+	<li><a href="#">Grandparent</a></li>
+	<li><a href="#">Parent</a></li>
+	<li><a href="#">Child</a></li>
+	<li><a href="#">Grandchild</a></li>
+	<li><a href="#">Great-Grandchild</a></li>
+</ul>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-navigation-footer-nav/01-molecules-navigation-footer-nav.html">Footer Nav</a></h2>
+			<ul class="nav-footer">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Blog</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-navigation-pagination/01-molecules-navigation-pagination.html">Pagination</a></h2>
+			<ol class="pagination">
+	<li class="current"><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">6</a></li>
+	<li><a href="#">7</a></li>
+</ol>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-navigation-primary-nav/01-molecules-navigation-primary-nav.html">Primary Nav</a></h2>
+			<nav id="nav" class="nav">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav><!--end .nav-->
+
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-navigation-tabs/01-molecules-navigation-tabs.html">Tabs</a></h2>
+			<div class="tabs">
+	<ul class="tab-list">
+		<li><a href="#" class="active">Tab 1</a></li>
+		<li><a href="#">Tab 2</a></li>
+		<li><a href="#">Tab 3</a></li>
+	</ul>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-address/01-molecules-text-address.html">Address</a></h2>
+			<div class="vcard">
+	<div class="org">Company Name</div>
+	<div class="adr">
+		<div class="street-address">1234 Main St.</div>
+		<span class="locality">Anywhere</span>,
+		<span class="postal-code">101010</span>,
+		<abbr class="region" title="California">CA</abbr>
+		<div class="country-name">U.S.A</div>
+	</div>
+	<div class="tel">+1.888.123.4567</div>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-blockquote-with-citation/01-molecules-text-blockquote-with-citation.html">Blockquote With Citation</a></h2>
+			<blockquote>
+   	<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation. </p>
+	<cite class="citation">Quote Source</cite>
+</blockquote>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-byline-author-only/01-molecules-text-byline-author-only.html">Byline Author Only</a></h2>
+			<div class="byline">by Author Name</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-byline-author-time/01-molecules-text-byline-author-time.html">Byline Author Time</a></h2>
+			<div class="byline">by Author Name on <time datetime="2013-04-06T12:32+00:00">June 3rd</time></div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-caption/01-molecules-text-caption.html">Caption</a></h2>
+			<p class="caption">A caption can be applied to an image, quote, form field, etc.</p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-heading-group/01-molecules-text-heading-group.html">Heading Group</a></h2>
+			<div class="hgroup">
+   	<h2>This is the heading group's main heading</h2>
+   	<h3>This is the heading group's subheading</h3>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-intro-text/01-molecules-text-intro-text.html">Intro Text</a></h2>
+			<p class="intro">The intro text may be a lead-in to the passage of text, or it may just be used to create a visual distinction between the rest of the passage of text.</p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/01-molecules-text-pullquote/01-molecules-text-pullquote.html">Pullquote</a></h2>
+			<blockquote class="pullquote">
+   	<p>A pull quote is a quotation or excerpt from an article</p>
+</blockquote>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-article-article-body/02-organisms-article-article-body.html">Article Body</a></h2>
+			<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla sem a urna porttitor fringilla. Nulla eget justo felis. </p>
+
+<p><a href="#">Aliquam erat volutpat.</a> Mauris vulputate scelerisque feugiat. Cras a erat a diam venenatis aliquam. Sed tempus, purus ac pretium varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eros dolor, rutrum eu sollicitudin eu, commodo at leo. Suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus. Maecenas eu urna adipiscing neque dictum mollis suscipit in augue. Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium.</p>
+
+<p>Aliquam ultrices cursus mauris, eget volutpat justo mattis nec. Sed a orci turpis. Aliquam aliquet placerat dui, consectetur tincidunt leo tristique et. Vivamus enim nisi, blandit a venenatis quis, convallis et arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris libero sapien, placerat in sodales eu, tempor quis dui. Vivamus egestas faucibus pulvinar. Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui.
+</p>
+
+
+<p>Cras at fringilla ipsum. Donec nec libero eget est blandit dignissim a eu ante. Morbi augue nulla, luctus eu sagittis vel, malesuada ut felis. Aliquam erat volutpat. Morbi malesuada augue ac massa hendrerit fermentum. Integer scelerisque lacus a dolor convallis lobortis. Curabitur mollis ante in massa ultricies dignissim.
+</p>
+
+
+
+<p>Donec posuere fringilla nunc, vitae venenatis diam scelerisque vel. Nullam vitae mauris magna. Mauris et diam quis justo volutpat tincidunt congue nec magna. Curabitur vitae orci elit. Ut mollis massa id magna vestibulum consequat. Proin rutrum lectus justo, sit amet tincidunt est. Vivamus vitae lacinia risus.
+</p>
+
+
+<p>Donec venenatis imperdiet tortor, vitae blandit odio interdum ut. Integer orci metus, lobortis id lacinia eget, rutrum vitae justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In pretium fermentum justo nec pharetra. Maecenas eget dapibus justo. Ut quis est risus. Nullam et eros at odio commodo venenatis quis et augue. Sed sed augue at tortor porttitor hendrerit nec ut nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sollicitudin enim consectetur mi commodo quis cursus ante pretium. Nunc gravida cursus nisi in gravida. Suspendisse eget tortor sed urna consequat tincidunt. Etiam eget convallis lectus. Suspendisse cursus rutrum massa ac faucibus.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium deserunt sed explicabo voluptate sapiente ratione inventore molestiae nihil earum repellat quia odit vitae perspiciatis aliquam amet?</p>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-comments-comment-thread/02-organisms-comments-comment-thread.html">Comment Thread</a></h2>
+			<section class="comments section">
+	<div class="comments-container" id="comments-container">
+		<h2 class="section-title">59 Comments</h2>
+		<div class="comment-list">
+		</div>
+	</div>
+</section>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-components-carousel/02-organisms-components-carousel.html">Carousel</a></h2>
+			<div class="carousel-list-carousel">
+	<div class="carousel-container">
+	<div>
+	<div class="carousel-controls">
+		<a href="#" class="carousel-prev">&larr;</a>
+		<div class="carousel-pagination">1/5</div>
+		<a href="#" class="carousel-next">&rarr;</a>
+	</div>
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-global-footer/02-organisms-global-footer.html">Footer</a></h2>
+			<!-- Begin Footer -->
+<footer class="footer" role="contentinfo">
+	<div class="lc">
+		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+	</div>
+</footer>
+<!-- End Footer -->
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-global-header/02-organisms-global-header.html">Header</a></h2>
+			<!-- Begin .header -->
+<header class="header cf" role="banner">
+	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+</header>
+<!-- End .header -->
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-sections-latest-posts/02-organisms-sections-latest-posts.html">Latest Posts</a></h2>
+			<section class="section latest-posts">
+	<h2 class="section-title">Latest Posts</h2>
+	<ul class="post-list">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</section>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-sections-recent-tweets/02-organisms-sections-recent-tweets.html">Recent Tweets</a></h2>
+			<section class="section related-posts">
+	<h3 class="section-title">Recent Tweets</h3>
+	<ul class="headline-list">
+		<li><h4><a href="#">Headline Lorem ipsum dolor sit amet</a></h4> </li>
+		<li><h4><a href="#">Laborum, molestiae, rerum, dolores eveniet </a></h4> </li>
+		<li><h4><a href="#">quae est fugit distinctio iure odit minus non ipsum </a></h4> </li>
+		<li><h4><a href="#">dolorum deserunt omnis voluptates voluptatum</a></h4> </li>
+		<li><h4><a href="#">nventore dignissimos vel molestiae, rerum, dolore</a></h4> </li>
+		<li><h4><a href="#"></a></h4></li>
+	</ul>
+	<a href="#" class="text-btn">Follow us on Twitter</a>
+</section>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-sections-related-posts/02-organisms-sections-related-posts.html">Related Posts</a></h2>
+			<section class="section related-posts">
+	<h3 class="section-title">Related Posts</h3>
+	<ul class="headline-list">
+		<li><h4><a href="#">Headline Lorem ipsum dolor sit amet</a></h4></li>
+		<li><h4><a href="#">Laborum, molestiae, rerum, dolores eveniet </a></h4></li>
+		<li><h4><a href="#">quae est fugit distinctio iure odit minus non ipsum </a></h4></li>
+		<li><h4><a href="#">dolorum deserunt omnis voluptates voluptatum</a></h4></li>
+		<li><h4><a href="#">nventore dignissimos vel molestiae, rerum, dolore</a></h4></li>
+		<li><h4><a href="#"></a></h4></li>
+	</ul>
+</section>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-sections-section-partners/02-organisms-sections-section-partners.html">Section Partners</a></h2>
+			<section class="box">
+	<h4>Logo</h4>
+	<ul class="text-list">
+		<li><a href="#">Jaime Presley, Estella Warren Get Into Nasty Fight At Hollywood Hotspot</a></li>
+		<li><a href="#">Lisa Rinna Rocks Tiny Bikini In Mexico</a></li>
+		<li><a href="#">Shakira Refuses To Pay Ex $100 Million</a></li>
+	</ul>
+	<h4>Logo</h4>
+	<ul class="text-list">
+		<li><a href="#">Game of Thrones: 5 Things We Love (Slash Are Obsessed With)</a></li>
+		<li><a href="#">Survivor's Corinne Kaplan: Being Voted Off Is 'Cringe- Worthy'</a></li>
+		<li><a href="#">Carrie Underwood: Live Sound of Music Won't Be a Remake</a></li>
+	</ul>
+</section>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/02-organisms-sections-section-sponsored-links/02-organisms-sections-section-sponsored-links.html">Section Sponsored Links</a></h2>
+			<section class="box">
+	<h3>You Might Like</h3>
+	<ul class="text-list">
+		<li><a href="#">I Guess They Weren’t Franchise Potential? 15 Big Budget Movie Series That Didn’t Get Off The Ground</a><div class="byline">Sponsored by Sponsor</div></li>
+		<li><a href="#">Rose Byrne: Bradley Cooper's New Leading Lady</a><div class="byline">Sponsored by Sponsor</div></li>
+		<li><a href="#">Plastic Surgery Disasters: Lil Kim, Meg Ryan & More</a><div class="byline">Sponsored by Sponsor</div></li>
+		<li><a href="#">THE 10 WORST REALITY SHOW TRAGEDIES — SO FAR</a><div class="byline">Sponsored by Sponsor</div></li>
+	</ul>
+</section>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/03-templates-layouts-article/03-templates-layouts-article.html">Article</a></h2>
+			<div class="page" id="page">
+	<div role="main">
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+					<header class="article-header">
+						<h1>Article Headline Lorem ipsum dolor sit amet</h1>
+					</header>
+				</article><!--end .article-->
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+			</div><!--end l-sidebar-->
+		</div><!--end l-two-col-->	
+	</div><!--End role=main-->
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/03-templates-layouts-blog/03-templates-layouts-blog.html">Blog</a></h2>
+			<div class="page" id="page">
+	<div role="main">
+		<h1>Latest Posts</h1>
+		<div class="l-two-col">
+			<div class="l-main">
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				
+			</div><!--end l-sidebar-->
+		</div><!--end two-col-->
+	</div><!--End role=main-->
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/03-templates-layouts-homepage/03-templates-layouts-homepage.html">Homepage</a></h2>
+			<div class="page" id="page">
+	<div role="main">
+		<div class="g g-3up">
+			<div class="gi">
+			</div>
+			<div class="gi">
+			</div>
+			<div class="gi">
+			</div>
+		</div><!--end 3up-->
+
+		<hr />
+
+		<div class="l-two-col">
+			<div class="l-main">
+			</div>
+
+			<div class="l-sidebar">
+			</div>
+		</div>
+		
+	</div><!--End role=main-->
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/04-pages-layouts-article/04-pages-layouts-article.html">Article</a></h2>
+			<div class="page" id="page">
+	<div role="main">
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+					<header class="article-header">
+						<h1>Article Headline Lorem ipsum dolor sit amet</h1>
+					</header>
+				</article><!--end .article-->
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+			</div><!--end l-sidebar-->
+		</div><!--end l-two-col-->	
+	</div><!--End role=main-->
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/04-pages-layouts-blog/04-pages-layouts-blog.html">Blog</a></h2>
+			<div class="page" id="page">
+	<div role="main">
+		<h1>Latest Posts</h1>
+		<div class="l-two-col">
+			<div class="l-main">
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				
+			</div><!--end l-sidebar-->
+		</div><!--end two-col-->
+	</div><!--End role=main-->
+</div>
+		</div>
+		<div class="sg-pattern">
+			<h2 class="sg-head sg-sub" ><a href="/patterns/04-pages-layouts-homepage/04-pages-layouts-homepage.html">Homepage</a></h2>
+			<div class="page" id="page">
+	<div role="main">
+		<div class="g g-3up">
+			<div class="gi">
+			</div>
+			<div class="gi">
+			</div>
+			<div class="gi">
+			</div>
+		</div><!--end 3up-->
+
+		<hr />
+
+		<div class="l-two-col">
+			<div class="l-main">
+			</div>
+
+			<div class="l-sidebar">
+			</div>
+		</div>
+		
+	</div><!--End role=main-->
+</div>
+		</div>
+</div> <!--end #patterns-->
+</div><!--End Style Guide Main Content-->
+<script>
+	var body = document.getElementsByTagName('body');
+	body[0].onclick = function() {
+		parent.postMessage('body-click',"http://"+window.location.host)
+	};
+</script>
+</body>
+</html>

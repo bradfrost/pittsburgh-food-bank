@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pattern Lab</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="/styleguide/css/styleguide.css" media="all" />
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/modernizr.js"></script>
+</head>
+<body>
+<h1>Heading 1<small> with small text</small></h1>
+<h2>Heading 2<small> with small text</small></h2>
+<h3>Heading 3<small> with small text</small></h3>  
+<h4>Heading 4<small> with small text</small></h4>
+<h5>Heading 5<small> with small text</small></h5> 
+<h6>Heading 6<small> with small text</small></h6>
+	<script>
+		parent.postMessage(window.location.href,"http://"+window.location.host);
+		
+		var body = document.getElementsByTagName('body');
+		body[0].onclick = function() {
+			parent.postMessage('body-click',"http://"+window.location.host)
+		};
+	</script>
+</body>
+</html>

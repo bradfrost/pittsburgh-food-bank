@@ -6,7 +6,6 @@
 		maxViewportWidth = 2600, //Maxiumum Size for Viewport
 		viewportResizeHandleWidth = 14, //Width of the viewport drag-to-resize handle
 		$sgViewport = $('#sg-viewport'), //Viewport element
-		$viewToggle = $('#sg-t-toggle'), //Toggle 
 		$sizePx = $('.sg-size-px'), //Px size input element in toolbar
 		$sizeEms = $('.sg-size-em'), //Em size input element in toolbar
 		$bodySize = parseInt($('body').css('font-size')), //Body size of the document
@@ -36,10 +35,8 @@
 		$('.sg-nav-container').toggleClass('active');
 	});
 	
-	
-	
-	//View Trigger
-	$viewToggle.on("click", function(e){
+	//"View (containing clean, code, raw, etc options) Trigger
+	$('#sg-t-toggle').on("click", function(e){
 		e.preventDefault();
 		$(this).parents('ul').toggleClass('active');
 	});
@@ -48,13 +45,6 @@
 	$('#sg-size-toggle').on("click", function(e){
 		e.preventDefault();
 		$(this).parents('ul').toggleClass('active');
-	});
-
-	//Add Active States for size controls
-	$('#sg-controls a').on("click", function(e){
-		var $this = $(this);
-		$('#sg-controls a').removeClass('active');
-		$this.addClass('active');
 	});
 	
 	//Phase View Events
@@ -220,6 +210,16 @@
 		updateSizeReading(val,'em','updatePxInput');
 	});
 	
+	// handle the MQ click
+	$('#sg-mq a').on("click", function(e){
+		e.preventDefault();
+		var val = $(this).html();
+		var type = (val.indexOf("px") != -1) ? "px" : "em";
+		val = val.replace(type,"");
+		var width = (type == "px") ? val*1 : val*$bodySize;
+		sizeiframe(width,true);
+	});
+	
 	//Resize the viewport
 	//'size' is the target size of the viewport
 	//'animate' is a boolean for switching the CSS animation on or off. 'animate' is true by default, but can be set to false for things like nudging and dragging
@@ -288,7 +288,7 @@
 	function updateViewportWidth(size) {
 	
 		$("#sg-viewport").width(size);
-		$("#sg-gen-container").width(Math.floor(size) + 14);
+		$("#sg-gen-container").width(size*1 + 14);
 		
 		updateSizeReading(size);
 	}
@@ -370,6 +370,8 @@
 		history.replaceState({ "pattern": patternName }, null, null);
 	}
 	
+	document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(patternName));
+	
 	urlHandler.skipBack = true;
 	document.getElementById("sg-viewport").contentWindow.location.replace(iFramePath);
 	
@@ -378,24 +380,21 @@
 	//Scripts to run after the page has loaded into the iframe
 	$sgViewport.load(function (){
 		
-		/*
+		
 		var $sgSrc = $sgViewport.attr('src'),
 			$vp = $sgViewport.contents(),
 			$sgPattern = $vp.find('.sg-pattern');
 
-		//Clean View Trigger
-		$('#sg-t-clean').on("click", function(e){
-			e.preventDefault();
-			$sgViewport.contents().hide();
-			$vp.find('body').toggleClass('sg-clean');
-			$vp.find('#intro, .sg-head, #about-sg').toggle();
-			$vp.find('[role=main]').toggleClass('clean');
-		});
+		//Inject styleguide CSS into iframe
+		//The styleguide CSS is being injected via Javascript as to keep the user-generated source code as clean as possible. 
+		//Final code won't include any trace of Pattern Lab
+		$vp.find("head").prepend($("<link/>", { rel: "stylesheet", href: "../../styleguide/css/styleguide.css", type: "text/css" })).prepend('<!--styleguide.css is inserted for annotation and demo purposes. Will not be included in final code. -->');
 		
 		//Code View Trigger
 		$('#sg-t-code').click(function(e){
 			var $code = $vp.find('.sg-code');
 			e.preventDefault();
+			$(this).toggleClass('active');
 			
 			if($vp.find('.sg-code').length==0) {
 				buildCodeView();
@@ -408,6 +407,7 @@
 		$('#sg-t-annotations').click(function(e){
 			var $annotations = $vp.find('.sg-annotations');
 			e.preventDefault();
+			$(this).toggleClass('active');
 			
 			if($vp.find('.sg-annotations').length==0) {
 				buildAnnotationView();
@@ -438,17 +438,6 @@
 			});
 			$vp.find('.sg-annotations').show();
 		}
-		*/
-		
-		// Pattern Click
-		// this doesn't work because patternlab-php assumes the iframe is being refreshed. not the overall app
-		/*
-		$vp.find('.sg-head a').on("click", function(e){
-			e.preventDefault();
-			var thisHref = $(this).attr('href');
-			window.location = thisHref;
-		});
-		*/
 	});
 	
 })(this);
@@ -519,6 +508,9 @@ function receiveIframeMessage(event) {
 			}
 			
 		}
+		
+		// for testing purposes
+		console.log(event.data.lineage);
 		
 		// reset the defaults
 		urlHandler.skipBack = false;

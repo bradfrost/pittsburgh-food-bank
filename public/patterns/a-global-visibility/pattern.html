@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pattern Lab</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="/styleguide/css/styleguide.css" media="all" />
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/modernizr.js"></script>
+</head>
+<body>
+<p class="hide-small">This text is hidden on smaller screens</p>
+
+<p class="hide-med hide-large"><em>This text is only visible on smaller screens</em></p>
+
+<p class="hide-med">This text is hidden on medium screens only</p>
+
+<p class="hide-small hide-large"><em>This text is only visible on medium screens</em></p>
+
+<p class="hide-large">This text is hidden on large screens</p>
+
+<p class="hide-small hide-med"><em>This text is only visible on large screens</em></p>
+	<script>
+		parent.postMessage(window.location.href,"http://"+window.location.host);
+		
+		var body = document.getElementsByTagName('body');
+		body[0].onclick = function() {
+			parent.postMessage('body-click',"http://"+window.location.host)
+		};
+	</script>
+</body>
+</html>

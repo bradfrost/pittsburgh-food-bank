@@ -49,15 +49,11 @@
 /*------------------------------------*\
     $STYLE GUIDE INTERFACE 
 \*------------------------------------*/
-html, body {
+#patternlab-html, #patternlab-body {
   margin: 0;
   padding: 0;
   background: #dddddd;
   -webkit-text-size-adjust: 100%; }
-
-html#pattern-frame {
-  background: #ffffff;
-}
 
 .sg-nav-wrapper {
   overflow: hidden;
@@ -285,7 +281,7 @@ html#pattern-frame {
       position: static;
       max-height: none;
       max-width: none; }
-      .sg-size-options li {
+      .sg-size-options > li {
         float: left;
         border: 0;
         border-left: 1px solid rgba(255, 255, 255, 0.05); } }
@@ -298,7 +294,7 @@ html#pattern-frame {
 .sg-input {
   margin: -2px 0 0 0;
   padding: 0;
-  border: 1px solid #222222;
+  border: 1px solid #222;
   background-color: #222;
   color: gray;
   width: 35px;
@@ -536,12 +532,7 @@ html#pattern-frame {
   font-weight: normal;
   font-style: normal; }
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
+/* Pattern Lab icon fonts */
 .icon-reload, .icon-cog, .icon-minus, .icon-plus, .icon-menu, .sg-header .sg-nav-toggle, .icon-checkbox-unchecked, .sg-checkbox, .icon-checkbox-checked, .sg-checkbox.active, .icon-eye {
   font-family: 'icons';
   speak: none;
@@ -575,3 +566,45 @@ you can use the generic selector below, but it's slower:
 
 .icon-eye:before {
   content: "\e001"; }
+
+/* Annotations */
+#comment-container {
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  background: #222222;
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  text-align: left;
+  padding: 1em; }
+  #comment-container a {
+    color: #dddddd; }
+
+#close-comments {
+  color: #fff;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  text-transform: uppercase;
+  display: none; }
+
+#comment-container {
+  position: fixed;
+  top: auto;
+  padding: 1em 1em 4em;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: bottom 0.3s ease-out;
+  -moz-transition: bottom 0.3s ease-out;
+  -webkit-transition: bottom 0.3s ease-out;
+  -ms-transition: bottom 0.3s ease-out;
+  -o-transition: bottom 0.3s ease-out;
+  transition: bottom 0.3s ease-out; }
+
+#close-comments {
+  display: block; }
+
+.has-comment, .has-comment a {
+  cursor: help !important; }
