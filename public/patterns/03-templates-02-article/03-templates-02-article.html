@@ -4,22 +4,31 @@
 	<title>Pattern Lab Pattern</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width" />
+
+	<!--
+		Styleguide CSS is included for 
+	-->
+	<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all">
 	
 	<!--
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
 		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
 	-->
 	<link rel="stylesheet" href="../../css/style.css" media="all" />
+	<style>
+		.has-comment, .has-comment a {
+			cursor: help !important; 
+		}
+	</style>
 	
 </head>
-<body>
-	
+<body class="sg-single-pattern">	
 	<!-- Start of Pattern -->
 <div class="page" id="page">
 	<!-- Begin .header -->
 	<header class="header cf" role="banner">
-	<a href="#"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>		<a href="#search-form" class="nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-		<a href="#menu" class=" nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+	<a href="#"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>		<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+		<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
 	<nav id="nav" class="nav">
 		<ul>
 			<li><a href="#">Home</a></li>
@@ -129,24 +138,10 @@
 		</form>						<ul class="comment-list">
 				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/arch" alt="Avatar" />						<h4 class="comment-name"><a href="#">Fergus Althuis</a></h4>
+		<img src="http://placeimg.com/100/100/people/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Frans Keegan</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Beats all you've ever saw, been in trouble with the law since the day they was born. Straight'nin' the curve, flat'nin' the hills. Someday the mountain might get 'em, but the law never will. Makin' their way, the only way they know how, that's just a little bit more than the law will allow. Just good ol' boys, wouldn't change if they could, fightin' the system like a true modern day Robin Hood.</p>
-					</div>
-				</li>				<li class="comment-container">
-					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/people/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Aquila Achterkamp</a></h4>
-					</div>
-					<div class="comment-text">
-						<p>Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.</p>
-					</div>
-				</li>				<li class="comment-container">
-					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/people" alt="Avatar" />						<h4 class="comment-name"><a href="#">Junius Koolen</a></h4>
-					</div>
-					<div class="comment-text">
-						<p>Fizzle crazy tortor. Sed rizzle. Ass pimpin' dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo' vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.</p>
+						<p>Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.</p>
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
@@ -154,6 +149,20 @@
 					</div>
 					<div class="comment-text">
 						<p>The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migrate? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!</p>
+					</div>
+				</li>				<li class="comment-container">
+					<div class="comment-meta">
+		<img src="http://placeimg.com/100/100/any" alt="Avatar" />						<h4 class="comment-name"><a href="#">Bertil Aaij</a></h4>
+					</div>
+					<div class="comment-text">
+						<p>Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man's best friend... or the wrong man's worst enemy. You going to give me a dog for a pet, give me a pit bull.</p>
+					</div>
+				</li>				<li class="comment-container">
+					<div class="comment-meta">
+		<img src="http://placeimg.com/100/100/tech/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Matthias Macguinness</a></h4>
+					</div>
+					<div class="comment-text">
+						<p>Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.</p>
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
@@ -215,48 +224,11 @@
 	
 	<!-- DO NOT MODIFY -->
 	<script>
-		
-		// alert the iframe parent that the pattern has loaded. for page follow.
-		if (self != top) {
-			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-			parent.postMessage( { "patternpartial": "templates-article", "path": window.location.toString(), "lineage": ["organisms-header","molecules-byline-author-time","organisms-article-body","molecules-social-share","organisms-comment-thread","organisms-related-posts","organisms-recent-tweets","organisms-footer"] }, targetOrigin);
-		}
-		
-		// if there are clicks on the iframe make sure the nav in the iframe parent closes
-		var body = document.getElementsByTagName('body');
-		body[0].onclick = function() {
-			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-			parent.postMessage( { "bodyclick": "bodyclick" }, targetOrigin)
-		};
-		
-		// find all links and add an onclick handler for replacing the iframe address so the history works
-		var aTags = document.getElementsByTagName('a');
-		for (a in aTags) {
-			aTags[a].onclick = function(e) {
-				e.preventDefault();
-				window.location.replace(this.getAttribute("href"));
-			};
-		}
-		
-		// watch the iframe source so that it can be sent back to everyone else.
-		function receiveIframeMessage(event) {
-			
-			// does the origin sending the message match the current host? if not dev/null the request
-			if ((window.location.protocol != "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
-				return;
-			}
-			
-			if (event.data.path != undefined) {
-				var re   = /patterns\/(.*)$/;
-				var path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+event.data.path;
-				window.location.replace(path);
-			} else if (event.data.reload != undefined) {
-				window.location.reload();
-			}
-			
-		}
-		window.addEventListener("message", receiveIframeMessage, false);
+		// handle injection of items from PHP
+		var patternPartial = "templates-article";
+		var lineage = ["organisms-header","molecules-byline-author-time","organisms-article-body","molecules-social-share","organisms-comment-thread","organisms-related-posts","organisms-recent-tweets","organisms-footer"];
 	</script>
+	<script src="../../styleguide/js/postmessage.js"></script>
 	<script src="../../data/annotations.js"></script>
 	<script src="../../styleguide/js/annotations-pattern.js"></script>
 	<!-- /DO NOT MODIFY -->

@@ -1,7 +1,7 @@
 /*!
- * Annotations Support for the Viewer - v0.2
+ * Annotations Support for the Viewer - v0.3
  *
- * Copyright (c) 2013 Dave Olsen, http://dmolsen.com
+ * Copyright (c) 2013 Brad Frost, http://bradfrostweb.com & Dave Olsen, http://dmolsen.com
  * Licensed under the MIT license
  *
  */
@@ -15,30 +15,30 @@ var annotationsViewer = {
 	onReady: function() {
 		
 		$('body').addClass('comments-ready');
-		$('#sg-t-annotations').click(function(){
+		$('#sg-t-annotations').click(function(e) {
+			
+			e.preventDefault();		
 			annotationsViewer.toggleComments();
-			return false;
+			annotationsViewer.commentContainerInit();
+			
 		});
-		
-		annotationsViewer.commentContainerInit();
 		
 	},
 	
 	toggleComments: function() {
 		
 		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+		$('#sg-t-annotations').toggleClass('active');
 		
 		if (!annotationsViewer.commentsActive) {
 			
 			annotationsViewer.commentsActive = true;
 			document.getElementById('sg-viewport').contentWindow.postMessage({ "commentToggle": "on" },targetOrigin);
-			$('#sg-t-annotations').text('Annotations On');
 			
 		} else {
 			
 			annotationsViewer.commentsActive = false;
 			document.getElementById('sg-viewport').contentWindow.postMessage({ "commentToggle": "off" },targetOrigin);
-			$('#sg-t-annotations').text('Annotations Off');
 			annotationsViewer.slideComment(999);
 			
 		}
@@ -47,16 +47,18 @@ var annotationsViewer = {
 	
 	commentContainerInit: function() {
 		
-		$('<div id="comment-container" style="display: none;"></div>').html('<a href="#" id="close-comments">Close</a><h2 id="comment-title">Annotation Title</h2><div id="comment-text">Here is some comment text</div>').appendTo('body').css('bottom',-$(document).outerHeight());
-		
-		if (annotationsViewer.sw < annotationsViewer.breakpoint) {
-			$('#comment-container').hide();
-		} else {
-			$('#comment-container').show();
+		if (document.getElementById("sg-annotation-container") == undefined) {
+			$('<div id="sg-annotation-container" style="display: none;"></div>').html('<a href="#" id="sg-annotation-close-btn">Close</a><h2 id="sg-annotation-title">Annotation Title</h2><div id="sg-annotation-text">Here is some comment text</div>').appendTo('body').css('bottom',-$(document).outerHeight());
 		}
 		
-		$('body').delegate('#close-comments','click',function(e) {
-			annotationsViewer.slideComment($('#comment-container').outerHeight());
+		if (annotationsViewer.sw < annotationsViewer.breakpoint) {
+			$('#sg-annotation-container').hide();
+		} else {
+			$('#sg-annotation-container').show();
+		}
+		
+		$('body').delegate('#sg-annotation-close-btn','click',function(e) {
+			annotationsViewer.slideComment($('#sg-annotation-containers').outerHeight());
 			return false;
 		});
 		
@@ -64,21 +66,21 @@ var annotationsViewer = {
 	
 	slideComment: function(pos) {
 		
-		$('#comment-container').show();
+		$('#sg-annotation-container').show();
 		
 		if (annotationsViewer.sw > annotationsViewer.breakpoint) {
-			$('#comment-container').css('bottom',-pos);
+			$('#sg-annotation-container').css('bottom',-pos);
 		} else {
-			var offset = $('#comment-container').offset().top;
+			var offset = $('#sg-annotation-container').offset().top;
 			$('html,body').animate({scrollTop: offset}, 500);
 		}
 		
 	},
 	
 	updateComment: function(el,title,msg) {
-			var $container = $('#comment-container'),
-				$title = $('#comment-title'),
-				$text = $('#comment-text');
+			var $container = $('#sg-annotation-container'),
+				$title = $('#sg-annotation-title'),
+				$text = $('#sg-annotation-text');
 			$title.text(title);
 			$text.html(msg);
 			annotationsViewer.slideComment(0);
@@ -96,8 +98,12 @@ var annotationsViewer = {
 			return;
 		}
 		
-		if (event.data.title != undefined) {
-			annotationsViewer.updateComment(event.data.el,event.data.title,event.data.comment);
+		if (event.data.commentOverlay != undefined) {
+			if (event.data.commentOverlay == "on") {
+				annotationsViewer.updateComment(event.data.el,event.data.title,event.data.comment);
+			} else {
+				annotationsViewer.slideComment($('#sg-annotation-container').outerHeight());
+			}
 		}
 		
 	}
@@ -106,6 +112,14 @@ var annotationsViewer = {
 
 $(document).ready(function() { annotationsViewer.onReady(); });
 window.addEventListener("message", annotationsViewer.receiveIframeMessage, false);
+
+// make sure if a new pattern or view-all is loaded that comments are turned on as appropriate
+$('#sg-viewport').load(function() {
+	if (annotationsViewer.commentsActive) {
+		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
+		document.getElementById('sg-viewport').contentWindow.postMessage({ "commentToggle": "on" },targetOrigin);
+	}
+});
 
 // no idea why this has to be outside. there's something funky going on with the JS pattern
 $('#sg-view li a').click(function() {

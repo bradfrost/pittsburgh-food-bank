@@ -4,16 +4,25 @@
 	<title>Pattern Lab Pattern</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width" />
+
+	<!--
+		Styleguide CSS is included for 
+	-->
+	<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all">
 	
 	<!--
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
 		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
 	-->
 	<link rel="stylesheet" href="../../css/style.css" media="all" />
+	<style>
+		.has-comment, .has-comment a {
+			cursor: help !important; 
+		}
+	</style>
 	
 </head>
-<body>
-	
+<body class="sg-single-pattern">	
 	<!-- Start of Pattern -->
 <div class="block block-hero">
 	<a href="http://www.fillerati.com" class="inner">
@@ -33,48 +42,11 @@
 	
 	<!-- DO NOT MODIFY -->
 	<script>
-		
-		// alert the iframe parent that the pattern has loaded. for page follow.
-		if (self != top) {
-			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-			parent.postMessage( { "patternpartial": "molecules-block-hero", "path": window.location.toString(), "lineage": ["atoms-landscape-16x9"] }, targetOrigin);
-		}
-		
-		// if there are clicks on the iframe make sure the nav in the iframe parent closes
-		var body = document.getElementsByTagName('body');
-		body[0].onclick = function() {
-			var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-			parent.postMessage( { "bodyclick": "bodyclick" }, targetOrigin)
-		};
-		
-		// find all links and add an onclick handler for replacing the iframe address so the history works
-		var aTags = document.getElementsByTagName('a');
-		for (a in aTags) {
-			aTags[a].onclick = function(e) {
-				e.preventDefault();
-				window.location.replace(this.getAttribute("href"));
-			};
-		}
-		
-		// watch the iframe source so that it can be sent back to everyone else.
-		function receiveIframeMessage(event) {
-			
-			// does the origin sending the message match the current host? if not dev/null the request
-			if ((window.location.protocol != "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
-				return;
-			}
-			
-			if (event.data.path != undefined) {
-				var re   = /patterns\/(.*)$/;
-				var path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+event.data.path;
-				window.location.replace(path);
-			} else if (event.data.reload != undefined) {
-				window.location.reload();
-			}
-			
-		}
-		window.addEventListener("message", receiveIframeMessage, false);
+		// handle injection of items from PHP
+		var patternPartial = "molecules-block-hero";
+		var lineage = ["atoms-landscape-16x9"];
 	</script>
+	<script src="../../styleguide/js/postmessage.js"></script>
 	<script src="../../data/annotations.js"></script>
 	<script src="../../styleguide/js/annotations-pattern.js"></script>
 	<!-- /DO NOT MODIFY -->

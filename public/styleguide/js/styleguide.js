@@ -160,9 +160,12 @@
 		hayMode = true;
 		$('#sg-gen-container').removeClass("vp-animate").width(minViewportWidth+viewportResizeHandleWidth);
 		$sgViewport.removeClass("vp-animate").width(minViewportWidth);		
+		
 		var timeoutID = window.setTimeout(function(){
 			$('#sg-gen-container').addClass('hay-mode').width(maxViewportWidth+viewportResizeHandleWidth);
 			$sgViewport.addClass('hay-mode').width(maxViewportWidth);
+			
+			setInterval(function(){ var vpSize = $sgViewport.width(); updateSizeReading(vpSize); },100);
 		}, 200);
 	}
 
@@ -383,12 +386,7 @@
 		
 		var $sgSrc = $sgViewport.attr('src'),
 			$vp = $sgViewport.contents(),
-			$sgPattern = $vp.find('.sg-pattern');
-
-		//Inject styleguide CSS into iframe
-		//The styleguide CSS is being injected via Javascript as to keep the user-generated source code as clean as possible. 
-		//Final code won't include any trace of Pattern Lab
-		$vp.find("head").prepend($("<link/>", { rel: "stylesheet", href: "../../styleguide/css/styleguide.css", type: "text/css" })).prepend('<!--styleguide.css is inserted for annotation and demo purposes. Will not be included in final code. -->');
+			$sgPattern = $vp.find('.sg-pattern-body');
 		
 		//Code View Trigger
 		$('#sg-t-code').click(function(e){
@@ -402,42 +400,23 @@
 				$code.toggle();
 			}
 		});
-
-		//Annotation View Trigger
-		$('#sg-t-annotations').click(function(e){
-			var $annotations = $vp.find('.sg-annotations');
-			e.preventDefault();
-			$(this).toggleClass('active');
-			
-			if($vp.find('.sg-annotations').length==0) {
-				buildAnnotationView();
-			} else {
-				$annotations.toggle();
-			}
-		});
 		
 		//Add code blocks after each pattern
 		function buildCodeView() {
 			$sgPattern.each(function(index) {
 				$this = $(this),
-				$thisHTML = $this.html().replace(/[<>]/g, function(m) { return {'<':'&lt;','>':'&gt;'}[m]}), 
-				$thisCode = $( '<code></code>' ).html($thisHTML);
+				$thisHTML = $this.html().replace(/[<>]/g, function(m) { return {'<':'&lt;','>':'&gt;'}[m]}),
+				$codeWrapper = $('<div class="sg-code"><div class="sg-code-contains">This pattern contains: <code>atoms-logo</code> <code>molecule-primary-nav</code> <code>molecule-search-form</code></div><h3 class="sg-code-head">HTML</h3><pre class="sg-code-html"></pre><h3 class="sg-code-head">CSS</h3><pre class="sg-code-css"></pre></div>'), //Wrapper content for each pattern
+				$htmlCode = $( '<code></code>' ).html($thisHTML), //The pattern's HTML code
+				$cssCode = $( '<code></code>' ).html('CSS goes here'); //The pattern's CSS code
 				
-				$('<pre class="sg-code" />').html($thisCode).appendTo($this); //Create new node, fill it with the code text, then append it to the pattern
+				$codeWrapper.find('.sg-code-html').html($htmlCode); //Add pattern's HTML code to the HTML code container
+				$codeWrapper.find('.sg-code-css').html($cssCode); //Add pattern's CSS code to the CSS code container
+				$codeWrapper.appendTo($this); //Add code wrapper to the end of the pattern
 			});
-			$vp.find('.sg-code').show();
+			$vp.find('.sg-code').show(); //Show all code views in the viewport
 		}
-
-		//Add annotation blocks after each pattern
-		function buildAnnotationView() {
-			$sgPattern.each(function(index) { //Loop through each pattern
-				$this = $(this),
-				$thisAnnotation = "This is an example of an annotation. Eventually this annotation will be replaced by a real annotation defined in an external JSON file."; //Example Annotation
-				
-				$('<div class="sg-annotations" />').html($thisAnnotation).appendTo($this); //Create new node, fill it with the annotation text, then append it to the pattern
-			});
-			$vp.find('.sg-annotations').show();
-		}
+		
 	});
 	
 })(this);

@@ -8,7 +8,7 @@ var comments = {
 	{
 		"el": ".logo",
 	 	"title" : "Logo",
-	 	"comment": "The logo image is purposefully larger and scaled down to the final dimensions. Keeping image file sizes as small as possible is extremely important, but loading in a slightly larger image ensures image crispness on Retina and other high resolution displays. Typically the file size difference is negligible and ensures a positive aesthetic first impression.</p><p>See also: <a href=\"http://bradfrostweb.com/blog/mobile/hi-res-optimization/\">Optimizing Web Experiences for High Resolution Screens</a></p>"
+	 	"comment": "The logo image is an SVG file, which ensures that the logo displays crisply even on high resolution displays. A PNG fallback is provided for browsers that don't support SVG images.</p><p>Further reading: <a href=\"http://bradfrostweb.com/blog/mobile/hi-res-optimization/\">Optimizing Web Experiences for High Resolution Screens</a></p>"
 	},
 	{
 	 	"el": "#nav",
@@ -48,7 +48,7 @@ var comments = {
 	{
 		"el": ".qty-field",
 	 	"title" : "Quantity Field",
-	 	"comment": "We're using the HTML5 number input type, which <a href=\"http://diveintohtml5.info/forms.html\">brings up the appropriate virtual keyboard</a> for many mobile browsers. To increase usability, the input labels are using the "for" attribute, which focuses the cursor in the form field when clicked. However, iOS doesn't honor "for" default functionality, so we're adding "cursor: pointer" to the labels to get Mobile Safari to behave properly."
+	 	"comment": "We're using the HTML5 number input type, which <a href=\"http://diveintohtml5.info/forms.html\">brings up the appropriate virtual keyboard</a> for many mobile browsers. To increase usability, the input labels are using the \"for\" attribute, which focuses the cursor in the form field when clicked. However, iOS doesn't honor \"for\" default functionality, so we're adding \"cursor: pointer\" to the labels to get Mobile Safari to behave properly."
 	},
 	{
 		"el": ".size-field",

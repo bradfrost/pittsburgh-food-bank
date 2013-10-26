@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Style Guide for a Specific Pattern Sub-Type</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
-    <link rel="stylesheet" href="../../css/style.css" media="all" />
-</head>
-<body>
-
-<!--Style Guide Main Content-->
-<div class="sg-main" role="main">
-
-	<!--Patterns-->
-	<div id="patterns">
-			<div class="sg-pattern">
-				<h2 class="sg-head sg-sub" ><a href="../../patterns/02-organisms-01-article-00-article-body/02-organisms-01-article-00-article-body.html" class="patternLink" data-patternpartial="organisms-article-body">Article Body</a></h2>
-				<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla sem a urna porttitor fringilla. Nulla eget justo felis. </p>
+<html id="patternlab-html">
+	<head id="patternlab-head">
+		<title>Pattern Lab Sub-type Style Guide</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
+		<link rel="stylesheet" href="../../css/style.css" media="all" />
+	</head>
+	<body id="patternlab-body" class="pattern-list">
+		
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-01-article-00-article-body/02-organisms-01-article-00-article-body.html" class="patternLink" data-patternpartial="organisms-article-body">Article Body</a></h2>
+						<div class="sg-pattern-body">
+							<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla sem a urna porttitor fringilla. Nulla eget justo felis. </p>
 
 <p><a href="#">Aliquam erat volutpat.</a> Mauris vulputate scelerisque feugiat. Cras a erat a diam venenatis aliquam. Sed tempus, purus ac pretium varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eros dolor, rutrum eu sollicitudin eu, commodo at leo. Suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus. Maecenas eu urna adipiscing neque dictum mollis suscipit in augue. Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium.</p>
 
@@ -67,55 +68,21 @@
 <p>Donec venenatis imperdiet tortor, vitae blandit odio interdum ut. Integer orci metus, lobortis id lacinia eget, rutrum vitae justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In pretium fermentum justo nec pharetra. Maecenas eget dapibus justo. Ut quis est risus. Nullam et eros at odio commodo venenatis quis et augue. Sed sed augue at tortor porttitor hendrerit nec ut nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sollicitudin enim consectetur mi commodo quis cursus ante pretium. Nunc gravida cursus nisi in gravida. Suspendisse eget tortor sed urna consequat tincidunt. Etiam eget convallis lectus. Suspendisse cursus rutrum massa ac faucibus.
 </p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium deserunt sed explicabo voluptate sapiente ratione inventore molestiae nihil earum repellat quia odit vitae perspiciatis aliquam amet?</p>
-			</div>
-	</div> <!--end #patterns-->
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
 	
-</div><!--end .sg-main-->
-<script>
-	
-	// alert the iframe parent that the pattern has loaded. for page follow.
-	if (self != top) {
-		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-		parent.postMessage( { "patternpartial": "viewall-organisms-article", "path": window.location.toString() }, targetOrigin);
-	}
-	
-	// if there are clicks on the iframe make sure the nav in the iframe parent closes
-	var body = document.getElementsByTagName('body');
-	body[0].onclick = function() {
-		var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-		parent.postMessage( { "bodyclick":"bodyclick" }, targetOrigin)
-	};
-	
-	// find all links and add an onclick handler for replacing the iframe address so the history works
-	if (self != top) {
-		var aTags = document.getElementsByTagName('a');
-		for (a in aTags) {
-			aTags[a].onclick = function(e) {
-				e.preventDefault();
-				window.location.replace(this.getAttribute("href"));
-			};
-		}
-	}
-	
-	// watch the iframe source so that it can be sent back to everyone else.
-	function receiveIframeMessage(event) {
+		</div><!--end .sg-main-->
 		
-		// does the origin sending the message match the current host? if not dev/null the request
-		if ((window.location.protocol != "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
-			return;
-		}
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-organisms-article";
+			var lineage = "";
+		</script>
+		<script src="../../styleguide/js/postmessage.js"></script>
+		<script src="../../data/annotations.js"></script>
+		<script src="../../styleguide/js/annotations-pattern.js"></script>
 		
-		if (event.data.path != undefined) {
-			var re   = /patterns\/(.*)$/;
-			var path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+event.data.path;
-			window.location.replace(path);
-		} else if (event.data.reload != undefined) {
-			window.location.reload();
-		}
-		
-	}
-	window.addEventListener("message", receiveIframeMessage, false);
-	
-</script>
-</body>
+	</body>
 </html>
