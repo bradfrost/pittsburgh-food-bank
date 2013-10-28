@@ -837,14 +837,16 @@ td {
 .text-btn {
   font-style: italic; }
 
-/* Generic Placeholder Brick: REMOVE FOR PRODUCTION */
-.brick {
+/* Generic FPO Block: REMOVE FOR PRODUCTION */
+.fpo {
   background: #dcdddc;
+  color: #888;
   padding: 2rem;
   text-align: center;
   font-weight: bold;
   border-bottom: 1px solid #eeeeee; }
 
+/* End FPO: REMOVE FOR PRODUCTION */
 /* Block */
 .block {
   overflow: hidden; }
