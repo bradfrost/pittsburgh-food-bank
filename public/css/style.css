@@ -61,16 +61,16 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL CLASSES
 \*------------------------------------*/
 /* Clearfix */
-.cf, .l-two-col, [role=main] {
+.cf, .l-two-col {
   *zoom: 1; }
 
-.cf:before, .l-two-col:before, [role=main]:before, .cf:after, .l-two-col:after, [role=main]:after {
+.cf:before, .l-two-col:before, .cf:after, .l-two-col:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, .l-two-col:after, [role=main]:after {
+.cf:after, .l-two-col:after {
   clear: both; }
 
 /* Completely remove from the flow and screen readers. */
@@ -363,7 +363,7 @@ td {
     $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-.lc, .header, [role=main] {
+.lc, .header {
   max-width: 72rem;
   margin: 0 auto;
   padding: 0.5rem; }
@@ -531,36 +531,43 @@ td {
 \*------------------------------------*/
 .header {
   background: white;
-  padding: 0;
-  border-bottom: 1px solid #dbdbdb; }
+  padding: 0; }
 
 .logo {
   float: left;
-  max-width: 8rem;
-  margin: 0.4rem; }
+  max-width: 8em;
+  margin: 0.6em 0 0 0.6em; }
   @media all and (min-width: 46.8em) {
     .logo {
-      max-width: 9rem; } }
+      max-width: 13em; } }
 
 .nav-toggle {
   float: right;
   display: block;
-  padding: 0.9rem 1rem 0.7rem;
+  padding: 1.3rem;
   font-size: 1.3rem;
   line-height: 1;
   border-left: 1px solid #dbdbdb; }
   @media all and (min-width: 46.8em) {
     .nav-toggle {
       display: none; } }
+  @media all and (max-width: 18em) {
+    .nav-toggle {
+      padding: 1.3em 0.5em; } }
 
 .search-form {
   overflow: hidden;
   max-height: 0; }
+  .search-form.active {
+    max-height: 3em; }
   @media all and (min-width: 46.8em) {
     .search-form {
       float: right;
       max-height: none;
-      margin: 0.65em 0.5em 0 0; } }
+      margin: 1.5em 1em 0 0; } }
+  @media all and (max-width: 46.8em) {
+    .search-form {
+      clear: both; } }
 
 /*------------------------------------*\
     $NAVIGATION
@@ -579,7 +586,8 @@ td {
     .nav {
       max-height: none;
       float: right;
-      clear: none; }
+      clear: none;
+      margin: 1em 1em 0 0; }
       .nav li {
         float: left; }
       .nav a {
@@ -599,8 +607,9 @@ td {
     $MAIN CONTENT AREA
 \*------------------------------------*/
 [role=main] {
-  padding: 0.5rem 0.5rem 2rem;
   overflow: hidden; }
+  [role=main] .fpo:nth-child(even) {
+    background: #e1e1e1; }
 
 /*------------------------------------*\
     $FOOTER
@@ -609,24 +618,13 @@ td {
   clear: both;
   overflow: hidden;
   background: #131313;
-  color: white;
-  line-height: 1.2; }
-  .footer .lc, .footer .header, .footer [role=main] {
-    padding: 1rem 1rem 0; }
+  color: #f9f9f9;
+  line-height: 1.2;
+  font-size: 85%; }
+  .footer .lc, .footer .header {
+    padding: 1rem; }
   .footer a {
     color: #f9f9f9; }
-
-.nav-footer {
-  margin: -1rem -1rem 1rem; }
-  .nav-footer li {
-    border-bottom: 1px solid #333333; }
-    @media all and (min-width: 46.8em) {
-      .nav-footer li {
-        border: 0;
-        float: left; } }
-  .nav-footer a {
-    display: block;
-    padding: 1rem; }
 
 @media all and (min-width: 46.8em) {
   .copyright {

@@ -1,24 +1,23 @@
 .header {
 	background: $white;
 	padding: 0;
-	border-bottom: 1px solid #dbdbdb;
 	@extend .lc;
 }
 
 .logo {
 	float: left;
-	max-width: 8rem;
-	margin: 0.4rem;
+	max-width: 8em;
+	margin: 0.6em 0 0 0.6em;
 
 	@media all and (min-width: $bp-med) {
-		max-width: 9rem;
+		max-width: 13em;
 	}
 }
 
 .nav-toggle {
 	float: right;
 	display: block;
-	padding: 0.9rem 1rem 0.7rem;
+	padding: 1.3rem;
 	font-size: 1.3rem;
 	line-height: 1;
 	border-left: 1px solid #dbdbdb;
@@ -26,15 +25,27 @@
 	@media all and (min-width: $bp-med) {
 		display: none;
 	}
+
+	@media all and (max-width: 18em) {
+		padding: 1.3em 0.5em;		
+	}
 }
 
 .search-form {
 	overflow: hidden;
 	max-height: 0;
 
+	&.active {
+		max-height: 3em;
+	}
+
 	@media all and (min-width: $bp-med) {
 		float: right;
 		max-height: none;
-		margin: 0.65em 0.5em 0 0;
+		margin: 1.5em 1em 0 0;
+	}
+
+	@media all and (max-width: $bp-med) {
+		clear: both;
 	}
 }
