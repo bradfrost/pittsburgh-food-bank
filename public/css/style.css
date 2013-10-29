@@ -553,7 +553,7 @@ td {
       display: none; } }
   @media all and (max-width: 18em) {
     .nav-toggle {
-      padding: 1.3em 0.5em; } }
+      padding: 1em 0.5em; } }
 
 .search-form {
   overflow: hidden;
