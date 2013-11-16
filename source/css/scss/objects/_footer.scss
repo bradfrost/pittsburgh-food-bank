@@ -4,10 +4,10 @@
 .footer {
 	clear: both;
 	overflow: hidden;
+	padding: $pad;
 	background: $gray-dark-2;
 	color: $gray-light;
-	line-height: 1.2;
-	font-size: 85%;
+	
 
 	.lc {
 		padding: $pad;
@@ -24,7 +24,10 @@
 //Footer Nav
 
 .copyright {
+	margin: $space 0;
+	font-size: $font-size-sm;
+
 	@media all and (min-width: $bp-med) {
-			float: right;
+			text-align: center;
 		}
 }

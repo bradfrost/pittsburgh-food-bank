@@ -54,23 +54,45 @@
 		<div class="fpo">Directory </div>
 	</div><!--End role=main-->
 <div class="donate-slider">
-	<form method="post">
-		<input type="range" />
-	</form>
+	<div class="lc">
+		<h2>Donate to the Greater Pittsburgh Community Food Bank</h2>
+		<form method="post" action="#" class="donate-form">
+			<div class="">
+				<div class="field-container donate-range-container">
+					<label for="donate-range">Choose an amount to donate:</label>
+					<input type="number" data-type="range" class="donate-range ui-slider-input" id="donate-range" value="25" min="1" max="300" />
+					<div class="donate-slider-message">Every dollar helps. 96% of donated money goes directly to feeding the hungry.</div>
+				</div>
+				<button class="donate-submit btn">Donate</button>
+			</div>
+		</form>
+		
+	</div><!-- end .lc-->
 </div><!-- end .donate-slider-->	<!-- Begin Footer -->
 	<footer class="footer" role="contentinfo">
 		<div class="lc">
 			<div >Contact information</div>
 			<div>Footer navigation</div>
-			<div>Social media links</div>
-			<div>Newsletter signup</div>
-			<div>Copyright info &amp; fine print</div>
+		<ul class="social-list">
+			<li><a href="http://www.facebook.com/pages/Greater-Pittsburgh-Community-Food-Bank/145889928474" rel="external">Facebook</a></li>
+			<li><a href="http://www.twitter.com/pghfoodbank" rel="external">Twitter</a></li>
+			<li><a href="http://www.youtube.com/pittsburghfoodbank" rel="external">Youtube</a></li>
+		</ul>		<form action="#" method="post" class="inline-form newsletter-form">           
+		    <fieldset>
+			    <legend>Sign up for our newsletter</legend>
+			    <label for="newsletter-scope">Sign up for our newsletter</label>
+			    <div class="inline-container">
+			   		<input type="newsletter" placeholder="E-mail address" id="newsletter-field" class="newsletter-field" />
+			    	<button class="newsletter-submit">Sign Me Up</button>
+				</div>
+		    </fieldset>
+		</form>			<div class="copyright">&copy; 2013 Greater Pittsburgh Community Foodbank <a href="/privacy-policy">view the Privacy Policy</a></div>
 		</div>
 	</footer>
 	<!-- End Footer -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="js/jquery.mobile.custom.js"></script>
-	<script src="js/init.js"></script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery.mobile.custom.js"></script>
 	<script src="../../js/init.js"></script></div>
 	<!-- End of Pattern -->
 	

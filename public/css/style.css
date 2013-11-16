@@ -1,6 +1,3 @@
-/*
-
-*/
 /*------------------------------------*\
     $TABLE OF CONTENTS
 \*------------------------------------*/
@@ -20,10 +17,10 @@
  * .....Text-related elements (p, blockquote, lists)
  * .....Defaults
  * .....Breakpoints
- * TYPOGRAPHY------------------------------
- * MEDIA------------------------------
- * LAYOUT------------------------------
- * NAVIGATION------------------------------
+ * TYPOGRAPHY............................
+ * MEDIA.................................
+ * LAYOUT................................
+ * NAVIGATION............................
  * TOC To Be Continued
  */
 /*------------------------------------*\
@@ -61,16 +58,16 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL CLASSES
 \*------------------------------------*/
 /* Clearfix */
-.cf, .l-two-col {
+.cf, .l-two-col, .donate-form {
   *zoom: 1; }
 
-.cf:before, .l-two-col:before, .cf:after, .l-two-col:after {
+.cf:before, .l-two-col:before, .donate-form:before, .cf:after, .l-two-col:after, .donate-form:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, .l-two-col:after {
+.cf:after, .l-two-col:after, .donate-form:after {
   clear: both; }
 
 /* Completely remove from the flow and screen readers. */
@@ -252,9 +249,12 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 
 button, input[type="submit"] {
   padding: 0.5rem;
+  color: #fff;
   background: #333333;
-  border: 1px solid gray;
-  cursor: pointer; }
+  padding: 1em;
+  border: 0;
+  cursor: pointer;
+  text-align: center; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -274,16 +274,14 @@ input[type="search"]::-webkit-search-decoration {
 
 .inline-form fieldset, .inline-form .inline-container {
   position: relative; }
-.inline-form input[type=submit], .inline-form button, .inline-form .btn {
-  font-size: 0.875em;
-  padding: 0.65rem 1.3rem;
+.inline-form input[type=submit], .inline-form button {
   background: #333333;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   width: auto; }
-  .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus, .inline-form .btn:hover, .inline-form .btn:focus {
+  .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus {
     background: gray;
     color: white; }
 
@@ -532,6 +530,9 @@ td {
 .header {
   background: white;
   padding: 0; }
+  @media all and (min-width: 46.8em) {
+    .header {
+      padding: 1.5em 0; } }
 
 .logo {
   float: left;
@@ -617,18 +618,20 @@ td {
 .footer {
   clear: both;
   overflow: hidden;
+  padding: 1rem;
   background: #131313;
-  color: #f9f9f9;
-  line-height: 1.2;
-  font-size: 85%; }
+  color: #f9f9f9; }
   .footer .lc, .footer .header {
     padding: 1rem; }
   .footer a {
     color: #f9f9f9; }
 
-@media all and (min-width: 46.8em) {
-  .copyright {
-    float: right; } }
+.copyright {
+  margin: 1rem 0;
+  font-size: 0.75em; }
+  @media all and (min-width: 46.8em) {
+    .copyright {
+      text-align: center; } }
 
 /*------------------------------------*\
     $TEXT Styles
@@ -690,24 +693,15 @@ td {
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-/* Icon Font */
+/* Icon font was generated using Icomoon http://icomoon.io/ using icon sets Icomoon and Entypo */
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot");
-  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+  src: url("../../fonts/icons.eot");
+  src: url("../../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../../fonts/icons.ttf") format("truetype"), url("../../fonts/icons.woff") format("woff"), url("../../fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-  font-family: 'icons';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-.icon-twitter:before, .icon-stumbleupon:before, .icon-pinterest:before, .icon-linkedin:before, .icon-google-plus:before, .icon-search:before, .icon-play:before, .icon-menu:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-bubble:before, .icon-facebook:before, .icon-feed:before, .icon-youtube:before, .icon-tag:before, .icon-tumblr:before, .icon-instagram, .icon-podcast, .icon-apple, .icon-android, .icon-arrow:after, .icon-envelope:before {
+[class^="icon-"], [class*=" icon-"] {
   font-family: 'icons';
   speak: none;
   font-style: normal;
@@ -715,94 +709,141 @@ td {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-.icon-twitter:before {
-  content: "\74"; }
-
-.icon-stumbleupon:before {
-  content: "\75"; }
-
-.icon-pinterest:before {
-  content: "\70"; }
-
-.icon-linkedin:before {
-  content: "\69"; }
-
-.icon-google-plus:before {
-  content: "\67"; }
-
-.icon-search:before {
-  content: "\73"; }
-
-.icon-play:before {
-  content: "\61"; }
-
-.icon-menu:before {
-  content: "\21"; }
-
-.icon-arrow-left:before {
-  content: "\23"; }
-
-.icon-arrow-right:before {
-  content: "\24"; }
-
-.icon-bubble:before {
-  content: "\25"; }
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .icon-facebook:before {
-  content: "\66"; }
+  content: "\e600"; }
 
-.icon-feed:before {
-  content: "\27"; }
+.icon-twitter:before {
+  content: "\e601"; }
 
 .icon-youtube:before {
-  content: "\79"; }
+  content: "\e602"; }
 
-.icon-tag:before {
-  content: "\28"; }
+.icon-menu:before {
+  content: "\e603"; }
 
-.icon-tumblr:before {
-  content: "\6d"; }
+.icon-earth:before {
+  content: "\e604"; }
 
-.icon-instagram:before {
-  content: "\22"; }
+.icon-bubble:before {
+  content: "\e605"; }
 
-.icon-podcast:before {
-  content: "\26"; }
+.icon-bubble2:before {
+  content: "\e606"; }
 
-.icon-android:before {
-  content: "\29"; }
+.icon-home:before {
+  content: "\e607"; }
 
-.icon-apple:before {
-  content: "\2a"; }
+.icon-camera:before {
+  content: "\e608"; }
 
-.icon-envelope:before {
-  content: "\2b"; }
+.icon-phone:before {
+  content: "\e609"; }
 
-.icon-arrow:after {
-  content: "\61";
-  display: inline-block;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg); }
+.icon-clock:before {
+  content: "\e60a"; }
 
-.icon-play:before {
-  font-size: 0.7rem;
-  padding-left: 0.2em; }
+.icon-clock2:before {
+  content: "\e60b"; }
 
-.icon-play-box {
-  display: block;
-  margin-left: 2rem; }
+.icon-calendar:before {
+  content: "\e60c"; }
 
-.icon-play-box:before {
-  padding: 0.25rem;
-  background: gray;
-  color: white;
-  margin-left: -1.7rem;
-  margin-right: 0.5rem; }
+.icon-calendar2:before {
+  content: "\e60d"; }
+
+.icon-quotes-left:before {
+  content: "\e60e"; }
+
+.icon-pie:before {
+  content: "\e60f"; }
+
+.icon-stats:before {
+  content: "\e610"; }
+
+.icon-bars:before {
+  content: "\e611"; }
+
+.icon-bars2:before {
+  content: "\e612"; }
+
+.icon-accessibility:before {
+  content: "\e613"; }
+
+.icon-truck:before {
+  content: "\e614"; }
+
+.icon-heart:before {
+  content: "\e615"; }
+
+.icon-star:before {
+  content: "\e616"; }
+
+.icon-happy:before {
+  content: "\e617"; }
+
+.icon-sad:before {
+  content: "\e618"; }
+
+.icon-checkmark-circle:before {
+  content: "\e619"; }
+
+.icon-cancel-circle:before {
+  content: "\e61a"; }
+
+.icon-info:before {
+  content: "\e61b"; }
+
+.icon-close:before {
+  content: "\e61c"; }
+
+.icon-checkmark:before {
+  content: "\e61d"; }
+
+.icon-checkmark2:before {
+  content: "\e61e"; }
+
+.icon-minus:before {
+  content: "\e61f"; }
+
+.icon-plus:before {
+  content: "\e620"; }
+
+.icon-mail:before {
+  content: "\e621"; }
+
+.icon-flag:before {
+  content: "\e622"; }
+
+.icon-search:before {
+  content: "\e623"; }
+
+.icon-arrow-down:before {
+  content: "\e624"; }
+
+.icon-arrow-up:before {
+  content: "\e625"; }
+
+.icon-arrow-right:before {
+  content: "\e626"; }
+
+.icon-arrow-left:before {
+  content: "\e627"; }
+
+.icon-arrow-left2:before {
+  content: "\e628"; }
+
+.icon-arrow-down2:before {
+  content: "\e629"; }
+
+.icon-arrow-up2:before {
+  content: "\e62a"; }
+
+.icon-arrow-right2:before {
+  content: "\e62b"; }
 
 /*------------------------------------*\
     $BUTTONS
@@ -817,7 +858,8 @@ td {
   border: 0;
   text-align: center; }
   .btn:hover, .btn:focus {
-    color: white; }
+    color: white;
+    background: gray; }
   .btn.disabled {
     background: #eeeeee;
     color: #bbbbbb; }
@@ -935,12 +977,6 @@ td {
 
 .inline-list li {
   display: inline-block; }
-
-/* Social List */
-.social-list li {
-  margin: 0 0.4rem 1rem 0; }
-.social-list a {
-  font-size: 1.6em; }
 
 /* Headline List */
 .headline-list {
@@ -1106,3 +1142,160 @@ td {
 
 .comment-text {
   margin-left: 9em; }
+
+/* Donate Behavior */
+.donate-range-container {
+  margin-bottom: 1em; }
+
+.donate-slider {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 3em 1rem; }
+
+.donate-slider-message {
+  font-size: 0.75em;
+  line-height: 1.1;
+  height: 2em; }
+  .donate-slider-message a {
+    text-decoration: underline; }
+
+.donate-submit {
+  display: block;
+  width: 100%; }
+  @media all and (min-width: 46.8em) {
+    .donate-submit {
+      width: auto; } }
+
+div.ui-slider.ui-mini {
+  margin: .25em 0; }
+
+.ui-field-contain div.ui-slider,
+.ui-field-contain div.ui-slider.ui-mini {
+  margin: 0; }
+
+div.ui-slider:before, div.ui-slider:after {
+  content: "";
+  display: table; }
+
+div.ui-slider:after {
+  clear: both; }
+
+/* High level of specificity to override Textinput CSS. */
+input.ui-input-text.ui-slider-input {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 4px;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  border-width: 0;
+  background-image: none;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: text-bottom;
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.ui-slider-input::-webkit-outer-spin-button,
+.ui-slider-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.ui-slider-track,
+.ui-slider-switch {
+  position: relative;
+  overflow: visible;
+  height: 15px;
+  margin: 0 15px 0 68px; }
+
+.ui-slider-track.ui-mini {
+  height: 12px;
+  top: 8px; }
+
+.ui-slider-bg {
+  border: none;
+  height: 100%; }
+
+.ui-slider-handle .ui-btn-inner {
+  padding: 0;
+  height: 100%; }
+
+select.ui-slider-switch {
+  display: none; }
+
+div.ui-slider-switch {
+  display: inline-block;
+  height: 32px;
+  width: 5.8em;
+  margin: .5em 0;
+  top: 0; }
+
+.ui-slider-switch.ui-mini .ui-slider-handle {
+  width: 25px;
+  height: 25px;
+  margin: 1px 0 0 -13px;
+  padding: 0; }
+
+.ui-slider-handle-snapping {
+  -webkit-transition: left 70ms linear;
+  -moz-transition: left 70ms linear; }
+
+div.ui-slider {
+  position: relative;
+  height: 30px;
+  margin: 2em 0 1em;
+  zoom: 1; }
+  div.ui-slider .ui-slider-input {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+
+.ui-slider-handle {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 44px;
+  height: 56px;
+  margin: -50px 0 0 -20px;
+  outline: 0;
+  text-align: center;
+  font-weight: bold;
+  background: #bbbbbb;
+  color: black; }
+  .ui-slider-handle:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 14px 22px 0 22px;
+    border-color: #bbbbbb transparent transparent transparent; }
+  .ui-slider-handle:hover {
+    color: black;
+    background: #dddddd; }
+    .ui-slider-handle:hover:after {
+      border-top-color: #dddddd; }
+  .ui-slider-handle:focus {
+    color: black; }
+  .ui-slider-handle:active {
+    color: black;
+    background: #666666; }
+    .ui-slider-handle:active:after {
+      border-top-color: #666666; }
+
+.ui-slider-track {
+  margin: 0;
+  background: #333333;
+  height: 40px;
+  width: 100%; }
+
+.ui-slider-bg {
+  background: rgba(0, 0, 0, 0.3); }

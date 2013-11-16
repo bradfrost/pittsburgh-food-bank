@@ -40,9 +40,12 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 
 button, input[type="submit"] {
 	padding: $pad-half;
+	color: #fff;
 	background: $gray-dark;
-	border: 1px solid $gray;
+	padding: 1em;
+	border: 0;
 	cursor: pointer;
+	text-align: center;
 }
 
 input[type="checkbox"],
@@ -72,9 +75,7 @@ input[type="search"]::-webkit-search-decoration {
 		position: relative;
 	}
 	
-	input[type=submit], button, .btn {
-		font-size: $font-size-slightly-smaller;
-		padding: 0.65rem 1.3rem;
+	input[type=submit], button {
 		background: $gray-dark;
 		position: absolute;
 		top: 0;

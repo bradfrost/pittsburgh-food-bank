@@ -1,6 +1,3 @@
-/*
-
-*/
 /*------------------------------------*\
     $TABLE OF CONTENTS
 \*------------------------------------*/
@@ -20,10 +17,10 @@
  * .....Text-related elements (p, blockquote, lists)
  * .....Defaults
  * .....Breakpoints
- * TYPOGRAPHY------------------------------
- * MEDIA------------------------------
- * LAYOUT------------------------------
- * NAVIGATION------------------------------
+ * TYPOGRAPHY............................
+ * MEDIA.................................
+ * LAYOUT................................
+ * NAVIGATION............................
  * TOC To Be Continued
  */
 /*------------------------------------*\
@@ -252,9 +249,12 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 
 button, input[type="submit"] {
   padding: 0.5rem;
+  color: #fff;
   background: #333333;
-  border: 1px solid gray;
-  cursor: pointer; }
+  padding: 1em;
+  border: 0;
+  cursor: pointer;
+  text-align: center; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -274,16 +274,14 @@ input[type="search"]::-webkit-search-decoration {
 
 .inline-form fieldset, .inline-form .inline-container {
   position: relative; }
-.inline-form input[type=submit], .inline-form button, .inline-form .btn {
-  font-size: 0.875em;
-  padding: 0.65rem 1.3rem;
+.inline-form input[type=submit], .inline-form button {
   background: #333333;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   width: auto; }
-  .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus, .inline-form .btn:hover, .inline-form .btn:focus {
+  .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus {
     background: gray;
     color: white; }
 
@@ -532,6 +530,9 @@ td {
 .header {
   background: white;
   padding: 0; }
+  @media all and (min-width: 46.8em) {
+    .header {
+      padding: 1.5em 0; } }
 
 .logo {
   float: left;
@@ -817,7 +818,8 @@ td {
   border: 0;
   text-align: center; }
   .btn:hover, .btn:focus {
-    color: white; }
+    color: white;
+    background: gray; }
   .btn.disabled {
     background: #eeeeee;
     color: #bbbbbb; }
@@ -1106,3 +1108,179 @@ td {
 
 .comment-text {
   margin-left: 9em; }
+
+.donate-slider {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 3em 0.5rem; }
+
+.donate-slider-message {
+  font-size: 0.75em; }
+
+.donate-submit {
+  display: block;
+  width: 100%; }
+
+div.ui-slider {
+  height: 30px;
+  margin: .5em 0;
+  zoom: 1; }
+
+div.ui-slider.ui-mini {
+  margin: .25em 0; }
+
+.ui-field-contain div.ui-slider,
+.ui-field-contain div.ui-slider.ui-mini {
+  margin: 0; }
+
+div.ui-slider:before, div.ui-slider:after {
+  content: "";
+  display: table; }
+
+div.ui-slider:after {
+  clear: both; }
+
+/* High level of specificity to override Textinput CSS. */
+input.ui-input-text.ui-slider-input {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 4px;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  border-width: 0;
+  background-image: none;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: text-bottom;
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.ui-slider-input::-webkit-outer-spin-button,
+.ui-slider-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.ui-slider-track,
+.ui-slider-switch {
+  position: relative;
+  overflow: visible;
+  height: 15px;
+  margin: 0 15px 0 68px; }
+
+.ui-slider-track.ui-mini {
+  height: 12px;
+  top: 8px; }
+
+.ui-slider-bg {
+  border: none;
+  height: 100%; }
+
+/* High level of specificity to override button margins in grids */
+.ui-slider-track .ui-btn.ui-slider-handle,
+.ui-slider-switch .ui-btn.ui-slider-handle {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 44px;
+  height: 60px;
+  margin: -40px 0 0;
+  outline: 0; }
+
+.ui-slider-handle .ui-btn-inner {
+  padding: 0;
+  height: 100%; }
+
+select.ui-slider-switch {
+  display: none; }
+
+div.ui-slider-switch {
+  display: inline-block;
+  height: 32px;
+  width: 5.8em;
+  margin: .5em 0;
+  top: 0; }
+
+.ui-slider-switch.ui-mini .ui-slider-handle {
+  width: 25px;
+  height: 25px;
+  margin: 1px 0 0 -13px;
+  padding: 0; }
+
+.ui-slider-handle-snapping {
+  -webkit-transition: left 70ms linear;
+  -moz-transition: left 70ms linear; }
+
+.ui-slider-switch.ui-mini .ui-slider-handle .ui-btn-inner {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  border-top: none; }
+
+.ui-slider-switch .ui-slider-label {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  top: 0;
+  line-height: 2;
+  min-height: 100%;
+  border-width: 0;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.ui-slider-switch.ui-mini .ui-slider-label {
+  font-size: 14px; }
+
+.ui-slider-switch .ui-slider-label-a {
+  z-index: 1;
+  left: 0;
+  text-indent: -1.5em; }
+
+.ui-slider-switch .ui-slider-label-b {
+  z-index: 0;
+  right: 0;
+  text-indent: 1.5em; }
+
+@media all and (min-width: 28em) {
+  .ui-field-contain label.ui-slider {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin: 0 2% 0 0; }
+
+  .ui-field-contain div.ui-slider {
+    display: inline-block;
+    width: 78%; }
+
+  .ui-field-contain.ui-hide-label div.ui-slider {
+    display: block;
+    width: auto; }
+
+  .ui-field-contain div.ui-slider-switch,
+  .ui-field-contain.ui-hide-label div.ui-slider-switch {
+    display: inline-block;
+    width: 5.8em; }
+
+  .ui-field-contain div.ui-slider-switch.ui-mini {
+    width: 5em; } }
+.ui-slider {
+  position: relative; }
+
+.ui-slider-handle {
+  background: yellow; }
+
+.ui-slider-track {
+  margin: 0;
+  background: green;
+  height: 40px;
+  width: 100%; }
+
+.ui-slider-bg {
+  background: purple; }

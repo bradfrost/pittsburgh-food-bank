@@ -195,6 +195,15 @@
     left: auto;
     right: 0; }
 
+.sg-nav-templates .sg-acc-panel, .sg-nav-pages .sg-acc-panel {
+  width: 30em; }
+  .sg-nav-templates .sg-acc-panel li, .sg-nav-pages .sg-acc-panel li {
+    float: left;
+    width: 50%; }
+    .sg-nav-templates .sg-acc-panel li:nth-child(odd), .sg-nav-pages .sg-acc-panel li:nth-child(odd) {
+      clear: left;
+      border-right: 1px solid rgba(255, 255, 255, 0.05); }
+
 /* Controls (sizing, view mode) */
 .sg-controls {
   border: 0;
@@ -490,6 +499,11 @@
   .animate-move:hover > .demo-shape {
     left: 100%;
     margin-left: -20px; }
+
+.demo-icons {
+  font-size: 2em; }
+  .demo-icons li {
+    padding: 0.2em; }
 
 .sg-colors {
   overflow: hidden; }

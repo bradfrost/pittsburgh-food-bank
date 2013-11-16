@@ -299,6 +299,22 @@ $animate-quick: 0.2s;
 	}
 }
 
+.sg-nav-templates, .sg-nav-pages {
+	.sg-acc-panel {
+		width: 30em;
+
+		li {
+			float: left;
+			width: 50%;
+
+			&:nth-child(odd) {
+				clear: left;
+				border-right: 1px solid $sg-tint;
+			}
+		}
+	}
+}
+
 /* Controls (sizing, view mode) */
 .sg-controls {
 	border: 0;
@@ -713,6 +729,15 @@ $animate-quick: 0.2s;
 			left: 100%;
 			margin-left: -20px;
 		}
+	}
+}
+
+//Icon List
+.demo-icons {
+	font-size: 2em;
+
+	li {
+		padding: 0.2em;
 	}
 }
 

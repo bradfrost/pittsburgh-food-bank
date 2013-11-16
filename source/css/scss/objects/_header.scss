@@ -2,6 +2,10 @@
 	background: $white;
 	padding: 0;
 	@extend .lc;
+
+	@media all and (min-width: $bp-med) {
+		padding: 1.5em 0;
+	}
 }
 
 .logo {
