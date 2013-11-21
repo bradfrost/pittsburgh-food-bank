@@ -24,7 +24,7 @@
 /* Completely remove from the flow but leave available to screen readers. */
 .is-vishidden {
     position: absolute !important;
-    overflow: hidden;
+    overflow: hidden !important;
     width: 1px;
     height: 1px;
     padding: 0;

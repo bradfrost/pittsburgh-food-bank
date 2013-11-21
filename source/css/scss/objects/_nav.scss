@@ -3,13 +3,12 @@
 \*------------------------------------*/
 
 .nav {
+	@extend .cf;
 	clear: both;
-	overflow: hidden;
 	max-height: 0;
 	
 	a {
 		display: block;
-		padding: $pad;
 		border-top: 1px solid $gray-light-2;
 	}
 
@@ -23,14 +22,48 @@
 		clear: none;
 		margin: 1em 1em 0 0;
 
-		li {
+		> ul > li {
 			float: left;
+			margin-right: 1em;
 		}
 
 		a {
 			border: 0;
 		}
 		
+	}
+}
+
+.nav-li {
+	position: relative;
+
+	> a {
+		font-size: 110%;
+	}
+}
+
+.nav-subnav-link {
+	.icon-arrow-down {
+		position: relative;
+		top: 2px;
+		left: -2px;
+	}
+}
+
+.nav-subnav {
+	@media all and (min-width: $bp-med) {
+		position: absolute;
+		top: 100%;
+		left: -0.5em;
+		background: $white;
+		padding: 0.5em;
+		min-width: 12em;
+		border: 1px solid $gray-light-2;
+		display: none;
+
+		&.active {
+			display: block;
+		}
 	}
 }
 

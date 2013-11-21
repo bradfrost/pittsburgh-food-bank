@@ -24,6 +24,28 @@
 		$('.header .search-form').toggleClass('active');
 	});
 
+	//Primary Navigation
+	$('body').on('click',function() {
+		$('.nav-subnav-link, .nav-subnav').removeClass('active');
+	});
+
+	$('.nav-subnav-link').on('click',function(e){
+		var $this = $(this),
+			$subnav = $this.next('.nav-subnav');
+		e.stopPropagation();
+
+		if($this.hasClass('active')) {
+			$subnav.removeClass('active');
+			$this.removeClass('active');
+		} else {
+			$this.addClass('active');
+			$subnav.addClass('active');
+		}
+
+		//$('.nav-subnav-link, .nav-subnav').removeClass('active'); //Close other open subnav menus
+		
+	});
+
 	//
 	// Donate Slider
 	//
@@ -38,7 +60,7 @@
 
 		
 
-		setTimeout(function(){ updateSliderValue($(".donate-range").val()) },50);
+		setTimeout(function(){ updateSliderValue($(".donate-range").val()); },50);
 	}
 
 	//On Slider Change
@@ -49,6 +71,7 @@
 	//Donate Slider Init
 	$(".donate-range").slider({
 		create: startSliderWatch(),
+		stop: function() { return false; },
 		highlight: true
 	});
 

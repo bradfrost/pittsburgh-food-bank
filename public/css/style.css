@@ -58,16 +58,16 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL CLASSES
 \*------------------------------------*/
 /* Clearfix */
-.cf, .l-two-col, .donate-form {
+.cf, .l-two-col, .nav, .donate-form {
   *zoom: 1; }
 
-.cf:before, .l-two-col:before, .donate-form:before, .cf:after, .l-two-col:after, .donate-form:after {
+.cf:before, .l-two-col:before, .nav:before, .donate-form:before, .cf:after, .l-two-col:after, .nav:after, .donate-form:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, .l-two-col:after, .donate-form:after {
+.cf:after, .l-two-col:after, .nav:after, .donate-form:after {
   clear: both; }
 
 /* Completely remove from the flow and screen readers. */
@@ -78,7 +78,7 @@ header, footer, nav, section, article, hgroup, figure {
 /* Completely remove from the flow but leave available to screen readers. */
 .is-vishidden {
   position: absolute !important;
-  overflow: hidden;
+  overflow: hidden !important;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -225,6 +225,9 @@ form ol, form ul {
   list-style: none;
   margin-left: 0; }
 
+legend {
+  display: none; }
+
 fieldset {
   border: 0;
   padding: 0;
@@ -362,7 +365,7 @@ td {
 \*------------------------------------*/
 /* Layout Container */
 .lc, .header {
-  max-width: 72rem;
+  max-width: 78rem;
   margin: 0 auto;
   padding: 0.5rem; }
 
@@ -575,11 +578,9 @@ td {
 \*------------------------------------*/
 .nav {
   clear: both;
-  overflow: hidden;
   max-height: 0; }
   .nav a {
     display: block;
-    padding: 1rem;
     border-top: 1px solid #eeeeee; }
   .nav.active {
     max-height: 40em; }
@@ -589,10 +590,34 @@ td {
       float: right;
       clear: none;
       margin: 1em 1em 0 0; }
-      .nav li {
-        float: left; }
+      .nav > ul > li {
+        float: left;
+        margin-right: 1em; }
       .nav a {
         border: 0; } }
+
+.nav-li {
+  position: relative; }
+  .nav-li > a {
+    font-size: 110%; }
+
+.nav-subnav-link .icon-arrow-down {
+  position: relative;
+  top: 2px;
+  left: -2px; }
+
+@media all and (min-width: 46.8em) {
+  .nav-subnav {
+    position: absolute;
+    top: 100%;
+    left: -0.5em;
+    background: white;
+    padding: 0.5em;
+    min-width: 12em;
+    border: 1px solid #eeeeee;
+    display: none; }
+    .nav-subnav.active {
+      display: block; } }
 
 .pagination {
   overflow: hidden; }
