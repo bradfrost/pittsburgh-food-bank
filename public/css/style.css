@@ -846,6 +846,9 @@ td {
 .icon-search:before {
   content: "\e623"; }
 
+.icon-location:before {
+  content: "\e62c"; }
+
 .icon-arrow-down:before {
   content: "\e624"; }
 
@@ -869,6 +872,9 @@ td {
 
 .icon-arrow-right2:before {
   content: "\e62b"; }
+
+.icon-mail:before {
+  content: "\e62d"; }
 
 /*------------------------------------*\
     $BUTTONS
