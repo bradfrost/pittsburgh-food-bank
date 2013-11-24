@@ -1,12 +1,24 @@
 //Article
-.article-header {
-	h1 {
-		font-size: 2.5em;
+.page-title {
+	font-size: $font-size-large;
+	margin-bottom: 0.3em;
+
+	@media all and (min-width: $bp-small-2) {
+		font-size: $font-size-large-2;
+	}
+
+	@media all and (min-width: $bp-med) {
+		font-size: $font-size-large-3;
+	}
+
+	@media all and (min-width: $bp-large) {
+		font-size: $font-size-xl;
+		line-height: 1.1;
 	}
 }
 
 .byline {
-	font-size: $font-size-slightly-smaller;
+	font-size: $font-size-sm-2;
 	font-style: italic;
 	margin-bottom: $space-half;
 }
@@ -14,19 +26,6 @@
 /* Wordpress Caption */
 .wp-caption-text {
 	font-style: italic;
-}
-
-// Review Summary
-.review-summary {
-	.grade {
-		width: 4.5em;
-		float: left;
-		margin: 0 $space-half 0 0;
-	}
-
-	.summary-text {
-		margin-left: 5em;
-	}
 }
 
 //Social Share

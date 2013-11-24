@@ -1,7 +1,8 @@
 .header {
-	background: $white;
 	padding: 0;
 	@extend .lc;
+	position: relative;
+	z-index: 2;
 
 	@media all and (min-width: $bp-med) {
 		padding: 1.5em 0;

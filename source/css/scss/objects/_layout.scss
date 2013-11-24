@@ -12,28 +12,49 @@
 /*------------------------------------*\
     $TEMPLATES
 \*------------------------------------*/
-
-/* Two Column Layout */
-.l-two-col {
+.l-1col {
 	@extend .cf;
+	position: relative;
 
 	.l-main {
+		@extend .lc;
+	}
+}
+
+.l-3col {
+	@extend .lc;
+	@extend .cf;
+	position: relative;
+
+	.l-main {
+		@media all and (min-width: $bp-med-3) {
+			margin-left: 14.5em;
+		}
+
 		@media all and (min-width: $bp-large) {
-			float: left;
-			width: 70%;
-			padding-right: $pad;
+			margin-right: 14.5em;
 		}
 	}
 	
 	.l-sidebar {
-		@media all and (max-width: $bp-large) {
-			clear: both;
+		@media all and (min-width: $bp-med-3) {
+			position: absolute;
+			top: $pad-half;
+			left: $pad-half;
+			width: 14em;
+		}
+	}
+
+	.l-sidebar2 {
+		@media all and (min-width: $bp-med-3) and (max-width: $bp-large) {
+			margin-left: 14.5em;
 		}
 
 		@media all and (min-width: $bp-large) {
-			float: left;
-			width: 30%;
-			padding: 0 0 0 $pad;
+			position: absolute;
+			top: $pad-half;
+			right: $pad-half;
+			width: 14em;
 		}
 	}
 }

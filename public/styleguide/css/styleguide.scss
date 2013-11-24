@@ -703,6 +703,20 @@ $animate-quick: 0.2s;
 	}
 }
 
+.demo .l-main {
+	background: $sg-tertiary;
+	color: $sg-secondary;
+	text-align: center;
+	padding: 1em;
+}
+
+.demo .l-sidebar, .demo .l-sidebar2 {
+	color: $sg-tertiary;
+	background: $sg-secondary;
+	text-align: center;
+	padding: 1em;
+}
+
 //Demo box for animation
 .demo-animate {
 	background: $sg-tertiary;

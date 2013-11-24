@@ -481,6 +481,18 @@
     .demo .gi .gi:nth-of-type(2n), .demo .demo-block .gi:nth-of-type(2n) {
       background: rgba(0, 0, 0, 0.3); }
 
+.demo .l-main {
+  background: #dddddd;
+  color: gray;
+  text-align: center;
+  padding: 1em; }
+
+.demo .l-sidebar, .demo .l-sidebar2 {
+  color: #dddddd;
+  background: gray;
+  text-align: center;
+  padding: 1em; }
+
 .demo-animate {
   background: #dddddd;
   padding: 1em;
