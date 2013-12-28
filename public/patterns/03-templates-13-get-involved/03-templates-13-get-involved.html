@@ -39,7 +39,7 @@
 		    	<span class="is-vishidden">Search</span>
 		    </button>
 	    </fieldset>
-	</form>	<nav id="nav" class="nav">
+	</form>	<nav id="nav" class="nav" role="navigation">
 		<ul>
 			<li class="nav-li">
 				<a href="#" class="nav-subnav-link">Programs<span class="icon-arrow-down"></span></a>
@@ -118,11 +118,53 @@
 		<h2>Donate to the Greater Pittsburgh Community Food Bank</h2>
 		<form method="post" action="#" class="donate-form">
 			<div class="">
-				<div class="field-container donate-range-container">
-					<label for="donate-range">Choose an amount to donate:</label>
-					<input type="number" data-type="range" class="donate-range ui-slider-input" id="donate-range" value="1" min="1" max="100" />
-					<div class="donate-slider-message">Every dollar helps. 96% of donated money goes directly to feeding the hungry.</div>
-				</div>
+				<fieldset class="donate-step donate-range-container">
+					<legend>Choose amount</legend>
+					<div for="donate-range" class="field-instruction"><span class="form-step">1</span> Choose an amount to donate</div>
+					<div class="field-container">
+						<label for="donate-range" class="field-instruction is-vishidden">Choose amount to donate</label>
+						<input type="number" data-type="range" class="donate-range ui-slider-input" id="donate-range" value="1" min="1" max="100" />
+						<div class="donate-slider-message">Every dollar helps. 96% of donated money goes directly to feeding the hungry.</div>
+					</div>
+					<div class="field-container">
+						<input type="checkbox" id="donate-monthly" />
+						<label for="donate-monthly">Make this a monthly donation?</label>
+					</div>
+				</fieldset><!--end .donate-step-->
+				<fieldset class="donate-step">
+					<legend>Your information</legend>
+					<div class="field-instruction"><span class="form-step">2</span> Enter your information</div>
+					<div class="field-container">
+						<label for="donate-name">Name</label>
+						<input type="text" id="donate-name" placeholder="First Last" autocomplete="off" required />
+					</div>
+					<div class="field-container">
+						<label for="donate-email">E-mail</label>
+						<input type="email" id="donate-email" placeholder="your@email.com" required />
+					</div>
+					<div class="field-container">
+						<label for="donate-address">Address</label>
+						<input type="text" id="donate-address" placeholder="123 Main St" autocomplete="off" required />
+					</div>
+					<div class="field-container">
+						<label for="donate-address">Address 2</label>
+						<input type="text" id="donate-address" placeholder="Apt #, Suite, etc" autocomplete="off" required />
+					</div>
+				</fieldset><!--end .donate-step-->
+				<fieldset class="donate-step">
+					<legend>Payment information</legend>
+					<div class="field-instruction"><span class="form-step">3</span> Enter payment information</div>
+					<div class="field-container">
+						<input type="radio" name="payment-type" id="payment-cc" /><label for="payment-cc">Credit Card</label>
+						<input type="radio" name="payment-type" id="payment-bank" /><label for="payment-bank">Bank Account</label>
+					</div>
+					<div class="field-container">
+						<label for="payment-cc-num">Credit Card Number</label>
+						<input type="number" pattern="[0-9]*" id="payment-cc-num" placeholder="Enter Credit Card Number" required />
+					</div>
+				</fieldset><!--end .donate-step-->
+
+				
 				<button class="donate-submit btn">Donate</button>
 			</div>
 		</form>

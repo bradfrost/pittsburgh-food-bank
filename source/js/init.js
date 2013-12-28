@@ -71,7 +71,6 @@
 	//Donate Slider Init
 	$(".donate-range").slider({
 		create: startSliderWatch(),
-		stop: function() { return false; },
 		highlight: true
 	});
 

@@ -377,26 +377,26 @@ td {
 
 .l-3col {
   position: relative; }
-  @media all and (min-width: 55.75em) {
+  @media all and (min-width: 56.25em) {
     .l-3col .l-main {
-      margin-left: 14.5em; } }
+      margin-left: 15em; } }
   @media all and (min-width: 66em) {
     .l-3col .l-main {
-      margin-right: 14.5em; } }
-  @media all and (min-width: 55.75em) {
+      margin-right: 15em; } }
+  @media all and (min-width: 56.25em) {
     .l-3col .l-sidebar {
       position: absolute;
-      top: 0.5em;
-      left: 0.5em;
+      top: 0;
+      left: 0;
       width: 14em; } }
-  @media all and (min-width: 55.75em) and (max-width: 66em) {
+  @media all and (min-width: 56.25em) and (max-width: 66em) {
     .l-3col .l-sidebar2 {
-      margin-left: 14.5em; } }
+      margin-left: 15em; } }
   @media all and (min-width: 66em) {
     .l-3col .l-sidebar2 {
       position: absolute;
-      top: 0.5em;
-      right: 0.5em;
+      top: 0;
+      right: 0;
       width: 14em; } }
 
 /*------------------------------------*\
@@ -543,6 +543,7 @@ td {
     $PAGE STRUCTURE
 \*------------------------------------*/
 .header {
+  background: white;
   padding: 0;
   position: relative;
   z-index: 2; }
@@ -659,6 +660,7 @@ td {
 .footer {
   clear: both;
   overflow: hidden;
+  padding: 1em;
   background: #131313;
   color: #f9f9f9; }
   .footer .lc, .footer .l-1col .l-main, .l-1col .footer .l-main, .footer .l-3col, .footer .header {
