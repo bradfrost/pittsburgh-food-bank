@@ -69,3 +69,5 @@ sass-cache
 /source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_media.scssc
 /source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_tables.scssc
 /source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_text.scssc
+
+.DS_Store
