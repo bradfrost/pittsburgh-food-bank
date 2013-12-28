@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pattern Lab Sub-type Style Guide</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
+		<link rel="stylesheet" href="../../css/style.css" media="all" />
+	</head>
+	<body class="pattern-list">
+		
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-00-meta-00-head/00-atoms-00-meta-00-head.html" class="patternLink" data-patternpartial="atoms-head">Head</a></h2>
+						<div class="sg-pattern-body">
+							<!--Stuff that goes into the head of the document-->
+
+<!--End stuff that goes into the head of the document-->
+
+
+						</div>
+					</div>
+					<div class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-00-meta-01-foot/00-atoms-00-meta-01-foot.html" class="patternLink" data-patternpartial="atoms-foot">Foot</a></h2>
+						<div class="sg-pattern-body">
+							<!--Stuff that goes at the end of the document-->
+
+<!--End stuff that goes at the end of the document-->
+
+
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
+	
+		</div><!--end .sg-main-->
+		
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-atoms-meta";
+			var lineage = "";
+		</script>
+		<script src="../../styleguide/js/postmessage.js"></script>
+		<script src="../../data/annotations.js"></script>
+		<script src="../../styleguide/js/annotations-pattern.js"></script>
+		
+	</body>
+</html>
