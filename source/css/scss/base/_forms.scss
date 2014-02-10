@@ -1,24 +1,25 @@
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
-
-form > div {
-	margin-bottom: $space;
-}
-
 form ol, form ul {
 	list-style: none;
 	margin-left: 0;
 }
 
 legend {
-	display: none;
+	display: block;
+	width: 100%;
+	font-size: $font-size-sm-2;
+	margin-bottom: $space;
+	padding-bottom: $pad-half;	
+	border-bottom: 1px dashed $gray;
+	
 }
 
 fieldset {
 	border: 0;
-	padding: 0;
-	margin: 0;
+	padding: $pad 0;
+	margin: 0 0 $space;
 }
 
 label {
@@ -73,10 +74,27 @@ input[type="search"]::-webkit-search-decoration {
 	margin-bottom: $space;
 }
 
+.radio-container, .checkbox-container {
+	label {
+		display: inline;
+	}
+}
+
+//Field Step
+.form-step {
+	background: $gray-dark;
+	color: $white;
+	padding: 0.2em 0.5em;
+	line-height: 1;
+	border-radius: 15px;
+}
+
 .inline-form {
 	
 	fieldset, .inline-container {
 		position: relative;
+		padding: 0;
+		margin: 0;
 	}
 	
 	input[type=submit], button {
@@ -91,27 +109,6 @@ input[type="search"]::-webkit-search-decoration {
 			background: $gray;
 			color: $white;
 		}
-	}
-}
-
-// PK to clean this up
-.inline-search-results-form {
-	width: 100%;
-	@media all and (min-width: $bp-med) {
-		width: 82%;
-
-	} 
-	
-	fieldset, .inline-container {
-		position: relative;
-	}
-	
-	input[type=submit], button {
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 1;
-		width: auto;
 	}
 }
 

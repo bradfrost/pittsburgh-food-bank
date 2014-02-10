@@ -1,23 +1,37 @@
-/* Donate Behavior */
+/* Donate Organism */
+.donate {
+	background: rgba(0,0,0,0.1);
+	padding: 3em $pad 0;
+	position: relative;
+
+	.lc {
+		@media all and (min-width: $bp-med) {
+			padding-right: 33%;
+			background: url(../images/sample/fpo-smiling-kids.png) no-repeat 100% 100%;
+		}
+	}
+}
+
+.donate-messaging {
+	position: relative;
+
+
+}
+
+
 .donate-range-container {
-	margin-bottom: 1em;
-
-
+	padding-top: $pad-half;
 }
 
 .donate-form {
 	@extend .cf;
 }
 
-.donate-slider {
-	background: rgba(0,0,0,0.1);
-	padding: 3em $pad;
-}
+
 
 .donate-slider-message {
 	font-size: $font-size-sm;
 	line-height: 1.1;
-	height: 2em;
 
 	a {
 		text-decoration: underline;
@@ -34,46 +48,6 @@
 	}
 }
 
-div.ui-slider.ui-mini {
-	margin: .25em 0;
-}
-.ui-field-contain div.ui-slider,
-.ui-field-contain div.ui-slider.ui-mini {
-	margin: 0;
-}
-div.ui-slider:before, div.ui-slider:after {
-	content: "";
-	display: table;
-}
-div.ui-slider:after {
-	clear: both;
-}
-/* High level of specificity to override Textinput CSS. */
-input.ui-input-text.ui-slider-input {
-	display: block;
-	float: left;
-	margin: 0;
-	padding: 4px;
-	width: 40px;
-	height: 22px;
-	line-height: 22px;
-	font-size: 14px;
-	border-width: 0;
-	background-image: none;
-	font-weight: bold;
-	text-align: center;
-	vertical-align: text-bottom;
-	outline: 0;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	box-sizing: content-box;
-}
-.ui-slider-input::-webkit-outer-spin-button,
-.ui-slider-input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
 .ui-slider-track,
 .ui-slider-switch {
 	position: relative;
@@ -182,7 +156,7 @@ div.ui-slider {
 
 .ui-slider-track {
 	margin: 0;
-	background: $gray-dark;
+	background: $gray;
 	height: 40px;
 	width: 100%;
 }

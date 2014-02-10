@@ -144,13 +144,20 @@ a {
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: 0.5em; }
 
 h2, .beta {
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: 0.5em; }
 
 h3, .gamma {
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: 0.5em; }
+
+h4, .delta {
+  line-height: 1.2;
+  margin-bottom: 0.5em; }
 
 /* Subheadings */
 .subheading {
@@ -218,20 +225,22 @@ figcaption {
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
-form > div {
-  margin-bottom: 1em; }
-
 form ol, form ul {
   list-style: none;
   margin-left: 0; }
 
 legend {
-  display: none; }
+  display: block;
+  width: 100%;
+  font-size: 0.875em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px dashed gray; }
 
 fieldset {
   border: 0;
-  padding: 0;
-  margin: 0; }
+  padding: 1em 0;
+  margin: 0 0 1em; }
 
 label {
   display: block;
@@ -275,8 +284,20 @@ input[type="search"]::-webkit-search-decoration {
 .field-container {
   margin-bottom: 1em; }
 
+.radio-container label, .checkbox-container label {
+  display: inline; }
+
+.form-step {
+  background: #333333;
+  color: white;
+  padding: 0.2em 0.5em;
+  line-height: 1;
+  border-radius: 15px; }
+
 .inline-form fieldset, .inline-form .inline-container {
-  position: relative; }
+  position: relative;
+  padding: 0;
+  margin: 0; }
 .inline-form input[type=submit], .inline-form button {
   background: #333333;
   position: absolute;
@@ -287,20 +308,6 @@ input[type="search"]::-webkit-search-decoration {
   .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus {
     background: gray;
     color: white; }
-
-.inline-search-results-form {
-  width: 100%; }
-  @media all and (min-width: 46.8em) {
-    .inline-search-results-form {
-      width: 82%; } }
-  .inline-search-results-form fieldset, .inline-search-results-form .inline-container {
-    position: relative; }
-  .inline-search-results-form input[type=submit], .inline-search-results-form button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: auto; }
 
 /* Validation */
 .has-error {
@@ -377,26 +384,26 @@ td {
 
 .l-3col {
   position: relative; }
-  @media all and (min-width: 56.25em) {
+  @media all and (min-width: 55.75em) {
     .l-3col .l-main {
-      margin-left: 15em; } }
+      margin-left: 14.5em; } }
   @media all and (min-width: 66em) {
     .l-3col .l-main {
-      margin-right: 15em; } }
-  @media all and (min-width: 56.25em) {
+      margin-right: 14.5em; } }
+  @media all and (min-width: 55.75em) {
     .l-3col .l-sidebar {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 0.5em;
+      left: 0.5em;
       width: 14em; } }
-  @media all and (min-width: 56.25em) and (max-width: 66em) {
+  @media all and (min-width: 55.75em) and (max-width: 66em) {
     .l-3col .l-sidebar2 {
-      margin-left: 15em; } }
+      margin-left: 14.5em; } }
   @media all and (min-width: 66em) {
     .l-3col .l-sidebar2 {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 0.5em;
+      right: 0.5em;
       width: 14em; } }
 
 /*------------------------------------*\
@@ -543,7 +550,6 @@ td {
     $PAGE STRUCTURE
 \*------------------------------------*/
 .header {
-  background: white;
   padding: 0;
   position: relative;
   z-index: 2; }
@@ -660,7 +666,6 @@ td {
 .footer {
   clear: both;
   overflow: hidden;
-  padding: 1em;
   background: #131313;
   color: #f9f9f9; }
   .footer .lc, .footer .l-1col .l-main, .l-1col .footer .l-main, .footer .l-3col, .footer .header {
@@ -1198,18 +1203,25 @@ td {
 .comment-text {
   margin-left: 9em; }
 
-/* Donate Behavior */
-.donate-range-container {
-  margin-bottom: 1em; }
-
-.donate-slider {
+/* Donate Organism */
+.donate {
   background: rgba(0, 0, 0, 0.1);
-  padding: 3em 1em; }
+  padding: 3em 1em 0;
+  position: relative; }
+  @media all and (min-width: 46.8em) {
+    .donate .lc, .donate .l-1col .l-main, .l-1col .donate .l-main, .donate .l-3col, .donate .header {
+      padding-right: 33%;
+      background: url(../images/sample/fpo-smiling-kids.png) no-repeat 100% 100%; } }
+
+.donate-messaging {
+  position: relative; }
+
+.donate-range-container {
+  padding-top: 0.5em; }
 
 .donate-slider-message {
   font-size: 0.75em;
-  line-height: 1.1;
-  height: 2em; }
+  line-height: 1.1; }
   .donate-slider-message a {
     text-decoration: underline; }
 
@@ -1219,46 +1231,6 @@ td {
   @media all and (min-width: 46.8em) {
     .donate-submit {
       width: auto; } }
-
-div.ui-slider.ui-mini {
-  margin: .25em 0; }
-
-.ui-field-contain div.ui-slider,
-.ui-field-contain div.ui-slider.ui-mini {
-  margin: 0; }
-
-div.ui-slider:before, div.ui-slider:after {
-  content: "";
-  display: table; }
-
-div.ui-slider:after {
-  clear: both; }
-
-/* High level of specificity to override Textinput CSS. */
-input.ui-input-text.ui-slider-input {
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 4px;
-  width: 40px;
-  height: 22px;
-  line-height: 22px;
-  font-size: 14px;
-  border-width: 0;
-  background-image: none;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: text-bottom;
-  outline: 0;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  -ms-box-sizing: content-box;
-  box-sizing: content-box; }
-
-.ui-slider-input::-webkit-outer-spin-button,
-.ui-slider-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
 
 .ui-slider-track,
 .ui-slider-switch {
@@ -1348,7 +1320,7 @@ div.ui-slider {
 
 .ui-slider-track {
   margin: 0;
-  background: #333333;
+  background: gray;
   height: 40px;
   width: 100%; }
 

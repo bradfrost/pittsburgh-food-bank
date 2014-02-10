@@ -2,18 +2,22 @@
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha   { 
 	line-height: 1.2;
+	margin-bottom: $space-half;
 }
 
 h2, .beta    { 
 	line-height: 1.2;
+	margin-bottom: $space-half;
 }
 
 h3, .gamma   { 
 	line-height: 1.2;
+	margin-bottom: $space-half;
 }
 
 h4, .delta   {
-	
+	line-height: 1.2;
+	margin-bottom: $space-half;
 }
 
 h5, .epsilon { 

@@ -47,8 +47,11 @@
 	});
 
 	//
-	// Donate Slider
+	// Donate Form
 	//
+
+	//Hide steps 2 and three
+	$('.donate-step').not('#donate-step-1').hide();
 
 	//Watch for changes in slider
 	function startSliderWatch() {
@@ -95,9 +98,6 @@
 			$donateSliderMessage.html('Every dollar counts. 96% of every dollar goes to services to feed the hungry.');
 		}
 	}
-
-	
-	
 
 	$(".donate-form").submit(function(e){
 		e.preventDefault();
