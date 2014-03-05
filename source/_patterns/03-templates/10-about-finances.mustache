@@ -1,17 +1,19 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
+		<div class="lc">
+			{{> molecules-page-header }}
+		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<h1 class="fpo">Finances</h1>
-				<div class="fpo">Intro copy about finances (short and sweet)</div>
-				<div class="fpo">Link to financial</div>
+				<div class="fpo">Description of financial policy</div>
+				<div class="fpo">Link to financial PDF</div>
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
-				<div class="fpo">About section navigation</div>
+				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				
+				<div class="fpo">Links to About GPCFB and other relevant links</div>
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->

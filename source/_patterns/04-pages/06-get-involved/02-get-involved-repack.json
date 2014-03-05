@@ -1,0 +1,25 @@
+{
+	"page" : {
+		"title" : "Repack",
+		"intro" : "Repack at the GPCFB Lorem ipsum dolor."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Get Involved"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Volunteer"
+			},
+			{ 
+				"label": "Advocacy"
+			},
+			{ 
+				"label": "Kids"
+			},
+			{ 
+				"label": "Food Drives"
+			}
+		]
+	}
+}

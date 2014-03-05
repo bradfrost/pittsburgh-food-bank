@@ -1,0 +1,28 @@
+{
+	"page" : {
+		"title" : "Blog",
+		"intro" : "Latest news, upcoming events, stories, and more Lorem ipsum dolor sit."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Categories"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Advocacy Updates"
+			},
+			{ 
+				"label": "Events"
+			},
+			{ 
+				"label": "Stories"
+			},
+			{ 
+				"label": "News"
+			},
+			{ 
+				"label": "Programs"
+			}
+		]
+	}
+}

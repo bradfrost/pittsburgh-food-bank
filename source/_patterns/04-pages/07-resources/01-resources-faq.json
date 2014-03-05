@@ -1,0 +1,31 @@
+{
+	"page" : {
+		"title" : "Frequently Asked Questions",
+		"intro" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, architecto enim commodi laboriosam quibusdam cupiditate."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Resources"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "FAQ"
+			},
+			{ 
+				"label": "About Hunger"
+			},
+			{ 
+				"label": "Hunger Profiles"
+			},
+			{ 
+				"label": "Food Sources"
+			},
+			{ 
+				"label": "Advocacy Information"
+			},
+			{ 
+				"label": "Links"
+			}
+		]
+	}
+}

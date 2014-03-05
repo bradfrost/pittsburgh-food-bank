@@ -1,0 +1,17 @@
+{{# sectionNav }}
+<nav class="vertical-nav section-nav">
+	<h3 class="section-nav-title"><a href="{{ url }}">{{ headline.xs }}</a></h3>
+	<ul class="section-nav-list">
+		{{# sectionNavList }}
+		<li>
+			<a href="{{ url }}" class="{{# hasSubnav }}section-subnav-link{{/ hasSubnav }} {{# isActive }}active{{/ isActive }}">{{ label }}{{# hasSubnav }}<span class="icon-down-arrow"></span>{{/ hasSubnav }}</a>
+			<ul class="section-subnav">
+				{{# sectionSubList }}
+				<li><a href="{{ url }}" class="{{# isActive }}active{{/ isActive }}">{{ label }}</a></li>
+				{{/ sectionSubList }}
+			</ul>
+		</li>
+		{{/ sectionNavList }}
+	</ul>
+</nav>
+{{/ sectionNav }}

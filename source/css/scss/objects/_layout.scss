@@ -29,6 +29,7 @@
 	.l-main {
 		@media all and (min-width: $bp-med-3) {
 			margin-left: 14.5em;
+			min-height: 27em; //Temporary min-height
 		}
 
 		@media all and (min-width: $bp-large) {

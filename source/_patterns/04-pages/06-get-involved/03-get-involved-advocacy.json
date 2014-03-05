@@ -1,0 +1,25 @@
+{
+	"page" : {
+		"title" : "Advocacy",
+		"intro" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolores."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Get Involved"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Volunteer"
+			},
+			{ 
+				"label": "Advocacy"
+			},
+			{ 
+				"label": "Kids"
+			},
+			{ 
+				"label": "Food Drives"
+			}
+		]
+	}
+}

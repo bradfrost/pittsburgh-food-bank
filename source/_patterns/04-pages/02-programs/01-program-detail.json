@@ -1,0 +1,43 @@
+{
+	"page" : {
+		"title" : "Program Detail Page",
+		"intro" : "Produce to People provides lorem ipsum dolor sit amet, consectetur adipisicing"
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Programs"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Produce to People"
+			},
+			{ 
+				"label": "Community Harvest"
+			},
+			{ 
+				"label": "SNAP"
+			},
+			{ 
+				"label": "Farm Stand Project"
+			},
+			{ 
+				"label": "Summer Food"
+			},
+			{ 
+				"label": "Commodity"
+			},
+			{ 
+				"label": "Supplemental Food Program"
+			},
+			{ 
+				"label": "Nutrition"
+			},
+			{ 
+				"label": "Agency Relations"
+			},
+			{ 
+				"label": "Educational Programs"
+			}
+		]
+	}
+}

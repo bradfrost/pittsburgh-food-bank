@@ -386,7 +386,8 @@ td {
   position: relative; }
   @media all and (min-width: 55.75em) {
     .l-3col .l-main {
-      margin-left: 14.5em; } }
+      margin-left: 14.5em;
+      min-height: 27em; } }
   @media all and (min-width: 66em) {
     .l-3col .l-main {
       margin-right: 14.5em; } }
@@ -682,7 +683,7 @@ td {
 
 .page-title {
   font-size: 1.4375em;
-  margin-bottom: 0.3em; }
+  margin-bottom: 0.1em; }
   @media all and (min-width: 29.75em) {
     .page-title {
       font-size: 2em; } }
@@ -693,6 +694,9 @@ td {
     .page-title {
       font-size: 3.5em;
       line-height: 1.1; } }
+
+.page-intro {
+  font-size: 1.4375em; }
 
 .byline {
   font-size: 0.875em;

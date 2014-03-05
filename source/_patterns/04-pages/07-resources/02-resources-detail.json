@@ -1,0 +1,31 @@
+{
+	"page" : {
+		"title" : "Resource Detail",
+		"intro" : "Information about the resource (like About Hunger) lorem ipsum dolor sit amet."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Resources"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "FAQ"
+			},
+			{ 
+				"label": "About Hunger"
+			},
+			{ 
+				"label": "Hunger Profiles"
+			},
+			{ 
+				"label": "Food Sources"
+			},
+			{ 
+				"label": "Advocacy Information"
+			},
+			{ 
+				"label": "Links"
+			}
+		]
+	}
+}

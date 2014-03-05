@@ -1,17 +1,20 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
+		<div class="lc">
+			{{> molecules-page-header }}
+		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<h1 class="fpo">Volunteer</h1>
-				<div class="fpo">Intro text (short and sweet)</div>
 				<div class="fpo">Contact information</div>
 				<div class="fpo">List of volunteer categories (repack, gleaning, fundraising, food drives, produce to people, clerical work)</div>
+				<div class="fpo">Volunteer Age Requirements</div>
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
-				<div class="fpo">Volunteer Age Requirements</div>
+				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
+				<div class="fpo">Upcoming events</div>
 				<div class="fpo">Newsletter Signup to stay up-to-date with volunteer opportunities</div>
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->

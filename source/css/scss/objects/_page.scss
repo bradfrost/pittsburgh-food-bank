@@ -1,7 +1,7 @@
 //Article
 .page-title {
 	font-size: $font-size-large;
-	margin-bottom: 0.3em;
+	margin-bottom: 0.1em;
 
 	@media all and (min-width: $bp-small-2) {
 		font-size: $font-size-large-2;
@@ -15,6 +15,10 @@
 		font-size: $font-size-xl;
 		line-height: 1.1;
 	}
+}
+
+.page-intro {
+	font-size: $font-size-large;
 }
 
 .byline {

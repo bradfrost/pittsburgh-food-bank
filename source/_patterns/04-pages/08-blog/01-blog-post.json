@@ -1,0 +1,28 @@
+{
+	"page" : {
+		"title" : "Blog Post",
+		"intro" : "blog posts might not have intro text"
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Categories"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Advocacy Updates"
+			},
+			{ 
+				"label": "Events"
+			},
+			{ 
+				"label": "Stories"
+			},
+			{ 
+				"label": "News"
+			},
+			{ 
+				"label": "Programs"
+			}
+		]
+	}
+}

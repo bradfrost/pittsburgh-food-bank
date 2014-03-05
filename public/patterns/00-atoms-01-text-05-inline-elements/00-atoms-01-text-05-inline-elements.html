@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="">
 	<head>
-		<title></title>
+		<title>Page Title | Greater Pittsburgh Community Food Bank</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1392011458" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1394126877" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,7 +15,7 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1392011458" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1394126877" media="all">
 		
 
 		<!-- End Pattern Lab -->
@@ -70,60 +70,62 @@
 		var patternPartial = "atoms-inline-elements";
 		var lineage        = [];
 		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
 	</script>
-	
-	<script type="text/html" id="sg-pattern-html">
-&lt;div class=&quot;text&quot;&gt;
-	&lt;p&gt;&lt;a href=&quot;#&quot;&gt;This is a text link&lt;/a&gt;&lt;/p&gt;
-
-	&lt;p&gt;&lt;strong&gt;Strong is used to indicate strong importance&lt;/strong&gt;&lt;/p&gt;
-
-	&lt;p&gt;&lt;em&gt;This text has added emphasis&lt;/em&gt;&lt;/p&gt;
-
-	&lt;p&gt;The &lt;b&gt;b element&lt;/b&gt; is stylistically different text from normal text, without any special importance&lt;/p&gt;
-
-	&lt;p&gt;The &lt;i&gt;i element&lt;/i&gt; is text that is set off from the normal text&lt;/p&gt;
-
-	&lt;p&gt;The &lt;u&gt;u element&lt;/u&gt; is text with an unarticulated, though explicitly rendered, non-textual annotation&lt;/p&gt;
-
-	&lt;p&gt;&lt;del&gt;This text is deleted&lt;/del&gt; and &lt;ins&gt;This text is inserted&lt;/ins&gt;&lt;/p&gt;
-
-	&lt;p&gt;&lt;s&gt;This text has a strikethrough&lt;/s&gt;&lt;/p&gt;
-
-	&lt;p&gt;Superscript&lt;sup&gt;&reg;&lt;/sup&gt;&lt;/p&gt;
-
-	&lt;p&gt;Subscript for things like H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
-
-	&lt;p&gt;&lt;small&gt;This small text is small for for fine print, etc.&lt;/small&gt;&lt;/p&gt;
-
-	&lt;p&gt;Abbreviation: &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/p&gt;
-
-	&lt;p&gt;Keybord input: &lt;kbd&gt;Cmd&lt;/kbd&gt;&lt;/p&gt;
-
-	&lt;p&gt;&lt;q cite=&quot;https://developer.mozilla.org/en-US/docs/HTML/Element/q&quot;&gt;This text is a short inline quotation&lt;/q&gt;&lt;/p&gt;
-
-	&lt;p&gt;&lt;cite&gt;This is a citation&lt;/cite&gt;
-
-	&lt;/p&gt;&lt;p&gt;The &lt;dfn&gt;dfn element&lt;/dfn&gt; indicates a definition.&lt;/p&gt;
-
-	&lt;p&gt;The &lt;mark&gt;mark element&lt;/mark&gt; indicates a highlight&lt;/p&gt;
-
-	&lt;p&gt;&lt;code&gt;This is what inline code looks like.&lt;/code&gt;&lt;/p&gt;
-
-	&lt;p&gt;&lt;samp&gt;This is sample output from a computer program&lt;/samp&gt;&lt;/p&gt;
-
-	&lt;p&gt;The &lt;var&gt;variarble element&lt;/var&gt;, such as &lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;!--end .text--&gt;
-	</script>
-	
-	<script type="text/html" id="sg-pattern-css">
-{% patternCSS %}
-	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
 		
-	<script src="../../styleguide/js/postmessage.js?1392011458"></script>
-	<script src="../../data/annotations.js?1392011458"></script>
-	<script src="../../styleguide/js/annotations-pattern.js?1392011458"></script>
-	<script src="../../styleguide/js/code-pattern.js?1392011458"></script>
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1394126877">
+		(function() {
+			if (self != top) {
+				var cb = '1394126877';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1394126877">
+		(function() {
+			if (self != top) {
+				var cb = '1394126877';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
 	
 
 

@@ -1,0 +1,25 @@
+{
+	"page" : {
+		"title" : "Volunteer",
+		"intro" : "Volunteer your time at GPCFB events Lorem ipsum."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Get Involved"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Volunteer"
+			},
+			{ 
+				"label": "Advocacy"
+			},
+			{ 
+				"label": "Kids"
+			},
+			{ 
+				"label": "Food Drives"
+			}
+		]
+	}
+}

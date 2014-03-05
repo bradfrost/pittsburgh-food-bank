@@ -1,0 +1,25 @@
+{
+	"page" : {
+		"title" : "Join Kids Campaign to End Hunger",
+		"intro" : "Make a difference in your community Lorem ipsum dolor."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Get Involved"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Volunteer"
+			},
+			{ 
+				"label": "Advocacy"
+			},
+			{ 
+				"label": "Kids"
+			},
+			{ 
+				"label": "Food Drives"
+			}
+		]
+	}
+}

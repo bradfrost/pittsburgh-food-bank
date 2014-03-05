@@ -1,0 +1,46 @@
+{
+	"page" : {
+		"title" : "Jobs & Internships",
+		"intro" : "Join the fight at the GPCFB to eradicate hunger in the Pittsburgh area and beyond lorem ipsum."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "About"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "History"
+			},
+			{ 
+				"label": "Operations"
+			},
+			{ 
+				"label": "Board & Staff"
+			},
+			{ 
+				"label": "Jobs & Internships"
+			},
+			{ 
+				"label": "Agences"
+			},
+			{ 
+				"label": "Donors"
+			},
+			{ 
+				"label": "Sponsors"
+			},
+			{ 
+				"label": "Press/Awards"
+			},
+			{ 
+				"label": "Finances"
+			},
+			{ 
+				"label": "Network Developments"
+			},
+			{ 
+				"label": "Brand"
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{{# sectionNav }}
+&lt;nav class=&quot;vertical-nav section-nav&quot;&gt;
+	&lt;h3 class=&quot;section-nav-title&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ headline.xs }}&lt;/a&gt;&lt;/h3&gt;
+	&lt;ul class=&quot;section-nav-list&quot;&gt;
+		{{# sectionNavList }}
+		&lt;li&gt;
+			&lt;a href=&quot;{{ url }}&quot; class=&quot;{{# hasSubnav }}section-subnav-link{{/ hasSubnav }} {{# isActive }}active{{/ isActive }}&quot;&gt;{{ label }}{{# hasSubnav }}&lt;span class=&quot;icon-down-arrow&quot;&gt;&lt;/span&gt;{{/ hasSubnav }}&lt;/a&gt;
+			&lt;ul class=&quot;section-subnav&quot;&gt;
+				{{# sectionSubList }}
+				&lt;li&gt;&lt;a href=&quot;{{ url }}&quot; class=&quot;{{# isActive }}active{{/ isActive }}&quot;&gt;{{ label }}&lt;/a&gt;&lt;/li&gt;
+				{{/ sectionSubList }}
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		{{/ sectionNavList }}
+	&lt;/ul&gt;
+&lt;/nav&gt;
+{{/ sectionNav }}

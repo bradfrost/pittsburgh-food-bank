@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="">
 	<head>
-		<title></title>
+		<title>Page Title | Greater Pittsburgh Community Food Bank</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../css/style.css?1392011458" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1394126877" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,7 +15,7 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1392011458" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1394126877" media="all">
 		
 
 		<!-- End Pattern Lab -->
@@ -67,57 +67,62 @@
 		var patternPartial = "atoms-text-fields";
 		var lineage        = [];
 		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
 	</script>
-	
-	<script type="text/html" id="sg-pattern-html">
-&lt;fieldset&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label for=&quot;text&quot;&gt;Text Input &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
-        &lt;input id=&quot;text&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
-        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label for=&quot;webaddress&quot;&gt;Web Address&lt;/label&gt;
-        &lt;input id=&quot;webaddress&quot; type=&quot;url&quot; placeholder=&quot;http://yoursite.com&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label for=&quot;emailaddress&quot;&gt;Email Address&lt;/label&gt;
-        &lt;input id=&quot;emailaddress&quot; type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label for=&quot;search&quot;&gt;Search&lt;/label&gt;
-        &lt;input id=&quot;search&quot; type=&quot;search&quot; placeholder=&quot;Enter Search Term&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label for=&quot;text&quot;&gt;Number Input &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
-        &lt;input id=&quot;text&quot; type=&quot;number&quot; placeholder=&quot;Enter a Number&quot; pattern=&quot;[0-9]*&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label for=&quot;textarea&quot;&gt;Textarea&lt;/label&gt;
-        &lt;textarea id=&quot;textarea&quot; rows=&quot;8&quot; cols=&quot;48&quot; placeholder=&quot;Enter your message here&quot;&gt;&lt;/textarea&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label class=&quot;error&quot;&gt;Error Input&lt;/label&gt;
-        &lt;input class=&quot;is-error&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field-container&quot;&gt;
-        &lt;label  class=&quot;valid&quot;&gt;Valid&lt;/label&gt;
-        &lt;input  class=&quot;is-valid&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
-    &lt;/div&gt;
-&lt;/fieldset&gt;
-	</script>
-	
-	<script type="text/html" id="sg-pattern-css">
-{% patternCSS %}
-	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
 		
-	<script src="../../styleguide/js/postmessage.js?1392011458"></script>
-	<script src="../../data/annotations.js?1392011458"></script>
-	<script src="../../styleguide/js/annotations-pattern.js?1392011458"></script>
-	<script src="../../styleguide/js/code-pattern.js?1392011458"></script>
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1394126877">
+		(function() {
+			if (self != top) {
+				var cb = '1394126877';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1394126877">
+		(function() {
+			if (self != top) {
+				var cb = '1394126877';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
 	
 
 

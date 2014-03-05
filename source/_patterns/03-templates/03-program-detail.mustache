@@ -1,14 +1,15 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
+		<div class="lc">
+			{{> molecules-page-header }}
+		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<h1 class="fpo">Program Detail</h1>
-				<div class="fpo">Program overview (short &amp; sweet)</div>
 				<div class="fpo">Program description</div>
 			</div>
 			<div class="l-sidebar">
-				<div class="fpo">Other programs</div>
+				{{> molecules-section-nav }}
 			</div>
 			<div class="l-sidebar2">
 				<div class="fpo">Program news (upcoming events, etc)</div>

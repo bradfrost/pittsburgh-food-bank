@@ -1,0 +1,25 @@
+{
+	"page" : {
+		"title" : "Kids",
+		"intro" : " Lots of kids right here in our area do not get enough to eat Lorem ipsum dolor sit."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Get Involved"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Volunteer"
+			},
+			{ 
+				"label": "Advocacy"
+			},
+			{ 
+				"label": "Kids"
+			},
+			{ 
+				"label": "Food Drives"
+			}
+		]
+	}
+}
