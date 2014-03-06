@@ -427,7 +427,8 @@
 /* Section Pattern */
 .sg-pattern {
   margin-bottom: 2em;
-  position: relative; }
+  position: relative;
+  padding: 0.5em; }
 
 /* Section Head */
 .sg-pattern-head {
@@ -738,3 +739,9 @@ div.clear {
   .animate-move:hover > .demo-shape {
     left: 100%;
     margin-left: -20px; }
+
+.glyph {
+  float: left;
+  width: 25%; }
+  .glyph .fs0 {
+    display: none; }

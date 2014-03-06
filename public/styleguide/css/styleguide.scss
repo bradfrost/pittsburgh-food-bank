@@ -612,6 +612,7 @@ $animate-quick: 0.2s;
 .sg-pattern {
 	margin-bottom: $sg-doublespace;
 	position: relative; //Prevents absolutely-positioned elements from floating to the top
+	padding: 0.5em;
 	@extend .sg-cf;
 }
 
@@ -1008,5 +1009,15 @@ div.clear {
 			left: 100%;
 			margin-left: -20px;
 		}
+	}
+}
+
+//Icon font demo styles
+.glyph {
+	float: left;
+	width: 25%;
+	
+	.fs0 {
+		display: none;
 	}
 }
