@@ -399,8 +399,8 @@ td {
   @media all and (min-width: 55.75em) {
     .l-3col .l-sidebar {
       position: absolute;
-      top: 0.5em;
-      left: 0.5em;
+      top: 1em;
+      left: 1em;
       width: 14em; } }
   @media all and (min-width: 55.75em) and (max-width: 66em) {
     .l-3col .l-sidebar2 {
@@ -408,8 +408,8 @@ td {
   @media all and (min-width: 66em) {
     .l-3col .l-sidebar2 {
       position: absolute;
-      top: 0.5em;
-      right: 0.5em;
+      top: 1em;
+      right: 1em;
       width: 14em; } }
 
 /*------------------------------------*\
@@ -669,6 +669,9 @@ td {
   .pagination a {
     padding: 1em; }
 
+.section-nav-list li {
+  margin-bottom: 0.5em; }
+
 /*------------------------------------*\
     $MAIN CONTENT AREA
 \*------------------------------------*/
@@ -768,9 +771,6 @@ td {
   margin: 0 0 1em 1.2em; }
   .text ol ol {
     margin-bottom: 0; }
-@media all and (min-width: 48em) {
-  .text {
-    font-size: 128%; } }
 
 /* Review Grade Tile */
 .grade {

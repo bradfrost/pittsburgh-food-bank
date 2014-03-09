@@ -1,22 +1,20 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
-		<div class="l-1col">
-			<div class="l-main">
-				{{> molecules-page-header }}
-				<dl class="glossary-list">
-					{{# dl }}
-					<dt><h3>{{ dt }}</h3></dt>
-					<dd>
-						<ul class="g g-4up">
-							{{# dd }}
-							<li class="gi"><a href="{{ url }}">{{ label }}</a></li>
-							{{/ dd }}
-					</dd>
-					{{/ dl }}
-				</dl>
-			</div><!--end .l-main-->
-		</div><!--end .l-1col-->'
+		<div class="lc">
+			{{> molecules-page-header }}
+			<dl class="glossary-list">
+				{{# dl }}
+				<dt><h3>{{ dt }}</h3></dt>
+				<dd>
+					<ul class="g g-4up">
+						{{# dd }}
+						<li class="gi"><a href="{{ url }}">{{ label }}</a></li>
+						{{/ dd }}
+				</dd>
+				{{/ dl }}
+			</dl>
+		</div><!--end .lc-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

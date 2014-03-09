@@ -44,8 +44,8 @@
 	.l-sidebar {
 		@media all and (min-width: $bp-med-3) {
 			position: absolute;
-			top: $pad-half;
-			left: $pad-half;
+			top: $pad;
+			left: $pad;
 			width: 14em;
 		}
 	}
@@ -57,8 +57,8 @@
 
 		@media all and (min-width: $bp-large) {
 			position: absolute;
-			top: $pad-half;
-			right: $pad-half;
+			top: $pad;
+			right: $pad;
 			width: 14em;
 		}
 	}
