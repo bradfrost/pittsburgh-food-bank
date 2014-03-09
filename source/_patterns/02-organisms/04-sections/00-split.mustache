@@ -1,0 +1,34 @@
+{{# split }}
+<div class="split">
+	<div class="lc">
+		<div class="g g-2up">
+			<div class="gi split-col-1">
+				{{# splitCol1 }}
+				<div class="split-inner">
+					<h2 class="section-title">{{ headline.xs }}</h2>
+					<p>{{ excerpt.short }}</p>
+					<ul class="text-list">
+						{{# splitList }}
+						<li><a href="{{ url }}">{{ label }}</a></li>
+						{{/ splitList }}
+					</ul>
+				</div>
+				{{/ splitCol1 }}
+			</div>
+			<div class="gi split-col-2">
+				{{# splitCol2 }}
+				<div class="split-inner">
+					<h2 class="section-title">{{ headline.xs }}</h2>
+					<p>{{ excerpt.short }}</p>
+					<ul class="text-list">
+						{{# splitList }}
+						<li><a href="{{ url }}">{{ label }}</a></li>
+						{{/ splitList }}
+					</ul>
+				</div>
+				{{/ splitCol2 }}
+			</div>
+		</div>
+	</div>
+</div>
+{{/ split }}

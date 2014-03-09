@@ -1,0 +1,34 @@
+{{# split }}
+&lt;div class=&quot;split&quot;&gt;
+	&lt;div class=&quot;lc&quot;&gt;
+		&lt;div class=&quot;g g-2up&quot;&gt;
+			&lt;div class=&quot;gi split-col-1&quot;&gt;
+				{{# splitCol1 }}
+				&lt;div class=&quot;split-inner&quot;&gt;
+					&lt;h2 class=&quot;section-title&quot;&gt;{{ headline.xs }}&lt;/h2&gt;
+					&lt;p&gt;{{ excerpt.short }}&lt;/p&gt;
+					&lt;ul class=&quot;text-list&quot;&gt;
+						{{# splitList }}
+						&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ label }}&lt;/a&gt;&lt;/li&gt;
+						{{/ splitList }}
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				{{/ splitCol1 }}
+			&lt;/div&gt;
+			&lt;div class=&quot;gi split-col-2&quot;&gt;
+				{{# splitCol2 }}
+				&lt;div class=&quot;split-inner&quot;&gt;
+					&lt;h2 class=&quot;section-title&quot;&gt;{{ headline.xs }}&lt;/h2&gt;
+					&lt;p&gt;{{ excerpt.short }}&lt;/p&gt;
+					&lt;ul class=&quot;text-list&quot;&gt;
+						{{# splitList }}
+						&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ label }}&lt;/a&gt;&lt;/li&gt;
+						{{/ splitList }}
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				{{/ splitCol2 }}
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+{{/ split }}

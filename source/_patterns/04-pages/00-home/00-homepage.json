@@ -2,5 +2,83 @@
 	"page" : {
 		"title" : "Greater Pittsburgh Community Food Bank",
 		"intro" : "Lorem ipsum dolor sit amet."
+	},
+	"hero" : false,
+	"banner" : {
+		"headline" : {
+			"medium" : "Dedicated to ending hunger in SW Pennsylvania and beyond."
+		}
+	},
+	"splitCol1" : {
+		"headline" : {
+			"xs" : "Get Help"
+		},
+		"excerpt" : {
+			"short" : "We're hear to help. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quasi."
+		},
+		"splitList" : [
+			{
+				"label" : "Find food near you"
+			},
+			{
+				"label" : "View upcoming events"
+			},
+			{
+				"label" : "View simple, affordable recipes"
+			},
+			{
+				"label" : "View SNAP benefits"
+			},
+			{
+				"label" : "Learn more about hunger"
+			}
+		]
+	},
+	"splitCol2" : {
+		"headline" : {
+			"xs" : "Give Help"
+		},
+		"excerpt" : {
+			"short" : "It's easy to contribute to ending hunger. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quasi."
+		},
+		"splitList" : [
+			{
+				"label" : "Donate"
+			},
+			{
+				"label" : "Volunteer"
+			},
+			{
+				"label" : "Organize a food drive"
+			},
+			{
+				"label" : "View upcoming events"
+			},
+			{
+				"label" : "Become a sponsor"
+			}
+		]
+	},
+	"sectionBlock" : {
+		"headline" : {
+			"short" : "About the Greater Pittsburgh Community Food Bank"
+		},
+		"excerpt" : {
+			"short" : "For the past xx years Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, enim, id! Iste repellendus quidem nesciunt."
+		},
+		"textList" : [
+			{
+				"label" : "About our mission"
+			},
+			{
+				"label" : "Our history"
+			},
+			{
+				"label" : "Our leadership"
+			},
+			{
+				"label" : "Jobs & Internships"
+			}
+		]
 	}
 }

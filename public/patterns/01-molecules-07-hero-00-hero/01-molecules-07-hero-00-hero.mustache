@@ -1,0 +1,14 @@
+{{# hero }}
+&lt;div class=&quot;hero-main {{ heroClass }}&quot;&gt;
+	&lt;div class=&quot;hero-img&quot;&gt;
+		&lt;a href=&quot;{{ url }}&quot;&gt;
+			{{&gt; atoms-hero }}
+		&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;hero-body&quot;&gt;
+		&lt;h2 class=&quot;hero-title&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ headline.short }}&lt;/a&gt;&lt;/h2&gt;
+		&lt;p class=&quot;hero-description&quot;&gt;{{ excerpt.medium }} &lt;/p&gt;
+		{{&gt; molecules-button }}
+	&lt;/div&gt;
+&lt;/div&gt;&lt;!--end .hero-main--&gt;
+{{/ hero }}

@@ -7,6 +7,10 @@
 	max-width: $max-width;	
 	margin: 0 auto;
 	padding: $pad-half;
+
+	@media all and (min-width: $bp-med) {
+		padding: $pad;
+	}
 }
 
 /*------------------------------------*\
@@ -306,5 +310,29 @@
 			float: right;
 			text-align: right;
 		}
+	}
+}
+
+// Split Treatment
+.split {
+	overflow: hidden;
+	
+	.gi {
+		padding: $pad;
+		background: $gray-light;
+
+		&:last-child {
+			background: $gray-light-2;
+		}
+	}
+}
+
+.split-inner {
+	max-width: $max-width/2;
+}
+
+.split-col-1 {
+	.split-inner {
+		
 	}
 }

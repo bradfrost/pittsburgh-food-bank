@@ -1,0 +1,63 @@
+//Hero Banner
+.hero-banner {
+	background: $gray-light-2;
+	text-align: center;
+	padding: 4em 0;
+}
+
+.hero-banner-text {
+	font-size: 4em;
+	margin: 0;
+}
+
+//Hero main 
+.hero-main {
+	@extend .cf;
+	margin-bottom: $space-double;
+
+	.hero-body {
+		padding: $pad 0 0;
+	}
+
+	.btn {
+		margin-top: $space;
+	}
+	
+	.hero-title {
+		font-size: $font-size-large;
+		margin-bottom: 0.1em;
+
+		@media all and (min-width: $bp-large) {
+			font-size: $font-size-xl;
+		}
+	}
+
+	@media all and (min-width: $bp-large) {
+
+		.hero-img {
+			float: left;
+			width: 50%;
+		}
+
+		.hero-body {
+			float: left;
+			width: 50%;
+			padding: 0 $pad;
+		}
+	}
+
+	@media all and (min-width: $bp-xl) {
+		.eyebrow {
+			margin-bottom: $space;
+		}
+
+		.hero-img {
+			width: 66%
+		}
+
+		.hero-body {
+			width: 34%;
+			padding-top: $pad;
+		}
+	}
+}

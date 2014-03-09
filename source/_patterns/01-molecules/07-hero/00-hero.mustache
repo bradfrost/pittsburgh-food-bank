@@ -1,0 +1,14 @@
+{{# hero }}
+<div class="hero-main {{ heroClass }}">
+	<div class="hero-img">
+		<a href="{{ url }}">
+			{{> atoms-hero }}
+		</a>
+	</div>
+	<div class="hero-body">
+		<h2 class="hero-title"><a href="{{ url }}">{{ headline.short }}</a></h2>
+		<p class="hero-description">{{ excerpt.medium }} </p>
+		{{> molecules-button }}
+	</div>
+</div><!--end .hero-main-->
+{{/ hero }}

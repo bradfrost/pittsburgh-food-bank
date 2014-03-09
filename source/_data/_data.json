@@ -8,9 +8,13 @@
 			"src": "../../images/fpo_4x3.png",
 			"alt": "4x3 Image"
 		},
-		"landscape-16x9": {
-			"src": "../../images/fpo_16x9.png",
-			"alt": "16x9 Image"
+		"hero": {
+			"src": "../../images/fpo_hero.png",
+			"alt": "Hero Image"
+		},
+		"thumb": {
+			"src": "../../images/fpo_thumb.png",
+			"alt": "Thumb"
 		},
 		"square": {
 			"src": "../../images/fpo_square.png",
@@ -37,6 +41,7 @@
 	},
 	"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
 	"url" : "#",
+	"cta" : "Call to action",
 	"year" : {
 		"long": "2014",
 		"short": "14"
@@ -70,5 +75,10 @@
 			}
 		]
 	},
+	"hero" : true,
+	"banner" : true,
+	"touts" : true,
+	"split" : true,
+	"sectionBlock" : true,
 	"donate" : true
 }

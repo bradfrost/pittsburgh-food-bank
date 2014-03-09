@@ -1,28 +1,29 @@
 &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
 	{{&gt; organisms-header }}
 	&lt;div role=&quot;main&quot;&gt;
-		&lt;div class=&quot;l-1col&quot;&gt;
-			&lt;div class=&quot;l-main&quot;&gt;
-				&lt;div class=&quot;fpo&quot;&gt;
-					Mission Tagline
+		{{&gt; molecules-hero-text-banner }}
+		&lt;div class=&quot;lc&quot;&gt;
+			{{&gt; molecules-hero }}
+		&lt;/div&gt;
+		{{# touts }}
+		&lt;div class=&quot;lc&quot;&gt;
+			&lt;div class=&quot;g g-3up&quot;&gt;
+				&lt;div class=&quot;gi&quot;&gt;
+					{{&gt; molecules-block-thumb-title-excerpt }}
 				&lt;/div&gt;
-				&lt;div class=&quot;fpo&quot;&gt;
-					Campaign
+				&lt;div class=&quot;gi&quot;&gt;
+					{{&gt; molecules-block-thumb-title-excerpt }}
 				&lt;/div&gt;
-				&lt;div class=&quot;fpo&quot;&gt;
-					Get Help
+				&lt;div class=&quot;gi&quot;&gt;
+					{{&gt; molecules-block-thumb-title-excerpt }}
 				&lt;/div&gt;
-				&lt;div class=&quot;fpo&quot;&gt;
-					Give Help
-				&lt;/div&gt;
-				&lt;div class=&quot;fpo&quot;&gt;
-					Learn More
-				&lt;/div&gt;
-			&lt;/div&gt;&lt;!--end .l-main--&gt;
-		&lt;/div&gt;&lt;!--end .l-1col--&gt;
-		
-		
-
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!--end .lc--&gt;
+		{{/ touts }}
+		{{&gt; organisms-split }}
+		&lt;div class=&quot;lc&quot;&gt;
+			{{&gt; organisms-section-img-headline-list }}
+		&lt;/div&gt;
 	&lt;/div&gt;&lt;!--End role=main--&gt;
 	{{&gt; organisms-footer }}
 &lt;/div&gt;

@@ -5,3 +5,19 @@
 .section-title {
 	margin-bottom: $space-half;
 }
+
+//Section Block
+.section-block {
+	overflow: hidden;
+
+	.section-body {
+		float: left;
+		width: 50%;
+		padding-right: 1.5em;
+	}
+
+	.section-img {
+		float: left;
+		width: 50%;
+	}
+}
