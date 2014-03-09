@@ -12,10 +12,14 @@
 /* Block */
 .block {
 	overflow: hidden;
+}
 
-	p:last-child {
-		margin-bottom: 0;
-	}
+.b-img {
+	margin-bottom: $space-half;
+}
+
+.b-title {
+	margin: 0;
 }
 
 .headline {

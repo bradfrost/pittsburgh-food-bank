@@ -2267,8 +2267,12 @@ td {
 /* Block */
 .block {
   overflow: hidden; }
-  .block p:last-child {
-    margin-bottom: 0; }
+
+.b-img {
+  margin-bottom: 0.5em; }
+
+.b-title {
+  margin: 0; }
 
 .headline {
   line-height: 1.2; }
@@ -2590,6 +2594,11 @@ div.ui-slider {
 .hero-banner-text {
   font-size: 4em;
   margin: 0; }
+
+.hero-text {
+  background: #eeeeee;
+  text-align: center;
+  padding: 3em 0; }
 
 .hero-main {
   margin-bottom: 2em; }

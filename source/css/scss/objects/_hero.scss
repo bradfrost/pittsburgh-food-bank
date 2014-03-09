@@ -10,6 +10,13 @@
 	margin: 0;
 }
 
+//Hero Text
+.hero-text {
+	background: $gray-light-2;
+	text-align: center;
+	padding: 3em 0;
+}
+
 //Hero main 
 .hero-main {
 	@extend .cf;
