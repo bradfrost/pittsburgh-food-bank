@@ -3,6 +3,44 @@
 		"title" : "Jobs & Internships",
 		"intro" : "Join the fight at the GPCFB to eradicate hunger in the Pittsburgh area and beyond lorem ipsum."
 	},
+	"postList" : [
+		{
+			"headline" : {
+				"short" : "Truck Driver"
+			},
+			"timestamp" : "Feb 02, 2014",
+			"excerpt" : {
+				"short" : "Responsible for warehouse product care including receiving, storage, distribution, pickup and/or delivery."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Grant Writer"
+			},
+			"timestamp" : "Feb 02",
+			"excerpt" : {
+				"short" : "Prepare proposals for submission to potential funding sources to obtain funds for ongoing or special GPCFB projects."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Network Resource Specialist"
+			},
+			"timestamp" : "Feb 02 2014",
+			"excerpt" : {
+				"short" : "Provide support to facilitate Greater Pittsburgh Community Food Bank member network development and provide information, referrals, and food assistance to families within our eleven-county service area."
+			}
+		}
+	],
+	"well" : {
+		"headline" : {
+			"short" : "Want to Apply?"
+		},
+		"excerpt" : {
+			"short" : "If you would like to apply for a position, you may email your cover letter and resume to careers@pittsburghfoodbank.org, fax to 412-460-0418"
+		},
+		"cta" : "Contact Human Resources"
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "About"
@@ -40,6 +78,25 @@
 			},
 			{ 
 				"label": "Brand"
+			}
+		]
+	},
+	"sidebarTextList" : {
+		"headline" : {
+			"xs" : "Additional Resources"
+		},
+		"textList" : [
+			{
+				"label" : "About the GPCFB"
+			},
+			{
+				"label" : "Board and Management"
+			},
+			{
+				"label" : "Operations"
+			},
+			{
+				"label" : "Contact Us"
 			}
 		]
 	}

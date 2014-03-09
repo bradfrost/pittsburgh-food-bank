@@ -6,14 +6,22 @@
 		&lt;/div&gt;
 		&lt;div class=&quot;l-3col&quot;&gt;
 			&lt;div class=&quot;l-main&quot;&gt;
-				&lt;div class=&quot;fpo&quot;&gt;Available positions (title, description, contact info)&lt;/div&gt;
-				&lt;div class=&quot;fpo&quot;&gt;Contact information&lt;/div&gt;				
+				&lt;h2 class=&quot;section-title&quot;&gt;Available Jobs &amp;amp; Internships&lt;/h2&gt;
+				&lt;p class=&quot;section-desc&quot;&gt;The following career opportunities are currently open at the Food Bank:&lt;/p&gt;
+				&lt;ul class=&quot;post-list&quot;&gt;
+					{{# postList }}
+					&lt;li class=&quot;post-li&quot;&gt;
+						{{&gt; molecules-block-post}}
+					&lt;/li&gt;
+					{{/ postList }}
+				&lt;/ul&gt;
+				{{&gt; molecules-well }}			
 			&lt;/div&gt;&lt;!--end .l-main--&gt;
 			&lt;div class=&quot;l-sidebar&quot;&gt;
 				{{&gt; molecules-section-nav }}
 			&lt;/div&gt;&lt;!--end .l-sidebar--&gt;
 			&lt;div class=&quot;l-sidebar2&quot;&gt;
-				&lt;div class=&quot;fpo&quot;&gt;Links to About GPCFB and other relevant links&lt;/div&gt;
+				{{&gt; organisms-sidebar-text-list }}
 			&lt;/div&gt;&lt;!--end .l-sidebar2--&gt;
 		&lt;/div&gt;&lt;!--end .l-3col--&gt;
 	&lt;/div&gt;&lt;!--End role=main--&gt;

@@ -1,7 +1,155 @@
 {
 	"page" : {
-		"title" : "Board, Management, and Staff",
+		"title" : "Our Team",
 		"intro" : "A team dedicated to lorem ipsum dolor sit amet."
+	},
+	"execList" : [
+		{
+			"headline" : {
+				"short" : "Lisa Scales"
+			},
+			"byline" : "Chief Executive Officer"
+		},
+		{
+			"headline" : {
+				"short" : "Anne Hawkins"
+			},
+			"byline" : "Chief Development Officer"
+		},
+		{
+			"headline" : {
+				"short" : "Sharon Harm"
+			},
+			"byline" : "Chief Financial Officer"
+		},
+		{
+			"headline" : {
+				"short" : "Kim Dodson"
+			},
+			"byline" : "Executive Assistant"
+		},
+		{
+			"headline" : {
+				"short" : "Laura Randolph"
+			},
+			"byline" : "Chief Operating Officer"
+		},
+		{
+			"headline" : {
+				"short" : "Ron Cichowicz"
+			},
+			"byline" : "Chief Communications Officer"
+		}
+	],
+	"boardList" : [
+		{
+			"headline" : {
+				"short" : "Lori Ashby"
+			},
+			"excerpt" : {
+				"short" : "Highmark Strategic Business Ops"
+			}
+
+		},
+		{
+			"headline" : {
+				"short" : "Monti Bedi"
+			},
+			"excerpt" : {
+				"short" : "PNC Bank"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Marva Brown"
+			},
+			"excerpt" : {
+				"short" : "BNY Mellon"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "John Cerilli"
+			},
+			"excerpt" : {
+				"short" : "Littler Mendelson Advisor"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Lori Ashby"
+			},
+			"excerpt" : {
+				"short" : "Highmark Strategic Business Ops"
+			}
+
+		},
+		{
+			"headline" : {
+				"short" : "Monti Bedi"
+			},
+			"excerpt" : {
+				"short" : "PNC Bank"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Marva Brown"
+			},
+			"excerpt" : {
+				"short" : "BNY Mellon"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "John Cerilli"
+			},
+			"excerpt" : {
+				"short" : "Littler Mendelson Advisor"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Lori Ashby"
+			},
+			"excerpt" : {
+				"short" : "Highmark Strategic Business Ops"
+			}
+
+		},
+		{
+			"headline" : {
+				"short" : "Monti Bedi"
+			},
+			"excerpt" : {
+				"short" : "PNC Bank"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Marva Brown"
+			},
+			"excerpt" : {
+				"short" : "BNY Mellon"
+			}
+		},
+		{
+			"headline" : {
+				"short" : "John Cerilli"
+			},
+			"excerpt" : {
+				"short" : "Littler Mendelson Advisor"
+			}
+		}
+	],
+	"well" : {
+		"headline" : {
+			"short" : "Join Our Team"
+		},
+		"excerpt" : {
+			"short" : "Make a difference and lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		},
+		"cta" : "View Jobs & Internships"
 	},
 	"sectionNav" : {
 		"headline" : {

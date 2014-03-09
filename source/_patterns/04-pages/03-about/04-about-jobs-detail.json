@@ -1,7 +1,16 @@
 {
 	"page" : {
-		"title" : "Job Title",
-		"intro" : "Intro text about the job"
+		"title" : "Grant Writer",
+		"intro" : "Prepare proposals for submission to potential funding sources to obtain funds for ongoing or special GPCFB projects."
+	},
+	"well" : {
+		"headline" : {
+			"short" : "Ready to Apply?"
+		},
+		"excerpt" : {
+			"short" : "Email your cover letter and resume to careers@pittsburghfoodbank.org, fax to 412-460-0418 (Attn: Human Resources), or mail them to Human Resources, Greater Pittsburgh Community Food Bank, 1 N Linden St., Duquesne, PA 15110. The Food Bank is an Equal Opportunity Employer."
+		},
+		"cta" : "Contact Human Resources"
 	},
 	"sectionNav" : {
 		"headline" : {
@@ -40,6 +49,25 @@
 			},
 			{ 
 				"label": "Brand"
+			}
+		]
+	},
+	"sidebarTextList" : {
+		"headline" : {
+			"xs" : "Additional Resources"
+		},
+		"textList" : [
+			{
+				"label" : "About the GPCFB"
+			},
+			{
+				"label" : "Board and Management"
+			},
+			{
+				"label" : "Operations"
+			},
+			{
+				"label" : "Contact Us"
 			}
 		]
 	}

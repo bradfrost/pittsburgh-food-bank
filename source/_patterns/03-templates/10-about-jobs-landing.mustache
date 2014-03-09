@@ -6,14 +6,22 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Available positions (title, description, contact info)</div>
-				<div class="fpo">Contact information</div>				
+				<h2 class="section-title">Available Jobs &amp; Internships</h2>
+				<p class="section-desc">The following career opportunities are currently open at the Food Bank:</p>
+				<ul class="post-list">
+					{{# postList }}
+					<li class="post-li">
+						{{> molecules-block-post}}
+					</li>
+					{{/ postList }}
+				</ul>
+				{{> molecules-well }}			
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">Links to About GPCFB and other relevant links</div>
+				{{> organisms-sidebar-text-list }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->

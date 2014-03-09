@@ -153,6 +153,7 @@ h1 {
   margin-bottom: 0.5em; }
 
 h2 {
+  font-size: 2em;
   line-height: 1.2;
   margin-bottom: 0.5em; }
 
@@ -412,6 +413,10 @@ td {
       right: 1em;
       width: 14em; } }
 
+.l-centered-single-col {
+  max-width: 45em;
+  margin: 0 auto; }
+
 /*------------------------------------*\
     $GRIDS
 \*------------------------------------*/
@@ -553,12 +558,16 @@ td {
     text-align: right; }
 
 .split {
-  overflow: hidden; }
+  overflow: hidden;
+  background: #f9f9f9;
+  background: -moz-linear-gradient(left, #f9f9f9 0%, #f9f9f9 50%, #eeeeee 50%, #eeeeee 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f9f9f9), color-stop(50%, #f9f9f9), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee));
+  background: -webkit-linear-gradient(left, #f9f9f9 0%, #f9f9f9 50%, #eeeeee 50%, #eeeeee 100%);
+  background: -o-linear-gradient(left, #f9f9f9 0%, #f9f9f9 50%, #eeeeee 50%, #eeeeee 100%);
+  background: -ms-linear-gradient(left, #f9f9f9 0%, #f9f9f9 50%, #eeeeee 50%, #eeeeee 100%);
+  background: linear-gradient(to right, #f9f9f9 0%, #f9f9f9 50%, #eeeeee 50%, #eeeeee 100%); }
   .split .gi {
-    padding: 1em;
-    background: #f9f9f9; }
-    .split .gi:last-child {
-      background: #eeeeee; }
+    padding: 1em 2em; }
 
 .split-inner {
   max-width: 39em; }
@@ -2275,7 +2284,12 @@ td {
   margin-bottom: 0.5em; }
 
 .b-title {
+  font-size: 1.4375em;
   margin: 0; }
+
+.b-timestamp {
+  margin: 0;
+  font-style: italic; }
 
 .headline {
   line-height: 1.2; }
@@ -2352,6 +2366,11 @@ td {
     margin-bottom: 1em; }
   .text-list a {
     font-weight: bold; }
+
+.post-list > li {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1em;
+  margin-bottom: 1em; }
 
 .glossary-list dd {
   border-bottom: 1px solid #eeeeee;

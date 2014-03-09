@@ -25,6 +25,7 @@
 	}
 }
 
+//3 Column Layout - used for most page templates
 .l-3col {
 	@extend .lc;
 	@extend .cf;
@@ -62,6 +63,12 @@
 			width: 14em;
 		}
 	}
+}
+
+//Centered single col
+.l-centered-single-col {
+	max-width: 45em;
+	margin: 0 auto;
 }
 
 
@@ -316,14 +323,16 @@
 // Split Treatment
 .split {
 	overflow: hidden;
+	background: $gray-light; 
+	background: -moz-linear-gradient(left, $gray-light 0%, $gray-light 50%, $gray-light-2 50%, $gray-light-2 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$gray-light), color-stop(50%,$gray-light), color-stop(50%,$gray-light-2), color-stop(100%,$gray-light-2));
+	background: -webkit-linear-gradient(left, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
+	background: -o-linear-gradient(left, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
+	background: -ms-linear-gradient(left, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
+	background: linear-gradient(to right, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
 	
 	.gi {
-		padding: $pad;
-		background: $gray-light;
-
-		&:last-child {
-			background: $gray-light-2;
-		}
+		padding: $pad $pad-double;
 	}
 }
 

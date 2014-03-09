@@ -55,6 +55,15 @@
 	}
 }
 
+// Post List
+.post-list {
+	> li {
+		border-bottom: 1px solid $gray-light-2;
+		padding-bottom: $pad;
+		margin-bottom: $space;
+	}
+}
+
 // Glossary List
 .glossary-list {
 	dd {

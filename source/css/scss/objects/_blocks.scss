@@ -19,7 +19,13 @@
 }
 
 .b-title {
+	font-size: $font-size-large;
 	margin: 0;
+}
+
+.b-timestamp {
+	margin: 0;
+	font-style: italic;
 }
 
 .headline {

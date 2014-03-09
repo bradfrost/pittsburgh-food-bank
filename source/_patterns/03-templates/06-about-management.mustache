@@ -6,15 +6,30 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">List of board members (headshot, name, position, contact info(?)</div>
-				<div class="fpo">List of management (headshot(?), name, position, contact info(?)</div>
+				<h2>Executive Staff</h2>
+				<div class="g g-half">
+					{{# execList }}
+					<div class="gi">
+						{{> molecules-block-thumb-portrait-title }}
+					</div>
+					{{/ execList }}
+				</div>
+				<hr />
+				<h2>Board of Directors</h2>
+				<div class="g g-half">
+					{{# boardList }}
+					<div class="gi">
+						{{> molecules-block-title-excerpt }}
+					</div>
+					{{/ boardList }}
+				</div>
 				
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">Link to Jobs page</div>
+				{{> molecules-well }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->
