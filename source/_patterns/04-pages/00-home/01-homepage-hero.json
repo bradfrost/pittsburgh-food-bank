@@ -5,7 +5,7 @@
 	},
 	"banner" : {
 		"headline" : {
-			"medium" : "Dedicated to ending hunger in SW Pennsylvania and beyond."
+			"medium" : "Dedicated to ending hunger<br /> in SW Pennsylvania and beyond."
 		}
 	},
 	"hero" : true,

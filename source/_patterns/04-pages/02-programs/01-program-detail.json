@@ -3,6 +3,15 @@
 		"title" : "Program Detail Page",
 		"intro" : "Produce to People provides lorem ipsum dolor sit amet, consectetur adipisicing"
 	},
+	"well" : {
+		"headline" : {
+			"short" : "Program action"
+		},
+		"excerpt" : {
+			"short" : "Description of the program call to action"
+		},
+		"cta" : "Sign up now"
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Programs"
@@ -37,6 +46,44 @@
 			},
 			{ 
 				"label": "Educational Programs"
+			}
+		]
+	},
+	"sidebarPostList" : {
+		"headline" : {
+			"xs" : "Produce to People Stories"
+		},
+		"postList" : [
+			{
+				"label" : "This Is the Post Title",
+				"date" : "January 12"
+			},
+			{
+				"label" : "This Is Also a Post Title",
+				"date" : "January 30"
+			},
+			{
+				"label" : "Yes It's Another Post Title",
+				"date" : "February 12"
+			}
+		]
+	},
+	"sidebarEventList" : {
+		"headline" : {
+			"xs" : "Upcoming Events"
+		},
+		"eventList" : [
+			{
+				"label" : "Event Title",
+				"date" : "April 24"
+			},
+			{
+				"label" : "Another Event Title",
+				"date" : "May 21"
+			},
+			{
+				"label" : "Here's Another Event Title",
+				"date" : "June 23"
 			}
 		]
 	}

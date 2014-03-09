@@ -1,0 +1,13 @@
+{{# sidebarEventList }}
+<section class="section sidebar-section event-section">
+	<h3 class="sidebar-section-title">{{ headline.xs }}</h3>
+	<ul class="sidebar-block-list post-list">
+		{{# eventList }}
+		<li class="block-headline-byline">
+			<h4 class="b-title"><a href="#">{{ label }}</a></h4>
+			<p class="b-excerpt byline">{{ date }}</p>
+		</li>
+		{{/ eventList }}
+	</ul>
+</section>
+{{/ sidebarEventList }}

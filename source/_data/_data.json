@@ -81,5 +81,8 @@
 	"split" : true,
 	"sectionBlock" : true,
 	"ctaBanner" : true,
-	"donate" : true
+	"donate" : true,
+	"well" : true,
+	"sidebarPostList" : true,
+	"sidebarEventList" : true
 }

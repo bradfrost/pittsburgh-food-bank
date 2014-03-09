@@ -1,0 +1,13 @@
+{{# sidebarPostList }}
+<section class="section sidebar-section related-posts">
+	<h3 class="sidebar-section-title">{{ headline.xs }}</h3>
+	<ul class="sidebar-block-list post-list">
+		{{# postList }}
+		<li class="block-headline-byline">
+			<h4 class="b-title"><a href="#">{{ label }}</a></h4>
+			<p class="b-excerpt byline">{{ date }}</p>
+		</li>
+		{{/ postList }}
+	</ul>
+</section>
+{{/ sidebarPostList }}

@@ -2,12 +2,32 @@
 .hero-banner {
 	background: $gray-light-2;
 	text-align: center;
-	padding: 4em 0;
+	padding: 2em 0;
+
+	@media all and (min-width: $bp-med) {
+		padding: 4em 0;
+	}
 }
 
 .hero-banner-text {
-	font-size: 4em;
+	font-size: 2em;
 	margin: 0;
+
+	br {
+		display: none;
+
+		@media all and (min-width: $bp-large) {
+			display: inline-block;
+		}
+	}
+	
+	@media all and (min-width: $bp-small-3) {
+		font-size: 3em;
+	}
+
+	@media all and (min-width: $bp-med) {
+		font-size: 4em;
+	}
 }
 
 //CTA Banner

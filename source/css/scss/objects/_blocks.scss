@@ -74,9 +74,20 @@
 	}
 }
 
-/* Block Thumb with Summary */
+// Block Thumb with Summary
 .block-thumb {
 	img {
 		width: 100%;
+	}
+}
+
+// 
+.block-headline-byline {
+	.b-title {
+		margin: 0;
+	}
+
+	.b-excerpt {
+		margin: 0;
 	}
 }

@@ -22,3 +22,16 @@
 		width: 50%;
 	}
 }
+
+//Sidebar Sections
+
+//Sidebar Post List
+.sidebar-section {
+	padding-bottom: $pad;
+	border-bottom: 1px solid $gray-light;
+	margin-bottom: $space;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}

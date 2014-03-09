@@ -113,11 +113,11 @@ header, footer, nav, section, article, hgroup, figure {
   .hide-small {
     display: none; } }
 
-@media all and (min-width: 46.8em) and (max-width: 66em) {
+@media all and (min-width: 46.8em) and (max-width: 64em) {
   .hide-med {
     display: none; } }
 
-@media all and (min-width: 66em) {
+@media all and (min-width: 64em) {
   .hide-large {
     display: none; } }
 
@@ -393,19 +393,19 @@ td {
     .l-3col .l-main {
       margin-left: 14.5em;
       min-height: 27em; } }
-  @media all and (min-width: 66em) {
+  @media all and (min-width: 64em) {
     .l-3col .l-main {
-      margin-right: 14.5em; } }
+      margin-right: 15em; } }
   @media all and (min-width: 55.75em) {
     .l-3col .l-sidebar {
       position: absolute;
       top: 1em;
       left: 1em;
       width: 14em; } }
-  @media all and (min-width: 55.75em) and (max-width: 66em) {
+  @media all and (min-width: 55.75em) and (max-width: 64em) {
     .l-3col .l-sidebar2 {
       margin-left: 14.5em; } }
-  @media all and (min-width: 66em) {
+  @media all and (min-width: 64em) {
     .l-3col .l-sidebar2 {
       position: absolute;
       top: 1em;
@@ -455,7 +455,7 @@ td {
     width: 50%; }
     .g-3up > .gi:nth-of-type(2n+1) {
       clear: left; } }
-@media all and (min-width: 66em) {
+@media all and (min-width: 64em) {
   .g-3up > .gi {
     width: 33.3333333%; }
     .g-3up > .gi:nth-of-type(2n+1) {
@@ -470,7 +470,7 @@ td {
     width: 50%; }
     .g-4up > .gi:nth-of-type(2n+1) {
       clear: both; } }
-@media all and (min-width: 66em) {
+@media all and (min-width: 64em) {
   .g-4up > .gi {
     width: 25%; }
     .g-4up > .gi:nth-of-type(2n+1) {
@@ -498,7 +498,7 @@ td {
       clear: none; }
     .g-max4 > .gi:nth-of-type(3n+1) {
       clear: left; } }
-@media all and (min-width: 66em) {
+@media all and (min-width: 64em) {
   .g-max4 > .gi {
     width: 25%; }
     .g-max4 > .gi:nth-of-type(3n+1) {
@@ -712,7 +712,7 @@ td {
   @media all and (min-width: 46.8em) {
     .page-title {
       font-size: 2.75em; } }
-  @media all and (min-width: 66em) {
+  @media all and (min-width: 64em) {
     .page-title {
       font-size: 3.5em;
       line-height: 1.1; } }
@@ -2310,9 +2310,13 @@ td {
     color: white;
     padding: 0.5em; }
 
-/* Block Thumb with Summary */
 .block-thumb img {
   width: 100%; }
+
+.block-headline-byline .b-title {
+  margin: 0; }
+.block-headline-byline .b-excerpt {
+  margin: 0; }
 
 .inline-list li {
   display: inline-block; }
@@ -2353,6 +2357,13 @@ td {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 1em;
   margin-bottom: 1em; }
+
+.sidebar-block-list li {
+  border-bottom: 1px solid #eeeeee;
+  margin: 0;
+  padding: 0.5em 0; }
+  .sidebar-block-list li:last-child {
+    border-bottom: 0; }
 
 .tooltip-container {
   display: inline-block;
@@ -2445,6 +2456,13 @@ td {
   .section-block .section-img {
     float: left;
     width: 50%; }
+
+.sidebar-section {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f9f9f9;
+  margin-bottom: 1em; }
+  .sidebar-section:last-child {
+    border-bottom: 0; }
 
 .comments li {
   margin-bottom: 1em; }
@@ -2621,10 +2639,10 @@ div.ui-slider {
   .hero-main .hero-title {
     font-size: 1.4375em;
     margin-bottom: 0.1em; }
-    @media all and (min-width: 66em) {
+    @media all and (min-width: 64em) {
       .hero-main .hero-title {
         font-size: 3.5em; } }
-  @media all and (min-width: 66em) {
+  @media all and (min-width: 64em) {
     .hero-main .hero-img {
       float: left;
       width: 50%; }
@@ -2644,11 +2662,25 @@ div.ui-slider {
 .hero-banner {
   background: #eeeeee;
   text-align: center;
-  padding: 4em 0; }
+  padding: 2em 0; }
+  @media all and (min-width: 46.8em) {
+    .hero-banner {
+      padding: 4em 0; } }
 
 .hero-banner-text {
-  font-size: 4em;
+  font-size: 2em;
   margin: 0; }
+  .hero-banner-text br {
+    display: none; }
+    @media all and (min-width: 64em) {
+      .hero-banner-text br {
+        display: inline-block; } }
+  @media all and (min-width: 39.8em) {
+    .hero-banner-text {
+      font-size: 3em; } }
+  @media all and (min-width: 46.8em) {
+    .hero-banner-text {
+      font-size: 4em; } }
 
 .cta-banner {
   background: #f9f9f9;
@@ -2660,3 +2692,12 @@ div.ui-slider {
     margin: 0 auto; }
   .cta-banner .text-btn {
     font-size: 2em; }
+
+.well {
+  background: #f9f9f9;
+  border: 1px solid #eeeeee;
+  padding: 1em;
+  margin-bottom: 1em; }
+
+.well-title {
+  margin: 0; }

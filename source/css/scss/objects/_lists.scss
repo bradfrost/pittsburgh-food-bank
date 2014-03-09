@@ -62,5 +62,17 @@
 		padding-bottom: $pad;
 		margin-bottom: $space;
 	}
-	
+}
+
+//Sidebar Block List 
+.sidebar-block-list {
+	li {
+		border-bottom: 1px solid $gray-light-2;
+		margin: 0;
+		padding: $pad-half 0;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 }
