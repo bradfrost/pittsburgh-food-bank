@@ -1,0 +1,25 @@
+// Timeline
+.timeline {
+	> li {
+		margin: 0;
+		padding: 0.2em 0 2em 2em;
+		border-left: 5px solid $gray-light-2;
+		position: relative;
+
+		&:before {
+			content: "";
+		    position: absolute;
+		    top: 0;
+		    left: -0.95em;
+		    width: 16px;
+		    height: 16px;
+		    border-radius: 16px;
+		    background: #fff;
+		    border: 5px solid $gray-light-2;
+		}
+	}
+}
+
+.timeline-timestamp {
+	
+}
