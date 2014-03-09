@@ -3,6 +3,179 @@
 		"title" : "Donors & Sponsors",
 		"intro" : "We can't do this alone. That's why we're so proud to have the support of lorem ipsum dolor sit amet."
 	},
+	"sponsorList" : [
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		},
+		{
+			"img" : {
+				"square" : {
+					"src" : "../../images/fpo_square.png",
+					"alt" : "Giant Eagle"
+				}
+			},
+			"url" : "http://gianteagle.com"
+		}
+	],
+	"well" : {
+		"headline" : {
+			"short" : "Become a Sponsor"
+		},
+		"excerpt" : {
+			"short" : "Help fight hunger, benefit lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		},
+		"cta" : "Contact Us"
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "About"
@@ -40,6 +213,25 @@
 			},
 			{ 
 				"label": "Brand"
+			}
+		]
+	},
+	"sidebarTextList" : {
+		"headline" : {
+			"xs" : "Additional Resources"
+		},
+		"textList" : [
+			{
+				"label" : "About the GPCFB"
+			},
+			{
+				"label" : "Board and Management"
+			},
+			{
+				"label" : "Operations"
+			},
+			{
+				"label" : "Contact Us"
 			}
 		]
 	}

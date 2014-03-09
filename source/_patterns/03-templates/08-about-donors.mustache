@@ -6,15 +6,22 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Thanks to our amazing sponsors</div>
-				<div class="fpo">Image list of sponsors</div>
-				<div class="fpo">Become a sponsor</div>
+				<h2>Thanks to our amazing sponsors</h2>
+				{{}}
+				<ul class="g g-3up">
+					{{# sponsorList }}
+					<li class="gi">
+						<a href="{{ url }}" rel="external">{{> atoms-square }}</a>
+					</li>
+					{{/ sponsorList }}
+				</ul>
+				{{> molecules-well }}
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">Links to About GPCFB and other relevant links</div>
+				{{> organisms-sidebar-text-list }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->
