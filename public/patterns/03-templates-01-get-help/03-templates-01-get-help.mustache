@@ -1,7 +1,8 @@
 &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
 	{{&gt; organisms-header }}
 	&lt;div role=&quot;main&quot;&gt;
-		{{&gt; organisms-page-header-form }}
+		{{&gt; organisms-hero-page-header-form }}
+		{{&gt; molecules-cta-banner }}
 		&lt;div class=&quot;lc&quot;&gt;	
 			&lt;section class=&quot;section&quot;&gt;
 				&lt;h2 class=&quot;section-title&quot;&gt;Our Programs&lt;/h2&gt;
@@ -14,9 +15,15 @@
 					{{/ list }}
 				&lt;/div&gt;
 			&lt;/section&gt;
-			&lt;div class=&quot;fpo&quot;&gt;Emergency food info&lt;/div&gt;
-			&lt;div class=&quot;fpo&quot;&gt;Find help near you&lt;/div&gt;
-			&lt;div class=&quot;fpo&quot;&gt;Program Touts&lt;/div&gt;
+			&lt;section class=&quot;section&quot;&gt;
+				&lt;h2 class=&quot;section-title&quot;&gt;Resources&lt;/h2&gt;
+				&lt;p class=&quot;section-desc&quot;&gt;For additional help, Lorem ipsum dolor sit amet, consectetur adipisicing.&lt;/p&gt;
+				&lt;ul class=&quot;text-list&quot;&gt;
+					&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Allegheny County services&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Statewide services&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;More about hunger&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/section&gt;
 		&lt;/div&gt;&lt;!--end .lc--&gt;
 	&lt;/div&gt;&lt;!--End role=main--&gt;
 	{{&gt; organisms-footer }}

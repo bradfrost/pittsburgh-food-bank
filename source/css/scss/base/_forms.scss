@@ -7,13 +7,8 @@ form ol, form ul {
 }
 
 legend {
-	display: block;
-	width: 100%;
-	font-size: $font-size-sm-2;
-	margin-bottom: $space;
-	padding-bottom: $pad-half;	
-	border-bottom: 1px dashed $gray;
-	
+	font-weight: bold;
+	margin-bottom: 0.2em;
 }
 
 fieldset {
@@ -24,6 +19,7 @@ fieldset {
 
 label {
 	display: block;
+	font-weight: bold;
 	padding-bottom: $space-quarter;
 }
 
@@ -36,7 +32,7 @@ button, input, select, textarea {
 input, textarea {
 	width: 100%;
 	border: 1px solid $gray;
-	padding: $pad-half 0.65rem;
+	padding: $pad;
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -47,7 +43,7 @@ button, input[type="submit"] {
 	padding: $pad-half;
 	color: #fff;
 	background: $gray-dark;
-	padding: 1em;
+	padding: 1.05em;
 	border: 0;
 	cursor: pointer;
 	text-align: center;

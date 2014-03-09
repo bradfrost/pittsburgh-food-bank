@@ -1,0 +1,28 @@
+//Hero Banner
+.hero-banner {
+	background: $gray-light-2;
+	text-align: center;
+	padding: 4em 0;
+}
+
+.hero-banner-text {
+	font-size: 4em;
+	margin: 0;
+}
+
+//CTA Banner
+.cta-banner {
+	background: $gray-light;
+	text-align: center;
+	padding: $pad-double $pad-half;
+
+	.banner-text {
+		font-size: $font-size-large;
+		max-width: 32em;
+		margin: 0 auto;
+	}
+
+	.text-btn {
+		font-size: $font-size-large-2;
+	}
+}

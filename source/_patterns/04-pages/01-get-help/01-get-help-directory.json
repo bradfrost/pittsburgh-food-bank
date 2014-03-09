@@ -2,5 +2,99 @@
 	"page" : {
 		"title" : "Food Assistance Directory",
 		"intro" : "Find food support near you lorem ipsum dolor sit amet."
-	}
+	},
+	"dl" : [
+		{
+			"dt" : "A",
+			"dd" : [
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				},
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				}
+			]
+		},
+		{
+			"dt" : "B",
+			"dd" : [
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				},
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				}
+			]
+		},
+		{
+			"dt" : "C",
+			"dd" : [
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				},
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				}
+			]
+		},
+		{
+			"dt" : "D",
+			"dd" : [
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				},
+				{
+					"label" : "Our Lady of the Angels"
+				},
+				{
+					"label" : "Salvation Army Social Services"
+				},
+				{
+					"label" : "St. Raphael's Food Pantry"
+				}
+			]
+		}
+	]
 }

@@ -3,6 +3,13 @@
 		"title" : "Get Help",
 		"intro" : "We're here when you need us. Our services can Lorem ipsum dolor sit amet."
 	},
+	"ctaBanner" : {
+		"excerpt" : {
+			"short" : "If you need emergency food, please call Hunger Services Network of the Urban League of Pittsburgh at"
+		},
+		"cta" : "412-325-0749",
+		"url" : "tel:+4123250749"
+	},
 	"list" : [
 		{
 			"headline" : {

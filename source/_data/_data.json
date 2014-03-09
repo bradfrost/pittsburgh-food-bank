@@ -80,5 +80,6 @@
 	"touts" : true,
 	"split" : true,
 	"sectionBlock" : true,
+	"ctaBanner" : true,
 	"donate" : true
 }

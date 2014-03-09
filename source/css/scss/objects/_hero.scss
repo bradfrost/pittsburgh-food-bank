@@ -1,21 +1,36 @@
-//Hero Banner
-.hero-banner {
-	background: $gray-light-2;
-	text-align: center;
-	padding: 4em 0;
-}
-
-.hero-banner-text {
-	font-size: 4em;
-	margin: 0;
-}
-
 //Hero Text
 .hero-text {
 	background: $gray-light-2;
-	text-align: center;
-	padding: 3em 0;
+	padding: $pad-double $pad-half;
+
+	form {
+		max-width: 28em;
+		
+		@media all and (min-width: $bp-med) {
+			margin: 0 auto;
+		}
+	}
+
+	legend {
+		text-align: left;
+	}
+
+	.page-intro {
+		max-width: 24em;
+
+		@media all and (min-width: $bp-med) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	@media all and (min-width: $bp-med) {
+		text-align: center;
+		padding: 3em 1em;
+	}
 }
+
+
 
 //Hero main 
 .hero-main {

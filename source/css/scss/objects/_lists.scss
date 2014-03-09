@@ -54,3 +54,13 @@
 		font-weight: bold;
 	}
 }
+
+// Glossary List
+.glossary-list {
+	dd {
+		border-bottom: 1px solid $gray-light-2;
+		padding-bottom: $pad;
+		margin-bottom: $space;
+	}
+	
+}

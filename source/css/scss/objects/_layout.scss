@@ -123,7 +123,7 @@
 
 /* Grid 3up */
 .g-3up {
-	@media all and (min-width: $bp-med) {
+	@media all and (min-width: $bp-small-3) {
 		> .gi {
 			float: left;
 			width: 50%;

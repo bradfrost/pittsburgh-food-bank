@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Page Title | Greater Pittsburgh Community Food Bank</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/style.css?1394334671" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+				<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1394334671" media="all">
+		
+
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+				
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div id="molecules-hero-text-banner" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-09-banners-00-hero-text-banner/01-molecules-09-banners-00-hero-text-banner.html" class="patternLink" data-patternpartial="molecules-hero-text-banner">Hero Text Banner</a></h2>
+						<div class="sg-pattern-body">
+							<div class="hero-banner">
+	<div class="lc">
+		<h2 class="hero-banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)</h2>
+	</div>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;hero-banner&quot;&gt;
+	&lt;div class=&quot;lc&quot;&gt;
+		&lt;h2 class=&quot;hero-banner-text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-cta-banner" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-09-banners-01-cta-banner/01-molecules-09-banners-01-cta-banner.html" class="patternLink" data-patternpartial="molecules-cta-banner">Cta Banner</a></h2>
+						<div class="sg-pattern-body">
+							<div class="banner cta-banner">
+	<div class="lc">
+		<p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+		<a href="#" class="banner-cta text-btn">Call to action</a>
+	</div>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;banner cta-banner&quot;&gt;
+	&lt;div class=&quot;lc&quot;&gt;
+		&lt;p class=&quot;banner-text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;
+		&lt;a href=&quot;#&quot; class=&quot;banner-cta text-btn&quot;&gt;Call to action&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
+	
+		</div><!--end .sg-main-->
+		
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-molecules-banners";
+			var lineage = "";
+		</script>
+		
+
+	<!--DO NOT REMOVE-->
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1394334671">
+		(function() {
+			if (self != top) {
+				var cb = '1394334671';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1394334671">
+		(function() {
+			if (self != top) {
+				var cb = '1394334671';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	</body>
+</html>

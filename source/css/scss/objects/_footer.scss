@@ -11,6 +11,15 @@
 	a {
 		color: $gray-light;
 	}
+
+	legend {
+		display: block;
+		width: 100%;
+		font-size: $font-size-sm-2;
+		margin-bottom: $space;
+		padding-bottom: $pad-half;
+		border-bottom: 1px dashed $gray;
+	}
 }
 
 //Footer Nav
