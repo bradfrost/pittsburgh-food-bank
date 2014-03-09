@@ -1,7 +1,60 @@
 {
 	"page" : {
-		"title" : "Fundraising Policy",
-		"intro" : "We strive to be as transparent as possible lorem ipsum dolor sit amet."
+		"title" : "Awards & Press",
+		"intro" : "Striving to be lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe."
+	},
+	"awardList" : [
+		{
+			"headline" : {
+				"short" : "Award Name"
+			},
+			"excerpt" : {
+				"short" : "The 2014 award for lorem ipsum dolor sit amet, consectetur adipisicing."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Award Name"
+			},
+			"excerpt" : {
+				"short" : "The 2014 award for lorem ipsum dolor sit amet, consectetur adipisicing."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Award Name"
+			},
+			"excerpt" : {
+				"short" : "The 2014 award for lorem ipsum dolor sit amet, consectetur adipisicing."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Award Name"
+			},
+			"excerpt" : {
+				"short" : "The 2014 award for lorem ipsum dolor sit amet, consectetur adipisicing."
+			}
+		}
+	],
+	"postList" : [
+		{
+
+		},
+		{
+
+		},
+		{
+
+		}
+	],
+	"well" : {
+		"headline" : {
+			"short" : "Join our newsletter"
+		},
+		"excerpt" : {
+			"short" : "Stay up-to-date on the latest news, information, and more lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		}
 	},
 	"sectionNav" : {
 		"headline" : {

@@ -198,3 +198,7 @@
 /public/patterns/04-pages-10-other-02-privacy-policy/04-pages-10-other-02-privacy-policy.html
 /public/patterns/04-pages-10-other/index.html
 /public/styleguide/html/styleguide.html
+
+/public/patterns/03-templates-10-about-press/03-templates-10-about-press.escaped.html
+/public/patterns/03-templates-10-about-press/03-templates-10-about-press.mustache
+/public/patterns/04-pages-03-about-09-about-press/04-pages-03-about-09-about-press.escaped.html
