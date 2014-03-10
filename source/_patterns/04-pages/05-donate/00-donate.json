@@ -1,7 +1,7 @@
 {
 	"page" : {
-		"title" : "Donate",
-		"intro" : "Donate to the Greater Pittsburgh Community Food Bank lorem ipsum dolor sit amet."
+		"title" : "Donate to the GPCFB",
+		"intro" : "95% of donated money goes directly to feeding the hungry. <br />Choose an amount to donate:"
 	},
 	"donate" : false
 }

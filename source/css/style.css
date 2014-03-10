@@ -207,7 +207,7 @@ dt {
   font-weight: bold; }
 
 dd {
-  margin-left: 0; }
+  margin: 0 0 1em; }
 
 /*------------------------------------*\
     $MEDIA ELEMENTS
@@ -390,20 +390,20 @@ td {
 
 .l-3col {
   position: relative; }
-  @media all and (min-width: 55.75em) {
+  @media all and (min-width: 48em) {
     .l-3col .l-main {
       margin-left: 14.5em;
       min-height: 27em; } }
   @media all and (min-width: 64em) {
     .l-3col .l-main {
       margin-right: 15em; } }
-  @media all and (min-width: 55.75em) {
+  @media all and (min-width: 48em) {
     .l-3col .l-sidebar {
       position: absolute;
       top: 1em;
       left: 1em;
       width: 14em; } }
-  @media all and (min-width: 55.75em) and (max-width: 64em) {
+  @media all and (min-width: 48em) and (max-width: 64em) {
     .l-3col .l-sidebar2 {
       margin-left: 14.5em; } }
   @media all and (min-width: 64em) {
@@ -2252,6 +2252,9 @@ td {
     background: #eeeeee;
     color: #bbbbbb; }
 
+.btn-wide {
+  padding: 1em 2em; }
+
 .btn-small {
   padding: 0.5em; }
 
@@ -2335,6 +2338,10 @@ td {
 .block-headline-byline .b-excerpt {
   margin: 0; }
 
+.block-event .b-byline {
+  margin: 0;
+  font-style: italic; }
+
 .inline-list li {
   display: inline-block; }
 
@@ -2386,6 +2393,8 @@ td {
   padding: 0.5em 0; }
   .sidebar-block-list li:last-child {
     border-bottom: 0; }
+.sidebar-block-list .b-title {
+  font-size: 1em; }
 
 .tooltip-container {
   display: inline-block;
@@ -2642,7 +2651,7 @@ div.ui-slider {
   .hero-text legend {
     text-align: left; }
   .hero-text .page-intro {
-    max-width: 24em; }
+    max-width: 27em; }
     @media all and (min-width: 46.8em) {
       .hero-text .page-intro {
         margin-left: auto;
@@ -2715,7 +2724,7 @@ div.ui-slider {
   .cta-banner .text-btn {
     font-size: 2em; }
 
-.well {
+.well, .info-box {
   background: #f9f9f9;
   border: 1px solid #eeeeee;
   padding: 1em;

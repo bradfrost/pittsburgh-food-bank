@@ -91,7 +91,7 @@
 	}
 }
 
-// 
+// Block Headline with Byline
 .block-headline-byline {
 	.b-title {
 		margin: 0;
@@ -99,5 +99,13 @@
 
 	.b-excerpt {
 		margin: 0;
+	}
+}
+
+//Block Event
+.block-event {
+	.b-byline {
+		margin: 0;
+		font-style: italic;
 	}
 }

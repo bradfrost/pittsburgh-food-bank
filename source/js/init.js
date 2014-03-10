@@ -99,6 +99,13 @@
 		}
 	}
 
+	//Donate Step Link
+	$('#donate-step-2-link').on('click',function(e){
+		e.preventDefault();
+		$('#donate-step-1').hide();
+		$('#donate-step-1').show();
+	});
+
 	$(".donate-form").submit(function(e){
 		e.preventDefault();
 		$(".donate-range").val(400).slider("refresh");

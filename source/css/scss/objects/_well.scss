@@ -10,3 +10,7 @@
 	margin: 0;
 }
 
+// Info Box
+.info-box {
+	@extend .well;
+}

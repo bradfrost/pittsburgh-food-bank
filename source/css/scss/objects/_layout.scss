@@ -32,7 +32,7 @@
 	position: relative;
 
 	.l-main {
-		@media all and (min-width: $bp-med-3) {
+		@media all and (min-width: $bp-med-2) {
 			margin-left: 14.5em;
 			min-height: 27em; //Temporary min-height
 		}
@@ -43,7 +43,7 @@
 	}
 	
 	.l-sidebar {
-		@media all and (min-width: $bp-med-3) {
+		@media all and (min-width: $bp-med-2) {
 			position: absolute;
 			top: $pad;
 			left: $pad;
@@ -52,7 +52,7 @@
 	}
 
 	.l-sidebar2 {
-		@media all and (min-width: $bp-med-3) and (max-width: $bp-large) {
+		@media all and (min-width: $bp-med-2) and (max-width: $bp-large) {
 			margin-left: 14.5em;
 		}
 

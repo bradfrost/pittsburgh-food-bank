@@ -1,6 +1,66 @@
 {
 	"page" : {
-		"title" : "Event Detail",
-		"intro" : "Will probably look like a blog post"
+		"title" : "D-Jam 2014",
+		"intro" : "The 15th Annual D-Jam is certainly NOT a night to be missed!"
+	},
+	"infoBox" : [
+		{
+			"dt" : "What",
+			"dd" : "The 15th Annual D-Jam Mustic Festival"
+		},
+		{
+			"dt" : "When",
+			"dd" : "Saturday, March 22, 2014<br />Doors @ 7:30, Show @ 8:30"
+		},
+		{
+			"dt" : "Where",
+			"dd" : "Rex Theater, 1602 E. Carson Street, Pittsburgh, South Side"
+		},
+		{
+			"dt" : "Price",
+			"dd" : "$20"
+		}
+	],
+	"cta" : "Buy Tickets",
+	"well" : {
+		"headline" : {
+			"short" : "Join Our Newsletter"
+		},
+		"excerpt" : {
+			"short" : "Stay up-to-date on upcoming events, program news, etc lorem ipsum dolor sit amet, consectetur adipisicing."
+		},
+		"cta" : "Sign up now"
+	},
+	"sidebarEventList" : {
+		"headline" : {
+			"xs" : "More Events"
+		},
+		"eventList" : [
+			{
+				"label" : "Event Title",
+				"date" : "April 24"
+			},
+			{
+				"label" : "Another Event Title",
+				"date" : "May 21"
+			},
+			{
+				"label" : "Here's Another Event Title",
+				"date" : "June 23"
+			}
+		]
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Events"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Upcoming Events"
+			},
+			{ 
+				"label": "Special Events"
+			}
+		]
 	}
 }

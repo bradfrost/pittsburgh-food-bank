@@ -6,15 +6,24 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Event Detail Information</div>
-				<div class="fpo">More upcoming events</div>
+				{{> molecules-info-box }}
+				<div class="text">
+					<p>{{> atoms-thumb }}</p>
+					<p>15th Annual D-JAM is set - this year at the Rex Theater in Pittsburgh's Historic South Side!</p>
+
+					<p>This year, groove to the sounds of Dave Tauberg and theCAUSE with special guest Steve Kimock!</p>
+
+					<p>Come see Pittsburgh's favorite jamband play the Grateful Dead, The Beatles,  Bob Dylan, Phish, and other favorites.</p>
+
+					<p>This is certainly NOT a night to be missed!</p>
+				</div>
+				{{> organisms-newsletter-well }}
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
-				
+				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">Info about organizing/volunteering an event</div>
-				<div class="fpo">Newsletter Signup to stay up-to-date with events</div>
+				{{> organisms-sidebar-event-list }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->
