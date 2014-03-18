@@ -5,10 +5,16 @@
 		
 
 		<div class="lc">
-			<div class="fpo">Donate food info</div>
-			<div class="fpo">Planned giving info</div>
-			<div class="fpo">Store link</div>
-			<div class="fpo">Volunteer tout ("Can't make a financial donation? Donate your time!" etc)</div>
+			<h2>More Ways to Give</h2>
+			<div class="g g-3up">
+				{{# list }}
+				<div class="gi">
+					{{> molecules-block-thumb-title-excerpt }}
+				</div>
+				{{/ list }}
+			</div><!--end .g-3up-->
+			<hr />
+			{{> organisms-section-img-headline-list }}
 		</div><!--end .lc-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}

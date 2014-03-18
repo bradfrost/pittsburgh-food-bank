@@ -3,5 +3,74 @@
 		"title" : "Donate to the GPCFB",
 		"intro" : "95% of donated money goes directly to feeding the hungry. <br />Choose an amount to donate:"
 	},
-	"donate" : false
+	"donate" : false,
+	"list" : [
+		{
+			"headline" : {
+				"short" : "Planned Giving"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Donate food"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "View our store"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Tribute Gifts"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Donate Credit Card Reward Points"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "In-Kind Donations"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		}
+	],
+	"sectionBlock" : {
+		"headline" : {
+			"short" : "Volunteer"
+		},
+		"excerpt" : {
+			"short" : "Can't make a financial donation? Donate your time and make a difference consectetur adipisicing elit. Tempore, enim, id! Iste repellendus quidem nesciunt."
+		},
+		"textList" : [
+			{
+				"label" : "Volunteer opportunities"
+			},
+			{
+				"label" : "Upcoming Events"
+			},
+			{
+				"label" : "Organize a food drive"
+			}
+		]
+	}
 }
