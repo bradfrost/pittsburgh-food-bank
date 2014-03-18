@@ -4,16 +4,18 @@
 		<div class="lc">
 			{{> molecules-page-header }}
 		</div>
-		<div class="l-1col">
-			<div class="l-main">
-				<div class="fpo">Volunteer</div>
-				<div class="fpo">Donate</div>
-				<div class="fpo">Organize</div>
-				<div class="fpo">Advocate</div>
-				<div class="fpo">Get Informed</div>
-				<div class="fpo">Newsletter Signup</div>
-			</div><!--end .l-main-->
-		</div><!--end .l-1col-->
+		<div class="lc">
+			{{> molecules-hero }}
+			<hr />
+			<h2>More Ways to Get Involved</h2>
+			<div class="g g-3up">
+				{{# list }}
+				<div class="gi">
+					{{> molecules-block-thumb-title-excerpt }}
+				</div>
+				{{/ list }}
+			</div><!--end .g-3up-->
+		</div>
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

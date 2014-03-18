@@ -2,5 +2,56 @@
 	"page" : {
 		"title" : "Get Involved",
 		"intro" : "Help eradicate hunger in southwestern PA lorem ipsum dolor sit amet."
-	}
+	},
+	"hero" : {
+		"headline" : {
+			"short" : "Donate your time. Make a difference."
+		},
+		"excerpt" : {
+			"medium" : "Learn about the many ways you can help end hunger lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		},
+		"cta" : "View volunteer opportunities"
+	},
+	"list" : [
+		{
+			"headline" : {
+				"short" : "Organize a Food Drive"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Make a Donation"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Donate Food"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Get Informed"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Stay up to date"
+			},
+			"excerpt" : {
+				"short" : "Join our newsletter Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		}
+	]
 }
