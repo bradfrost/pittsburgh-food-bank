@@ -6,16 +6,33 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Contact information</div>
-				<div class="fpo">List of volunteer categories (repack, gleaning, fundraising, food drives, produce to people, clerical work)</div>
-				<div class="fpo">Volunteer Age Requirements</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, voluptatum, ratione labore laudantium assumenda molestiae ipsa dignissimos accusamus amet omnis distinctio sit inventore minima. Magni, hic nam maiores iste sit</p>
+				<div class="g g-2up">
+					{{# list }}
+					<div class="gi">
+						{{> molecules-block-thumb-title-excerpt }}
+					</div>
+					{{/ list }}
+				</div>
+				<hr />
+				<div class="text">
+					<h2>Volunteer Age Requirements</h2>
+					<ul>
+						<li><strong>Age 4+ (w/adult):</strong> Fall Food Share Food Drive</li>
+						<li><strong>Age 7+ (w/adult):</strong> Gleaning</li>
+						<li><strong>Age 12+ (w/adult):</strong> Repack, Clerical, Produce to People, Some Food Drives </li>
+						<li><strong>Age 15+:</strong> Empty Bowls</li>
+						<li><strong>Age 18+:</strong> Blues Festival</li>
+					</ul>
+				</div>
+				{{> molecules-well }}
+				
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">Upcoming events</div>
-				<div class="fpo">Newsletter Signup to stay up-to-date with volunteer opportunities</div>
+				{{> organisms-sidebar-event-list }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 		

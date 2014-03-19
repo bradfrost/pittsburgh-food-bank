@@ -3,6 +3,35 @@
 		"title" : "Repack",
 		"intro" : "Repack at the GPCFB Lorem ipsum dolor."
 	},
+	"well" : {
+		"headline" : {
+			"short" : "Volunteer for Repack"
+		},
+		"excerpt" : {
+			"short" : "Description of the volunteer call to action"
+		},
+		"cta" : "Volunteer now"
+	},
+	"list" : false,
+	"sidebarEventList" : {
+		"headline" : {
+			"xs" : "Upcoming Events"
+		},
+		"eventList" : [
+			{
+				"label" : "Event Title",
+				"date" : "April 24"
+			},
+			{
+				"label" : "Another Event Title",
+				"date" : "May 21"
+			},
+			{
+				"label" : "Here's Another Event Title",
+				"date" : "June 23"
+			}
+		]
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Get Involved"

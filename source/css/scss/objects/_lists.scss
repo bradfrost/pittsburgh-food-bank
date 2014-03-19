@@ -75,14 +75,12 @@
 
 //Sidebar Block List 
 .sidebar-block-list {
+	margin-bottom: $space-half;
+	
 	li {
 		border-bottom: 1px solid $gray-light-2;
 		margin: 0;
 		padding: $pad-half 0;
-
-		&:last-child {
-			border-bottom: 0;
-		}
 	}
 
 	.b-title {

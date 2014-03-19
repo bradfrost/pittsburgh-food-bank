@@ -377,10 +377,10 @@ td {
 .lc, .l-1col .l-main, .l-3col, .header {
   max-width: 78em;
   margin: 0 auto;
-  padding: 0.5em; }
+  padding: 0 0.5em; }
   @media all and (min-width: 46.8em) {
     .lc, .l-1col .l-main, .l-3col, .header {
-      padding: 1em; } }
+      padding: 0 1em; } }
 
 /*------------------------------------*\
     $TEMPLATES
@@ -392,24 +392,24 @@ td {
   position: relative; }
   @media all and (min-width: 48em) {
     .l-3col .l-main {
-      margin-left: 14.5em;
+      margin-left: 13em;
       min-height: 27em; } }
   @media all and (min-width: 64em) {
     .l-3col .l-main {
-      margin-right: 15em; } }
+      margin-right: 15.5em; } }
   @media all and (min-width: 48em) {
     .l-3col .l-sidebar {
       position: absolute;
-      top: 1em;
+      top: 0;
       left: 1em;
-      width: 14em; } }
+      width: 12em; } }
   @media all and (min-width: 48em) and (max-width: 64em) {
     .l-3col .l-sidebar2 {
-      margin-left: 14.5em; } }
+      margin-left: 13em; } }
   @media all and (min-width: 64em) {
     .l-3col .l-sidebar2 {
       position: absolute;
-      top: 1em;
+      top: 0;
       right: 1em;
       width: 14em; } }
 
@@ -578,7 +578,8 @@ td {
 .header {
   padding: 0;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  border-bottom: 1px solid #dddddd; }
   @media all and (min-width: 46.8em) {
     .header {
       padding: 1.5em 0; } }
@@ -685,7 +686,8 @@ td {
     $MAIN CONTENT AREA
 \*------------------------------------*/
 [role=main] {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1em 0; }
   [role=main] .fpo:nth-child(even) {
     background: #e1e1e1; }
 
@@ -2387,14 +2389,14 @@ td {
   padding-bottom: 1em;
   margin-bottom: 1em; }
 
-.sidebar-block-list li {
-  border-bottom: 1px solid #eeeeee;
-  margin: 0;
-  padding: 0.5em 0; }
-  .sidebar-block-list li:last-child {
-    border-bottom: 0; }
-.sidebar-block-list .b-title {
-  font-size: 1em; }
+.sidebar-block-list {
+  margin-bottom: 0.5em; }
+  .sidebar-block-list li {
+    border-bottom: 1px solid #eeeeee;
+    margin: 0;
+    padding: 0.5em 0; }
+  .sidebar-block-list .b-title {
+    font-size: 1em; }
 
 .tooltip-container {
   display: inline-block;
@@ -2431,9 +2433,6 @@ td {
   margin-bottom: 1em; }
 
 .acc-handle {
-  background: #131313;
-  color: white;
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   display: block;
   position: relative;
@@ -2449,6 +2448,22 @@ td {
     background: #333333; }
     .acc-handle.active:after {
       content: "-"; }
+
+.acc-panel {
+  display: none;
+  padding: 1em 0; }
+  .acc-panel.active {
+    display: block; }
+
+@media all and (min-width: 64em) {
+  .accordion-to-full .acc-handle {
+    padding: 0;
+    border: 0; }
+    .accordion-to-full .acc-handle:after {
+      content: ""; }
+  .accordion-to-full .acc-panel {
+    display: block;
+    padding: 0 0 1em; } }
 
 .tabs {
   overflow: hidden; }

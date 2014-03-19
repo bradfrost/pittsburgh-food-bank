@@ -3,6 +3,65 @@
 		"title" : "Kids",
 		"intro" : " Lots of kids right here in our area do not get enough to eat Lorem ipsum dolor sit."
 	},
+	"list" : [
+		{
+			"headline" : {
+				"short" : "Kids Campaign to End Hunger"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Organize a Food Drive"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Volunteer"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Pennies for Peanut Butter"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Fundraisers"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Teens Take Action"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		}
+	],
+	"well" : {
+		"headline" : {
+			"short" : "Get Involved"
+		},
+		"excerpt" : {
+			"short" : "Description of the kids' get involved call to action"
+		},
+		"cta" : "Get Involved CTA"
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Get Involved"

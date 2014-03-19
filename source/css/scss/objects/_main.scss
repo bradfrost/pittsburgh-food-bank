@@ -3,6 +3,7 @@
 \*------------------------------------*/
 [role=main] {
 	overflow: hidden;
+	padding: $pad 0;
 
 	.fpo:nth-child(even) {
 		background: #e1e1e1;

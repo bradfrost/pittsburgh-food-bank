@@ -2,5 +2,55 @@
 	"page" : {
 		"title" : "Resources",
 		"intro" : "Learn about hunger, our mission, and more lorem ipsum dolor sit amet."
-	}
+	},
+	"list" : [
+		{
+			"headline" : {
+				"short" : "Learn About Hunger"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Learn About Food"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Recipe Rainbow"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Advocacy Information"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Frequently Asked Questions"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		}
+		{
+			"headline" : {
+				"short" : "Helpful Links"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		}
+	]
 }

@@ -6,13 +6,16 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">FAQ list</div>
+				{{# faqList }}
+					<h2>{{ headline.short }}</h2>
+					{{> organisms-accordion-to-full }}
+				{{/ faqList }}
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">Stat</div>
+				{{> organisms-sidebar-text-list }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 		

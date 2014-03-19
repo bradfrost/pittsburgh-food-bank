@@ -3,6 +3,7 @@
 	@extend .lc;
 	position: relative;
 	z-index: 2;
+	border-bottom: 1px solid $gray-light-3;
 
 	@media all and (min-width: $bp-med) {
 		padding: 1.5em 0;

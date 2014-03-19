@@ -3,6 +3,34 @@
 		"title" : "Advocacy",
 		"intro" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolores."
 	},
+	"well" : {
+		"headline" : {
+			"short" : "Become an Advocate"
+		},
+		"excerpt" : {
+			"short" : "Description of the advocacy call to action"
+		},
+		"cta" : "Advocacy CTA"
+	},
+	"sidebarPostList" : {
+		"headline" : {
+			"xs" : "Advocacy news"
+		},
+		"postList" : [
+			{
+				"label" : "This Is the Post Title",
+				"date" : "January 12"
+			},
+			{
+				"label" : "This Is Also a Post Title",
+				"date" : "January 30"
+			},
+			{
+				"label" : "Yes It's Another Post Title",
+				"date" : "February 12"
+			}
+		]
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Get Involved"

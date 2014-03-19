@@ -4,12 +4,14 @@
 		<div class="lc">
 			{{> molecules-page-header }}
 		</div>
-		<div class="l-1col">
-			<div class="l-main">
-				<div class="fpo">Intro text (short and sweet)</div>
-				<div class="fpo">Touts for each resource section (Hunger, Food, Recipes, Advocacy , etc)</div>
-				<div class="fpo">Stats</div>
-			</div><!--end .l-main-->
+		<div class="lc">
+			<div class="g g-3up">
+				{{# list }}
+				<div class="gi">
+					{{> molecules-block-thumb-title-excerpt }}
+				</div>
+				{{/ list }}
+			</div>
 		</div><!--end .l-1col-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}

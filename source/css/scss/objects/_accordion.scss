@@ -3,9 +3,6 @@
 }
 
 .acc-handle {
-	background: $gray-dark-2;
-	color: $white;
-	font-family: $font-secondary;
 	font-weight: bold;
 	display: block;
 	position: relative;
@@ -28,6 +25,34 @@
 
 		&:after {
 			content:"-";
+		}
+	}
+}
+
+.acc-panel {
+	display: none;
+	padding: $pad 0;
+
+	&.active {
+		display: block;
+	}
+}
+
+//Accordion to Full
+.accordion-to-full {
+	@media all and (min-width: $bp-large) {
+		.acc-handle {
+			padding: 0;
+			border: 0;
+
+			&:after {
+				content : "";
+			}
+		}
+
+		.acc-panel {
+			display: block;
+			padding: 0 0 $pad;
 		}
 	}
 }

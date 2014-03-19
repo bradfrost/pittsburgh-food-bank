@@ -76,6 +76,26 @@
 			}
 		]
 	},
+	"sidebarEventList" : {
+		"headline" : {
+			"xs" : "Upcoming Events"
+		},
+		"eventList" : [
+			{
+				"label" : "Event Title",
+				"date" : "April 24"
+			},
+			{
+				"label" : "Another Event Title",
+				"date" : "May 21"
+			},
+			{
+				"label" : "Here's Another Event Title",
+				"date" : "June 23"
+			}
+		],
+		"cta" : "View all events"
+	},
 	"hero" : true,
 	"banner" : true,
 	"touts" : true,
@@ -85,7 +105,6 @@
 	"donate" : true,
 	"well" : true,
 	"sidebarPostList" : true,
-	"sidebarEventList" : true,
 	"sidebarTextList" : true,
 	"timeline" : true
 }

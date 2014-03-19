@@ -3,6 +3,49 @@
 		"title" : "Volunteer",
 		"intro" : "Volunteer your time at GPCFB events Lorem ipsum."
 	},
+	"list" : [
+		{
+			"headline" : {
+				"short" : "Repack"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Produce To People"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Special Events"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		},
+		{
+			"headline" : {
+				"short" : "Gleaning"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, voluptate."
+			}
+		}
+	],
+	"well" : {
+		"headline" : {
+			"short" : "Volunteer "
+		},
+		"excerpt" : {
+			"short" : "Description of the volunteer call to action"
+		},
+		"cta" : "Volunteer now"
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Get Involved"

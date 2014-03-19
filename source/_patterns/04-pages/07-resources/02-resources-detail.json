@@ -3,6 +3,25 @@
 		"title" : "Resource Detail",
 		"intro" : "Information about the resource (like About Hunger) lorem ipsum dolor sit amet."
 	},
+	"sidebarTextList" : {
+		"headline" : {
+			"xs" : "Related Resources"
+		},
+		"textList" : [
+			{
+				"label" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			},
+			{
+				"label" : "Lorem ipsum dolor sit amet."
+			},
+			{
+				"label" : "Lorem ipsum dolor sit amet, consectetur."
+			},
+			{
+				"label" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam?"
+			}
+		]
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Resources"

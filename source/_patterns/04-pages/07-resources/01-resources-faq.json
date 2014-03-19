@@ -3,6 +3,111 @@
 		"title" : "Frequently Asked Questions",
 		"intro" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, architecto enim commodi laboriosam quibusdam cupiditate."
 	},
+	"faqList" : [
+		{
+			"headline" : {
+				"short" : "About"
+			},
+			"accordion" : [
+				{
+					"label" : "Is the Greater Pittsburgh Food Bank just a food pantry?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				}
+			]
+		},
+		{
+			"headline" : {
+				"short" : "About Hunger"
+			},
+			"accordion" : [
+				{
+					"label" : "Is the Greater Pittsburgh Food Bank just a food pantry?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				}
+			]
+		},
+		{
+			"headline" : {
+				"short" : "Facilities"
+			},
+			"accordion" : [
+				{
+					"label" : "Is the Greater Pittsburgh Food Bank just a food pantry?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				}
+			]
+		},
+		{
+			"headline" : {
+				"short" : "Facilities"
+			},
+			"accordion" : [
+				{
+					"label" : "Is the Greater Pittsburgh Food Bank just a food pantry?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				},
+				{
+					"label" : "Dolor sit amet Lorem ipsum dolor sit amet, consectetur?",
+					"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, numquam id laudantium quasi animi sint dolorem eius ipsa reiciendis amet nihil iusto magni eveniet odit aspernatur temporibus pariatur neque. Consequuntur."
+				}
+			]
+		}
+	],
+	"sidebarTextList" : {
+		"headline" : {
+			"xs" : "Helpful Resources"
+		},
+		"textList" : [
+			{
+				"label" : "About the GPCFB"
+			},
+			{
+				"label" : "Board and Management"
+			},
+			{
+				"label" : "Operations"
+			},
+			{
+				"label" : "Contact Us"
+			}
+		]
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Resources"

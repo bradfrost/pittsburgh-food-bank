@@ -1,19 +1,32 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
+		<div class="lc">
+			{{> molecules-page-header }}
+		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<h1 class="fpo">Advocacy</h1>
-				<div class="fpo">Intro text (short and sweet)</div>
-				<div class="fpo">Call to Action</div>
-				<div class="fpo">Advocacy description</div>
-				<div class="fpo">Policy Priorities</div>
+				<div class="text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, culpa, pariatur nostrum eveniet impedit blanditiis itaque ipsa modi molestias optio similique maiores voluptatibus veniam voluptate nemo officia tenetur! Et, dolores?</p>
+					<h2>Policy Priorities</h2>
+					<ul>
+						<li><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Rem, iste, sapiente modi consequatur inventore deserunt molestiae sit praesentium perferendis quo. Fugiat explicabo dolor quod optio ea! Ad numquam id voluptatibus.</li>
+						<li><strong>Cumque, a debitis velit aliquam</strong> iusto sapiente quo repellat iure enim nulla. Incidunt, esse, temporibus, deserunt earum fugiat modi quis dicta sunt nostrum assumenda tenetur nihil fuga expedita cumque praesentium.</li>
+						<li><strong>Itaque, architecto, dolores</strong>, facilis possimus rem aspernatur molestiae maxime repellendus nisi repudiandae distinctio similique officiis odit numquam voluptate provident dolorum necessitatibus praesentium pariatur molestias ea expedita at sint sapiente beatae.</li>
+					</ul>
+				</div>
+				<hr />
+				<h2>Resources</h2>
+
+				{{> molecules-well }}
+
+				
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
-				<div class="fpo">Links to resources (why end hunger? advocacy resources, etc)</div>
+				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">Latest Advocacy Updates from Blog</div>
+				{{> organisms-sidebar-post-list }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->

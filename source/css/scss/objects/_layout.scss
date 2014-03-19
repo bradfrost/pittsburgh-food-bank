@@ -6,10 +6,10 @@
 .lc {
 	max-width: $max-width;	
 	margin: 0 auto;
-	padding: $pad-half;
+	padding: 0 $pad-half;
 
 	@media all and (min-width: $bp-med) {
-		padding: $pad;
+		padding: 0 $pad;
 	}
 }
 
@@ -33,32 +33,32 @@
 
 	.l-main {
 		@media all and (min-width: $bp-med-2) {
-			margin-left: 14.5em;
+			margin-left: 13em;
 			min-height: 27em; //Temporary min-height
 		}
 
 		@media all and (min-width: $bp-large) {
-			margin-right: 15em;
+			margin-right: 15.5em;
 		}
 	}
 	
 	.l-sidebar {
 		@media all and (min-width: $bp-med-2) {
 			position: absolute;
-			top: $pad;
+			top: 0;
 			left: $pad;
-			width: 14em;
+			width: 12em;
 		}
 	}
 
 	.l-sidebar2 {
 		@media all and (min-width: $bp-med-2) and (max-width: $bp-large) {
-			margin-left: 14.5em;
+			margin-left: 13em;
 		}
 
 		@media all and (min-width: $bp-large) {
 			position: absolute;
-			top: $pad;
+			top: 0;
 			right: $pad;
 			width: 14em;
 		}

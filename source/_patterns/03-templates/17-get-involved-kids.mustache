@@ -1,19 +1,29 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
-		<div class="l-1col">
-			<div class="lc">
-				{{> molecules-page-header }}
-			</div>
+		<div class="lc">
+			{{> molecules-page-header }}
+		</div>
+		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Kids Campgign to End Hunger &amp; call to action</div>
-				<div class="fpo">Food Drives</div>
-				<div class="fpo">Volunteer</div>
-				<div class="fpo">Pennies for Peanut Butter</div>
-				<div class="fpo">Fundrasing</div>
-				<div class="fpo">Teens Take Action</div>
+				<div class="g g-2up">
+					{{# list }}
+					<div class="gi">
+						{{> molecules-block-thumb-title-excerpt }}
+					</div>
+					{{/ list }}
+				</div>
+				{{> molecules-well }}
+
+				
 			</div><!--end .l-main-->
-		</div><!--end .l-1col-->
+			<div class="l-sidebar">
+				{{> molecules-section-nav }}
+			</div><!--end .l-sidebar-->
+			<div class="l-sidebar2">
+				{{> organisms-sidebar-event-list }}
+			</div><!--end .l-sidebar2-->
+		</div><!--end .l-3col-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>
