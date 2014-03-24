@@ -25,6 +25,26 @@
 			}
 		]
 	},
+	"sidebarPostList" : {
+		"headline" : {
+			"xs" : "Related Posts"
+		},
+		"postList" : [
+			{
+				"date" : "May 24, 2014",
+				"label" : "This is a blog post title"
+			},
+			{
+				"date" : "May 24, 2014",
+				"label" : "This is a blog post title"
+			},
+			{
+				"date" : "May 24, 2014",
+				"label" : "This is a blog post title"
+			}
+		],
+		"cta" : "View more posts"
+	},
 	"sidebarText" : {
 		"headline" : {
 			"xs" : "About GPCFB"

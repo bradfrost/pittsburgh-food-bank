@@ -112,8 +112,9 @@
 	"sectionBlock" : true,
 	"ctaBanner" : true,
 	"donate" : true,
-	"sidebarPostList" : true,
+	"sidebarEventList" : true,
 	"sidebarTextList" : true,
-	"timeline" : true,
-	"sidebarText" : true
+	"sidebarText" : true,
+	"sidebarPostList" : true,
+	"timeline" : true
 }
