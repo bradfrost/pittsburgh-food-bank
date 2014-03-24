@@ -96,6 +96,15 @@
 		],
 		"cta" : "View all events"
 	},
+	"well" : {
+		"headline" : {
+			"short" : "Keep up with the latest news"
+		},
+		"excerpt" : {
+			"short" : "Stay up-to-date on upcoming events, program news, etc lorem ipsum dolor sit amet, consectetur adipisicing."
+		},
+		"cta" : "Sign up now"
+	},
 	"hero" : true,
 	"banner" : true,
 	"touts" : true,
@@ -103,7 +112,6 @@
 	"sectionBlock" : true,
 	"ctaBanner" : true,
 	"donate" : true,
-	"well" : true,
 	"sidebarPostList" : true,
 	"sidebarTextList" : true,
 	"timeline" : true,

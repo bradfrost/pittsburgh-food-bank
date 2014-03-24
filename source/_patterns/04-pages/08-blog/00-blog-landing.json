@@ -59,15 +59,6 @@
 			}
 		}
 	],
-	"well" : {
-		"headline" : {
-			"short" : "Keep up with the latest news"
-		},
-		"excerpt" : {
-			"short" : "Stay up-to-date on upcoming events, program news, etc lorem ipsum dolor sit amet, consectetur adipisicing."
-		},
-		"cta" : "Sign up now"
-	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Categories"

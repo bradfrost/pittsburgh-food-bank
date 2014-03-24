@@ -6,20 +6,17 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Timestamp</div>
-				<div class="fpo">Author Name</div>
-				<div class="fpo">Blog post (could be advocacy update, event update, </div>
-				<div class="fpo">Share post</div>
+				{{> organisms-text-passage }}
+				{{> molecules-social-share }}
 				<div class="fpo">Related posts</div>
+				{{> organisms-well-subscribe }}
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">About GPCFB</div>
-				<div class="fpo">Upcoming events</div>
-				<div class="fpo">Categories (advocacy updates, events, stories, etc)</div>
-				<div class="fpo">Subscribe tout (RSS, Twitter, Facebook, Newsletter)</div>
+				{{> organisms-sidebar-text }}
+				{{> organisms-sidebar-event-list }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->
