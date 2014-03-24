@@ -86,6 +86,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .inline-form {
+	margin-bottom: $space;
 	
 	fieldset, .inline-container {
 		position: relative;
@@ -112,6 +113,7 @@ input[type="search"]::-webkit-search-decoration {
 .has-error {
 	border-color: $error;
 }
+
 .is-valid {
 	border-color: $valid;
 }
@@ -123,10 +125,11 @@ input[type="search"]::-webkit-search-decoration {
     $SPECIFIC FORMS
 \*------------------------------------*/
 
-/* Search Form */
+// Search Form
 .search-field {
 	padding: 0.7em 3em 0.7em 0.7em;
 	padding-right: 3em;
+	margin: 0;
 }
 .inline-form .search-submit {
 	background: none;

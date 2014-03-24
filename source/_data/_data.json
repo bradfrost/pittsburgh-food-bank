@@ -106,5 +106,6 @@
 	"well" : true,
 	"sidebarPostList" : true,
 	"sidebarTextList" : true,
-	"timeline" : true
+	"timeline" : true,
+	"sidebarText" : true
 }

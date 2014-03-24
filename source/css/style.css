@@ -297,20 +297,22 @@ input[type="search"]::-webkit-search-decoration {
   line-height: 1;
   border-radius: 15px; }
 
-.inline-form fieldset, .inline-form .inline-container {
-  position: relative;
-  padding: 0;
-  margin: 0; }
-.inline-form input[type=submit], .inline-form button {
-  background: #333333;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: auto; }
-  .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus {
-    background: gray;
-    color: white; }
+.inline-form {
+  margin-bottom: 1em; }
+  .inline-form fieldset, .inline-form .inline-container {
+    position: relative;
+    padding: 0;
+    margin: 0; }
+  .inline-form input[type=submit], .inline-form button {
+    background: #333333;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: auto; }
+    .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus {
+      background: gray;
+      color: white; }
 
 /* Validation */
 .has-error {
@@ -322,10 +324,10 @@ input[type="search"]::-webkit-search-decoration {
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
-/* Search Form */
 .search-field {
   padding: 0.7em 3em 0.7em 0.7em;
-  padding-right: 3em; }
+  padding-right: 3em;
+  margin: 0; }
 
 .inline-form .search-submit {
   background: none;
@@ -671,14 +673,8 @@ td {
       display: block; } }
 
 .pagination {
-  overflow: hidden; }
-  .pagination li {
-    float: left;
-    border-right: 1px solid #eeeeee; }
-    .pagination li:last-child {
-      border: 0; }
-  .pagination a {
-    padding: 1em; }
+  overflow: hidden;
+  margin-bottom: 1em; }
 
 .section-nav-list li {
   margin-bottom: 0.5em; }
