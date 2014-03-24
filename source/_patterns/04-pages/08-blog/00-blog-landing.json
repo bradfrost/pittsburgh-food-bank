@@ -3,6 +3,44 @@
 		"title" : "Blog",
 		"intro" : "Latest news, upcoming events, stories, and more Lorem ipsum dolor sit."
 	},
+	"postList" : [
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "This is the latest blog post title"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		},
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "This is another blog post title"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		},
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "This could be a campaign update"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		}
+	],
+	"well" : {
+		"headline" : {
+			"short" : "Keep up with the latest news"
+		},
+		"excerpt" : {
+			"short" : "Stay up-to-date on upcoming events, program news, etc lorem ipsum dolor sit amet, consectetur adipisicing."
+		},
+		"cta" : "Sign up now"
+	},
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Categories"

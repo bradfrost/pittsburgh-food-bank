@@ -6,7 +6,14 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Latest blog entries (with pagination)</div>
+				<ul class="post-list">
+					{{# postList }}
+					<li>{{> molecules-block-post }}</li>
+					{{/ postList }}
+					{{> molecules-pagination }}
+					<div class="fpo">Subscribe tout (RSS, Twitter, Facebook, Newsletter)</div>
+					{{> organisms-well-social }}
+				</ul>
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
@@ -14,7 +21,7 @@
 			<div class="l-sidebar2">
 				<div class="fpo">About GPCFB</div>
 				<div class="fpo">Upcoming events</div>
-				<div class="fpo">Subscribe tout (RSS, Twitter, Facebook, Newsletter)</div>
+				
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->

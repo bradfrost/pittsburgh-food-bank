@@ -324,6 +324,7 @@ input[type="search"]::-webkit-search-decoration {
 \*------------------------------------*/
 /* Search Form */
 .search-field {
+  padding: 0.7em 3em 0.7em 0.7em;
   padding-right: 3em; }
 
 .inline-form .search-submit {
@@ -2436,16 +2437,17 @@ td {
   font-weight: bold;
   display: block;
   position: relative;
-  padding: 0.5em;
-  border-bottom: 1px solid #dddddd; }
+  padding: 1em 0;
+  border-bottom: 1px solid #dddddd;
+  margin: 0; }
   .acc-handle:after {
     content: "+";
     float: right; }
-  .acc-handle:hover {
-    color: white;
-    background: #333333; }
+  .acc-handle:hover, .acc-handle:focus {
+    cursor: pointer;
+    background: #f9f9f9; }
   .acc-handle.active {
-    background: #333333; }
+    background: #f9f9f9; }
     .acc-handle.active:after {
       content: "-"; }
 
@@ -2455,15 +2457,21 @@ td {
   .acc-panel.active {
     display: block; }
 
-@media all and (min-width: 64em) {
-  .accordion-to-full .acc-handle {
-    padding: 0;
-    border: 0; }
-    .accordion-to-full .acc-handle:after {
-      content: ""; }
-  .accordion-to-full .acc-panel {
-    display: block;
-    padding: 0 0 1em; } }
+.accordion-to-full {
+  border-top: 1px solid #dddddd;
+  margin-bottom: 2em; }
+  @media all and (min-width: 64em) {
+    .accordion-to-full {
+      border-top: 0; }
+      .accordion-to-full .acc-handle {
+        padding: 0;
+        margin-bottom: 0.5em;
+        border: 0; }
+        .accordion-to-full .acc-handle:after {
+          content: ""; }
+      .accordion-to-full .acc-panel {
+        display: block;
+        padding: 0 0 1em; } }
 
 .tabs {
   overflow: hidden; }

@@ -6,22 +6,23 @@
 	font-weight: bold;
 	display: block;
 	position: relative;
-	padding: $pad-half;
+	padding: $pad 0;
 	border-bottom: 1px solid $gray-light-3;
+	margin: 0;
 
 	&:after {
 		content:"+";
 		float: right;
 	}
 		
-	&:hover {
-		color: $white;
-		background: $gray-dark;
+	&:hover, &:focus {
+		cursor: pointer;
+		background: $gray-light;
 
 	}
 	
 	&.active {
-		background: $gray-dark;
+		background: $gray-light;
 
 		&:after {
 			content:"-";
@@ -40,9 +41,15 @@
 
 //Accordion to Full
 .accordion-to-full {
+	border-top: 1px solid $gray-light-3;
+	margin-bottom: $space-double;
+
 	@media all and (min-width: $bp-large) {
+		border-top: 0;
+
 		.acc-handle {
 			padding: 0;
+			margin-bottom: $space-half;
 			border: 0;
 
 			&:after {
