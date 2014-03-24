@@ -494,24 +494,24 @@ td {
     clear: left; }
 
 @media all and (min-width: 29.75em) {
-  .g-max4 > .gi {
+  .g-4up-linear > .gi {
     float: left;
     width: 50%; }
-    .g-max4 > .gi:nth-of-type(2n+1) {
+    .g-4up-linear > .gi:nth-of-type(2n+1) {
       clear: both; } }
 @media all and (min-width: 39.8em) {
-  .g-max4 > .gi {
+  .g-4up-linear > .gi {
     width: 33.3333333%; }
-    .g-max4 > .gi:nth-of-type(2n+1) {
+    .g-4up-linear > .gi:nth-of-type(2n+1) {
       clear: none; }
-    .g-max4 > .gi:nth-of-type(3n+1) {
+    .g-4up-linear > .gi:nth-of-type(3n+1) {
       clear: left; } }
 @media all and (min-width: 64em) {
-  .g-max4 > .gi {
+  .g-4up-linear > .gi {
     width: 25%; }
-    .g-max4 > .gi:nth-of-type(3n+1) {
+    .g-4up-linear > .gi:nth-of-type(3n+1) {
       clear: none; }
-    .g-max4 > .gi:nth-of-type(4n+1) {
+    .g-4up-linear > .gi:nth-of-type(4n+1) {
       clear: left; } }
 
 /* Grid 5up */
@@ -2340,6 +2340,11 @@ td {
 .block-event .b-byline {
   margin: 0;
   font-style: italic; }
+
+.block-contact {
+  margin-bottom: 1em; }
+  .block-contact a {
+    display: block; }
 
 .inline-list li {
   display: inline-block; }

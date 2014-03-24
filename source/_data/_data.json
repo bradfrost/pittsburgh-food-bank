@@ -116,5 +116,6 @@
 	"sidebarTextList" : true,
 	"sidebarText" : true,
 	"sidebarPostList" : true,
-	"timeline" : true
+	"timeline" : true,
+	"departmentList" : true
 }

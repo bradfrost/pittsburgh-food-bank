@@ -1,18 +1,47 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
-		<div class="l-1col">
 			<div class="lc">
 				{{> molecules-page-header }}
+				<div class="g g-2up">
+					<div class="gi">
+						<a href="{{ url }}">
+							<figure>
+								{{> atoms-hero }}
+								<figcaption>Get directions</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="gi">
+						<h2>Greater Pittsburgh Community Food Bank</h2>
+						1 North Linden Street<br />
+						Duquesne, PA 15110<br />
+						<a href="{{ url }}">Phone: 412-460-3663</a>
+						<a href="{{ url }}">Fax: 412-460-0418</a>
+						<a href="{{ url }}">Email us</a>
+					</div>
+				</div>
 			</div>
-			<div class="l-main">
-				<div class="fpo">Emergency food information</div>
-				<div class="fpo">Address (link to directions), phone number, fax, email</div>
-				<div class="fpo">Donate number and link</div>
-				<div class="fpo">Phone directory</div>
-				<div class="fpo">Directions</div>
-			</div><!--end .l-main-->
-		</div><!--end .l-1col-->
+			{{> organisms-split }}
+			<div class="lc">
+				<section class="section">
+					<h2 class="section-title">Contact Departments</h2>
+					<p class="section-desc">Please call <strong>(412) 460-3663</strong> and use the department's corresponding extension, or send an email.</p>
+					<div class="g g-4up-linear">
+						{{# departmentList }}
+						<div class="gi">
+							{{> molecules-block-contact }}
+						</div>
+						{{/ departmentList }}
+					</div><!--end .g-4up-->
+				</section>
+				<hr />
+				<section class="section contact-form-section">
+					<h2 class="section-title">Send a Message</h2>
+					<p class="section-desc">Have a question? Need to Lorem ipsum dolor sit amet, consectetur adipisicing elit? Contact us</p>
+					{{> molecules-contact-form }}
+				</section>
+			</div><!--end .lc-->
 		
 	</div><!--End role=main-->
 	{{> organisms-footer }}

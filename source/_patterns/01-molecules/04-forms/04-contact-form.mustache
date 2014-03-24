@@ -1,0 +1,24 @@
+<form action="{{ url }}" method="post" class="contact-form">
+	<div class="field-container">
+		<label for="contact-name">Name</label>
+		<input type="text" placeholder="First Last" autocomplete="off" id="contact-name" />
+	</div>
+	<div class="field-container">
+		<label for="contact-email">Email</label>
+		<input type="email" placeholder="name@domain.com"  id="contact-email" />
+	</div>
+	<div class="field-container">
+		<label for="contact-reason">Reason for contacting</label>
+		<select id="contact-reason">
+			<option>General Inquiry</option>
+			<option>Donations</option>
+			<option>Programs</option>
+			<option>Jobs</option>
+			<option>Other</option>
+		</select>
+	</div>
+	<div class="field-container">
+		<label for="contact-message">Message</label>
+		<textarea placeholder="Enter your message here"  rows="6" id="contact-message"></textarea>
+	</div>
+</form>

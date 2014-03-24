@@ -109,3 +109,12 @@
 		font-style: italic;
 	}
 }
+
+//Block Contact
+.block-contact {
+	margin-bottom: $space;
+	
+	a {
+		display: block;
+	}
+}
