@@ -129,7 +129,7 @@ header, footer, nav, section, article, hgroup, figure {
 
 body {
   background: white;
-  font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font: 100%/1.5 "proxima-nova", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
   color: #333333; }
 
@@ -185,8 +185,8 @@ blockquote {
 /* Horizontal Rule */
 hr {
   border: 0;
-  height: 2px;
-  background: #eeeeee;
+  border-bottom: 2px dotted #15561a;
+  height: 0;
   margin: 2em 0; }
 
 abbr {
@@ -263,13 +263,16 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
   -webkit-appearance: none; }
 
 button, input[type="submit"] {
-  padding: 0.5em;
-  color: #fff;
-  background: #333333;
+  color: #171303;
+  background: #e9bd1d;
+  text-transform: lowercase;
+  font-weight: bold;
   padding: 1.05em;
   border: 0;
   cursor: pointer;
   text-align: center; }
+  button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    background: #a98810; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -304,15 +307,11 @@ input[type="search"]::-webkit-search-decoration {
     padding: 0;
     margin: 0; }
   .inline-form input[type=submit], .inline-form button {
-    background: #333333;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
     width: auto; }
-    .inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus {
-      background: gray;
-      color: white; }
 
 /* Validation */
 .has-error {
@@ -583,17 +582,16 @@ td {
   position: relative;
   z-index: 2;
   border-bottom: 1px solid #dddddd; }
+  .header .logo {
+    float: left;
+    max-width: 8em;
+    margin: 0.6em 0 0 0.6em; }
+    @media all and (min-width: 46.8em) {
+      .header .logo {
+        max-width: 13em; } }
   @media all and (min-width: 46.8em) {
     .header {
       padding: 1.5em 0; } }
-
-.logo {
-  float: left;
-  max-width: 8em;
-  margin: 0.6em 0 0 0.6em; }
-  @media all and (min-width: 46.8em) {
-    .logo {
-      max-width: 13em; } }
 
 .nav-toggle {
   float: right;
@@ -694,21 +692,34 @@ td {
 .footer {
   clear: both;
   overflow: hidden;
-  background: #131313;
-  color: #f9f9f9;
+  background: #3b7840;
+  border-top: 3px solid #e9bd1d;
+  color: white;
   padding: 1em 0; }
   .footer a {
-    color: #f9f9f9; }
-  .footer legend {
+    color: #e9bd1d; }
+    .footer a:hover, .footer a:focus {
+      color: white; }
+  .footer h3 a {
+    color: white; }
+    .footer h3 a:hover, .footer h3 a:focus {
+      color: #e9bd1d; }
+  .footer li {
+    line-height: 1.1;
+    margin-bottom: 1em; }
+  .footer .logo {
     display: block;
-    width: 100%;
-    font-size: 0.875em;
-    margin-bottom: 1em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px dashed gray; }
+    margin: 0 auto;
+    max-width: 12em; }
+  @media all and (min-width: 46.8em) {
+    .footer {
+      padding: 2em 0; } }
+
+.footer-meta {
+  margin-top: 2em; }
 
 .copyright {
-  margin: 1em 0;
+  margin: 0.5em 0;
   font-size: 0.75em; }
   @media all and (min-width: 46.8em) {
     .copyright {
@@ -2631,7 +2642,7 @@ div.ui-slider {
   text-align: center;
   font-weight: bold;
   background: #bbbbbb;
-  color: black; }
+  color: #171303; }
   .ui-slider-handle:after {
     content: "";
     position: absolute;
@@ -2643,14 +2654,14 @@ div.ui-slider {
     border-width: 14px 22px 0 22px;
     border-color: #bbbbbb transparent transparent transparent; }
   .ui-slider-handle:hover {
-    color: black;
+    color: #171303;
     background: #dddddd; }
     .ui-slider-handle:hover:after {
       border-top-color: #dddddd; }
   .ui-slider-handle:focus {
-    color: black; }
+    color: #171303; }
   .ui-slider-handle:active {
-    color: black;
+    color: #171303;
     background: #666666; }
     .ui-slider-handle:active:after {
       border-top-color: #666666; }

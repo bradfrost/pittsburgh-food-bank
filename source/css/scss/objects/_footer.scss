@@ -4,28 +4,51 @@
 .footer {
 	clear: both;
 	overflow: hidden;
-	background: $gray-dark-2;
-	color: $gray-light;
+	background: $green;
+	border-top: $border-med solid $gold;
+	color: $white;
 	padding: $pad 0;
 
 	a {
-		color: $gray-light;
+		color: $gold;
+
+		&:hover, &:focus {
+			color: $white;
+		}
 	}
 
-	legend {
-		display: block;
-		width: 100%;
-		font-size: $font-size-sm-2;
+	h3 a {
+		color: $white;
+
+		&:hover, &:focus {
+			color: $gold;
+		}
+	}
+
+	li {
+		line-height: 1.1;
 		margin-bottom: $space;
-		padding-bottom: $pad-half;
-		border-bottom: 1px dashed $gray;
+	}
+
+	.logo {
+		display: block;
+		margin: 0 auto;
+		max-width: 12em;
+	}
+
+	@media all and (min-width: $bp-med) {
+		padding: $pad-double 0;
 	}
 }
 
-//Footer Nav
+//Footer Meta
+.footer-meta {
+	margin-top: 2em;
+}
 
+//Copyright
 .copyright {
-	margin: $space 0;
+	margin: $space-half 0;
 	font-size: $font-size-sm;
 
 	@media all and (min-width: $bp-med) {

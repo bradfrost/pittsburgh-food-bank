@@ -13,7 +13,13 @@ $gray-med-2 : #555;
 $gray-dark : #333;
 $gray-dark-2 : #131313;
 $white : #fff;
-$black : #000;
+$black : #171303;
+
+$green : #3b7840;
+$green-dark: #15561a;
+$green-light: #6bc04b;
+$gold : #e9bd1d;
+$gold-dark : darken( $gold, 15% );
 
 $dim : rgba(0,0,0,0.5);
 $dimmer : rgba(0,0,0,0.8);
@@ -25,7 +31,7 @@ $brand-facebook: #03539e;
 $brand-twitter: #35ccff;
 
 //Typography
-$font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$font : "proxima-nova", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 $font-secondary : Georgia, Times, "Times New Roman", serif;
 
 $font-size-sm : 0.75em;
