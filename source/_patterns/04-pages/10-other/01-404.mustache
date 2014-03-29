@@ -1,13 +1,11 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
-		<div class="l-1col">
-			<div class="l-main">
-				<h1 class="fpo">404 Page Not Found</h1>
-				<div class="fpo">Brief Explanation</div>
-				<div class="fpo">Common links (homepage, get help, give help, etc)</div>
-			</div><!--end .l-main-->
-		</div><!--end .l-1col-->
+		<div class="lc">
+			{{> molecules-page-header }}
+		</div>
+		{{> molecules-cta-banner }}
+		{{> organisms-split }}
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

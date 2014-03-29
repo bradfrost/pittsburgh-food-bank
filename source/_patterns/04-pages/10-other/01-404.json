@@ -1,0 +1,63 @@
+{
+	"page" : {
+		"title" : "Page Not Found",
+		"intro" : "The page you were looking unfortunately isn't here."
+	},
+	"ctaBanner" : {
+		"excerpt" : {
+			"short" : "While the page you were looking for wasn't found, there's still a whole bunch of ways you can get involved."
+		},
+		"cta" : "Visit the homepage",
+		"url" : "#"
+	},
+	"splitCol1" : {
+		"headline" : {
+			"xs" : "Get Help"
+		},
+		"excerpt" : {
+			"short" : "We're hear to help. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quasi."
+		},
+		"splitList" : [
+			{
+				"label" : "Find food near you"
+			},
+			{
+				"label" : "View upcoming events"
+			},
+			{
+				"label" : "View simple, affordable recipes"
+			},
+			{
+				"label" : "View SNAP benefits"
+			},
+			{
+				"label" : "Learn more about hunger"
+			}
+		]
+	},
+	"splitCol2" : {
+		"headline" : {
+			"xs" : "Give Help"
+		},
+		"excerpt" : {
+			"short" : "It's easy to contribute to ending hunger. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quasi."
+		},
+		"splitList" : [
+			{
+				"label" : "Donate"
+			},
+			{
+				"label" : "Volunteer"
+			},
+			{
+				"label" : "Organize a food drive"
+			},
+			{
+				"label" : "View upcoming events"
+			},
+			{
+				"label" : "Become a sponsor"
+			}
+		]
+	}
+}

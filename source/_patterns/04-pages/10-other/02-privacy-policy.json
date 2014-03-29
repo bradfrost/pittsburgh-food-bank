@@ -1,0 +1,46 @@
+{
+	"page" : {
+		"title" : "Privacy Policy",
+		"intro" : "This privacy statement discloses the privacy practices for our website."
+	},
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "About"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "History"
+			},
+			{ 
+				"label": "Operations"
+			},
+			{ 
+				"label": "Board & Staff"
+			},
+			{ 
+				"label": "Jobs & Internships"
+			},
+			{ 
+				"label": "Agences"
+			},
+			{ 
+				"label": "Donors"
+			},
+			{ 
+				"label": "Sponsors"
+			},
+			{ 
+				"label": "Press/Awards"
+			},
+			{ 
+				"label": "Finances"
+			},
+			{ 
+				"label": "Network Developments"
+			},
+			{ 
+				"label": "Brand"
+			}
+		]
+	}
+}
