@@ -6,22 +6,23 @@
 		</div>
 		<div class="l-3col">
 			<div class="l-main">
-				<div class="fpo">Search Results</div>
-				<div class="fpo">Pagination</div>
-				<div class="fpo">Search form w/ copy "Still can't find what you're looking for? Search again..."</div>
+				<ul class="post-list">
+					{{# postList }}
+					<li>{{> molecules-block-post }}</li>
+					{{/ postList }}
+					{{> molecules-pagination }}
+					{{> organisms-well-search }}
+				</ul>
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
-				
+				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
-				<div class="fpo">About GPCFB</div>
-				<div class="fpo">Upcoming events</div>
-				<div class="fpo">Categories (advocacy updates, events, stories, etc)</div>
-				<div class="fpo">Subscribe tout (RSS, Twitter, Facebook, Newsletter)</div>
+				{{> organisms-sidebar-text }}
+				{{> organisms-sidebar-event-list }}
+				
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
-		
-		
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

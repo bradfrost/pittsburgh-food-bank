@@ -2,5 +2,100 @@
 	"page" : {
 		"title" : "Search results for [keyword]",
 		"intro" : "Number of results: [30]"
+	},
+	"postList" : [
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "This is the latest blog post title"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		},
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "This is another blog post title"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		},
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "This could be a campaign update"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		},
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "Photos from a recent event"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		},
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "Agency update: Lorem ipsum dolor sit amet, consectetur."
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		},
+		{
+			"timestamp" : "April 18, 2014",
+			"headline" : {
+				"short" : "Important SNAP information Lorem ipsum dolor sit amet"
+			},
+			"excerpt" : {
+				"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet, velit eum deserunt voluptatibus praesentium ea labore rem rerum similique."
+			}
+		}
+	],
+	"sectionNav" : {
+		"headline" : {
+			"xs" : "Categories"
+		},
+		"sectionNavList" : [
+			{ 
+				"label": "Advocacy Updates"
+			},
+			{ 
+				"label": "Events"
+			},
+			{ 
+				"label": "Stories"
+			},
+			{ 
+				"label": "News"
+			},
+			{ 
+				"label": "Programs"
+			}
+		]
+	},
+	"well" : {
+		"headline" : {
+			"short" : "Still can't find what you're looking for?"
+		},
+		"excerpt" : {
+			"short" : "Enter a new search term to try again:"
+		}
+	},
+	"sidebarText" : {
+		"headline" : {
+			"xs" : "About GPCFB"
+		},
+		"excerpt" : {
+			"medium" : "The Greater Pittsburgh Community Food Bank is dedicated to ending hunger in Soutwstern PA and beyond."
+		},
+		"cta" : "Learn more"
 	}
 }

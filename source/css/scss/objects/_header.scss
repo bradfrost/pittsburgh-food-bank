@@ -37,21 +37,24 @@
 	}
 }
 
-.search-form {
-	overflow: hidden;
-	max-height: 0;
+//Searh form in header
+.header {
+	.search-form {
+		overflow: hidden;
+		max-height: 0;
 
-	&.active {
-		max-height: 3em;
-	}
+		&.active {
+			max-height: 3em;
+		}
 
-	@media all and (min-width: $bp-med) {
-		float: right;
-		max-height: none;
-		margin: 1.5em 1em 0 0;
-	}
+		@media all and (min-width: $bp-med) {
+			float: right;
+			max-height: none;
+			margin: 1.5em 1em 0 0;
+		}
 
-	@media all and (max-width: $bp-med) {
-		clear: both;
+		@media all and (max-width: $bp-med) {
+			clear: both;
+		}
 	}
 }

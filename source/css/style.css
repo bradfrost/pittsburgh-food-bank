@@ -609,18 +609,18 @@ td {
     .nav-toggle {
       padding: 1em 0.5em; } }
 
-.search-form {
+.header .search-form {
   overflow: hidden;
   max-height: 0; }
-  .search-form.active {
+  .header .search-form.active {
     max-height: 3em; }
   @media all and (min-width: 46.8em) {
-    .search-form {
+    .header .search-form {
       float: right;
       max-height: none;
       margin: 1.5em 1em 0 0; } }
   @media all and (max-width: 46.8em) {
-    .search-form {
+    .header .search-form {
       clear: both; } }
 
 /*------------------------------------*\
