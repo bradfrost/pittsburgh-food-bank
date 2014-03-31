@@ -4,10 +4,9 @@
 .footer {
 	clear: both;
 	overflow: hidden;
-	background: $green;
-	border-top: $border-med solid $gold;
+	background: url(../../images/bg-footer.png) repeat-x 0 100% $green;
 	color: $white;
-	padding: $pad 0;
+	padding: 0 0 7em;
 
 	a {
 		color: $gold;
@@ -17,17 +16,43 @@
 		}
 	}
 
-	h3 a {
-		color: $white;
+	h3 {
+		a {
+			color: $white;
 
-		&:hover, &:focus {
-			color: $gold;
+			&:hover, &:focus {
+				color: $gold;
+			}
 		}
 	}
 
 	li {
 		line-height: 1.1;
+		margin-bottom: 1.2em;
+
+		a {
+			display: block;
+		}
+	}
+
+	p {
+		font-size: $font-size-sm-2;
+	}
+
+	hr {
+		margin: $space 0;
+
+		@media all and (max-width: $bp-med) {
+			display: none;
+		}
+	}
+
+	.block-post-small {
 		margin-bottom: $space;
+
+		.b-timestamp {
+			color: $green-dark-2;
+		}
 	}
 
 	.logo {
@@ -36,22 +61,160 @@
 		max-width: 12em;
 	}
 
+	[class^="icon-"], [class*=" icon-"] {
+		display: inline-block;
+		padding-right: 0.4em;
+		color: $green-dark;
+		position: relative;
+		top: 3px;
+	}
+}
+
+//Giant Button Bar
+.footer-btn-bar-container {
+	background: $green-dark;
+	overflow: hidden;
+
 	@media all and (min-width: $bp-med) {
-		padding: $pad-double 0;
+		margin-bottom: $space-double;
+	}
+}
+
+.footer-btn-bar {
+	@extend .lc;
+	padding: 0;
+
+	a {
+		font-size: $font-size-large;
+		display: block;
+		float: left;
+		width: 50%;
+		background: $green-dark;
+		padding: 0.5em;
+		font-weight: bold;
+		text-align: center;
+		color: $white;
+
+		[class^="icon-"], [class*=" icon-"] {
+			color: $green;
+		}
+
+		&:last-child {
+			border-left: 1px solid $green;
+		}
+
+		&:hover, &:focus {
+			background: $gold;
+			color: $white;
+
+			[class^="icon-"], [class*=" icon-"] {
+				color: $white;
+			}
+		}
+
+		@media all and (min-width: $bp-small-2) {
+			padding: 0.875em;
+		}
+
+		@media all and (max-width: $bp-xs) {
+			float: none;
+			width: auto;
+		}
+	}
+}
+
+//Footer Grid Items
+.footer .gi {
+	@media all and (max-width: $bp-med) {
+		padding: 0;
+
+		.g-2up {
+			margin: 0;
+		}
+	}
+}
+
+//Footer Navigation Items, which collapse
+.nav-footer-item {
+	margin-bottom: 0.7em;
+	
+	a {
+		display: block;
+	}
+
+	@media all and (max-width: $bp-med) {
+		padding: $pad;
+		font-size: 1.1em;
+		font-weight: bold;
+		border-bottom: 1px solid $green-dark;
+		margin: 0;
+	}
+}
+
+.nav-footer-item-spacer {
+	@media all and (min-width: $bp-med) {
+		margin-bottom: 2em;
+	}
+}
+
+
+//Footer Accordion
+.footer {
+	.acc-handle {
+		&.active {
+			background: $green-dark;
+		}
+
+		@media all and (min-width: $bp-med) {
+			padding: 0;
+			margin-bottom: 0.7em;
+
+			&.active {
+				background: none;
+			}
+
+			&:after {
+				content : "";
+			}
+		}
+	}
+
+	.acc-panel {
+		@media all and (min-width: $bp-med) {
+			padding: 0;
+			display: block;
+		}
+	}
+}
+
+//Footer Contact
+.footer-contact {
+	@media all and (min-width: $bp-med) {
+		margin-top: 2em;
+	}
+}
+
+.footer-contact-area {
+	.acc-panel {
+		a {
+			display: block;
+			margin-bottom: $space;
+		}
+
+		.vcard {
+			font-size: $font-size-sm-2;
+			margin-bottom: $space;
+		}
 	}
 }
 
 //Footer Meta
 .footer-meta {
-	margin-top: 2em;
+	margin-top: 3em;
 }
 
 //Copyright
 .copyright {
-	margin: $space-half 0;
 	font-size: $font-size-sm;
-
-	@media all and (min-width: $bp-med) {
-			text-align: center;
-		}
+	text-align: center;
 }

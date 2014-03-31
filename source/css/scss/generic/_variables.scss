@@ -17,9 +17,11 @@ $black : #171303;
 
 $green : #3b7840;
 $green-dark: #15561a;
+$green-dark-2: darken( $green-dark, 05% );
 $green-light: #6bc04b;
 $gold : #e9bd1d;
-$gold-dark : darken( $gold, 15% );
+$gold-dark : darken( $gold, 05% );
+$gold-light : lighten( $gold, 05% );
 
 $dim : rgba(0,0,0,0.5);
 $dimmer : rgba(0,0,0,0.8);
@@ -35,9 +37,9 @@ $font : "proxima-nova", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 $font-secondary : Georgia, Times, "Times New Roman", serif;
 
 $font-size-sm : 0.75em;
-$font-size-sm-2 : 0.875em;
+$font-size-sm-2 : 0.85em;
 $font-size-med : 1em;
-$font-size-large : 1.4375em;
+$font-size-large : 1.4em;
 $font-size-large-2 : 2em;
 $font-size-large-3 : 2.75em;
 $font-size-xl : 3.5em;
@@ -54,6 +56,7 @@ $space-triple : $space*3;
 $space-quad : $space*4;
 $space-half : $space/2;
 $space-quarter : $space/4;
+$space-and-half : $space*1.5;
 $pad : 1em;
 $pad-and-half : $pad*1.5;
 $pad-double : $pad*2;
@@ -66,6 +69,7 @@ $border-thick: 7px;
 
 
 //Breakpoints
+$bp-xs : 19em;
 $bp-small : 24em;
 $bp-small-2 : 29.75em;
 $bp-small-3 : 39.8em;

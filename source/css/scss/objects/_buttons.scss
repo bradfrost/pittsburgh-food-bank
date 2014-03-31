@@ -3,17 +3,18 @@
 \*------------------------------------*/
 .btn {
 	display: inline-block;
-	background: $gray-dark;
+	background: $green-dark;
 	color: $white;
 	line-height: 1;
 	font-weight: bold;
+	text-transform: uppercase;
 	padding: $pad;
 	border: 0;
 	text-align: center;
 	
 	&:hover, &:focus {
 		color: $white;
-		background: $gray;
+		background: $green;
 	}
 
 	&.disabled {
@@ -40,6 +41,5 @@
 
 
 .text-btn {
-	font-style: italic;
 	font-weight: bold;
 }

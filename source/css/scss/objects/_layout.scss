@@ -11,6 +11,10 @@
 	@media all and (min-width: $bp-med) {
 		padding: 0 $pad;
 	}
+
+	@media all and (min-width: $bp-large) {
+		padding: 0 $pad-double;
+	}
 }
 
 /*------------------------------------*\
@@ -111,6 +115,25 @@
 			
 			&:nth-of-type(odd) {
 				clear: left;
+			}
+		}
+	}
+
+	.g-2up {
+		> .gi {
+			@media all and (min-width: $bp-med) {
+				padding-top: 0;
+				float: none;
+				width: auto;
+			}
+
+			@media all and (min-width: $bp-large) {
+				float: left;
+				width: 50%;
+				
+				&:nth-of-type(odd) {
+					clear: left;
+				}
 			}
 		}
 	}

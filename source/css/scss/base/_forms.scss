@@ -42,12 +42,13 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 button, input[type="submit"] {
 	color: $black;
 	background: $gold;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	font-weight: bold;
 	padding: 1.05em;
 	border: 0;
 	cursor: pointer;
 	text-align: center;
+	@include transition(all,0.2s,ease-out);
 
 	&:hover, &:focus {
 		background: $gold-dark;

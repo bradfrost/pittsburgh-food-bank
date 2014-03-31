@@ -110,4 +110,23 @@
 		e.preventDefault();
 		$(".donate-range").val(400).slider("refresh");
 	});
+
+	//Prevent links appearing within an accordion handle from firing
+	$('.acc-handle a').on('click',function(e){
+		if (window.matchMedia("(max-width: 46.8em)").matches) {
+			e.preventDefault();
+			$(this).parent().toggleClass('active');
+			$(this).parent().next('.acc-panel').toggleClass('active');
+		}
+		
+	});
+
+	//Accordion
+	$('.acc-handle').on('click',function(e){
+		if (window.matchMedia("(max-width: 46.8em)").matches) {
+			e.preventDefault();
+			$(this).toggleClass('active');
+			$(this).next('.acc-panel').toggleClass('active');
+		}
+	});
 })(this);

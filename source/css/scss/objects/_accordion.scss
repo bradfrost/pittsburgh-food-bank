@@ -6,19 +6,24 @@
 	font-weight: bold;
 	display: block;
 	position: relative;
-	padding: $pad 0;
-	border-bottom: 1px solid $gray-light-3;
+	padding: $pad;
 	margin: 0;
+	cursor: pointer;
+
+	a {
+		display: block;
+	}
 
 	&:after {
 		content:"+";
-		float: right;
+		position: absolute;
+		right: 1em;
+		top: 50%;
+		margin-top: -10px;
 	}
 		
 	&:hover, &:focus {
 		cursor: pointer;
-		background: $gray-light;
-
 	}
 	
 	&.active {
@@ -32,7 +37,7 @@
 
 .acc-panel {
 	display: none;
-	padding: $pad 0;
+	padding: $pad;
 
 	&.active {
 		display: block;

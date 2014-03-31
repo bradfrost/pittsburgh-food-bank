@@ -42,6 +42,7 @@
 	.search-form {
 		overflow: hidden;
 		max-height: 0;
+		margin: 0;
 
 		&.active {
 			max-height: 3em;
