@@ -112,21 +112,21 @@
 	});
 
 	//Prevent links appearing within an accordion handle from firing
-	$('.acc-handle a').on('click',function(e){
+	$('.acc-handle a').on('click',function(){
 		if (window.matchMedia("(max-width: 46.8em)").matches) {
-			e.preventDefault();
 			$(this).parent().toggleClass('active');
 			$(this).parent().next('.acc-panel').toggleClass('active');
+			return false;
 		}
 		
 	});
 
 	//Accordion
-	$('.acc-handle').on('click',function(e){
+	$('.acc-handle').on('click',function(){
 		if (window.matchMedia("(max-width: 46.8em)").matches) {
-			e.preventDefault();
 			$(this).toggleClass('active');
 			$(this).next('.acc-panel').toggleClass('active');
+			return false;
 		}
 	});
 })(this);
