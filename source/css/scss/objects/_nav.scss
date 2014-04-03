@@ -99,8 +99,8 @@
 			margin-right: 2em;
 		}
 
-		@media all and (min-width: 76.5em) {
-			margin-right: 3.4em;
+		@media all and (min-width: 77em) {
+			margin-right: 3.6em;
 		}
 	}
 
@@ -127,7 +127,7 @@
 	@media all and (min-width: $bp-med) {
 		max-height: none;
 		clear: both;
-		margin: 0 0 0 -0.5em;
+		margin: 0 -0.5em 0 -0.5em;
 		
 		a {
 			border: 0;

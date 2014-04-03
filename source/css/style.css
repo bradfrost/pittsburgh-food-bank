@@ -598,7 +598,7 @@ td {
     border-radius: 8px;
     display: block;
     max-width: 9em;
-    padding: 0.5em 0.5em 0.2em;
+    padding: 0.5em 0.5em 0;
     float: left; }
     .header .logo-link img {
       display: block;
@@ -793,9 +793,9 @@ td {
   @media all and (min-width: 69em) {
     .nav-list > li {
       margin-right: 2em; } }
-  @media all and (min-width: 76.5em) {
+  @media all and (min-width: 77em) {
     .nav-list > li {
-      margin-right: 3.4em; } }
+      margin-right: 3.6em; } }
 .nav-list a {
   display: block;
   border-top: 1px solid #3b7840;
@@ -813,7 +813,7 @@ td {
   .nav-list {
     max-height: none;
     clear: both;
-    margin: 0 0 0 -0.5em; }
+    margin: 0 -0.5em 0 -0.5em; }
     .nav-list a {
       border: 0; }
       .nav-list a.nav-subnav-link {
