@@ -2,55 +2,155 @@
     $NAVIGATION
 \*------------------------------------*/
 
+//Nav Container
 .nav {
 	@extend .cf;
-	clear: both;
-	max-height: 0;
 	
-	a {
-		display: block;
-		border-top: 1px solid $gray-light-2;
-	}
 
-	&.active {
-		max-height: 40em;
+	[class^="icon-"] {
+		position: relative;
+		top: 4px;
+		color: $green-dark;
 	}
 
 	@media all and (max-width: $bp-med) {
+		max-height: 0;
 		overflow: hidden;
+		clear: both;
+
+		&.active {
+			max-height: 70em;
+			background: $green-dark;
+		}
+	}
+}
+
+//Get Help/Give Help List
+.nav-action-list {
+	overflow: hidden;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid $green-dark;
+
+	li {
+		float: left;
+		margin-right: 1em;
+	}
+
+	a {
+		font-size: $font-size-large;
+		font-weight: bold;
+		color: $gold;
+
+		&:hover, &:focus {
+			color: $white;
+		}
+	}
+}
+
+//Primary Navigation List
+.nav-list {
+	> li {
+		position: relative;
+
+		@media all and (min-width: $bp-med) {
+			float:left;
+			width: 25%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		@media all and (min-width: 57em) {
+			width: auto;
+			margin-right: 0.5em;
+		}
+
+		@media all and (min-width: 59.8em) {
+			margin-right: 1em;
+		}
+
+		@media all and (min-width: 69em) {
+			margin-right: 2em;
+		}
+
+		@media all and (min-width: 76.5em) {
+			margin-right: 3.4em;
+		}
+	}
+
+	a {
+		display: block;
+		border-top: 1px solid $green;
+		padding: 0.5em;
+		font-size: 110%;
+
+		&.nav-subnav-link {
+			display: inline-block;
+		}
+	}
+
+	.nav-donate {
+		color: $gold;
+		font-weight: bold;
+
+		&:hover, &:focus {
+			color: $white;
+		}		
 	}
 
 	@media all and (min-width: $bp-med) {
 		max-height: none;
-		float: right;
-		clear: none;
-		margin: 1em 1em 0 0;
-
-		> ul > li {
-			float: left;
-			margin-right: 1em;
-		}
-
+		clear: both;
+		margin: 0 0 0 -0.5em;
+		
 		a {
 			border: 0;
 		}
-		
-	}
-}
-
-.nav-li {
-	position: relative;
-
-	> a {
-		font-size: 110%;
 	}
 }
 
 .nav-subnav-link {
-	.icon-arrow-down {
+	display: inline-block;
+	position: relative;
+	@include transition(none,0.3s,ease-out);
+
+	[class^="icon-"] {
+		font-size: 75%;
 		position: relative;
-		top: 2px;
-		left: -2px;
+		top: 1px;
+		left: 2px;
+	}
+
+	&:hover, &:focus {
+		@include transition(color,0.3s,ease-out);
+	}
+
+	&.active {
+		background: $green-dark;
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
+		color: $gold;
+
+		&:after {
+			content: " ";
+			position: absolute;
+		    bottom: 1px;
+		    right: -$border-radius;
+		    width: $border-radius;
+		    height: $border-radius;
+		    border-bottom-left-radius: $border-radius;
+	    	border-width: 0 0 1px 1px;
+	    	box-shadow: -2px 2px 0 $green-dark;
+		}
+
+		> [class^="icon-"] {
+			color: $gold;
+			-webkit-animation: flip 0.2s forwards;
+			-moz-animation:    flip 0.2s forwards;
+			-o-animation:      flip 0.2s forwards;
+			animation:         flip 0.2s forwards;
+		}
 	}
 }
 
@@ -58,12 +158,16 @@
 	@media all and (min-width: $bp-med) {
 		position: absolute;
 		top: 100%;
-		left: -0.5em;
-		background: $white;
+		left: 0;
+		z-index: 2;
+		background: $green-dark;
+		border-radius: $border-radius;
+		border-top-left-radius: 0;
+		line-height: 1.2;
 		padding: 0.5em;
-		min-width: 12em;
-		border: 1px solid $gray-light-2;
+		min-width: 15em;
 		display: none;
+
 
 		&.active {
 			display: block;
@@ -82,4 +186,21 @@
 	li {
 		margin-bottom: $space-half;
 	}
+}
+
+@-webkit-keyframes flip {
+  0%   { -webkit-transform: rotate(0); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+@-moz-keyframes flip {
+  0%   { -moz-transform: rotate(0); }
+  100% { -moz-transform: rotate(180deg); }
+}
+@-o-keyframes flip {
+  0%   { -o-transform: rotate(0); }
+  100% { -o-transform: rotate(180deg); }
+}
+@keyframes flip {
+  0%   { transform: rotate(0); }
+  100% { transform: rotate(180deg); }
 }

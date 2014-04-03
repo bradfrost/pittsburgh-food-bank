@@ -1,32 +1,74 @@
 .header {
-	padding: 0;
-	@extend .lc;
 	position: relative;
 	z-index: 2;
-	border-bottom: 1px solid $gray-light-3;
+	background: $green;
+	
+	.lc {
+		@extend .cf;
 
-	.logo {
+		@media all and (max-width: $bp-med) {
+			padding: 0;
+		}
+	}
+
+	a {
+		color: $white;
+
+		&:hover, &:focus {
+			color: $gold;
+		}
+	}
+
+	.logo-link {
+		border-radius: $border-radius;
+		display: block;
+		max-width: 9em;
+		padding: 0.5em 0.5em 0.2em;
 		float: left;
-		max-width: 8em;
-		margin: 0.6em 0 0 0.6em;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		&:hover, &:focus {
+			background: $green-dark;
+		}
 
 		@media all and (min-width: $bp-med) {
-			max-width: 13em;
+			float: none;
+			position: absolute;
+			top: 0;
+			left: 0.5em;
+			max-width: 14em;
+		}
+
+		@media all and (min-width: $bp-large) {
+			left: 1.5em;
 		}
 	}
 
 	@media all and (min-width: $bp-med) {
-		padding: 1.5em 0;
+		padding: 1em 0;
+	}
+
+	@media all and (min-width: $bp-med) {
+		padding: 2em 0 1.5em;
 	}
 }
 
 .nav-toggle {
 	float: right;
 	display: block;
-	padding: 1.3rem;
-	font-size: 1.3rem;
+	font-size: 1.3em;
+	padding: 1.1em;
 	line-height: 1;
-	border-left: 1px solid #dbdbdb;
+	border-left: 1px solid $tint;
+
+	&.active {
+		background: $green-dark;
+	}
 
 	@media all and (min-width: $bp-med) {
 		display: none;
@@ -37,25 +79,116 @@
 	}
 }
 
+//Header Navigation Container
+.header-nav-container {
+	@media all and (min-width: $bp-med) {
+		position: relative;
+		margin-left: 15em;
+	}
+
+	@media all and (min-width: $bp-large) {
+		margin-left: 16em;
+	}
+}
+
 //Searh form in header
 .header {
 	.search-form {
-		overflow: hidden;
 		max-height: 0;
+		overflow: hidden;
 		margin: 0;
 
 		&.active {
 			max-height: 3em;
 		}
 
+		::-webkit-input-placeholder {
+		   color: $green;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: $green;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: $green;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: $green;  
+		}
+
 		@media all and (min-width: $bp-med) {
-			float: right;
+			position: absolute;
+			top: -0.1em;
+			right: 0;
 			max-height: none;
-			margin: 1.5em 1em 0 0;
+			overflow: visible;
 		}
 
 		@media all and (max-width: $bp-med) {
 			clear: both;
 		}
+
+		&:hover, &:focus {
+			.search-field {
+				background: $white;
+				color: $black;
+
+				::-webkit-input-placeholder {
+				   color: $black;
+				}
+
+				:-moz-placeholder { /* Firefox 18- */
+				   color: $black;  
+				}
+
+				::-moz-placeholder {  /* Firefox 19+ */
+				   color: $black;  
+				}
+			}
+		}
 	}
+
+	.search-field {
+		background: $green-dark;
+		color: $white;
+		padding: 0.4em 3em 0.4em 0.7em;
+		border: 0;
+		@include transition(all,0.3s,ease-out);
+
+		&:focus, &:active {
+			background: $white;
+			color: $black;
+			outline: 0;
+		}
+	}
+
+	.search-submit {
+		padding: 0.5em 1em 0.3em;
+		right: -1px;
+		color: $green;
+		border-top-right-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+
+		&:hover, &:focus {
+			color: $black;
+			outline: 0;
+		}
+	}
+}
+
+// Search Form
+.search-field {
+	padding: 0.7em 3em 0.7em 0.7em;
+	padding-right: 3em;
+	margin: 0;
+}
+
+.search-submit {
+	background: none;
+	padding: 0.78em 1em;
+	border: 0;
+	border-left: 1px solid $green;
+	
 }

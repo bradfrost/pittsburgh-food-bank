@@ -3,6 +3,7 @@
 	background: $gray-light-2;
 	text-align: center;
 	padding: 2em 0;
+	margin-top: (-$pad);
 
 	@media all and (min-width: $bp-med) {
 		padding: 4em 0;

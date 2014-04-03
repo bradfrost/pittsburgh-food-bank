@@ -12,6 +12,10 @@
 /* Block */
 .block {
 	overflow: hidden;
+
+	img {
+		border-radius: $border-radius;
+	}
 }
 
 .b-img {

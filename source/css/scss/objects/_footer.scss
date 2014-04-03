@@ -4,7 +4,7 @@
 .footer {
 	clear: both;
 	overflow: hidden;
-	background: url(../../images/bg-footer.png) repeat-x 0 100% $green;
+	background: url(../images/bg-footer.png) repeat-x 0 100% $green;
 	color: $white;
 	padding: 0 0 7em;
 
@@ -61,7 +61,7 @@
 		max-width: 12em;
 	}
 
-	[class^="icon-"], [class*=" icon-"] {
+	[class^="icon-"] {
 		display: inline-block;
 		padding-right: 0.4em;
 		color: $green-dark;
@@ -95,7 +95,7 @@
 		text-align: center;
 		color: $white;
 
-		[class^="icon-"], [class*=" icon-"] {
+		[class^="icon-"] {
 			color: $green;
 		}
 
@@ -107,7 +107,7 @@
 			background: $gold;
 			color: $white;
 
-			[class^="icon-"], [class*=" icon-"] {
+			[class^="icon-"] {
 				color: $white;
 			}
 		}

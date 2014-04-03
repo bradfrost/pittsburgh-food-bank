@@ -10,8 +10,7 @@
 
 
 	//Navigation toggle for small screens
-	$('.nav-toggle-menu').click(function(e) {
-		e.preventDefault();
+	$('.nav-toggle-menu').click(function() {
 		$(this).toggleClass('active');
 		$('.nav').toggleClass('active');
 		return false;
@@ -30,20 +29,19 @@
 	});
 
 	$('.nav-subnav-link').on('click',function(e){
+
 		var $this = $(this),
-			$subnav = $this.next('.nav-subnav');
-		e.stopPropagation();
+			$panel = $this.next('.nav-subnav');
 
-		if($this.hasClass('active')) {
-			$subnav.removeClass('active');
-			$this.removeClass('active');
-		} else {
-			$this.addClass('active');
-			$subnav.addClass('active');
-		}
+		//Close other panels if link isn't a subnavigation item
+		$('.nav-subnav-link').not($this).removeClass('active');
+		$('.nav-subnav').not($panel).removeClass('active');
 
-		//$('.nav-subnav-link, .nav-subnav').removeClass('active'); //Close other open subnav menus
-		
+		//Toggle Class
+		$this.toggleClass('active');
+		$panel.toggleClass('active');
+
+		return false;
 	});
 
 	//
