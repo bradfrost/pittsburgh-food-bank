@@ -39,7 +39,7 @@
 		@media all and (min-width: $bp-med) {
 			float: none;
 			position: absolute;
-			top: 0;
+			top: -0.5em;
 			left: 0.5em;
 			max-width: 14em;
 		}
@@ -64,7 +64,7 @@
 	font-size: 1.3em;
 	padding: 1.1em;
 	line-height: 1;
-	border-left: 1px solid $tint;
+	border-left: 1px solid $green-dark;
 
 	&.active {
 		background: $green-dark;
@@ -99,7 +99,7 @@
 		margin: 0;
 
 		&.active {
-			max-height: 3em;
+			max-height: 6em;
 		}
 
 		::-webkit-input-placeholder {
@@ -162,6 +162,12 @@
 			color: $black;
 			outline: 0;
 		}
+
+		@media all and (max-width: $bp-med) {
+			border-radius: 0;
+			font-size: $font-size-large;
+			padding: 1em;
+		}
 	}
 
 	.search-submit {
@@ -174,6 +180,12 @@
 		&:hover, &:focus {
 			color: $black;
 			outline: 0;
+		}
+
+		@media all and (max-width: $bp-med) {
+			border-radius: 0;
+			font-size: $font-size-large;
+			padding: 1em;
 		}
 	}
 }

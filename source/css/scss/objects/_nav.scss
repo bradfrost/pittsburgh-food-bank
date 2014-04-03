@@ -45,6 +45,31 @@
 			color: $white;
 		}
 	}
+
+	@media all and (max-width: $bp-med) {
+		border-bottom: 0;
+		padding: 0;
+
+		li {
+			float: left;
+			width: 50%;
+			margin: 0;
+
+			&:last-child {
+				border-left: 1px solid $green;
+			}
+		}
+
+		a {
+			display: block;
+			text-align: center;
+			padding: 0.7em 0;
+		}
+
+		[class^="icon-"] {
+			color: $green;
+		}
+	}	
 }
 
 //Primary Navigation List
@@ -82,11 +107,11 @@
 	a {
 		display: block;
 		border-top: 1px solid $green;
-		padding: 0.5em;
+		padding: 0.8em 0.5em;
 		font-size: 110%;
 
-		&.nav-subnav-link {
-			display: inline-block;
+		@media all and (min-width: $bp-med) {
+			padding: 0.5em;
 		}
 	}
 
@@ -106,12 +131,15 @@
 		
 		a {
 			border: 0;
+
+			&.nav-subnav-link {
+				display: inline-block;
+			}
 		}
 	}
 }
 
 .nav-subnav-link {
-	display: inline-block;
 	position: relative;
 	@include transition(none,0.3s,ease-out);
 
@@ -152,9 +180,22 @@
 			animation:         flip 0.2s forwards;
 		}
 	}
+
+	@media all and (max-width: $bp-med) {
+		[class^="icon-"] {
+			color: $green;
+		}
+	}
 }
 
 .nav-subnav {
+	display: none;
+
+	&.active {
+		display: block;
+		background: $green;
+	}
+
 	@media all and (min-width: $bp-med) {
 		position: absolute;
 		top: 100%;
@@ -166,11 +207,9 @@
 		line-height: 1.2;
 		padding: 0.5em;
 		min-width: 15em;
-		display: none;
-
 
 		&.active {
-			display: block;
+			background: $green-dark;
 		}
 	}
 }

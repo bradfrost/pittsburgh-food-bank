@@ -13,6 +13,8 @@
 	$('.nav-toggle-menu').click(function() {
 		$(this).toggleClass('active');
 		$('.nav').toggleClass('active');
+		$('.header .search-form').removeClass('active');
+		$('.nav-toggle-search').removeClass('active');
 		return false;
 	});
 	
@@ -21,6 +23,11 @@
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$('.header .search-form').toggleClass('active');
+		$('.nav').removeClass('active');
+		$('.nav-toggle-menu').removeClass('active');
+		if($('.header .search-form').hasClass('active')) {
+			$('.header .search-field').focus();
+		}
 	});
 
 	//Primary Navigation
@@ -28,8 +35,7 @@
 		$('.nav-subnav-link, .nav-subnav').removeClass('active');
 	});
 
-	$('.nav-subnav-link').on('click',function(e){
-
+	$('.nav-subnav-link').on('click',function(){
 		var $this = $(this),
 			$panel = $this.next('.nav-subnav');
 
