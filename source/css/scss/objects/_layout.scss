@@ -54,6 +54,10 @@
 			left: $pad;
 			width: 12em;
 		}
+
+		@media all and (min-width: $bp-large) {
+			left: $pad-double;
+		}
 	}
 
 	.l-sidebar2 {

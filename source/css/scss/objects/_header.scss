@@ -22,15 +22,8 @@
 	.logo-link {
 		border-radius: $border-radius;
 		display: block;
-		max-width: 9em;
 		padding: 0.5em 0.5em 0;
 		float: left;
-
-		img {
-			display: block;
-			width: 100%;
-			height: auto;
-		}
 
 		&:hover, &:focus {
 			background: $green-dark;
@@ -41,7 +34,6 @@
 			position: absolute;
 			top: -0.5em;
 			left: 0.5em;
-			max-width: 14em;
 		}
 
 		@media all and (min-width: $bp-large) {
@@ -55,6 +47,17 @@
 
 	@media all and (min-width: $bp-med) {
 		padding: 2em 0 1.5em;
+	}
+
+	.logo {
+		display: block;
+		width: 128px;
+		height: 55px;
+
+		@media all and (min-width: $bp-med) {
+			width: 208px;
+		height: 89px;
+		}
 	}
 }
 

@@ -400,6 +400,9 @@ td {
       top: 0;
       left: 1em;
       width: 12em; } }
+  @media all and (min-width: 64em) {
+    .l-3col .l-sidebar {
+      left: 2em; } }
   @media all and (min-width: 48em) and (max-width: 64em) {
     .l-3col .l-sidebar2 {
       margin-left: 13em; } }
@@ -597,13 +600,8 @@ td {
   .header .logo-link {
     border-radius: 8px;
     display: block;
-    max-width: 9em;
     padding: 0.5em 0.5em 0;
     float: left; }
-    .header .logo-link img {
-      display: block;
-      width: 100%;
-      height: auto; }
     .header .logo-link:hover, .header .logo-link:focus {
       background: #15561a; }
     @media all and (min-width: 46.8em) {
@@ -611,8 +609,7 @@ td {
         float: none;
         position: absolute;
         top: -0.5em;
-        left: 0.5em;
-        max-width: 14em; } }
+        left: 0.5em; } }
     @media all and (min-width: 64em) {
       .header .logo-link {
         left: 1.5em; } }
@@ -622,6 +619,14 @@ td {
   @media all and (min-width: 46.8em) {
     .header {
       padding: 2em 0 1.5em; } }
+  .header .logo {
+    display: block;
+    width: 128px;
+    height: 55px; }
+    @media all and (min-width: 46.8em) {
+      .header .logo {
+        width: 208px;
+        height: 89px; } }
 
 .nav-toggle {
   float: right;
