@@ -65,12 +65,35 @@
 	float: right;
 	display: block;
 	font-size: 1.3em;
-	padding: 1.1em;
+	padding: 0.67em;
+	margin: 0.25em 0.25em 0 0;
+
 	line-height: 1;
-	border-left: 1px solid $green-dark;
+	background: $green-dark;
+	border-radius: $border-radius;
+
 
 	&.active {
 		background: $green-dark;
+	}
+
+	.nav-toggle-label {
+		font-size: 70%;
+		position: relative;
+		top: -3px;
+
+		@media all and (max-width: 19em) {
+			display: none;
+		}
+	}
+
+	.icon-menu2 {
+		display: inline-block;
+		margin-right: 3px;
+
+		@media all and (max-width: 19em) {
+			margin: 0;
+		}
 	}
 
 	@media all and (min-width: $bp-med) {
@@ -78,7 +101,8 @@
 	}
 
 	@media all and (max-width: 18em) {
-		padding: 1em 0.5em;		
+		padding-left: 0.5em;
+		padding-right: 0.5em;			
 	}
 }
 

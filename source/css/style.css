@@ -632,17 +632,33 @@ td {
   float: right;
   display: block;
   font-size: 1.3em;
-  padding: 1.1em;
+  padding: 0.67em;
+  margin: 0.25em 0.25em 0 0;
   line-height: 1;
-  border-left: 1px solid #15561a; }
+  background: #15561a;
+  border-radius: 8px; }
   .nav-toggle.active {
     background: #15561a; }
+  .nav-toggle .nav-toggle-label {
+    font-size: 70%;
+    position: relative;
+    top: -3px; }
+    @media all and (max-width: 19em) {
+      .nav-toggle .nav-toggle-label {
+        display: none; } }
+  .nav-toggle .icon-menu2 {
+    display: inline-block;
+    margin-right: 3px; }
+    @media all and (max-width: 19em) {
+      .nav-toggle .icon-menu2 {
+        margin: 0; } }
   @media all and (min-width: 46.8em) {
     .nav-toggle {
       display: none; } }
   @media all and (max-width: 18em) {
     .nav-toggle {
-      padding: 1em 0.5em; } }
+      padding-left: 0.5em;
+      padding-right: 0.5em; } }
 
 @media all and (min-width: 46.8em) {
   .header-nav-container {
