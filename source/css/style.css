@@ -58,16 +58,16 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL CLASSES
 \*------------------------------------*/
 /* Clearfix */
-.cf, .l-1col, .l-3col, .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar, .nav, .donate-form, .hero-main {
+.cf, .l-1col, .l-3col, .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar, .header .page-header, .nav, .donate-form, .hero-main {
   *zoom: 1; }
 
-.cf:before, .l-1col:before, .l-3col:before, .header .lc:before, .header .l-1col .l-main:before, .l-1col .header .l-main:before, .header .l-3col:before, .header .footer-btn-bar:before, .nav:before, .donate-form:before, .hero-main:before, .cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .nav:after, .donate-form:after, .hero-main:after {
+.cf:before, .l-1col:before, .l-3col:before, .header .lc:before, .header .l-1col .l-main:before, .l-1col .header .l-main:before, .header .l-3col:before, .header .footer-btn-bar:before, .header .page-header:before, .nav:before, .donate-form:before, .hero-main:before, .cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .header .page-header:after, .nav:after, .donate-form:after, .hero-main:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .nav:after, .donate-form:after, .hero-main:after {
+.cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .header .page-header:after, .nav:after, .donate-form:after, .hero-main:after {
   clear: both; }
 
 /* Completely remove from the flow and screen readers. */
@@ -367,16 +367,16 @@ td {
     $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-.lc, .l-1col .l-main, .l-3col, .footer-btn-bar {
+.lc, .l-1col .l-main, .l-3col, .footer-btn-bar, .page-header {
   max-width: 78em;
   margin: 0 auto;
   padding: 0 0.5em;
   position: relative; }
   @media all and (min-width: 46.8em) {
-    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar {
+    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar, .page-header {
       padding: 0 1em; } }
   @media all and (min-width: 64em) {
-    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar {
+    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar, .page-header {
       padding: 0 2em; } }
 
 /*------------------------------------*\
@@ -591,7 +591,7 @@ td {
   z-index: 2;
   background: #3b7840; }
   @media all and (max-width: 46.8em) {
-    .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar {
+    .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar, .header .page-header {
       padding: 0; } }
   .header a {
     color: white; }
@@ -710,11 +710,11 @@ td {
   color: white;
   padding: 0.4em 3em 0.4em 0.7em;
   border: 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  -webkit-transition: background 0.3s ease-out;
+  -moz-transition: background 0.3s ease-out;
+  -ms-transition: background 0.3s ease-out;
+  -o-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out; }
   .header .search-field:focus, .header .search-field:active {
     background: white;
     color: #171303;
@@ -2918,7 +2918,7 @@ td {
   padding: 3em 1em 2em;
   position: relative; }
   @media all and (min-width: 46.8em) {
-    .donate .lc, .donate .l-1col .l-main, .l-1col .donate .l-main, .donate .l-3col, .donate .footer-btn-bar {
+    .donate .lc, .donate .l-1col .l-main, .l-1col .donate .l-main, .donate .l-3col, .donate .footer-btn-bar, .donate .page-header {
       padding-right: 33%;
       background: url(../images/sample/fpo-smiling-kids.png) no-repeat 100% 100%; } }
 

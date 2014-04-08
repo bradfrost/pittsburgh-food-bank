@@ -1,4 +1,8 @@
-//Article
+//Page Header
+.page-header {
+	@extend .lc;
+}
+
 .page-title {
 	font-size: $font-size-large-2;
 	margin-bottom: 0.1em;

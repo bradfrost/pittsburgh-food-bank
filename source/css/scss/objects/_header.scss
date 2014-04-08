@@ -182,7 +182,7 @@
 		color: $white;
 		padding: 0.4em 3em 0.4em 0.7em;
 		border: 0;
-		@include transition(all,0.3s,ease-out);
+		@include transition(background,0.3s,ease-out);
 
 		&:focus, &:active {
 			background: $white;
