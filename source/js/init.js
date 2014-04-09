@@ -54,8 +54,11 @@
 	// Donate Form
 	//
 
+	//Set initial donate Step
+	var donateStep = 1;
+
 	//Hide steps 2 and three
-	$('.donate-step').not('#donate-step-1').hide();
+	$('.donate-step').not('#donate-step-1').addClass('closed');
 
 	//Watch for changes in slider
 	function startSliderWatch() {
@@ -64,8 +67,6 @@
 			updateSliderValue($thisVal);
 			updateSliderMessage($thisVal);
 		});
-
-		
 
 		setTimeout(function(){ updateSliderValue($(".donate-range").val()); },50);
 	}
@@ -83,9 +84,11 @@
 
 	//Donate Slider Message
 	var $donateSliderMessage = $('.donate-slider-message');
+	
+	//Update the text information when the donate slider value gets adjusted
 	function updateSliderMessage(val) {
 		if (val < 2) {
-			$donateSliderMessage.html('Every dollar counts. 96% of every dollar goes to services to feed the hungry.');
+			$donateSliderMessage.html('Every dollar counts. 96% goes to services to feed the hungry.');
 		} else if (val >= 2 && val < 10) {
 			$donateSliderMessage.html('By donating this amount, you can feed a child for one week');
 		} else if (val >= 10 &&  val < 25) {
@@ -104,16 +107,26 @@
 	}
 
 	//Donate Step Link
-	$('#donate-step-2-link').on('click',function(e){
-		e.preventDefault();
-		$('#donate-step-1').hide();
-		$('#donate-step-1').show();
+	$('#donate-step-2-link').on('click',function(){
+		$('#donate-step-2').addClass();
 	});
 
-	$(".donate-form").submit(function(e){
+	$(".donate-submit").on('click',function(e){
 		e.preventDefault();
-		$(".donate-range").val(400).slider("refresh");
+
+		if(donateStep != 3) {
+			donateStep++;
+		} else {
+			$('.donate-form').submit();
+		}
+
+		updateDonateStep();
 	});
+
+	//Advance the form to next major section
+	function updateDonateStep() {
+		$('#donate-step-'+donateStep).removeClass('closed');
+	}
 
 	//Prevent links appearing within an accordion handle from firing
 	$('.acc-handle a').on('click',function(){
@@ -122,7 +135,6 @@
 			$(this).parent().next('.acc-panel').toggleClass('active');
 			return false;
 		}
-		
 	});
 
 	//Accordion

@@ -1,27 +1,22 @@
 {{# donate }}
 <div class="donate">
 	<div class="lc">
-		<h2>Donate to the GPCFB</h2>
-		<div class="donate-messaging-text">
-			<p>Over 92,000 children in southwestern Pennsylvania don't have enough food to live a normal, healthy life. You can help fix this.</p>
-		</div>
+		<h2 class="section-title">Help feed the the greater Pittsburgh community</h2>
 		<form method="post" action="#" class="donate-form">
 				<fieldset class="donate-step donate-range-container" id="donate-step-1">
-					<legend><span class="form-step">1</span> Choose an amount to donate:</legend>
+					<legend><span class="donate-slider-message"><span class="donate-slider-amount"></span>Slide to choose amount to donate:</span></legend>
 					<div class="field-container">
-						<label for="donate-range" class="field-instruction is-vishidden">Choose amount to donate</label>
+						<label for="donate-range" class="field-instruction is-vishidden">Slide to choose amount to donate:</label>
 						<input type="number" data-type="range" class="donate-range ui-slider-input" id="donate-range" value="1" min="1" max="100" />
-						<div class="donate-slider-message">Every dollar helps. 96% of donated money goes directly to feeding the hungry.</div>
 					</div>
 					<div class="field-container checkbox-container">
 						<input type="checkbox" id="donate-monthly" />
 						<label for="donate-monthly">Yes, I would like to donate this amount monthly</label>
 					</div>
-					<a href="#donate-step-2" class="btn">Next Step</a>
 				</fieldset><!--end .donate-step-->
 
 				<fieldset class="donate-step" id="donate-step-2">
-					<legend><span class="form-step">2</span> Enter your information:</legend>
+					<legend class="donate-step-legend"><span class="form-step">2</span> Enter your information:</legend>
 					<div class="g g-2up">
 						<div class="field-container gi">
 							<label for="donate-name">Name</label>
@@ -33,11 +28,7 @@
 						</div>
 						<div class="field-container gi">
 							<label for="donate-address">Address</label>
-							<input type="text" id="donate-address" placeholder="123 Main St" autocomplete="off" required />
-						</div>
-						<div class="field-container gi">
-							<label for="donate-address-2">Address 2</label>
-							<input type="text" id="donate-address-2" placeholder="Apt #, Suite, etc" autocomplete="off" required />
+							<input type="text" id="donate-address" placeholder="123 Main St, Apt 2" autocomplete="off" required />
 						</div>
 						<div class="field-container gi">
 							<label for="donate-city">City</label>
@@ -100,11 +91,10 @@
 							</select>
 						</div>
 					</div><!--end .g-2up-->
-					<a href="#donate-step-3" class="btn">Next Step</a>
 				</fieldset><!--end .donate-step-->
 
 				<fieldset class="donate-step" id="donate-step-3">
-					<legend><span class="form-step">3</span> Enter payment information:</legend>
+					<legend class="donate-step-legend"><span class="form-step">3</span> Enter payment information:</legend>
 					<div class="field-container radio-container">
 						<input type="radio" name="payment-type" id="payment-cc" /><label for="payment-cc">Credit Card</label>
 						<input type="radio" name="payment-type" id="payment-bank" /><label for="payment-bank">Bank Account</label>
@@ -151,8 +141,8 @@
 					<div class="message">
 						Norton Secured, powered by VeriSign
 					</div>
-					<button class="donate-submit btn">Submit Donation</button>
 				</fieldset><!--end .donate-step-->
+				<button class="donate-submit btn">Donate</button>
 		</form><!--end .donate-form-->
 	</div><!-- end .lc-->
 </div><!-- end .donate-slider-->

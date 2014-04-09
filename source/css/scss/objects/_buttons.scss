@@ -3,18 +3,19 @@
 \*------------------------------------*/
 .btn {
 	display: inline-block;
-	background: $green-dark;
+	background: $green;
+	border-bottom: 2px solid $green-dark;
+	border-radius: $border-radius;
 	color: $white;
 	line-height: 1;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding: $pad;
-	border: 0;
+	padding: $pad $pad-and-half;
 	text-align: center;
 	
 	&:hover, &:focus {
 		color: $white;
-		background: $green;
+		background: $green-dark;
 	}
 
 	&.disabled {

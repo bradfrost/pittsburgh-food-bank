@@ -33,7 +33,7 @@ input, textarea {
 	width: 100%;
 	border: 1px solid $gray;
 	border-radius: $border-radius;
-	padding: $pad;
+	padding: 1.02em 1em;
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -77,8 +77,21 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .radio-container, .checkbox-container {
+	overflow: hidden;
+	padding-left: 2px;
+
+	input {
+		float: left;
+	}
+
 	label {
-		display: inline;
+		margin-left: 24px;
+		position: relative;
+		top: -4px;
+
+		&:hover, &:focus {
+			color: $green;
+		}
 	}
 }
 
@@ -106,6 +119,8 @@ input[type="search"]::-webkit-search-decoration {
 		right: 0;
 		z-index: 1;
 		width: auto;
+		border-top-right-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
 	}
 }
 

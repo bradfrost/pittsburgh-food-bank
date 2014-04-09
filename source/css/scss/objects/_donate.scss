@@ -1,23 +1,52 @@
 /* Donate Organism */
 .donate {
-	background: rgba(0,0,0,0.1);
-	padding: 3em $pad 2em;
+	border-top: 1px solid $gray;
+	padding: 2em $pad 2em;
 	position: relative;
+
+	.section-title {
+		font-size: $font-size-large;
+		color: $gold;
+	}
 
 	.lc {
 		@media all and (min-width: $bp-med) {
 			padding-right: 33%;
-			background: url(../images/sample/fpo-smiling-kids.png) no-repeat 100% 100%;
 		}
 	}
+
+	@media all and (min-width: $bp-med) {
+		background: url(../images/bg-fruit.png) no-repeat 100% 100%;
+	}
+}
+
+.donate-step {
+	padding: 0;
+	margin: 0;
+	max-height: 50em;
+	@include transition(max-height,0.5s,ease-out);
+
+	&.closed {
+		overflow: hidden;
+		max-height: 0;
+	}
+}
+
+.donate-step-legend {
+	display: block;
+	width: 100%;
+	border-top: 1px solid $gray-light-3;
+	padding-top: $pad;
+	margin-bottom: $space;
+}
+
+#donate-step-1 {
+	max-height: none;
 }
 
 .donate-messaging {
 	position: relative;
-
-
 }
-
 
 .donate-range-container {
 	padding-top: $pad-half;
@@ -27,24 +56,11 @@
 	@extend .cf;
 }
 
-
-
 .donate-slider-message {
-	font-size: $font-size-sm;
 	line-height: 1.1;
 
 	a {
 		text-decoration: underline;
-	}
-}
-
-.donate-submit {
-	display: block;
-	width: 100%;
-
-	@media all and (min-width: $bp-med) {
-
-		width: auto;
 	}
 }
 
@@ -94,7 +110,7 @@ div.ui-slider-switch {
 div.ui-slider {
 	position: relative;
 	height: 30px;
-	margin: 2em 0 1em;
+	margin: 2em 0;
 	zoom: 1;
 
 	.ui-slider-input {
@@ -111,57 +127,42 @@ div.ui-slider {
 	z-index: 1;
 	top: 50%;
 	width: 44px;
-	height: 56px;
-	margin: -50px 0 0 -20px;
+	height: 70px;
+	margin: -49px 0 0 -20px;
 	outline: 0;
 	text-align: center;
 	font-weight: bold;
-	background: $gray-light-4;
-	color: $black;
+	background: url(../images/bg-donate-slider.png) no-repeat 0 100%;
+	background-size: 100% auto;
+	color: $green;
+	@include transition(width,0.3s,ease-out);
 
-	&:after {
-		content: "";
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 0px;
-		height: 0px;
-		border-style: solid;
-		border-width: 14px 22px 0 22px;
-		border-color: $gray-light-4 transparent transparent transparent;
-	}
-
-	&:hover {
-		color: $black;
-		background: $gray-light-3;
-
-		&:after {
-			border-top-color: $gray-light-3;
-		}
-	}
-
-	&:focus {
-		color: $black;
-	}
-
-	&:active {
-		color: $black;
-		background: $gray-med;
-
-		&:after {
-			border-top-color: $gray-med;
-		}
+	&:hover, &:focus {
+		color: $green-dark;
 	}
 }
 
 .ui-slider-track {
 	margin: 0;
-	background: $gray;
+	background: $gray-light;
+	-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.4);
+	-webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.4);
+	box-shadow: inset 2px 2px 2px rgba(0,0,0,0.4);
 	height: 40px;
 	width: 100%;
+	border-radius: 2em;
+	border: 1px solid $gray-light-3;
 }
 
 .ui-slider-bg {
-	background: rgba(0,0,0,0.3);
+	background: $green;
+	background: -moz-linear-gradient(top, $green-light 0%, $green-light 50%, $green 50%, $green 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$green-light), color-stop(50%,$green-light), color-stop(50%,$green), color-stop(100%,$green));
+	background: -webkit-linear-gradient(top, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
+	background: -o-linear-gradient(top, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
+	background: -ms-linear-gradient(top, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
+	background: linear-gradient(to bottom, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
+	border-radius: 2em;
+	border-bottom-right-radius: 0;
 }
 
