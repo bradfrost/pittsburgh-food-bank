@@ -12,10 +12,19 @@
 	text-transform: uppercase;
 	padding: $pad $pad-and-half;
 	text-align: center;
+	position: relative;
+	top: 0;
+	outline: 0;
 	
 	&:hover, &:focus {
-		color: $white;
-		background: $green-dark;
+		color: $black;
+		background: $gold;
+		border-bottom-color: $gold-dark;
+	}
+
+	&:active {
+		background: $gold-dark;
+		top: 1px;
 	}
 
 	&.disabled {

@@ -1,11 +1,9 @@
 (function(w){
-	var sw = document.body.clientWidth,
-		sh = document.body.clientHeight;
+	var sw = document.body.clientWidth;
 
 	//On Window Resize
 	$(w).resize(function(){
 		sw = document.body.clientWidth; //Update screen width
-		sh = document.body.clientHeight; //Update screen height
 	});
 
 
@@ -66,6 +64,7 @@
 			var $thisVal = $(this).val();
 			updateSliderValue($thisVal);
 			updateSliderMessage($thisVal);
+			$('.donate-slider-amount').removeClass('blank').html('$'+$thisVal);
 		});
 
 		setTimeout(function(){ updateSliderValue($(".donate-range").val()); },50);
@@ -88,44 +87,66 @@
 	//Update the text information when the donate slider value gets adjusted
 	function updateSliderMessage(val) {
 		if (val < 2) {
-			$donateSliderMessage.html('Every dollar counts. 96% goes to services to feed the hungry.');
+			$donateSliderMessage.html('can go a long way. 96% goes to services to feed the hungry.');
 		} else if (val >= 2 && val < 10) {
-			$donateSliderMessage.html('By donating this amount, you can feed a child for one week');
+			$donateSliderMessage.html('can feed a child for one week');
 		} else if (val >= 10 &&  val < 25) {
-			$donateSliderMessage.html('By donating this amount, you can feed a family of 4 for a week');
+			$donateSliderMessage.html('can feed a family of 4 for a week');
 		} else if (val >= 25 &&  val < 50) {
-			$donateSliderMessage.html('By donating this amount, you can feed a family of 4 for a month');
-		} else if (val >= 50 &&  val < 100) {
-			$donateSliderMessage.html('This donation level helps 25 people eat for a week.');
-		} else if (val >= 100 &&  val < 250) {
-			$donateSliderMessage.html('This donation level allows us to feed 50 people.');
-		} else if (val >= 250) {
-			$donateSliderMessage.html('Thank you for your generosity. If you\'d like to consider becoming a <a href="/about/sponsors">sponsor</a>, please <a href="/contact">contact us</a>');
+			$donateSliderMessage.html('can feed a family of 4 for a month');
+		} else if (val >= 50 &&  val < 75) {
+			$donateSliderMessage.html('can help 25 people eat for a week.');
+		} else if (val >= 75 &&  val < 99) {
+			$donateSliderMessage.html('can help us feed 50 people a week.');
+		} else if (val >= 99) {
+			$donateSliderMessage.html('&nbsp;goes a long way. If you\'d like to consider becoming a <a href="/about/sponsors">sponsor</a>, please <a href="/contact">contact us</a>');
 		} else {
-			$donateSliderMessage.html('Every dollar counts. 96% of every dollar goes to services to feed the hungry.');
+			$donateSliderMessage.html('can go a long way. 96% goes to services to feed the hungry.');
 		}
 	}
-
-	//Donate Step Link
-	$('#donate-step-2-link').on('click',function(){
-		$('#donate-step-2').addClass();
-	});
 
 	$(".donate-submit").on('click',function(e){
 		e.preventDefault();
 
-		if(donateStep != 3) {
+		//If user is on the first step, advance to step two
+		if(donateStep === 1) {
 			donateStep++;
-		} else {
+			updateDonateStep();
+			$('#donate-name').focus();
+			smoothScroll($('#donate-step-2'));
+		}
+		//If user is on the second step, advance to step three
+		else if (donateStep === 2) {
+			donateStep++;
+			updateDonateStep();
+			$('#payment-cc-num').focus();
+			smoothScroll($('#donate-step-3'));
+		}
+		//If user is on the final step, submit the form
+		else if (donateStep === 3) {
 			$('.donate-form').submit();
 		}
-
-		updateDonateStep();
 	});
 
 	//Advance the form to next major section
 	function updateDonateStep() {
 		$('#donate-step-'+donateStep).removeClass('closed');
+	}
+
+	//Form Validation
+	$('.donate-form input').focusout(function() {
+		$(this).parsley().validate();
+	});
+
+	$('.donate-form').parsley();
+
+	//Scroll the body of an 
+	function smoothScroll(el) {
+		var target = el;
+		$('html,body').animate({
+			scrollTop: target.offset().top
+		}, 1000);
+		return false;
 	}
 
 	//Prevent links appearing within an accordion handle from firing

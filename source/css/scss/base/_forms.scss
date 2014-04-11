@@ -31,7 +31,7 @@ button, input, select, textarea {
 
 input, textarea {
 	width: 100%;
-	border: 1px solid $gray;
+	border: 1px solid $gray-light-4;
 	border-radius: $border-radius;
 	padding: 1.02em 1em;
 }
@@ -69,6 +69,18 @@ input[type="search"] {
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+   color: $gray;
+}
+
+::-moz-placeholder {
+   color: $gray;  
+}
+
+:-ms-input-placeholder {  
+   color: $gray;  
 }
 
 //Form Field Container
@@ -125,10 +137,12 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /* Validation */
-.has-error {
+.parsley-error {
 	border-color: $error;
 }
 
-.is-valid {
-	border-color: $valid;
+.parsley-errors-list.filled {
+	color: $error;
+	padding: 0.2em;
+	font-size: $font-size-sm;
 }
