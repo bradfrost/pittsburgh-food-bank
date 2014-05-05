@@ -37,8 +37,12 @@
 	position: relative;
 
 	.l-main {
+		background: $white;
+
 		@media all and (min-width: $bp-med-2) {
-			margin-left: 13em;
+			margin-left: 12em;
+			margin-top: -10em;
+			padding: 1em;
 			min-height: 27em; //Temporary min-height
 		}
 

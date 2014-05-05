@@ -58,16 +58,16 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL CLASSES
 \*------------------------------------*/
 /* Clearfix */
-.cf, .l-1col, .l-3col, .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar, .header .page-header, .nav, .donate-form, .hero-main {
+.cf, .l-1col, .l-3col, .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar, .header [role=main] > .page-header, .nav, .donate-form, .hero-main {
   *zoom: 1; }
 
-.cf:before, .l-1col:before, .l-3col:before, .header .lc:before, .header .l-1col .l-main:before, .l-1col .header .l-main:before, .header .l-3col:before, .header .footer-btn-bar:before, .header .page-header:before, .nav:before, .donate-form:before, .hero-main:before, .cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .header .page-header:after, .nav:after, .donate-form:after, .hero-main:after {
+.cf:before, .l-1col:before, .l-3col:before, .header .lc:before, .header .l-1col .l-main:before, .l-1col .header .l-main:before, .header .l-3col:before, .header .footer-btn-bar:before, .header [role=main] > .page-header:before, .nav:before, .donate-form:before, .hero-main:before, .cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .header [role=main] > .page-header:after, .nav:after, .donate-form:after, .hero-main:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .header .page-header:after, .nav:after, .donate-form:after, .hero-main:after {
+.cf:after, .l-1col:after, .l-3col:after, .header .lc:after, .header .l-1col .l-main:after, .l-1col .header .l-main:after, .header .l-3col:after, .header .footer-btn-bar:after, .header [role=main] > .page-header:after, .nav:after, .donate-form:after, .hero-main:after {
   clear: both; }
 
 /* Completely remove from the flow and screen readers. */
@@ -153,6 +153,7 @@ a {
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1 {
+  font-weight: normal;
   line-height: 1.2;
   margin-bottom: 0.5em; }
 
@@ -780,16 +781,16 @@ td {
     $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-.lc, .l-1col .l-main, .l-3col, .footer-btn-bar, .page-header {
+.lc, .l-1col .l-main, .l-3col, .footer-btn-bar, [role=main] > .page-header {
   max-width: 78em;
   margin: 0 auto;
   padding: 0 0.5em;
   position: relative; }
   @media all and (min-width: 46.8em) {
-    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar, .page-header {
+    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar, [role=main] > .page-header {
       padding: 0 1em; } }
   @media all and (min-width: 64em) {
-    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar, .page-header {
+    .lc, .l-1col .l-main, .l-3col, .footer-btn-bar, [role=main] > .page-header {
       padding: 0 2em; } }
 
 /*------------------------------------*\
@@ -800,13 +801,17 @@ td {
 
 .l-3col {
   position: relative; }
-  @media all and (min-width: 48em) {
-    .l-3col .l-main {
-      margin-left: 13em;
-      min-height: 27em; } }
-  @media all and (min-width: 64em) {
-    .l-3col .l-main {
-      margin-right: 15.5em; } }
+  .l-3col .l-main {
+    background: white; }
+    @media all and (min-width: 48em) {
+      .l-3col .l-main {
+        margin-left: 12em;
+        margin-top: -10em;
+        padding: 1em;
+        min-height: 27em; } }
+    @media all and (min-width: 64em) {
+      .l-3col .l-main {
+        margin-right: 15.5em; } }
   @media all and (min-width: 48em) {
     .l-3col .l-sidebar {
       position: absolute;
@@ -1004,7 +1009,7 @@ td {
   z-index: 2;
   background: #3b7840; }
   @media all and (max-width: 46.8em) {
-    .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar, .header .page-header {
+    .header .lc, .header .l-1col .l-main, .l-1col .header .l-main, .header .l-3col, .header .footer-btn-bar, .header [role=main] > .page-header {
       padding: 0; } }
   .header a {
     color: white; }
@@ -3342,7 +3347,7 @@ td {
     font-size: 1.4em;
     color: #e9bd1d; }
   @media all and (min-width: 46.8em) {
-    .donate .lc, .donate .l-1col .l-main, .l-1col .donate .l-main, .donate .l-3col, .donate .footer-btn-bar, .donate .page-header {
+    .donate .lc, .donate .l-1col .l-main, .l-1col .donate .l-main, .donate .l-3col, .donate .footer-btn-bar, .donate [role=main] > .page-header {
       padding-right: 33%; } }
   @media all and (min-width: 46.8em) {
     .donate {
@@ -3534,28 +3539,31 @@ div.ui-slider {
       width: 34%;
       padding-top: 1em; } }
 
-.hero-banner {
+.banner {
+  margin-top: -1em;
+  margin-bottom: 1em; }
+
+.banner-hero {
   background: #eeeeee;
   text-align: center;
-  padding: 2em 0;
-  margin-top: -1em; }
+  padding: 2em 0; }
   @media all and (min-width: 46.8em) {
-    .hero-banner {
+    .banner-hero {
       padding: 4em 0; } }
 
-.hero-banner-text {
+.banner-hero-text {
   font-size: 2em;
   margin: 0; }
-  .hero-banner-text br {
+  .banner-hero-text br {
     display: none; }
     @media all and (min-width: 64em) {
-      .hero-banner-text br {
+      .banner-hero-text br {
         display: inline-block; } }
   @media all and (min-width: 39.8em) {
-    .hero-banner-text {
+    .banner-hero-text {
       font-size: 3em; } }
   @media all and (min-width: 46.8em) {
-    .hero-banner-text {
+    .banner-hero-text {
       font-size: 4em; } }
 
 .cta-banner {
@@ -3570,11 +3578,13 @@ div.ui-slider {
     font-size: 2em; }
 
 .banner-pattern {
-  height: 17em;
-  background: #f9f9f9;
-  margin-bottom: 1em; }
+  height: 4em;
+  background: #f9f9f9; }
   .banner-pattern.kiwis {
     background: url(../../images/patterns/pattern-kiwis.png) #f3f5d6; }
+  @media all and (min-width: 46.8em) {
+    .banner-pattern {
+      height: 15em; } }
 
 .well, .info-box {
   background: #f9f9f9;
