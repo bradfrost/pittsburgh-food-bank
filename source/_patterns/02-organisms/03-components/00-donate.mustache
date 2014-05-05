@@ -20,71 +20,32 @@
 					<div class="g g-2up">
 						<div class="field-container gi">
 							<label for="donate-name">Name</label>
-							<input type="text" id="donate-name" placeholder="First Last" autocomplete="off" required />
+							<input type="text" id="donate-name" placeholder="First Last" autocomplete="off" required data-parsley-error-message="Please enter your full name" />
 						</div>
 						<div class="field-container gi">
 							<label for="donate-email">E-mail</label>
-							<input type="email" id="donate-email" placeholder="your@email.com" required />
+							<input type="email" id="donate-email" placeholder="your@email.com" required data-parsley-error-message="Please enter a valid e-mail address" />
 						</div>
 						<div class="field-container gi">
 							<label for="donate-address">Address</label>
-							<input type="text" id="donate-address" placeholder="123 Main St, Apt 2" autocomplete="off" required />
+							<input type="text" id="donate-address" placeholder="123 Main St, Apt 2" autocomplete="off" required data-parsley-error-message="Please enter your street address" />
 						</div>
 						<div class="field-container gi">
 							<label for="donate-city">City, State</label>
-							<input type="text" id="donate-city" placeholder="Pittsburgh, PA" autocomplete="off" required />
+							<input type="text" id="donate-city" placeholder="Pittsburgh, PA" autocomplete="off" required data-parsley-error-message="Please enter your city and state, separated by a comma" pattern="\,+"	HTML5
+data-parsley-pattern="\,+" />
 						</div>
 						
 					</div><!--end .g-2up-->
 				</fieldset><!--end .donate-step-->
-
+				
 				<fieldset class="donate-step" id="donate-step-3">
-					<legend class="donate-step-legend"><span class="form-step">3</span> Enter payment information:</legend>
-					<div class="field-container radio-container">
-						<input type="radio" name="payment-type" id="payment-cc" checked="checked" /><label for="payment-cc">Credit Card</label>
-						<input type="radio" name="payment-type" id="payment-bank" /><label for="payment-bank">Bank Account</label>
-					</div>
-					<div class="field-container">
-						<label for="payment-cc-num">Credit Card Number</label>
-						<input type="number" pattern="[0-9]*" id="payment-cc-num" placeholder="Enter Credit Card Number" required />
-					</div>
-					<div class="field-container">
-						<label for="payment-cc-num">CVV Number</label>
-						<input type="number" pattern="[0-9]*" id="payment-cc-cvv" placeholder="123" required />
-					</div>
-					<div class="field-container">
-						<label for="payment-cc-month">Expiration Month</label>
-						<select id="payment-cc-month" required />
-							<option value="00">Choose Month</option>
-							<option value="01">01 - January</option>
-						    <option value="02">02 - February</option>
-						    <option value="03">03 - March</option>
-						    <option value="04">04 - April</option>
-						    <option value="05">05 - May</option>
-						    <option value="06">06 - June</option>
-						    <option value="07">07 - July</option>
-						    <option value="08">08 - August</option>
-						    <option value="09">09 - September</option>
-						    <option value="10">10 - October</option>
-						    <option value="11">11 - November</option>
-						    <option value="12">12 - December</option>
-						</select>
-					</div>
-					<div class="field-container">
-						<label for="payment-cc-month">Expiration Year</label>
-						<select id="payment-cc-month" required />
-							<option value="00">Choose Year</option>
-							<option value="2014">2014</option>
-						    <option value="2015">2015</option>
-						    <option value="2016">2016</option>
-						    <option value="2017">2017</option>
-						    <option value="2018">2018</option>
-						    <option value="2019">2019</option>
-						    <option value="2019">2020</option>
-						</select>
-					</div>
-					<div class="message">
-						Norton Secured, powered by VeriSign
+					<legend class="donate-step-legend"><span class="form-step">3</span> Credit card info:</legend>
+					<div class="credit-card-group">
+						<input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number">
+						<input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration">
+						<input placeholder="CVV" pattern="[0-9]*" type="text" class="card-cvv">
+						<input placeholder="ZIP" pattern="[0-9]*" type="text" class="card-zip">
 					</div>
 				</fieldset><!--end .donate-step-->
 				<button class="donate-submit btn">Donate</button>

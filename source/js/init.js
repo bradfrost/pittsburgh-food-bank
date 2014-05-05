@@ -93,7 +93,7 @@
 		} else if (val >= 10 &&  val < 25) {
 			$donateSliderMessage.html('can feed a family of 4 for a week');
 		} else if (val >= 25 &&  val < 50) {
-			$donateSliderMessage.html('can feed a family of 4 for a month');
+			$donateSliderMessage.html('can feed a family of 4 for two weeks');
 		} else if (val >= 50 &&  val < 75) {
 			$donateSliderMessage.html('can help 25 people eat for a week.');
 		} else if (val >= 75 &&  val < 99) {
@@ -124,7 +124,8 @@
 		}
 		//If user is on the final step, submit the form
 		else if (donateStep === 3) {
-			$('.donate-form').submit();
+			$('.donate-form').parsley().submit();
+			alert('Form Submitted! Send to server and return success message when complete');
 		}
 	});
 

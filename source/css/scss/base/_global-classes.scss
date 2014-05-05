@@ -21,6 +21,11 @@
     visibility: hidden !important;
 }
 
+.hide {
+    left: -999999px;
+    position: absolute;
+}
+
 /* Completely remove from the flow but leave available to screen readers. */
 .is-vishidden {
     position: absolute !important;
