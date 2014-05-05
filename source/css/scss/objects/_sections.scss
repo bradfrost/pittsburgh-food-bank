@@ -7,6 +7,12 @@
 	margin-bottom: 0;
 }
 
+.section-img {
+	img {
+		border-radius: $border-radius;
+	}
+}
+
 //Section Block
 .section-block {
 	overflow: hidden;

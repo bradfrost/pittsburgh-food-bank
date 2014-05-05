@@ -3300,6 +3300,9 @@ td {
   font-size: 2.75em;
   margin-bottom: 0; }
 
+.section-img img {
+  border-radius: 8px; }
+
 .section-block {
   overflow: hidden; }
   .section-block .section-body {
