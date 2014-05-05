@@ -3,23 +3,11 @@
 	@extend .lc;
 }
 
-.page-title {
-	font-size: $font-size-large-2;
-	margin-bottom: 0.1em;
-
-	@media all and (min-width: $bp-med) {
-		font-size: $font-size-large-3;
-	}
-
-	@media all and (min-width: $bp-large) {
-		font-size: $font-size-xl;
-		line-height: 1.1;
-	}
-}
-
 .page-intro {
 	font-size: $font-size-large;
 	line-height: 1.3;
+	color: $gray;
+	font-weight: bold;
 }
 
 .byline {

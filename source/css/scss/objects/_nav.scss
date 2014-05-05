@@ -221,9 +221,18 @@
 }
 
 // Section Nav
+.section-nav-title {
+	margin-bottom: 0;
+}
+
 .section-nav-list {
 	li {
-		margin-bottom: $space-half;
+		border-bottom: 1px dotted $gray;
+	}
+
+	a {
+		display: block;
+		padding: $pad-half 0;
 	}
 }
 

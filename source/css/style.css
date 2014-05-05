@@ -153,9 +153,16 @@ a {
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1 {
+  font-size: 2em;
   font-weight: normal;
-  line-height: 1.2;
-  margin-bottom: 0.5em; }
+  line-height: 1.2; }
+  @media all and (min-width: 29.75em) {
+    h1 {
+      font-size: 2.75em; } }
+  @media all and (min-width: 46.8em) {
+    h1 {
+      font-size: 3.5em;
+      line-height: 1.1; } }
 
 h2 {
   font-size: 2em;
@@ -170,11 +177,6 @@ h3 {
 h4 {
   line-height: 1.2;
   margin-bottom: 0.5em; }
-
-/* Subheadings */
-.subheading {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: normal; }
 
 /* Text-Related Elements */
 p {
@@ -805,25 +807,26 @@ td {
     background: white; }
     @media all and (min-width: 48em) {
       .l-3col .l-main {
-        margin-left: 12em;
+        margin-left: 13.5em;
         margin-top: -10em;
         padding: 1em;
-        min-height: 27em; } }
+        min-height: 27em;
+        border-radius: 8px; } }
     @media all and (min-width: 64em) {
       .l-3col .l-main {
-        margin-right: 15.5em; } }
+        margin-right: 13.5em; } }
   @media all and (min-width: 48em) {
     .l-3col .l-sidebar {
       position: absolute;
       top: 0;
       left: 1em;
-      width: 12em; } }
+      width: 12.5em; } }
   @media all and (min-width: 64em) {
     .l-3col .l-sidebar {
       left: 2em; } }
   @media all and (min-width: 48em) and (max-width: 64em) {
     .l-3col .l-sidebar2 {
-      margin-left: 13em; } }
+      margin-left: 14.5em; } }
   @media all and (min-width: 64em) {
     .l-3col .l-sidebar2 {
       position: absolute;
@@ -1043,8 +1046,8 @@ td {
     height: 55px; }
     @media all and (min-width: 46.8em) {
       .header .logo {
-        width: 208px;
-        height: 89px; } }
+        width: 12em;
+        height: auto; } }
 
 .nav-toggle {
   float: right;
@@ -1081,10 +1084,10 @@ td {
 @media all and (min-width: 46.8em) {
   .header-nav-container {
     position: relative;
-    margin-left: 15em; } }
+    margin-left: 13.5em; } }
 @media all and (min-width: 64em) {
   .header-nav-container {
-    margin-left: 16em; } }
+    margin-left: 13.5em; } }
 
 .header .search-form {
   max-height: 0;
@@ -1325,8 +1328,14 @@ td {
   overflow: hidden;
   margin-bottom: 1em; }
 
+.section-nav-title {
+  margin-bottom: 0; }
+
 .section-nav-list li {
-  margin-bottom: 0.5em; }
+  border-bottom: 1px dotted gray; }
+.section-nav-list a {
+  display: block;
+  padding: 0.5em 0; }
 
 @-webkit-keyframes flip {
   0% {
@@ -1496,20 +1505,11 @@ td {
   font-size: 0.75em;
   text-align: center; }
 
-.page-title {
-  font-size: 2em;
-  margin-bottom: 0.1em; }
-  @media all and (min-width: 46.8em) {
-    .page-title {
-      font-size: 2.75em; } }
-  @media all and (min-width: 64em) {
-    .page-title {
-      font-size: 3.5em;
-      line-height: 1.1; } }
-
 .page-intro {
   font-size: 1.4em;
-  line-height: 1.3; }
+  line-height: 1.3;
+  color: gray;
+  font-weight: bold; }
 
 .byline {
   font-size: 0.85em;
@@ -3344,14 +3344,14 @@ td {
   padding: 2em 1em 2em;
   position: relative; }
   .donate .section-title {
-    font-size: 1.4em;
+    font-size: 1.8em;
     color: #e9bd1d; }
   @media all and (min-width: 46.8em) {
     .donate .lc, .donate .l-1col .l-main, .l-1col .donate .l-main, .donate .l-3col, .donate .footer-btn-bar, .donate [role=main] > .page-header {
       padding-right: 33%; } }
   @media all and (min-width: 46.8em) {
     .donate {
-      background: url(../images/bg-fruit.png) no-repeat 100% 0; } }
+      background: url(../images/bg-fruit.png) no-repeat 100% 1em; } }
 
 .donate-step {
   padding: 0;
@@ -3489,6 +3489,10 @@ div.ui-slider {
   border-radius: 2em;
   border-bottom-right-radius: 0; }
 
+.hero {
+  margin-top: -1em;
+  margin-bottom: 2em; }
+
 .hero-text {
   background: #eeeeee;
   padding: 2em 0.5em; }
@@ -3510,38 +3514,36 @@ div.ui-slider {
       text-align: center;
       padding: 3em 1em; } }
 
-.hero-main {
-  margin-bottom: 2em; }
-  .hero-main .hero-body {
-    padding: 1em 0 0; }
-  .hero-main .btn {
-    margin-top: 1em; }
-  .hero-main .hero-title {
-    font-size: 1.4em;
-    margin-bottom: 0.1em; }
-    @media all and (min-width: 64em) {
-      .hero-main .hero-title {
-        font-size: 3.5em; } }
+.hero-main .hero-body {
+  padding: 1em 0 0; }
+.hero-main .btn {
+  margin-top: 1em; }
+.hero-main .hero-title {
+  font-size: 1.4em;
+  margin-bottom: 0.1em; }
   @media all and (min-width: 64em) {
-    .hero-main .hero-img {
-      float: left;
-      width: 50%; }
-    .hero-main .hero-body {
-      float: left;
-      width: 50%;
-      padding: 0 1em; } }
-  @media all and (min-width: 73em) {
-    .hero-main .eyebrow {
-      margin-bottom: 1em; }
-    .hero-main .hero-img {
-      width: 66%; }
-    .hero-main .hero-body {
-      width: 34%;
-      padding-top: 1em; } }
+    .hero-main .hero-title {
+      font-size: 3.5em; } }
+@media all and (min-width: 64em) {
+  .hero-main .hero-img {
+    float: left;
+    width: 50%; }
+  .hero-main .hero-body {
+    float: left;
+    width: 50%;
+    padding: 0 1em; } }
+@media all and (min-width: 73em) {
+  .hero-main .eyebrow {
+    margin-bottom: 1em; }
+  .hero-main .hero-img {
+    width: 66%; }
+  .hero-main .hero-body {
+    width: 34%;
+    padding-top: 1em; } }
 
 .banner {
   margin-top: -1em;
-  margin-bottom: 1em; }
+  margin-bottom: 1.5em; }
 
 .banner-hero {
   background: #eeeeee;
@@ -3581,13 +3583,13 @@ div.ui-slider {
   height: 4em;
   background: #f9f9f9; }
   .banner-pattern.kiwis {
-    background: url(../../images/patterns/pattern-kiwis.png) #f3f5d6; }
+    background: url(../images/patterns/pattern-kiwis.png) #f3f5d6; }
   @media all and (min-width: 46.8em) {
     .banner-pattern {
       height: 15em; } }
 
 .well, .info-box {
-  background: #f9f9f9;
+  background: #fcf8e3;
   border: 1px solid #eeeeee;
   padding: 1em;
   margin-bottom: 1em; }

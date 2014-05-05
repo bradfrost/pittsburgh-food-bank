@@ -55,8 +55,8 @@
 		height: 55px;
 
 		@media all and (min-width: $bp-med) {
-			width: 208px;
-		height: 89px;
+			width: 12em;
+			height: auto;
 		}
 	}
 }
@@ -110,11 +110,11 @@
 .header-nav-container {
 	@media all and (min-width: $bp-med) {
 		position: relative;
-		margin-left: 15em;
+		margin-left: 13.5em;
 	}
 
 	@media all and (min-width: $bp-large) {
-		margin-left: 16em;
+		margin-left: 13.5em;
 	}
 }
 

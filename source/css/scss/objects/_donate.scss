@@ -5,7 +5,7 @@
 	position: relative;
 
 	.section-title {
-		font-size: $font-size-large;
+		font-size: 1.8em;
 		color: $gold;
 	}
 
@@ -16,7 +16,7 @@
 	}
 
 	@media all and (min-width: $bp-med) {
-		background: url(../images/bg-fruit.png) no-repeat 100% 0;
+		background: url(../images/bg-fruit.png) no-repeat 100% 1em;
 	}
 }
 

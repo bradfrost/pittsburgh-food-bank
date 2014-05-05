@@ -1,9 +1,18 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1 { 
+	font-size: $font-size-large-2;
 	font-weight: normal;
 	line-height: 1.2;
-	margin-bottom: $space-half;
+
+	@media all and (min-width: $bp-small-2) {
+		font-size: $font-size-large-3;
+	}
+
+	@media all and (min-width: $bp-med) {
+		font-size: $font-size-xl;
+		line-height: 1.1;
+	}
 }
 
 h2 {
@@ -21,14 +30,4 @@ h3 {
 h4 {
 	line-height: 1.2;
 	margin-bottom: $space-half;
-}
-
-h5 { 
-	
-}
-
-/* Subheadings */
-.subheading {
-	font-family: $font-secondary;
-	font-weight: normal;
 }

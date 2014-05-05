@@ -1,4 +1,9 @@
-//Hero Text
+//Hero
+.hero {
+	margin-top: -$space;
+	margin-bottom: $space-double;
+}
+
 .hero-text {
 	background: $gray-light-2;
 	padding: $pad-double $pad-half;
@@ -35,7 +40,6 @@
 //Hero main 
 .hero-main {
 	@extend .cf;
-	margin-bottom: $space-double;
 
 	.hero-body {
 		padding: $pad 0 0;
@@ -55,7 +59,6 @@
 	}
 
 	@media all and (min-width: $bp-large) {
-
 		.hero-img {
 			float: left;
 			width: 50%;

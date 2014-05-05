@@ -40,14 +40,15 @@
 		background: $white;
 
 		@media all and (min-width: $bp-med-2) {
-			margin-left: 12em;
+			margin-left: $sidebar-1-width;
 			margin-top: -10em;
 			padding: 1em;
 			min-height: 27em; //Temporary min-height
+			border-radius: $border-radius;
 		}
 
 		@media all and (min-width: $bp-large) {
-			margin-right: 15.5em;
+			margin-right: $sidebar-1-width;
 		}
 	}
 	
@@ -56,7 +57,7 @@
 			position: absolute;
 			top: 0;
 			left: $pad;
-			width: 12em;
+			width: ($sidebar-1-width - 1);
 		}
 
 		@media all and (min-width: $bp-large) {
@@ -66,7 +67,7 @@
 
 	.l-sidebar2 {
 		@media all and (min-width: $bp-med-2) and (max-width: $bp-large) {
-			margin-left: 13em;
+			margin-left: ($sidebar-1-width + 1);
 		}
 
 		@media all and (min-width: $bp-large) {
