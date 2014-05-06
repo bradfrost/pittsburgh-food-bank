@@ -18,7 +18,8 @@
 		},
 		"sectionNavList" : [
 			{ 
-				"label": "Produce to People"
+				"label": "Produce to People",
+				"isActive" : true
 			},
 			{ 
 				"label": "Community Harvest"

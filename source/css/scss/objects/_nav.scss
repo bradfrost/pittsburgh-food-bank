@@ -222,10 +222,12 @@
 
 // Section Nav
 .section-nav-title {
-	margin-bottom: 0;
+	margin-bottom: 0.5em;
 }
 
 .section-nav-list {
+	border-top: 1px dotted $gray;
+
 	li {
 		border-bottom: 1px dotted $gray;
 	}
@@ -233,6 +235,26 @@
 	a {
 		display: block;
 		padding: $pad-half 0;
+		position: relative;
+
+		&.active {
+			color: $green;
+			padding-right: 10px;
+
+			&:after {
+				content: "";
+				display: block;
+				width: 0; 
+				height: 0;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				margin-top: -4px;
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				border-left: 5px solid $green;
+			}
+		}
 	}
 }
 
