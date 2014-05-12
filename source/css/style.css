@@ -1,3 +1,11 @@
+/*
+Theme Name: Pittsburgh Food Bank
+Theme URI: http://pittsburghfoodbank.org
+Author: Brad Frost Web
+Author URI: http://bradfrostweb.com
+Description: Custom theme for the Pittsburgh Food Bank
+Version: 1.0
+*/
 /*------------------------------------*\
     $TABLE OF CONTENTS
 \*------------------------------------*/
@@ -808,8 +816,8 @@ td {
     @media all and (min-width: 48em) {
       .l-3col .l-main {
         margin-left: 13.5em;
-        margin-top: -10em;
-        padding: 1em;
+        margin-top: -12em;
+        padding: 2em 2em 0 2em;
         min-height: 27em;
         border-radius: 8px; } }
     @media all and (min-width: 64em) {
@@ -826,7 +834,7 @@ td {
       left: 2em; } }
   @media all and (min-width: 48em) and (max-width: 64em) {
     .l-3col .l-sidebar2 {
-      margin-left: 14.5em; } }
+      margin-left: 15.5em; } }
   @media all and (min-width: 64em) {
     .l-3col .l-sidebar2 {
       position: absolute;

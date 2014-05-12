@@ -41,8 +41,8 @@
 
 		@media all and (min-width: $bp-med-2) {
 			margin-left: $sidebar-1-width;
-			margin-top: -10em;
-			padding: 1em;
+			margin-top: -12em;
+			padding: $pad-double $pad-double 0 $pad-double;
 			min-height: 27em; //Temporary min-height
 			border-radius: $border-radius;
 		}
@@ -67,7 +67,7 @@
 
 	.l-sidebar2 {
 		@media all and (min-width: $bp-med-2) and (max-width: $bp-large) {
-			margin-left: ($sidebar-1-width + 1);
+			margin-left: ($sidebar-1-width + $pad-double);
 		}
 
 		@media all and (min-width: $bp-large) {
