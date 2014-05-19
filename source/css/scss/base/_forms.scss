@@ -297,26 +297,26 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .no-svg .card-image {
-	background-image: url('../images/cc-front.png');
+	background-image: url('images/cc-front.png');
 
 	&.visa {
-		background-image: url('../images/cc-visa.png');
+		background-image: url('images/cc-visa.png');
 	}
 
 	&.mc { 
-		background-image: url('../images/cc-mc.png');
+		background-image: url('images/cc-mc.png');
 	}
 
 	&.amex {
-		background-image: url('../images/cc-amex.png');
+		background-image: url('images/cc-amex.png');
 	}
 
 	&.disc { 
-		background-image: url('../images/cc-disc.png');
+		background-image: url('images/cc-disc.png');
 	}
 
 	&.cvv2 {
-		background-image: url('../images/cc-back.png');
+		background-image: url('images/cc-back.png');
 	}
 }
 

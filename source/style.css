@@ -470,17 +470,17 @@ input[type="search"]::-webkit-search-decoration {
     transform: rotateY(180deg); }
 
 .no-svg .card-image {
-  background-image: url("../images/cc-front.png"); }
+  background-image: url("images/cc-front.png"); }
   .no-svg .card-image.visa {
-    background-image: url("../images/cc-visa.png"); }
+    background-image: url("images/cc-visa.png"); }
   .no-svg .card-image.mc {
-    background-image: url("../images/cc-mc.png"); }
+    background-image: url("images/cc-mc.png"); }
   .no-svg .card-image.amex {
-    background-image: url("../images/cc-amex.png"); }
+    background-image: url("images/cc-amex.png"); }
   .no-svg .card-image.disc {
-    background-image: url("../images/cc-disc.png"); }
+    background-image: url("images/cc-disc.png"); }
   .no-svg .card-image.cvv2 {
-    background-image: url("../images/cc-back.png"); }
+    background-image: url("images/cc-back.png"); }
 
 .card-instruction {
   display: block;
@@ -1402,7 +1402,7 @@ td {
 .footer {
   clear: both;
   overflow: hidden;
-  background: url(../images/bg-footer.png) repeat-x 0 100% #3b7840;
+  background: url(images/bg-footer.png) repeat-x 0 100% #3b7840;
   color: white;
   padding: 0 0 7em; }
   .footer a {
@@ -1625,8 +1625,8 @@ td {
 /* Icon font was generated using Icomoon http://icomoon.io/ using icon sets Icomoon and Entypo */
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot");
-  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.svg#icons") format("svg");
+  src: url("fonts/icons.eot");
+  src: url("fonts/icons.eot?#iefix") format("embedded-opentype"), url("fonts/icons.ttf") format("truetype"), url("fonts/icons.woff") format("woff"), url("fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"], .icon {
@@ -3382,7 +3382,7 @@ td {
       padding-right: 33%; } }
   @media all and (min-width: 46.8em) {
     .donate {
-      background: url(../images/bg-fruit.png) no-repeat 100% 1em; } }
+      background: url(images/bg-fruit.png) no-repeat 100% 1em; } }
 
 .donate-step {
   padding: 0;
@@ -3487,7 +3487,7 @@ div.ui-slider {
   outline: 0;
   text-align: center;
   font-weight: bold;
-  background: url(../images/bg-donate-slider.png) no-repeat 0 100%;
+  background: url(images/bg-donate-slider.png) no-repeat 0 100%;
   background-size: 100% auto;
   color: #3b7840;
   -webkit-transition: width 0.3s ease-out;
@@ -3616,7 +3616,7 @@ div.ui-slider {
   height: 4em;
   background: #f9f9f9; }
   .banner-pattern.kiwis {
-    background: url(../images/patterns/pattern-kiwis.png) #f3f5d6; }
+    background: url(images/patterns/pattern-kiwis.png) #f3f5d6; }
   @media all and (min-width: 48em) {
     .banner-pattern {
       height: 15em; } }
