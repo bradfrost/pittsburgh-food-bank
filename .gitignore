@@ -7,6 +7,8 @@
 .DS_Store
 
 /config.codekit
+*.scssc
+/source/css/.sass-cache/
 
 
 /public/css/style.css
@@ -221,3 +223,39 @@
 /public/patterns/04-pages-04-events-00-events-landing/04-pages-04-events-00-events-landing.escaped.html
 /public/patterns/04-pages-04-events-01-events-detail/04-pages-04-events-01-events-detail.escaped.html
 /public/patterns/04-pages-05-donate-00-donate/04-pages-05-donate-00-donate.escaped.html
+
+/source/css/.sass-cache/43534b0e7413cb8e7dd8da4f35a978ec3e879692/_mixins.scssc
+/source/css/.sass-cache/43534b0e7413cb8e7dd8da4f35a978ec3e879692/_reset.scssc
+/source/css/.sass-cache/43534b0e7413cb8e7dd8da4f35a978ec3e879692/_variables.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_accordion.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_banner.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_blocks.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_buttons.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_comments.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_donate.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_footer.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_header.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_hero.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_icons.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_layout.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_lists.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_main.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_nav.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_page.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_sections.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_tabs.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_text.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_timeline.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_tooltip.scssc
+/source/css/.sass-cache/641be79f2009e2c62898b2ea219464818b93351e/_well.scssc
+/source/css/.sass-cache/ab22d4c3d67c8ef1b26bab9f208b2ce053fe905c/style.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_animation.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_forms.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_global-classes.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_headings.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_links.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_lists.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_main.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_media.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_tables.scssc
+/source/css/.sass-cache/d9c221bd0ca9825ce778e285e89372d8ccbb2e63/_text.scssc
