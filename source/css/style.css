@@ -1225,100 +1225,100 @@ td {
       .nav-action-list [class^="icon-"] {
         color: #3b7840; } }
 
-.nav-list > li {
+.menu > li {
   position: relative; }
   @media all and (min-width: 46.8em) {
-    .nav-list > li {
+    .menu > li {
       float: left;
       width: 25%; }
-      .nav-list > li:last-child {
+      .menu > li:last-child {
         margin-right: 0; } }
   @media all and (min-width: 57em) {
-    .nav-list > li {
+    .menu > li {
       width: auto;
       margin-right: 0.5em; } }
   @media all and (min-width: 59.8em) {
-    .nav-list > li {
+    .menu > li {
       margin-right: 1em; } }
   @media all and (min-width: 69em) {
-    .nav-list > li {
+    .menu > li {
       margin-right: 2em; } }
   @media all and (min-width: 77em) {
-    .nav-list > li {
+    .menu > li {
       margin-right: 3.6em; } }
-.nav-list a {
+.menu a {
   display: block;
   border-top: 1px solid #3b7840;
   padding: 0.8em 0.5em;
   font-size: 110%; }
   @media all and (min-width: 46.8em) {
-    .nav-list a {
+    .menu a {
       padding: 0.5em; } }
-.nav-list .nav-donate {
+.menu .menu-item-174 a {
   color: #e9bd1d;
   font-weight: bold; }
-  .nav-list .nav-donate:hover, .nav-list .nav-donate:focus {
+  .menu .menu-item-174 a:hover, .menu .menu-item-174 a:focus {
     color: white; }
 @media all and (min-width: 46.8em) {
-  .nav-list {
+  .menu {
     max-height: none;
     clear: both;
     margin: 0 -0.5em 0 -0.5em; }
-    .nav-list a {
+    .menu a {
       border: 0; }
-      .nav-list a.nav-subnav-link {
+      .menu a.nav-subnav-link {
         display: inline-block; } }
 
-.nav-subnav-link {
+.menu-item-has-children > a {
   position: relative;
   -webkit-transition: none 0.3s ease-out;
   -moz-transition: none 0.3s ease-out;
   -ms-transition: none 0.3s ease-out;
   -o-transition: none 0.3s ease-out;
   transition: none 0.3s ease-out; }
-  .nav-subnav-link [class^="icon-"] {
+  .menu-item-has-children > a [class^="icon-"] {
     font-size: 75%;
     position: relative;
     top: 1px;
     left: 2px; }
-  .nav-subnav-link:hover, .nav-subnav-link:focus {
+  .menu-item-has-children > a:hover, .menu-item-has-children > a:focus {
     -webkit-transition: color 0.3s ease-out;
     -moz-transition: color 0.3s ease-out;
     -ms-transition: color 0.3s ease-out;
     -o-transition: color 0.3s ease-out;
     transition: color 0.3s ease-out; }
-  .nav-subnav-link.active {
+  .menu-item-has-children > a.active {
     background: #15561a;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: #e9bd1d; }
-    .nav-subnav-link.active:after {
+    .menu-item-has-children > a.active:before {
       content: " ";
       position: absolute;
-      bottom: 1px;
+      bottom: 0px;
       right: -8px;
       width: 8px;
       height: 8px;
       border-bottom-left-radius: 8px;
       border-width: 0 0 1px 1px;
       box-shadow: -2px 2px 0 #15561a; }
-    .nav-subnav-link.active > [class^="icon-"] {
+    .menu-item-has-children > a.active > [class^="icon-"] {
       color: #e9bd1d;
       -webkit-animation: flip 0.2s forwards;
       -moz-animation: flip 0.2s forwards;
       -o-animation: flip 0.2s forwards;
       animation: flip 0.2s forwards; }
   @media all and (max-width: 46.8em) {
-    .nav-subnav-link [class^="icon-"] {
+    .menu-item-has-children > a [class^="icon-"] {
       color: #3b7840; } }
 
-.nav-subnav {
+.sub-menu {
   display: none; }
-  .nav-subnav.active {
+  .sub-menu.active {
     display: block;
     background: #3b7840; }
   @media all and (min-width: 46.8em) {
-    .nav-subnav {
+    .sub-menu {
       position: absolute;
       top: 100%;
       left: 0;
@@ -1329,7 +1329,7 @@ td {
       line-height: 1.2;
       padding: 0.5em;
       min-width: 15em; }
-      .nav-subnav.active {
+      .sub-menu.active {
         background: #15561a; } }
 
 .pagination {
@@ -1629,7 +1629,7 @@ td {
   src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"], .icon {
   font-family: 'icons';
   speak: none;
   font-style: normal;

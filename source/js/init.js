@@ -33,13 +33,16 @@
 		$('.nav-subnav-link, .nav-subnav').removeClass('active');
 	});
 
-	$('.nav-subnav-link').on('click',function(){
+	//Append icon after subnav items
+	$('.menu-item-has-children > a').append('<span class="icon-arrow-down5"></span>');
+	
+	$('.menu-item-has-children > a').on('click',function(){
 		var $this = $(this),
-			$panel = $this.next('.nav-subnav');
+			$panel = $this.next('.sub-menu');
 
 		//Close other panels if link isn't a subnavigation item
-		$('.nav-subnav-link').not($this).removeClass('active');
-		$('.nav-subnav').not($panel).removeClass('active');
+		$('.menu-item-has-children > a').not($this).removeClass('active');
+		$('.sub-menu').not($panel).removeClass('active');
 
 		//Toggle Class
 		$this.toggleClass('active');
@@ -125,7 +128,6 @@
 		//If user is on the final step, submit the form
 		else if (donateStep === 3) {
 			$('.donate-form').parsley().submit();
-			alert('Form Submitted! Send to server and return success message when complete');
 		}
 	});
 

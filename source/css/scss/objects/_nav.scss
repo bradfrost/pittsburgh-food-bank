@@ -73,7 +73,7 @@
 }
 
 //Primary Navigation List
-.nav-list {
+.menu {
 	> li {
 		position: relative;
 
@@ -115,7 +115,7 @@
 		}
 	}
 
-	.nav-donate {
+	.menu-item-174 a {
 		color: $gold;
 		font-weight: bold;
 
@@ -139,7 +139,7 @@
 	}
 }
 
-.nav-subnav-link {
+.menu-item-has-children > a {
 	position: relative;
 	@include transition(none,0.3s,ease-out);
 
@@ -160,10 +160,10 @@
 		border-top-right-radius: $border-radius;
 		color: $gold;
 
-		&:after {
+		&:before {
 			content: " ";
 			position: absolute;
-		    bottom: 1px;
+		    bottom: 0px;
 		    right: -$border-radius;
 		    width: $border-radius;
 		    height: $border-radius;
@@ -188,7 +188,7 @@
 	}
 }
 
-.nav-subnav {
+.sub-menu {
 	display: none;
 
 	&.active {
