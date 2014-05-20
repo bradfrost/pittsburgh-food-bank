@@ -33,11 +33,25 @@
 
 //Sidebar Post List
 .sidebar-section {
-	padding-bottom: $pad;
-	border-bottom: 1px solid $gray-light;
-	margin-bottom: $space;
+	background: $gray-light;
+	padding: 3em $pad-half $pad-half;
+	border-radius: $border-radius;
+	margin-bottom: 3em;
+	position: relative;
 
-	&:last-child {
-		border-bottom: 0;
+	
+	&:before {
+		content: "";
+		display: block;
+		width: 4em;
+		height: 4em;
+		border: 0.5em solid $gray-light;
+		border-radius: 2.5em;
+		position: absolute;
+		top: -2.5em;
+		left: 50%;
+		margin-left: -2.5em;
+		
+		background: url(images/icon_carrot.png) no-repeat 50% 50% #fff;
 	}
 }
