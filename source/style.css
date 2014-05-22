@@ -3338,7 +3338,7 @@ td {
   .section-block .section-body {
     float: left;
     width: 50%;
-    padding-right: 1.5em; }
+    padding-left: 1.5em; }
   .section-block .section-img {
     float: left;
     width: 50%; }
@@ -3638,7 +3638,7 @@ div.ui-slider {
 
 .banner-pattern {
   height: 4em;
-  background: url(images/patterns/pattern-stripes.png) #fbfef7; }
+  background: url(images/patterns/pattern-tiles.png) #fbfef7; }
   .banner-pattern.stripes {
     background: url(images/patterns/pattern-stripes.png) #fbfef7; }
   .banner-pattern.tiles {

@@ -1,5 +1,8 @@
 {{# sectionBlock }}
 <section class="section section-block">
+	<div class="section-img">
+		{{> atoms-hero }}
+	</div>
 	<div class="section-body">
 		<h2 class="section-title">{{ headline.short }}</h2>
 		<p class="section-desc">{{ excerpt.short }}</p>
@@ -8,9 +11,6 @@
 			<li><a href="{{ url }}">{{ label }}</a></li>
 			{{/ textList }}
 		</ul>
-	</div>
-	<div class="section-img">
-		{{> atoms-hero }}
 	</div>
 </section>
 {{/ sectionBlock }}
