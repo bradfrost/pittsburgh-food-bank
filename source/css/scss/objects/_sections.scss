@@ -4,6 +4,7 @@
 
 .section-title {
 	font-size: $font-size-large-3;
+	font-weight: normal;
 	margin-bottom: 0;
 }
 
@@ -34,7 +35,7 @@
 //Sidebar Post List
 .sidebar-section {
 	background: $gray-light;
-	padding: 3em $pad-half $pad-half;
+	padding: 3em $pad $pad;
 	border-radius: $border-radius;
 	margin-bottom: 3em;
 	position: relative;
@@ -54,4 +55,16 @@
 		
 		background: url(images/icon_carrot.png) no-repeat 50% 50% #fff;
 	}
+}
+
+.sidebar-section-events {
+	&:before {
+		background-image: url(images/icon_calendar.png);
+	}
+}
+
+.sidebar-section-title {
+	color: $gray;
+	font-size: 1.2em;
+	text-align: center;
 }

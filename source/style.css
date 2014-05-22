@@ -141,7 +141,7 @@ header, footer, nav, section, article, hgroup, figure {
 
 body {
   background: white;
-  font: 100%/1.5 "proxima-nova", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font: 100%/1.5 "Gotham SSm A", "Gotham SSm B", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
   color: #333333; }
 
@@ -1233,19 +1233,19 @@ td {
       width: 25%; }
       .menu > li:last-child {
         margin-right: 0; } }
-  @media all and (min-width: 57em) {
+  @media all and (min-width: 60em) {
     .menu > li {
       width: auto;
       margin-right: 0.5em; } }
-  @media all and (min-width: 59.8em) {
+  @media all and (min-width: 66em) {
     .menu > li {
       margin-right: 1em; } }
-  @media all and (min-width: 69em) {
+  @media all and (min-width: 72em) {
     .menu > li {
       margin-right: 2em; } }
-  @media all and (min-width: 77em) {
+  @media all and (min-width: 78em) {
     .menu > li {
-      margin-right: 3.6em; } }
+      margin-right: 3.2em; } }
 .menu a {
   display: block;
   border-top: 1px solid #3b7840;
@@ -1576,6 +1576,8 @@ td {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.4em; }
 
+.text h2, .text h3, .text h4 {
+  font-weight: normal; }
 .text a {
   text-decoration: underline; }
 .text ul {
@@ -3325,6 +3327,7 @@ td {
 
 .section-title {
   font-size: 2.75em;
+  font-weight: normal;
   margin-bottom: 0; }
 
 .section-img img {
@@ -3342,7 +3345,7 @@ td {
 
 .sidebar-section {
   background: #f9f9f9;
-  padding: 3em 0.5em 0.5em;
+  padding: 3em 1em 1em;
   border-radius: 8px;
   margin-bottom: 3em;
   position: relative; }
@@ -3358,6 +3361,14 @@ td {
     left: 50%;
     margin-left: -2.5em;
     background: url(images/icon_carrot.png) no-repeat 50% 50% white; }
+
+.sidebar-section-events:before {
+  background-image: url(images/icon_calendar.png); }
+
+.sidebar-section-title {
+  color: gray;
+  font-size: 1.2em;
+  text-align: center; }
 
 .comments li {
   margin-bottom: 1em; }
@@ -3536,7 +3547,7 @@ div.ui-slider {
   margin-bottom: 2em; }
 
 .hero-text {
-  background: url(images/patterns/pattern-stripes.png) #cbeeb1;
+  background: #f9f9f9;
   padding: 2em 0.5em; }
   .hero-text form {
     max-width: 28em; }
@@ -3590,7 +3601,7 @@ div.ui-slider {
   margin-bottom: 1.5em; }
 
 .banner-hero {
-  background: url(images/patterns/pattern-stripes.png) #cbeeb1;
+  background: #f9f9f9;
   text-align: center;
   padding: 2em 0; }
   @media all and (min-width: 46.8em) {
@@ -3599,6 +3610,7 @@ div.ui-slider {
 
 .banner-hero-text {
   font-size: 2em;
+  letter-spacing: -1px;
   margin: 0; }
   .banner-hero-text br {
     display: none; }
@@ -3607,7 +3619,8 @@ div.ui-slider {
         display: inline-block; } }
   @media all and (min-width: 39.8em) {
     .banner-hero-text {
-      font-size: 3em; } }
+      font-size: 3em;
+      letter-spacing: -2px; } }
   @media all and (min-width: 46.8em) {
     .banner-hero-text {
       font-size: 4em; } }
@@ -3625,9 +3638,19 @@ div.ui-slider {
 
 .banner-pattern {
   height: 4em;
-  background: #f9f9f9; }
+  background: url(images/patterns/pattern-stripes.png) #fbfef7; }
+  .banner-pattern.stripes {
+    background: url(images/patterns/pattern-stripes.png) #fbfef7; }
+  .banner-pattern.tiles {
+    background: url(images/patterns/pattern-tiles.png) #fbfef7; }
   .banner-pattern.kiwis {
     background: url(images/patterns/pattern-kiwis.png) #f3f5d6; }
+  .banner-pattern.cooking {
+    background: url(images/patterns/pattern-cooking.png) #fbfef7; }
+  .banner-pattern.gardening {
+    background: url(images/patterns/pattern-gardening.png) #fbfef7; }
+  .banner-pattern.groceries {
+    background: url(images/patterns/pattern-groceries.png) #fbfef7; }
   @media all and (min-width: 48em) {
     .banner-pattern {
       height: 15em; } }

@@ -6,7 +6,7 @@
 
 //Hero Banner
 .banner-hero {
-	background: url(images/patterns/pattern-stripes.png) $green-light-mute;
+	background: $gray-light;
 	text-align: center;
 	padding: 2em 0;
 
@@ -17,6 +17,7 @@
 
 .banner-hero-text {
 	font-size: 2em;
+	letter-spacing: -1px;
 	margin: 0;
 
 	br {
@@ -29,6 +30,7 @@
 	
 	@media all and (min-width: $bp-small-3) {
 		font-size: 3em;
+		letter-spacing: -2px;
 	}
 
 	@media all and (min-width: $bp-med) {
@@ -56,12 +58,38 @@
 //Pattern Banner
 .banner-pattern {
 	height: 4em;
-	background: $gray-light;
+	background: url(images/patterns/pattern-stripes.png) #fbfef7;
 
+	//Stripe Pattern
+	&.stripes {
+		background: url(images/patterns/pattern-stripes.png) #fbfef7;
+	}
+	
+	//Tiles
+	&.tiles {
+		background: url(images/patterns/pattern-tiles.png) #fbfef7;
+	}
+
+	//Kiwi Pattern
 	&.kiwis {
 		background: url(images/patterns/pattern-kiwis.png) #f3f5d6;
 	}
-
+	
+	//Cooking Patter
+	&.cooking {
+		background: url(images/patterns/pattern-cooking.png) #fbfef7;
+	}
+	
+	//Gardening
+	&.gardening {
+		background: url(images/patterns/pattern-gardening.png) #fbfef7;
+	}
+	
+	//groceries
+	&.groceries {
+		background: url(images/patterns/pattern-groceries.png) #fbfef7;
+	}
+	
 	@media all and (min-width: $bp-med-2) {
 		height: 15em;
 	}

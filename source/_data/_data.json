@@ -66,7 +66,7 @@
 		"first-name": "Author",
 		"last-name": "Name"
 	},
-	"bannerClass" : "kiwis",
+	"bannerClass" : "stripes",
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Section Nav"
