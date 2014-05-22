@@ -3345,22 +3345,28 @@ td {
 
 .sidebar-section {
   background: #f9f9f9;
-  padding: 3em 1em 1em;
+  padding: 2.5em 1em 1em;
   border-radius: 8px;
   margin-bottom: 3em;
   position: relative; }
   .sidebar-section:before {
     content: "";
     display: block;
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     border: 0.5em solid #f9f9f9;
-    border-radius: 2.5em;
+    border-radius: 3em;
     position: absolute;
-    top: -2.5em;
+    top: -1.5em;
     left: 50%;
-    margin-left: -2.5em;
+    margin-left: -2em;
     background: url(images/icon_carrot.png) no-repeat 50% 50% white; }
+  .sidebar-section .b-excerpt {
+    color: gray; }
+  .sidebar-section .text-btn {
+    display: block;
+    margin: 1em 0 0;
+    color: #c14903; }
 
 .sidebar-section-events:before {
   background-image: url(images/icon_calendar.png); }
