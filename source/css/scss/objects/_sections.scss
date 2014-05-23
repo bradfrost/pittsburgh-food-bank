@@ -33,7 +33,7 @@
 //Sidebar Sections
 
 //Sidebar Post List
-.sidebar-section, .widget-container {
+.sidebar-section, .widget, .widget-container {
 	background: $gray-light;
 	padding: 2.5em $pad $pad;
 	border-radius: $border-radius;
@@ -68,13 +68,13 @@
 	}
 }
 
-.sidebar-section-events {
+.sidebar-section-events, .tribe-events-list-widget {
 	&:before {
 		background-image: url(images/icon_calendar.png);
 	}
 }
 
-.sidebar-section-title, .widget-title {
+.sidebar-section-title, .widgettitle {
 	color: $gray;
 	font-size: 1.2em;
 	text-align: center;

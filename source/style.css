@@ -1183,6 +1183,10 @@ td {
   border: 0;
   border-left: 1px solid #3b7840; }
 
+.header-simple .logo-link {
+  position: relative;
+  display: inline-block; }
+
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
@@ -3059,7 +3063,7 @@ td {
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
-.btn {
+.btn, .tribe-events-sub-nav a {
   display: inline-block;
   background: #3b7840;
   border-bottom: 2px solid #15561a;
@@ -3073,14 +3077,14 @@ td {
   position: relative;
   top: 0;
   outline: 0; }
-  .btn:hover, .btn:focus {
+  .btn:hover, .tribe-events-sub-nav a:hover, .btn:focus, .tribe-events-sub-nav a:focus {
     color: #171303;
     background: #e9bd1d;
     border-bottom-color: #d8ae15; }
-  .btn:active {
+  .btn:active, .tribe-events-sub-nav a:active {
     background: #d8ae15;
     top: 1px; }
-  .btn.disabled {
+  .btn.disabled, .tribe-events-sub-nav a.disabled {
     background: #eeeeee;
     color: #bbbbbb; }
 
@@ -3167,7 +3171,13 @@ td {
     padding: 0.5em; }
 
 .block-thumb img {
-  width: 100%; }
+  width: 14em;
+  height: 14em;
+  border: 3px solid #dddddd;
+  border-radius: 7em;
+  margin: 0 auto; }
+.block-thumb .b-title, .block-thumb .b-excerpt {
+  text-align: center; }
 
 .block-headline-byline .b-title {
   margin: 0; }
@@ -3314,26 +3324,30 @@ td {
         display: block;
         padding: 0 0 1em; } }
 
-.tabs {
-  overflow: hidden; }
-  .tabs ul {
-    display: table;
-    width: 100%; }
-  .tabs li {
-    display: table-cell;
+/*------------------------------------*\
+    $TABS
+\*------------------------------------*/
+.tabs, .tribe-bar-views-list {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 1em; }
+  .tabs li, .tribe-bar-views-list li {
+    display: inline-block;
     text-align: center;
-    border-right: 1px solid #dddddd; }
-    .tabs li:last-child {
-      border-right: 0; }
-  .tabs a {
-    display: block;
-    padding: 0.5em;
-    background: gray; }
-    .tabs a:hover, .tabs a:focus {
-      background: #dddddd; }
-    .tabs a.active {
-      background: #333333;
-      color: white; }
+    margin-right: 0.3em;
+    padding: 1em 1.5em;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+    bottom: -1px;
+    font-weight: bold;
+    cursor: pointer; }
+    .tabs li:hover, .tribe-bar-views-list li:hover, .tabs li:focus, .tribe-bar-views-list li:focus {
+      background: #eeeeee; }
+    .tabs li.active, .tribe-bar-views-list li.active, .tabs li.tribe-bar-active, .tribe-bar-views-list li.tribe-bar-active {
+      background: white;
+      border-bottom-color: white; }
 
 .section {
   margin: 0 0 1em; }
@@ -3356,13 +3370,13 @@ td {
     float: left;
     width: 50%; }
 
-.sidebar-section, .widget-container {
+.sidebar-section, .widget, .widget-container {
   background: #f9f9f9;
   padding: 2.5em 1em 1em;
   border-radius: 8px;
   margin-bottom: 3em;
   position: relative; }
-  .sidebar-section:before, .widget-container:before {
+  .sidebar-section:before, .widget:before, .widget-container:before {
     content: "";
     display: block;
     width: 3em;
@@ -3374,18 +3388,18 @@ td {
     left: 50%;
     margin-left: -2em;
     background: url(images/icon_carrot.png) no-repeat 50% 50% white; }
-  .sidebar-section .b-excerpt, .widget-container .b-excerpt {
+  .sidebar-section .b-excerpt, .widget .b-excerpt, .widget-container .b-excerpt {
     color: gray; }
-  .sidebar-section .text-btn, .widget-container .text-btn {
+  .sidebar-section .text-btn, .widget .text-btn, .widget-container .text-btn {
     display: block;
     margin: 1em 0 0;
     color: #c14903;
     text-align: center; }
 
-.sidebar-section-events:before {
+.sidebar-section-events:before, .tribe-events-list-widget:before {
   background-image: url(images/icon_calendar.png); }
 
-.sidebar-section-title, .widget-title {
+.sidebar-section-title, .widgettitle {
   color: gray;
   font-size: 1.2em;
   text-align: center; }
@@ -3591,7 +3605,7 @@ div.ui-slider {
   margin-top: 1em; }
   .hero-main .hero-body {
     padding: 1em 0 0; }
-  .hero-main .btn {
+  .hero-main .btn, .hero-main .tribe-events-sub-nav a, .tribe-events-sub-nav .hero-main a {
     margin-top: 1em; }
   .hero-main .hero-title {
     font-size: 1.4em;
@@ -3700,3 +3714,19 @@ div.ui-slider {
     border-radius: 16px;
     background: #fff;
     border: 5px solid #eeeeee; }
+
+/*------------------------------------*\
+    $VENDOR
+\*------------------------------------*/
+.js .tribe-bar-views-select {
+  display: none; }
+
+.js .tribe-bar-views-inner label {
+  display: none; }
+
+h2.tribe-events-page-title {
+  text-align: left;
+  font-weight: normal; }
+
+.tribe-events-sub-nav span {
+  display: none; }

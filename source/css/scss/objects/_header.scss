@@ -229,6 +229,14 @@
 	background: none;
 	padding: 0.78em 1em;
 	border: 0;
-	border-left: 1px solid $green;
-	
+	border-left: 1px solid $green;	
+}
+
+
+//Simple Header, for use on third-party sites
+.header-simple {
+	.logo-link {
+		position: relative;
+		display: inline-block;
+	}
 }

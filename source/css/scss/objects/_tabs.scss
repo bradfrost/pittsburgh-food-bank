@@ -1,33 +1,32 @@
+/*------------------------------------*\
+    $TABS
+\*------------------------------------*/
 .tabs {
-	overflow: hidden;
-
-	ul {
-		display: table;
-		width: 100%;
-	}
+	border-bottom: 1px solid $gray-light-2;
+	margin-bottom: $space;
 	
 	li {
-		display: table-cell;
+		display: inline-block;
 		text-align: center;
-		border-right: 1px solid $gray-light-3;
-
-		&:last-child {
-			border-right: 0;
-		}
-	}
-
-	a {
-		display: block;
-		padding: $pad-half;
-		background: $gray;
+		margin-right: 0.3em;
+		padding: $pad $pad-and-half;
+		background: $gray-light-2;
+		border: 1px solid $gray-light-2;
+		border-top-right-radius: $border-radius;
+		border-top-left-radius: $border-radius;
+		
+		position: relative;
+		bottom: -1px;
+		font-weight: bold;
+		cursor: pointer;
 
 		&:hover, &:focus {
-			background: $gray-light-3;
+			background: $gray-light-2;
 		}
 
-		&.active {
-			background: $gray-dark;
-			color: $white;
+		&.active, &.tribe-bar-active {
+			background: $white;
+			border-bottom-color: $white;
 		}
 	}
 }

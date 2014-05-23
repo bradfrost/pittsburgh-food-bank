@@ -1,0 +1,30 @@
+//Override styles for Tribe Events Wordpress Plugin http://tri.be/support/documentation/the-events-calendar-template-tags-general-functions/
+
+.js .tribe-bar-views-select {
+	display: none;
+}
+
+.js .tribe-bar-views-inner {
+	label {
+		display: none;
+	}
+}
+
+.tribe-bar-views-list {
+	@extend .tabs;
+}
+
+h2.tribe-events-page-title {
+	text-align: left;
+	font-weight: normal;
+}
+
+.tribe-events-sub-nav {
+	a {
+		@extend .btn;
+	}
+	
+	span {
+		display: none;
+	}
+}
