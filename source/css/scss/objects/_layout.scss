@@ -43,12 +43,16 @@
 			margin-left: $sidebar-1-width;
 			margin-top: -12em;
 			padding: $pad-double $pad-double 0 $pad-double;
-			min-height: 27em; //Temporary min-height
+			min-height: 40em; //Temporary min-height
 			border-radius: $border-radius;
 		}
 
 		@media all and (min-width: $bp-large) {
 			margin-right: $sidebar-1-width;
+		}
+		
+		@media all and (min-width: 70em) {
+			padding: $pad-double 3em 0 3em;
 		}
 	}
 	

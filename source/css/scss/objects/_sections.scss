@@ -33,7 +33,7 @@
 //Sidebar Sections
 
 //Sidebar Post List
-.sidebar-section {
+.sidebar-section, .widget-container {
 	background: $gray-light;
 	padding: 2.5em $pad $pad;
 	border-radius: $border-radius;
@@ -64,6 +64,7 @@
 		display: block;
 		margin: 1em 0 0;
 		color: #c14903;
+		text-align: center;
 	}
 }
 
@@ -73,7 +74,7 @@
 	}
 }
 
-.sidebar-section-title {
+.sidebar-section-title, .widget-title {
 	color: $gray;
 	font-size: 1.2em;
 	text-align: center;

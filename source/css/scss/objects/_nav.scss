@@ -188,6 +188,7 @@
 	}
 }
 
+//Wordpress sub-navigation
 .sub-menu {
 	display: none;
 
@@ -222,7 +223,12 @@
 
 // Section Nav
 .section-nav-title {
+	font-size: $font-size-med;
 	margin-bottom: 0.5em;
+	
+	a {
+		color: $gray;
+	}
 }
 
 .section-nav-list {

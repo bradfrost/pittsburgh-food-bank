@@ -7,6 +7,16 @@
 	line-height: 1.3;
 	color: $gray;
 	
+	&:empty {
+		display: block !important;
+		background: #d63232;
+		color: white;
+		
+		&:before {
+			content: "Page must contain a 140-character-or-less page tagline"
+		}
+	}
+	
 	@media all and (min-width: $bp-small-2) {
 		font-size: $font-size-large;
 	}
