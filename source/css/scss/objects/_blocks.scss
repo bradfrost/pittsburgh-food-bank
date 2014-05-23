@@ -93,7 +93,15 @@
 // Block Thumb with Summary
 .block-thumb {
 	img {
-		width: 100%;
+		width: 14em;
+		height: 14em;
+		border: 3px solid $gray-light-3;
+		border-radius: 7em;
+		margin: 0 auto;
+	}
+	
+	.b-title, .b-excerpt {
+		text-align: center;
 	}
 }
 

@@ -3167,7 +3167,13 @@ td {
     padding: 0.5em; }
 
 .block-thumb img {
-  width: 100%; }
+  width: 14em;
+  height: 14em;
+  border: 3px solid #dddddd;
+  border-radius: 7em;
+  margin: 0 auto; }
+.block-thumb .b-title, .block-thumb .b-excerpt {
+  text-align: center; }
 
 .block-headline-byline .b-title {
   margin: 0; }
