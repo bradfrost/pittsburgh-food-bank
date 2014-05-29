@@ -6,7 +6,6 @@
 		sw = document.body.clientWidth; //Update screen width
 	});
 
-
 	//Navigation toggle for small screens
 	$('.nav-toggle-menu').click(function() {
 		$(this).toggleClass('active');

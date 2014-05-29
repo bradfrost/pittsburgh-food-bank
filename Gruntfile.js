@@ -7,9 +7,14 @@ module.exports = function(grunt) {
         concat: {
             dist: {
 				src: [
-					'source/js/libs/*.js', // All JS in the libs folder
-					'!source/js/libs/modernizr.js', // Except for Modernizr
-					'source/js/init.js'
+					'source/js/jquery.js', // A
+					'source/js/jquery.mobile.custom.js',
+					'source/js/jquery.inputmask.js',
+					'source/js/jquery.inputmask.date.extensions.js',
+					'source/js/single-cc-field.js',
+					'source/js/parsley.js',
+					'source/js/init.js',
+					'!source/js/modernizr.js' // Exclude Modernizr
 				],
 				dest: 'public/js/production.js'
 			}
@@ -43,6 +48,13 @@ module.exports = function(grunt) {
                 command: "php core/builder.php -gp"
             }
         },
+        copy: {
+		  main: {
+		    files: [
+		      { src:"source/js/modernizr.js", dest:"public/js/modernizr.js" }
+		    ]
+		  }
+		},
 		watch: {
             all: {
                 files: ['*'],
@@ -57,7 +69,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: ['source/js/*.js'],
-				tasks: ['concat', 'uglify'],
+				tasks: ['concat', 'uglify', 'copy'],
 				options: {
 					livereload: true
 				}
@@ -79,7 +91,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Tasks
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch', 'autoprefixer', 'shell:patternlab']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch', 'copy', 'autoprefixer', 'shell:patternlab']);
 };
