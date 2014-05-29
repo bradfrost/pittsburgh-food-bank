@@ -51,7 +51,8 @@ module.exports = function(grunt) {
         copy: {
 		  main: {
 		    files: [
-		      { src:"source/js/modernizr.js", dest:"public/js/modernizr.js" }
+		      { src:"source/js/modernizr.js", dest:"public/js/modernizr.js" },
+		      { src:"public/style.css", dest:"../wordpress/wp-content/themes/pittsburghfoodbank/style.css" }
 		    ]
 		  }
 		},
@@ -76,7 +77,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: ['source/css/*.scss', 'source/css/**/*.scss', 'public/styleguide/css/**/*.scss'],
-				tasks: ['sass','autoprefixer'],
+				tasks: ['sass','autoprefixer', 'copy'],
 				options: {
 					livereload: true
 				}
