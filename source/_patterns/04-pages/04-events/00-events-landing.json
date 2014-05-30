@@ -86,5 +86,14 @@
 				"label" : "Etc"
 			}
 		]
+	},
+	"sidebarText" : {
+		"headline" : {
+			"xs" : "Want to organize an event?"
+		},
+		"excerpt" : {
+			"medium" : "Want to fight hunger and give back to your community? Organize and event benefiting the Greater Pittsburgh Community Food Bank! If you're interested in organizing an event, please contact our Special Events Coordinator."
+		},
+		"cta" : "Contact Us"
 	}
 }

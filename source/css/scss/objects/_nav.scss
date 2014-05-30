@@ -73,7 +73,7 @@
 }
 
 //Primary Navigation List
-.menu {
+.header .menu {
 	> li {
 		position: relative;
 
@@ -139,7 +139,7 @@
 	}
 }
 
-.menu-item-has-children > a {
+.header .menu-item-has-children > a {
 	position: relative;
 	@include transition(none,0.3s,ease-out);
 
@@ -189,7 +189,7 @@
 }
 
 //Wordpress sub-navigation
-.sub-menu {
+.header .sub-menu {
 	display: none;
 
 	&.active {

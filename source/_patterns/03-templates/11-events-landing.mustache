@@ -6,7 +6,7 @@
 			<div class="l-main">
 				<section class="section">
 					{{> molecules-page-header }}
-					<h2>Upcoming Events</h2>
+					{{> molecules-tabs }}
 					<ul class="post-list event-list">
 						{{# eventList }}
 						<li>{{> molecules-block-event }}</li>
@@ -14,16 +14,13 @@
 					</ul>
 				</section>
 				{{> organisms-well-subscribe }}
-				<section class="section">
-					<h2>Want to organize an event?</h2>
-					<p>The Food Bank divides special events into two types, those we sponsor and organize, and those that are created and carried out by people or groups in the community on our behalf. If you wish to hold an event on our behalf, please <a href="#">contact the Special Events Coordinator.</a></p>
-				</section>
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
 				{{> molecules-section-nav }}
 			</div><!--end .l-sidebar-->
 			<div class="l-sidebar2">
 				{{> organisms-sidebar-text-list }}
+				{{> organisms-sidebar-text }}
 			</div><!--end .l-sidebar2-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->
