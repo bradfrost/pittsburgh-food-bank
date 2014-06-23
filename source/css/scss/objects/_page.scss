@@ -1,11 +1,19 @@
 //Page Header
-[role=main] > .page-header {
+.page-header {
 	@extend .lc;
+	text-align: center;
+	padding: $pad 0;
+	max-width: 50em;
+	
+	@media all and (min-width: $bp-small-2) {
+		padding: $pad-double 0;
+	}
 }
 
 .page-intro {
 	line-height: 1.3;
 	color: $gray;
+	margin: 0;
 	
 	&:empty {
 		display: block !important;

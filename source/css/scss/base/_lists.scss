@@ -15,5 +15,7 @@ dt {
 }
 
 dd {
-	margin: 0 0 $space;
+	margin: 0 0 $space-half;
+	padding-bottom: $pad-half;
+	border-bottom: 1px solid $gray-light-2;
 }

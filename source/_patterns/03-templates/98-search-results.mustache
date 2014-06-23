@@ -2,8 +2,7 @@
 	{{> organisms-header }}
 	<div role="main">
 		{{> molecules-page-header }}
-		{{> molecules-pattern-banner }}
-		<div class="l-3col">
+		<div class="main-body l">
 			<div class="l-main">
 				<ul class="post-list">
 					{{# postList }}
@@ -14,13 +13,9 @@
 				</ul>
 			</div><!--end .l-main-->
 			<div class="l-sidebar">
-				{{> molecules-section-nav }}
-			</div><!--end .l-sidebar-->
-			<div class="l-sidebar2">
 				{{> organisms-sidebar-text }}
 				{{> organisms-sidebar-event-list }}
-				
-			</div><!--end .l-sidebar2-->
+			</div><!--end .l-sidebar-->
 		</div><!--end .l-3col-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}

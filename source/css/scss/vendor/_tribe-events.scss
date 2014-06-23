@@ -22,9 +22,18 @@ h2.tribe-events-page-title {
 .tribe-events-sub-nav {
 	a {
 		@extend .btn;
+		@extend .btn-small;
 	}
 	
 	span {
 		display: none;
 	}
+}
+
+.single-tribe_events .tribe-events-event-meta {
+	margin: 0 !important;
+}
+
+.single-tribe_events #tribe-events-gmap {
+	margin-bottom: $space !important;
 }

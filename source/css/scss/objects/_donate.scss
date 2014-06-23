@@ -1,22 +1,14 @@
 /* Donate Organism */
 .donate {
-	border-top: 1px solid $gray;
 	padding: 2em $pad 2em;
 	position: relative;
+	text-align: center;
+	max-width: 50em;
+	margin: 0 auto;
 
 	.section-title {
+		font-weight: bold;
 		font-size: 1.8em;
-		color: $gold;
-	}
-
-	.lc {
-		@media all and (min-width: $bp-med) {
-			padding-right: 33%;
-		}
-	}
-
-	@media all and (min-width: $bp-med) {
-		background: url(images/bg-fruit.png) no-repeat 100% 1em;
 	}
 }
 

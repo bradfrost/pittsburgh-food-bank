@@ -1,12 +1,7 @@
 //Hero
-.hero {
-	margin-top: -$space;
-	margin-bottom: $space-double;
-}
-
 .hero-text {
 	background: $gray-light;
-	padding: $pad-double $pad-half;
+
 
 	form {
 		max-width: 28em;
@@ -28,11 +23,6 @@
 			margin-right: auto;
 		}
 	}
-
-	@media all and (min-width: $bp-med) {
-		text-align: center;
-		padding: 3em 1em;
-	}
 }
 
 
@@ -40,7 +30,6 @@
 //Hero main 
 .hero-main {
 	@extend .cf;
-	margin-top: 1em;
 
 	.hero-body {
 		padding: $pad 0 0;
@@ -78,7 +67,12 @@
 		}
 
 		.hero-img {
-			width: 66%
+			width: 66%;
+			
+			img {
+				display: block;
+				border-radius: $border-radius;
+			}
 		}
 
 		.hero-body {

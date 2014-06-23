@@ -5,6 +5,10 @@
 	border-radius: $border-radius;
 	padding: $pad;
 	margin-bottom: $space;
+	
+	@media all and (min-width: $bp-med-2) {
+		margin-bottom: 0;
+	}
 }
 
 .well-title {

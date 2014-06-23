@@ -18,6 +18,20 @@
 	}
 }
 
+//Main Content Container
+.main-body {
+	max-width: $max-width - $pad-double;
+	margin: 0 auto;
+	background: $white;
+	border: 1px solid $gray-light-5;
+	border-radius: $border-radius;
+	padding: $pad;
+	
+	@media all and (min-width: $bp-small-3) and (max-width: $bp-med-2), (min-width: $bp-large) {
+		padding: $pad-double;
+	}
+}
+
 /*------------------------------------*\
     $TEMPLATES
 \*------------------------------------*/
@@ -31,64 +45,26 @@
 }
 
 //3 Column Layout - used for most page templates
-.l-3col {
-	@extend .lc;
+.l {
 	@extend .cf;
 	position: relative;
 
 	.l-main {
-		background: $white;
 
 		@media all and (min-width: $bp-med-2) {
-			margin-left: $sidebar-1-width;
-			margin-top: -12em;
-			padding: $pad-double $pad-double 0 $pad-double;
-			min-height: 75em; //Temporary min-height
-			border-radius: $border-radius;
-		}
-
-		@media all and (min-width: $bp-large) {
-			margin-right: $sidebar-1-width;
-		}
-		
-		@media all and (min-width: 70em) {
-			padding: $pad-double 3em 0 3em;
+			float: left;
+			width: 72%;
+			padding-right: $pad-double;
 		}
 	}
 	
 	.l-sidebar {
 		@media all and (min-width: $bp-med-2) {
-			position: absolute;
-			top: 0;
-			left: $pad;
-			width: ($sidebar-1-width - 1);
-		}
-
-		@media all and (min-width: $bp-large) {
-			left: $pad-double;
-		}
-	}
-
-	.l-sidebar2 {
-		@media all and (min-width: $bp-med-2) and (max-width: $bp-large) {
-			margin-left: ($sidebar-1-width + $pad-double);
-		}
-
-		@media all and (min-width: $bp-large) {
-			position: absolute;
-			top: 0;
-			right: $pad;
-			width: 14em;
+			float: left;
+			width: 28%;
 		}
 	}
 }
-
-//Centered single col
-.l-centered-single-col {
-	max-width: 45em;
-	margin: 0 auto;
-}
-
 
 /*------------------------------------*\
     $GRIDS

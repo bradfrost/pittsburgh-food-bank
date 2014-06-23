@@ -1,25 +1,24 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
-			<div class="lc">
-				{{> molecules-page-header }}
-				<div class="g g-2up">
-					<div class="gi">
-						<a href="{{ url }}">
-							<figure>
-								{{> atoms-hero }}
-								<figcaption>Get directions</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="gi">
-						<h2>Greater Pittsburgh Community Food Bank</h2>
-						1 North Linden Street<br />
-						Duquesne, PA 15110<br />
-						<a href="{{ url }}">Phone: 412-460-3663</a>
-						<a href="{{ url }}">Fax: 412-460-0418</a>
-						<a href="{{ url }}">Email us</a>
-					</div>
+		{{> molecules-page-header }}
+		<div class="main-body l">
+			<div class="g g-2up">
+				<div class="gi">
+					<a href="{{ url }}">
+						<figure>
+							{{> atoms-hero }}
+							<figcaption>Get directions</figcaption>
+						</figure>
+					</a>
+				</div>
+				<div class="gi">
+					<h2>Greater Pittsburgh Community Food Bank</h2>
+					1 North Linden Street<br />
+					Duquesne, PA 15110<br />
+					<a href="{{ url }}">Phone: 412-460-3663</a>
+					<a href="{{ url }}">Fax: 412-460-0418</a>
+					<a href="{{ url }}">Email us</a>
 				</div>
 			</div>
 			{{> organisms-split }}
@@ -42,7 +41,7 @@
 					{{> molecules-contact-form }}
 				</section>
 			</div><!--end .lc-->
-		
+		</div><!--end main-body-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

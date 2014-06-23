@@ -168,4 +168,11 @@
 			return false;
 		}
 	});
+	
+
+	//Fix text widows http:/justinhileman.info/article/a-jquery-widont-snippet/
+    $('h1').each(function() {
+        $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+    });
+
 })(this);
