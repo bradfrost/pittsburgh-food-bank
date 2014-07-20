@@ -1,19 +1,45 @@
 //Page Header
 .page-header {
-	@extend .lc;
+	background: url(images/bg_hero_corn.jpg) no-repeat $gray-dark;
+	background-size: cover;
+	text-align: center;
+	color: $white;
+	
+	form {
+		margin: $space auto;
+		max-width: 32em;
+	}
+	
+	.btn {
+		display: inline-block;
+		margin: 1em auto;
+	}
+	
+	@media all and (min-width: $bp-small-2) {
+		padding: $pad-double $pad;
+	}
+	
+	@media all and (min-width: $bp-large) {
+		padding: 4em $pad;
+	}
+}
+
+.page-header-inner {
 	text-align: center;
 	padding: $pad 0;
 	max-width: 50em;
-	
-	@media all and (min-width: $bp-small-2) {
-		padding: $pad-double 0;
-	}
+}
+
+.page-title {
+	max-width: 20em;
+	margin: 0 auto $space-half;
 }
 
 .page-intro {
 	line-height: 1.3;
-	color: $gray;
-	margin: 0;
+	color: $white;
+	margin: 0 auto;
+	max-width: 30em;
 	
 	&:empty {
 		display: block !important;

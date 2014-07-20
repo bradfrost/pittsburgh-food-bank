@@ -41,11 +41,11 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 }
 
 button, input[type="submit"] {
-	color: $black;
-	background: $gold;
+	color: $white;
+	background: $green-dark;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 1.05em;
+	padding: $pad;
 	border: 0;
 	cursor: pointer;
 	text-align: center;
@@ -129,10 +129,10 @@ input[type="search"]::-webkit-search-decoration {
 		position: absolute;
 		top: 0;
 		right: 0;
+		border: 1px solid $white;
 		z-index: 1;
 		width: auto;
-		border-top-right-radius: $border-radius;
-		border-bottom-right-radius: $border-radius;
+		border-radius: $border-radius;
 	}
 }
 

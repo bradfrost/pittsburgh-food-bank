@@ -2,10 +2,23 @@
 	margin: 0 0 $space;
 }
 
+.section-alt {
+	background: $gray-light-2;
+	padding: $pad-double 0;
+}
+
 .section-title {
-	font-size: $font-size-large-3;
+	font-size: $font-size-large-2;
 	font-weight: normal;
+	text-transform: uppercase;
 	margin-bottom: 0;
+	text-align: center;
+}
+
+.section-desc {
+	text-align: center;
+	margin: 0 auto $space;
+	max-width: 30em;
 }
 
 .section-img {

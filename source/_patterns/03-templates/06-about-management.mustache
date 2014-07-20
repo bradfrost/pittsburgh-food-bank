@@ -2,11 +2,9 @@
 	{{> organisms-header }}
 	<div role="main">
 		{{> molecules-page-header }}
-		<div class="main-body l">
-			<div class="l-main">
-				
+		<div class="main-body">	
 				<h2>Executive Staff</h2>
-				<div class="g g-half">
+				<div class="g g-3up">
 					{{# execList }}
 					<div class="gi">
 						{{> molecules-block-thumb-portrait-title }}
@@ -15,19 +13,16 @@
 				</div>
 				<hr />
 				<h2>Board of Directors</h2>
-				<div class="g g-half">
+				<div class="g g-3up">
 					{{# boardList }}
 					<div class="gi">
 						{{> molecules-block-title-excerpt }}
 					</div>
 					{{/ boardList }}
 				</div>
-				
-			</div><!--end .l-main-->
-			<div class="l-sidebar">
+				<hr />
 				{{> molecules-well }}
-			</div><!--end .l-sidebar2-->
-		</div><!--end .l-3col-->
+		</div><!--end .main-body-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

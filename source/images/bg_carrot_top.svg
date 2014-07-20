@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 360 252" enable-background="new 0 0 360 252" xml:space="preserve">
+<g id="Layer_1" display="none">
+	<g id="inverse_x5F_carrot.psd_1_" display="inline">
+		<defs>
+			<rect id="SVGID_1_" x="129.524" y="84.27" width="114.286" height="36.364"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g id="Group_1" clip-path="url(#SVGID_2_)">
+			<g id="Shape_1_1_" enable-background="new    ">
+				<defs>
+					<path id="SVGID_3_" enable-background="new    " d="M129.524,84.27c0,0,44.048,35.325,56.104,35.325
+						c12.056,0,58.182-35.325,58.182-35.325H129.524z"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  overflow="visible"/>
+				</clipPath>
+				<g clip-path="url(#SVGID_4_)">
+					
+						<image overflow="visible" width="110" height="35" id="Shape_1_2_" xlink:href="6092CDC8B0DE827C.png"  transform="matrix(1.039 0 0 1.039 129.5238 84.2698)">
+					</image>
+				</g>
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="129.524" y="84.27" width="114.286" height="36.364">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="129.524" y="84.27" width="114.286" height="36.364" id="Layer_4_x27_s_Outer_Stroke_2_">
+				<g id="Layer_4_x27_s_Outer_StrokeOpacity_Mask_1_" filter="url(#Adobe_OpacityMaskFilter)">
+					
+						<image overflow="visible" width="110" height="35" id="Layer_4_x27_s_Outer_StrokeOpacity_Mask_4_" xlink:href="6092CDC8B0DE827C.jpg"  transform="matrix(1.039 0 0 1.039 129.5238 84.2698)">
+					</image>
+				</g>
+			</mask>
+			<g mask="url(#Layer_4_x27_s_Outer_Stroke_2_)">
+				
+					<image overflow="visible" width="110" height="35" id="Layer_4_x27_s_Outer_Stroke_1_" xlink:href="6092CDC8B0DE827B.png"  transform="matrix(1.039 0 0 1.039 129.5238 84.2698)">
+				</image>
+			</g>
+			
+				<image overflow="visible" width="110" height="34" id="Layer_4_1_" xlink:href="6092CDC8B0DE8284.png"  transform="matrix(1.039 0 0 1.039 129.5238 84.2698)">
+			</image>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+	<path fill="#C5C5C4" d="M77.75,120.283c5.244,5.244,94.12,65.614,95.695,66.79c4.916,3.67,7.739,3.848,12.454,0
+		c6.855-5.596,96.511-67.138,96.351-66.79H77.75z"/>
+	<path fill="#F9F9FA" d="M77.75,119.167c5.244,5.244,94.12,65.614,95.695,66.79c4.916,3.67,7.739,3.848,12.454,0
+		c6.855-5.596,96.511-67.138,96.351-66.79L77.75,119.167z"/>
+</g>
+</svg>

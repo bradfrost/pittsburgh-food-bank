@@ -5,19 +5,27 @@
 
 //Hero Banner
 .banner-hero {
-	background: $gray-light;
+	background: url(images/bg_hero_homepage.jpg) no-repeat 50% 0 $gray-dark;
+	background-size: cover;
+	color: $white;
 	text-align: center;
 	padding: 2em 0;
 
 	@media all and (min-width: $bp-med) {
 		padding: 4em 0;
 	}
+	
+	@media all and (min-width: $bp-med) {
+		padding: 16em 0 4em;
+	}
 }
 
 .banner-hero-text {
+	font-weight: normal;
 	font-size: 2em;
 	letter-spacing: -1px;
 	margin: 0;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
 
 	br {
 		display: none;

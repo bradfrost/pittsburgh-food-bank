@@ -20,16 +20,7 @@
 
 //Main Content Container
 .main-body {
-	max-width: $max-width - $pad-double;
-	margin: 0 auto;
-	background: $white;
-	border: 1px solid $gray-light-5;
-	border-radius: $border-radius;
-	padding: $pad;
-	
-	@media all and (min-width: $bp-small-3) and (max-width: $bp-med-2), (min-width: $bp-large) {
-		padding: $pad-double;
-	}
+	position: relative;
 }
 
 /*------------------------------------*\
@@ -336,13 +327,8 @@
 // Split Treatment
 .split {
 	overflow: hidden;
-	background: $gray-light; 
-	background: -moz-linear-gradient(left, $gray-light 0%, $gray-light 50%, $gray-light-2 50%, $gray-light-2 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$gray-light), color-stop(50%,$gray-light), color-stop(50%,$gray-light-2), color-stop(100%,$gray-light-2));
-	background: -webkit-linear-gradient(left, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
-	background: -o-linear-gradient(left, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
-	background: -ms-linear-gradient(left, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
 	background: linear-gradient(to right, $gray-light 0%,$gray-light 50%,$gray-light-2 50%,$gray-light-2 100%);
+	margin-bottom: $space-double;
 	
 	.gi {
 		padding: $pad $pad-double;

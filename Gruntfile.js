@@ -52,7 +52,8 @@ module.exports = function(grunt) {
 		  main: {
 		    files: [
 		      { src:"source/js/modernizr.js", dest:"public/js/modernizr.js" },
-		      { src:"public/style.css", dest:"../wordpress/wp-content/themes/pittsburghfoodbank/style.css" }
+		      { src:"public/style.css", dest:"../wordpress/wp-content/themes/pittsburghfoodbank/style.css" },
+		       { expand: true, cwd: 'public/', src:"images/*", dest:"../../wordpress/wp-content/themes/pittsburghfoodbank/" }
 		    ]
 		  }
 		},

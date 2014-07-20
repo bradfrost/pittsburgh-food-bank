@@ -92,6 +92,11 @@
 
 // Block Thumb with Summary
 .block-thumb {
+	.b-title {
+		font-weight: normal;
+		font-size: $font-size-large-2;	
+	}
+	
 	img {
 		width: 14em;
 		height: 14em;
