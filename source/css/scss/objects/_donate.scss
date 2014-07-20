@@ -4,11 +4,11 @@
 	position: relative;
 	z-index: 3;
 	text-align: center;
-	max-width: 50em;
+	max-width: 55em;
 	margin: 0 auto;
 
 	.section-title {
-		font-weight: bold;
+		text-transform: none;
 		font-size: 1.8em;
 	}
 }

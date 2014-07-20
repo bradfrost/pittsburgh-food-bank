@@ -135,7 +135,17 @@
 
 //Block Contact
 .block-contact {
-	margin-bottom: $space;
+	border: 1px solid $gray-light-2;
+	border-radius: $border-radius;
+	padding: $pad;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+	
+	.b-title {
+		font-size: 1.2em;
+		margin-bottom: 0.2em;
+		color: $gray;
+		font-weight: normal;
+	}
 	
 	a {
 		display: block;

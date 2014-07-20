@@ -46,10 +46,12 @@
 }
 
 //CTA Banner
-.cta-banner {
-	background: $gray-light;
+.banner-cta {
+	color: $orange;
+	background: url(images/icon_help_plus.png) no-repeat 50% 1em;
 	text-align: center;
-	padding: $pad-double $pad-half;
+	padding: 5.5em $pad-half $pad-double;
+	margin: 0;
 
 	.banner-text {
 		font-size: $font-size-large;
@@ -58,6 +60,7 @@
 	}
 
 	.text-btn {
+		color: $orange;
 		font-size: $font-size-large-2;
 	}
 }
