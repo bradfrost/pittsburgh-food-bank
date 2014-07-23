@@ -3,18 +3,28 @@
 	<div role="main">
 		{{> molecules-page-header }}
 		<div class="main-body l">
-			<div class="l-main">
-				<h2>Thanks to our amazing sponsors</h2>
-				{{}}
-				<ul class="g g-3up">
-					{{# sponsorList }}
-					<li class="gi">
-						<a href="{{ url }}" rel="external">{{> atoms-square }}</a>
-					</li>
-					{{/ sponsorList }}
-				</ul>
-				{{> molecules-well }}
+			<div class="l-main lc">
+				<div class="text">
+					<p>Greater Pittsburgh Community Food Bank is indebted to our community partners who donate or help us purchase food, sponsor our events, and help underwrite the cost of Food Bank operations.
+
+<p>Foundation grants, corporate sponsorship, and individual donations make up the lion’s share of the funds that support the Food Bank. Government support makes up only 29% of the Food Bank’s budget.
+
+<p>The Food Bank welcomes donations of food and grocery items. You can find information about most-needed items and drop-off locations on the donate food page. Commercial food donors please read about our food donation programs on the sources of food page.
+				</div>
+				<section class="section">
+					<header class="section-header">
+						<h2 class="section-title">Thanks to our amazing sponsors</h2>
+					</header>
+					<ul class="g g-3up">
+						{{# sponsorList }}
+						<li class="gi">
+							<a href="{{ url }}" rel="external">{{> molecules-block-thumb-title }}</a>
+						</li>
+						{{/ sponsorList }}
+					</ul>
+				</section>
 			</div><!--end .l-main-->
+			{{> molecules-well }}
 			<div class="l-sidebar">
 				{{> organisms-sidebar-text-list }}
 			</div><!--end .l-sidebar2-->

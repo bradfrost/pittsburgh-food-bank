@@ -2,8 +2,11 @@
 	{{> organisms-header }}
 	<div role="main">
 		{{> molecules-page-header }}
-		<div class="main-body">	
-				<h2>Executive Staff</h2>
+		<div class="lc">
+			<section class="section">
+				<header class="section-header">
+					<h2 class="section-title">Executive Staff</h2>
+				</header>
 				<div class="g g-3up">
 					{{# execList }}
 					<div class="gi">
@@ -11,8 +14,12 @@
 					</div>
 					{{/ execList }}
 				</div>
-				<hr />
-				<h2>Board of Directors</h2>
+			</section>
+			<hr />
+			<section class="section">
+				<header class="section-header">
+					<h2 class="section-title">Board of Directors</h2>
+				</header>
 				<div class="g g-3up">
 					{{# boardList }}
 					<div class="gi">
@@ -20,9 +27,9 @@
 					</div>
 					{{/ boardList }}
 				</div>
-				<hr />
-				{{> molecules-well }}
-		</div><!--end .main-body-->
+			</section>	
+		</div><!--end .lc-->
+		{{> molecules-well }}
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

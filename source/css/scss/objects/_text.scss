@@ -16,14 +16,22 @@
 
 //Text Passages
 .text {
-	font-size: 120%;
+	font-size: 110%;
+	max-width: 36em;
+	margin: 0 auto $space-double;
 	
 	h2, h3, h4 {
+		color: $green;
 		font-weight: normal;	
 	}
 	
 	a {
+		color: $green;
 		text-decoration: underline;
+		
+		&:hover, &:focus {
+			color: $green-dark;
+		}
 	}
 
 	ul {

@@ -48,6 +48,16 @@ module.exports = function(grunt) {
                 command: "php core/builder.php -gp"
             }
         },
+        imagemin: {
+			dynamic: {
+				files: [{
+					expand: true,
+					cwd: 'source/images',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'public/images'
+				}]
+			}
+		},
         copy: {
 		  main: {
 		    files: [
@@ -82,6 +92,13 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true
 				}
+			},
+			images: {
+				files: ['**/*.{png,jpg,gif}'],
+				tasks: ['imagemin'],
+				options: {
+					spawn: false
+				}
 			}
 		}
     });
@@ -94,7 +111,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	// Tasks
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch', 'copy', 'autoprefixer', 'shell:patternlab']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch', 'copy', 'autoprefixer', 'imagemin', 'shell:patternlab']);
 };

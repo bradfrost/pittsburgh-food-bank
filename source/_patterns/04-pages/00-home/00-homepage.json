@@ -60,6 +60,7 @@
 		]
 	},
 	"sectionBlock" : {
+		"img" : false,
 		"headline" : {
 			"short" : "About the GPCFB"
 		},

@@ -94,7 +94,7 @@
 .block-thumb {
 	.b-title {
 		font-weight: normal;
-		font-size: $font-size-large-2;	
+		font-size: 1.6em;	
 	}
 	
 	img {
@@ -105,7 +105,7 @@
 		margin: 0 auto;
 	}
 	
-	.b-title, .b-excerpt {
+	.b-title, .b-excerpt, .b-text {
 		text-align: center;
 	}
 }

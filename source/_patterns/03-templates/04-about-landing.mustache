@@ -3,7 +3,7 @@
 	<div role="main">
 		{{> molecules-page-header }}
 		<div class="main-body">
-			<div class="l-centered-single-col">
+			<div class="lc">
 				<div class="text">
 					<h2>Mission Statement</h2>
 					<p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, blanditiis, qui fugiat facere esse nam at eius aliquam veniam perferendis iste vel! Veritatis.</p>
@@ -17,9 +17,13 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, aliquam, ullam nostrum ad sit maiores amet a exercitationem hic id sunt odit corporis autem ducimus quia possimus similique quaerat temporibus.</p>	
 				</div>
 			</div>
-			<section class="section">
-				<h2 class="section-title">More About Us</h2>
-				<p class="section-desc">Learn more about our award-winning facilities, our operations, and more lorem ipsum dolor</p>
+		</div><!--end .lc-->
+		<section class="section section-alt">
+			<div class="lc">
+				<header class="section-header">
+					<h2 class="section-title">More About Us</h2>
+					<p class="section-desc">Learn more about our award-winning facilities, our operations, and more lorem ipsum dolor</p>
+				</header>
 				<div class="g g-3up">
 					{{# list }}
 					<div class="gi">
@@ -27,8 +31,8 @@
 					</div>
 					{{/ list }}
 				</div>
-			</section>
-		</div><!--end .lc-->
+			</div>
+		</section>
 	</div><!--end role=main-->
 	{{> organisms-footer }}
 </div>

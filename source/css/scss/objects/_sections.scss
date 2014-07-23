@@ -1,5 +1,6 @@
 .section {
 	margin: 0 0 $space;
+	@extend .cf;
 	
 	.text-list {
 		text-align: center;
@@ -9,6 +10,11 @@
 .section-alt {
 	background: $gray-light-2;
 	padding: $pad-double 0;
+	margin-bottom: 0;
+}
+
+.section-header {
+	margin-bottom: $space;
 }
 
 .section-title {
@@ -21,8 +27,13 @@
 
 .section-desc {
 	text-align: center;
-	margin: 0 auto $space;
+	margin: 0 auto 0;
 	max-width: 30em;
+}
+
+.section-intro {
+	font-size: $font-size-large;
+	text-align: center;
 }
 
 .section-img {
@@ -47,60 +58,98 @@
 	}
 }
 
-//Sidebar Sections
+//Homepage Design
 
-//Sidebar Post List
-.widget, .widget-container {
-	background: $gray-light;
-	padding: 2.5em $pad $pad;
-	border-radius: $border-radius;
-	margin-bottom: 3em;
-	position: relative;
+//Homepage touts
+.section-homepage-touts {
+	margin-bottom: 2em;
+}
 
+//Homepage Give/Get Help section
+.section-shade-2 {
+	background: url(images/bg_section_shadow_2.png) no-repeat 50% 4em;
 	
-	&:before {
-		content: "";
-		display: block;
-		width: 3em;
-		height: 3em;
-		border: 0.5em solid $gray-light;
-		border-radius: 3em;
-		position: absolute;
-		top: -1.5em;
-		left: 50%;
-		margin-left: -2em;
-		
-		background: url(images/icon_carrot.png) no-repeat 50% 50% #fff;
+	.lc {
+		max-width: 62em;
 	}
 	
-	.b-excerpt {
-		color: $gray;
-	}
-	
-	.text-btn {
-		display: block;
-		margin: 1em 0 0;
-		color: #c14903;
-		text-align: center;
+	.section-intro {
+		margin-bottom: $space-double;
 	}
 }
 
-.tribe-events-list-widget {
-	&:before {
-		background-image: url(images/icon_calendar.png);
-	}
-}
-
-.widgettitle {
-	color: $gray;
-	font-size: 1.2em;
-	text-align: center;
+//Homepage About Section
+.section-shade {
+	background: url(images/bg_section_shadow.png) no-repeat 50% 0;
+	padding-top: 2em;
 	
-	a {
-		color: $gray;
-		
-		&:hover, &:focus {
+	.section-title {
+		text-transform: none;
+	}
+	
+	.section-desc {
+		margin-bottom: $space;
+		max-width: 44em;
+		font-size: $font-size-large;
+	}
+	
+	.text-list {
+		a {
 			color: $green;
+			font-size: 1.2em;
+			
+			
+			&:hover, &:focus {
+				color: $green-dark;
+			}
 		}
 	}
+}
+
+
+.icon-grocery-bag {
+	display: block;
+	width: 217px;
+	height: 297px;
+	background: url(images/icon_grocery_bag.png) no-repeat 50% 50%;
+	margin: 0 auto $space;
+}
+
+.icon-plate {
+	display: block;
+	width: 323px;
+	height: 232px;
+	background: url(images/icon_plate.png) no-repeat 50% 50%;
+	margin: 0 auto $space-double;
+}
+
+.list-section {
+	text-align: left;
+	margin-bottom: $space;
+	padding-left: 8em;
+	
+	.text-list {
+		text-align: left;
+		
+		a {
+			color: $green;
+			
+			&:hover, &:focus {
+				color: $green-dark;
+			}
+		}
+	}
+	
+	@media all and (min-width: $bp-large) {
+		float: left;
+		width: 50%;
+	}
+}
+
+.list-section-get-help {
+	background: url(images/icon_help_plus_green.png) no-repeat 0 1em;
+}
+
+.list-section-give-help {
+	background: url(images/icon_help_heart_green.png) no-repeat 0 1em;
 }

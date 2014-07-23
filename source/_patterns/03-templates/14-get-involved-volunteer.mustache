@@ -1,36 +1,38 @@
 <div class="page" id="page">
 	{{> organisms-header }}
-	<div role="main">
+	<main role="main">
 		{{> molecules-page-header }}
-		<div class="main-body l">
-			<div class="l-main">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, voluptatum, ratione labore laudantium assumenda molestiae ipsa dignissimos accusamus amet omnis distinctio sit inventore minima. Magni, hic nam maiores iste sit</p>
-				<div class="g g-2up">
-					{{# list }}
-					<div class="gi">
-						{{> molecules-block-thumb-title-excerpt }}
+		<div class="l">
+			<div class="lc">
+				<div class="l-main">
+					<div class="text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, voluptatum, ratione labore laudantium assumenda molestiae ipsa dignissimos accusamus amet omnis distinctio sit inventore minima. Magni, hic nam maiores iste sit</p>
 					</div>
-					{{/ list }}
-				</div>
-				<hr />
-				<div class="text">
-					<h2>Volunteer Age Requirements</h2>
-					<ul>
-						<li><strong>Age 4+ (w/adult):</strong> Fall Food Share Food Drive</li>
-						<li><strong>Age 7+ (w/adult):</strong> Gleaning</li>
-						<li><strong>Age 12+ (w/adult):</strong> Repack, Clerical, Produce to People, Some Food Drives </li>
-						<li><strong>Age 15+:</strong> Empty Bowls</li>
-						<li><strong>Age 18+:</strong> Blues Festival</li>
-					</ul>
-				</div>
-				{{> molecules-well }}
-				
-			</div><!--end .l-main-->
+					<div class="g g-4up">
+						{{# list }}
+						<div class="gi">
+							{{> molecules-block-thumb-title-excerpt }}
+						</div>
+						{{/ list }}
+					</div>
+					<hr />
+					<div class="text">
+						<h2>Volunteer Age Requirements</h2>
+						<ul>
+							<li><strong>Age 4+ (w/adult):</strong> Fall Food Share Food Drive</li>
+							<li><strong>Age 7+ (w/adult):</strong> Gleaning</li>
+							<li><strong>Age 12+ (w/adult):</strong> Repack, Clerical, Produce to People, Some Food Drives </li>
+							<li><strong>Age 15+:</strong> Empty Bowls</li>
+							<li><strong>Age 18+:</strong> Blues Festival</li>
+						</ul>
+					</div>
+				</div><!--end .l-main-->
+			</div><!--end .lc-->
+			{{> molecules-well }}
 			<div class="l-sidebar">
 				{{> organisms-sidebar-event-list }}
 			</div><!--end .l-sidebar-->
-		</div><!--end .l-3col-->
-		
-	</div><!--End role=main-->
+		</div><!--end .l-->
+	</main><!--End role=main-->
 	{{> organisms-footer }}
 </div>

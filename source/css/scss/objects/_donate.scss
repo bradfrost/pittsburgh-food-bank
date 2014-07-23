@@ -1,12 +1,17 @@
 /* Donate Organism */
 .donate {
+	background: $gray-light-2;
+	border-top: 1px solid $gray-light-3;
 	padding: 2em $pad 2em;
 	position: relative;
 	z-index: 3;
 	text-align: center;
-	max-width: 55em;
 	margin: 0 auto;
 
+	.lc {
+		max-width: 55em;	
+	}
+	
 	.section-title {
 		text-transform: none;
 		font-size: 1.8em;
@@ -16,6 +21,7 @@
 .donate-step {
 	padding: 0;
 	margin: 0;
+	text-align: left;
 	max-height: 50em;
 	@include transition(max-height,0.5s,ease-out);
 
@@ -57,6 +63,10 @@
 
 .donate-range-container {
 	padding-top: $pad-half;
+	
+	legend {
+		text-align: center;
+	}
 }
 
 .donate-form {
@@ -65,6 +75,7 @@
 
 .donate-slider-message {
 	line-height: 1.1;
+	text-align: center;
 
 	a {
 		text-decoration: underline;

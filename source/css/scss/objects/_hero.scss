@@ -41,10 +41,11 @@
 	
 	.hero-title {
 		font-size: $font-size-large;
+		font-weight: normal;
 		margin-bottom: 0.1em;
 
 		@media all and (min-width: $bp-large) {
-			font-size: $font-size-xl;
+			font-size: 3em;
 		}
 	}
 

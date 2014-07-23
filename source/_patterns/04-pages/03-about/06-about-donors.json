@@ -7,164 +7,218 @@
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}	
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		},
 		{
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png",
+					"src" : "images/fpo_square.png",
 					"alt" : "Giant Eagle"
 				}
 			},
-			"url" : "http://gianteagle.com"
+			"url" : "http://gianteagle.com",
+			"headline" : {
+				"short" : false
+			}
 		}
 	],
 	"well" : {

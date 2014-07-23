@@ -1,0 +1,56 @@
+
+//Sidebar Post List
+.widget, .widget-container {
+	padding: 2.5em $pad $pad;
+	border-radius: $border-radius;
+	margin-bottom: 3em;
+	position: relative;
+
+	
+	&:before {
+		content: "";
+		display: block;
+		width: 3em;
+		height: 3em;
+		border: 0.5em solid $gray-light;
+		border-radius: 3em;
+		
+		background: url(images/icon_carrot.png) no-repeat 50% 50% #fff;
+	}
+	
+	.b-excerpt {
+		color: $gray;
+	}
+	
+	.text-btn {
+		display: block;
+		margin: 1em 0 0;
+		color: #c14903;
+		text-align: center;
+	}
+	
+	@media all and (min-width: $bp-med) {
+		float: left;
+		width: 50%;
+	}
+}
+
+.tribe-events-list-widget {
+	&:before {
+		background-image: url(images/icon_calendar.png);
+	}
+}
+
+.widgettitle {
+	color: $gray;
+	font-size: 1.2em;
+	text-align: center;
+	
+	a {
+		color: $gray;
+		
+		&:hover, &:focus {
+			color: $green;
+		}
+	}
+}

@@ -5,9 +5,9 @@
 		<div class="lc">
 			{{> molecules-hero }}
 		</div>
-		<div class="main-body">
+		<div class="lc">
 			{{# touts }}
-				<div class="g g-3up section">
+				<div class="g g-1to3up section-homepage-touts">
 					<div class="gi">
 						{{> molecules-block-thumb-title-excerpt }}
 					</div>
@@ -19,11 +19,54 @@
 					</div>
 				</div>
 			{{/ touts }}
-			{{> organisms-split }}
+		</div>
+		<section class="section section-shade-2">
+			<div class="lc">
+				<div class="icon-grocery-bag"></div>
+				<p class="section-intro">We're here to help and we're working hard to fight hunger.</p>
+				
+				<div class="list-section list-section-get-help">
+					<h2 class="list-section-title">Get Help</h2>
+					<ul class="text-list">
+						<li><a href="#">Find food near you</a></li>
+						<li><a href="#">View upcoming events</a></li>
+						<li><a href="#">View simple, affordable recipes</a></li>
+						<li><a href="#">View SNAP benefits</a></li>
+						<li><a href="#">Learn more about hunger</a></li>
+					</ul>
+				</div>
+				
+				<div class="list-section list-section-give-help">
+					<h2 class="list-section-title">Give Help</h2>
+					<ul class="text-list">
+						<li><a href="#">Find food near you</a></li>
+						<li><a href="#">View upcoming events</a></li>
+						<li><a href="#">View simple, affordable recipes</a></li>
+						<li><a href="#">View SNAP benefits</a></li>
+						<li><a href="#">Learn more about hunger</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-			{{> organisms-section-img-headline-list }}
+		<section class="section section-shade">
+			<div class="lc">
+				<div class="icon-plate"></div>
+				{{# sectionBlock }}
+				<div class="section-body">
+					<h2 class="section-title">{{ headline.short }}</h2>
+					<p class="section-desc">{{ excerpt.short }}</p>
+					<ul class="text-list">
+						{{# textList }}
+						<li><a href="{{ url }}">{{ label }}</a></li>
+						{{/ textList }}
+					</ul>
+				</div>
+				{{/ sectionBlock }}
+			</div>
+		</section>
 
-		</div><!--end .main-body-->
+
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

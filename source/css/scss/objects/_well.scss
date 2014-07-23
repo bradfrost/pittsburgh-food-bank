@@ -1,18 +1,38 @@
 // Well
 .well {
-	background: $info;
-	border: 1px solid $gray-light-2;
-	border-radius: $border-radius;
-	padding: $pad;
-	margin-bottom: $space;
+	background: $gray-light-2;
+	border-top: 1px solid $gray-light-3;
+	border-bottom: 1px solid $gray-light-3;
+	padding: $pad 0;
+	position: relative;
 	
-	@media all and (min-width: $bp-med-2) {
-		margin-bottom: 0;
+	&:before {
+		content: "";
+		display: block;
+		width: 80px;
+		height: 50px;
+		position: absolute;
+		top: -28px;
+		left: 50%;
+		margin-left: -40px;
+		background: url(images/bg_carrot_inverse.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	
+	@media all and (min-width: $bp-large) {
+		padding: $pad-double 0;
+		
+		.lc {
+			min-height: 14em;
+			background: url(images/icon_well_newsletter.png) no-repeat 2em 0;
+			padding-left: 20em;
+		}
 	}
 }
 
 .well-title {
 	margin: 0;
+	color: $green;
 }
 
 // Info Box
