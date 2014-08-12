@@ -1,7 +1,7 @@
 
 //Sidebar Post List
 .widget, .widget-container {
-	padding: 2.5em $pad $pad;
+	padding: 0 $pad $pad 5em;
 	border-radius: $border-radius;
 	margin-bottom: 3em;
 	position: relative;
@@ -12,9 +12,11 @@
 		display: block;
 		width: 3em;
 		height: 3em;
-		border: 0.5em solid $gray-light;
+		border: 0.5em solid $gray-light-2;
 		border-radius: 3em;
-		
+		position: absolute;
+		top: 0;
+		left: 0;
 		background: url(images/icon_carrot.png) no-repeat 50% 50% #fff;
 	}
 	
@@ -22,11 +24,38 @@
 		color: $gray;
 	}
 	
-	.text-btn {
+	h4 {
+		margin: 0;
+	}
+	
+	ul, ol {
+		list-style: none;
+		border-top: 1px solid $gray-light-2;
+		
+		li {
+			border-bottom: 1px solid $gray-light-2;
+			padding: $pad-half 0;
+			
+			a {
+				font-weight: bold;
+				color: $black;
+				
+				&:hover, &:focus {
+					color: $green;
+				}
+			}
+		}
+	}
+	
+	.post-date {
 		display: block;
+		color: $gray;
+		font-style: italic;
+	}
+	
+	.text-btn {
 		margin: 1em 0 0;
 		color: #c14903;
-		text-align: center;
 	}
 	
 	@media all and (min-width: $bp-med) {
@@ -42,15 +71,14 @@
 }
 
 .widgettitle {
-	color: $gray;
-	font-size: 1.2em;
-	text-align: center;
+	color: $green;
+	font-size: 1.6em;
 	
 	a {
-		color: $gray;
+		color: $green;
 		
 		&:hover, &:focus {
-			color: $green;
+			color: $green-dark;
 		}
 	}
 }

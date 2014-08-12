@@ -72,15 +72,15 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 ::-webkit-input-placeholder {
-   color: $gray;
+   color: $gray-light-4;
 }
 
 ::-moz-placeholder {
-   color: $gray;  
+   color: $gray-light-4;
 }
 
 :-ms-input-placeholder {  
-   color: $gray;  
+   color: $gray-light-4; 
 }
 
 //Form Field Container
@@ -139,6 +139,10 @@ input[type="search"]::-webkit-search-decoration {
 /* Validation */
 .parsley-error {
 	border-color: $error;
+}
+
+.parsley-success {
+	border-color: $valid;
 }
 
 .parsley-errors-list.filled {

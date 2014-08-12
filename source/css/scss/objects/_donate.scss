@@ -1,6 +1,6 @@
 /* Donate Organism */
 .donate {
-	background: $gray-light-2;
+	background: $gray-light-6;
 	border-top: 1px solid $gray-light-3;
 	padding: 2em $pad 2em;
 	position: relative;
@@ -16,6 +16,11 @@
 		text-transform: none;
 		font-size: 1.8em;
 	}
+}
+
+.donate-page {
+	background: $white;
+	border-top: 0;
 }
 
 .donate-step {
@@ -42,6 +47,20 @@
 //Expose first donate step by default
 #donate-step-1 {
 	max-height: none;
+	
+	legend {
+		border-top: 0;
+		padding-top: 0;
+	}
+	
+	.field-container {
+		max-width: 38em;
+		margin: 0 auto $space;
+	}
+	
+	.checkbox-container {
+		max-width: 29em;
+	}
 }
 
 //Inline value of the donate message

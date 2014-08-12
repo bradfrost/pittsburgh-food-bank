@@ -1,20 +1,15 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
-		{{> organisms-page-header-donate }}
+		{{> molecules-page-header }}
 		
-		<div class="main-body">
-			<h2>More Ways to Give</h2>
-			<div class="g g-3up">
-				{{# list }}
-				<div class="gi">
-					{{> molecules-block-thumb-title-excerpt }}
-				</div>
-				{{/ list }}
-			</div><!--end .g-3up-->
-			<hr />
-			{{> organisms-section-img-headline-list }}
-		</div><!--end .lc-->
+		<section class="section">
+			<div class="lc lc-single">
+				{{> organisms-donate-extended }}
+			</div>
+			
+		</section>
+		
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

@@ -4,14 +4,16 @@
 		{{> molecules-page-header }}
 		<div class="main-body l">
 			<div class="l-main">
-				<ul class="post-list">
-					{{# postList }}
-					<li>{{> molecules-block-post }}</li>
-					{{/ postList }}
-					{{> molecules-pagination }}
-					{{> organisms-well-search }}
-				</ul>
+				<div class="lc lc-single">
+					<ul class="post-list">
+						{{# postList }}
+						<li>{{> molecules-block-post }}</li>
+						{{/ postList }}
+						{{> molecules-pagination }}
+					</ul>
+				</div>
 			</div><!--end .l-main-->
+			{{> organisms-well-search }}
 			<div class="l-sidebar">
 				{{> organisms-sidebar-text }}
 				{{> organisms-sidebar-event-list }}

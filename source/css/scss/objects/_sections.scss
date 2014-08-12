@@ -8,9 +8,13 @@
 }
 
 .section-alt {
-	background: $gray-light-2;
+	background: $gray-light-6;
 	padding: $pad-double 0;
 	margin-bottom: 0;
+}
+
+.section-pad {
+	padding: $pad-double 0;
 }
 
 .section-header {
