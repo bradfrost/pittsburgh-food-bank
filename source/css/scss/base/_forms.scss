@@ -72,15 +72,15 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 ::-webkit-input-placeholder {
-   color: $gray;
+   color: $gray-light-4;
 }
 
 ::-moz-placeholder {
-   color: $gray;  
+   color: $gray-light-4;
 }
 
 :-ms-input-placeholder {  
-   color: $gray;  
+   color: $gray-light-4; 
 }
 
 //Form Field Container
@@ -88,8 +88,7 @@ input[type="search"]::-webkit-search-decoration {
 	margin-bottom: $space;
 }
 
-.radio-container, .checkbox-container {
-	overflow: hidden;
+.checkbox-container {
 	padding-left: 2px;
 
 	input {
@@ -97,6 +96,7 @@ input[type="search"]::-webkit-search-decoration {
 	}
 
 	label {
+		font-weight: normal;
 		margin-left: 24px;
 		position: relative;
 		top: -4px;
@@ -107,13 +107,45 @@ input[type="search"]::-webkit-search-decoration {
 	}
 }
 
+.radio-container {
+	padding: 0.2em 0.1em;
+	overflow: hidden;
+	margin-bottom: $space;
+	
+	label {
+		font-weight: normal;
+		float: left;
+		margin-right: 1.5em;
+		
+		&:hover, &:focus {
+			color: $green;
+		}
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	input {
+		float: left;
+		position: relative;
+		top: 2px;
+	}
+
+	
+}
+
 //Field Step
 .form-step {
-	background: $gray-dark;
-	color: $white;
-	padding: 0.2em 0.5em;
+	background: $gray-light-3;
+	color: $gray;
+	padding: 0.4em 0.5em;
 	line-height: 1;
 	border-radius: 15px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
 }
 
 .inline-form {
@@ -139,6 +171,10 @@ input[type="search"]::-webkit-search-decoration {
 /* Validation */
 .parsley-error {
 	border-color: $error;
+}
+
+.parsley-success {
+	border-color: $valid;
 }
 
 .parsley-errors-list.filled {
@@ -254,7 +290,7 @@ input[type="search"]::-webkit-search-decoration {
 	height: 22px;
 	position: relative;
 	top: 50%;
-	margin: 0 3px -6px 0;
+	margin: 0 8px -6px 0;
 	width: 32px;
 	z-index: 2;
 

@@ -50,63 +50,26 @@
 		return false;
 	});
 
+
+
 	//
 	// Donate Form
 	//
+	
+	$('.donate').hover(function() {
+		$('body').addClass('donatehover');
+	}, function() {
+		$('body').removeClass('donatehover');
+	});
 
 	//Set initial donate Step
 	var donateStep = 1;
 
-	//Hide steps 2 and three
+	//Hide steps 2 and 3
 	$('.donate-step').not('#donate-step-1').addClass('closed');
-
-	//Watch for changes in slider
-	function startSliderWatch() {
-		$(".donate-range").change(function(){
-			var $thisVal = $(this).val();
-			updateSliderValue($thisVal);
-			updateSliderMessage($thisVal);
-			$('.donate-slider-amount').removeClass('blank').html('$'+$thisVal);
-		});
-
-		setTimeout(function(){ updateSliderValue($(".donate-range").val()); },50);
-	}
-
-	//On Slider Change
-	function updateSliderValue(val) {
-		$('.ui-slider-handle').html('$'+val);
-	}
-
-	//Donate Slider Init
-	$(".donate-range").slider({
-		create: startSliderWatch(),
-		highlight: true
-	});
-
-	//Donate Slider Message
-	var $donateSliderMessage = $('.donate-slider-message');
+	$('.donate-submit-text').text('Next Step');
 	
-	//Update the text information when the donate slider value gets adjusted
-	function updateSliderMessage(val) {
-		if (val < 2) {
-			$donateSliderMessage.html('can go a long way. 96% goes to services to feed the hungry.');
-		} else if (val >= 2 && val < 10) {
-			$donateSliderMessage.html('can feed a child for one week');
-		} else if (val >= 10 &&  val < 25) {
-			$donateSliderMessage.html('can feed a family of 4 for a week');
-		} else if (val >= 25 &&  val < 50) {
-			$donateSliderMessage.html('can feed a family of 4 for two weeks');
-		} else if (val >= 50 &&  val < 75) {
-			$donateSliderMessage.html('can help 25 people eat for a week.');
-		} else if (val >= 75 &&  val < 99) {
-			$donateSliderMessage.html('can help us feed 50 people a week.');
-		} else if (val >= 99) {
-			$donateSliderMessage.html('&nbsp;goes a long way. If you\'d like to consider becoming a <a href="/about/sponsors">sponsor</a>, please <a href="/contact">contact us</a>');
-		} else {
-			$donateSliderMessage.html('can go a long way. 96% goes to services to feed the hungry.');
-		}
-	}
-
+	//Donation form submit action
 	$(".donate-submit").on('click',function(e){
 		e.preventDefault();
 
@@ -122,11 +85,12 @@
 			donateStep++;
 			updateDonateStep();
 			$('#payment-cc-num').focus();
+			$('.donate-submit-text').text('Complete Donation');
 			smoothScroll($('#donate-step-3'));
 		}
 		//If user is on the final step, submit the form
 		else if (donateStep === 3) {
-			$('.donate-form').parsley().submit();
+			$('#donate-form').submit();
 		}
 	});
 
@@ -141,6 +105,60 @@
 	});
 
 	$('.donate-form').parsley();
+	
+	$('#donate-name').focusout(function(){
+		var $thisVal = $(this).val().split(' '),
+			$first = $thisVal.shift(),
+			$last = $thisVal.join(' ');
+		
+		$('#billing-first-name').val($first);
+		$('#billing-last-name').val($last);
+	});
+	
+	$('.amount-container').hide();
+	
+	//Update message on hover
+	$('.chicklet-list a, .chicklet-list .input-container').hover(function(){
+		var $this = $(this),
+			$thisMessage = $this.attr('data-message'),
+			$messageContainer = $('#donate-step-1 .donate-step-message');
+			
+		$messageContainer.text($thisMessage);
+	});
+	
+	//Donate button list
+	$('.chicklet-list a').click(function(e){
+		var $this = $(this),
+			$thisMessage = $this.attr('data-message'),
+			$thisAmount = $this.attr('data-amount');
+		e.preventDefault();
+		$('.chicklet-list a').removeClass('active');
+		$(this).addClass('active');
+		$('#other-amount').val("");
+		$('#donation-amount').val($thisAmount);
+	});
+	
+	$('#other-amount').focus(function(){
+		$('.chicklet-list a').removeClass('active');
+	});
+	
+	$('#other-amount').blur(function(){
+		$thisAmount = $(this).val();
+		if($thisAmount!=="") {
+			$('#donation-amount').val($thisAmount);
+		}
+	});
+	
+	
+	//Payment Type Radio
+	$('#payment-type-bank').hide();
+	
+	$('#payment-type-radio').change(function() {
+		var $paymentTypeTarget = $(this).find('input:checked').attr('data-payment-type');
+		
+		$('.payment-type').removeClass('active');
+		$('#'+$paymentTypeTarget).addClass('active');
+	});
 
 	//Scroll the body of an 
 	function smoothScroll(el) {
@@ -168,10 +186,9 @@
 			return false;
 		}
 	});
-	
-
-	//Fix text widows http:/justinhileman.info/article/a-jquery-widont-snippet/
-    $('h1').each(function() {
+    
+    //Fix text widows http:/justinhileman.info/article/a-jquery-widont-snippet/
+	$('h1, .page-title, .page-intro, .b-title, .b-excerpt').each(function() {
         $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
     });
 

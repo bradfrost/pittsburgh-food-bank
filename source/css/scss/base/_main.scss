@@ -4,3 +4,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	color: $gray-dark;
 }
+
+[role=main] {
+	transition: opacity 0.2s ease-out;
+}

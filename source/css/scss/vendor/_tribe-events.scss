@@ -39,5 +39,27 @@ h2.tribe-events-page-title {
 }
 
 .tribe-events-meta-group-gmap {
-	margin-bottom: $space;
+	margin-bottom: $space !important;
+}
+
+.tribe-events-list-widget ol, .tribe-events-adv-list-widget ol {
+	list-style: none !important;
+	margin-bottom: $space-half !important;
+}
+
+.tribe-events-list-widget li, .tribe-events-adv-list-widget li {
+	margin: 0 !important;
+}
+
+.tribe-events-widget-link a {
+	@extend .text-btn;
+}
+
+.tribe-clearfix:after {
+	display: none !important;
+}
+
+.duration {
+	color: $gray;
+	font-style: italic;
 }

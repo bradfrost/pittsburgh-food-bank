@@ -17,12 +17,19 @@
 //Text Passages
 .text {
 	font-size: 110%;
-	max-width: 36em;
 	margin: 0 auto $space-double;
 	
-	h2, h3, h4 {
+	h2, h3, h4, h5, h6 {
 		color: $green;
-		font-weight: normal;	
+		font-weight: normal;
+		
+		strong {
+			font-weight: normal;
+		}
+		
+		em {
+			font-style: normal;
+		}
 	}
 	
 	a {
@@ -50,6 +57,18 @@
 		ol {
 			margin-bottom: 0;
 		}
+	}
+	
+	li {
+		margin-bottom: $space;
+	}
+	
+	.btn, .text-btn {
+		text-decoration: none;
+	}
+	
+	.btn {
+		color: $white;
 	}
 }
 

@@ -18,6 +18,10 @@
 	}
 }
 
+.lc-single {
+	max-width: 46.75em;
+}
+
 /*------------------------------------*\
     $TEMPLATES
 \*------------------------------------*/
@@ -30,7 +34,7 @@
 	}
 }
 
-//3 Column Layout - used for most page templates
+//Layout template
 .l {
 	@extend .cf;
 	position: relative;
@@ -40,8 +44,10 @@
 		
 	}
 	
+	//Widget Container
 	.l-sidebar {
 		@extend .lc;
+		padding-top: 3em;
 	}
 }
 

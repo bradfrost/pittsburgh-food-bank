@@ -1,21 +1,43 @@
 /* Donate Organism */
 .donate {
-	background: $gray-light-2;
+	background: $gray-light-6;
 	border-top: 1px solid $gray-light-3;
 	padding: 2em $pad 2em;
 	position: relative;
 	z-index: 3;
-	text-align: center;
 	margin: 0 auto;
-
-	.lc {
-		max-width: 55em;	
-	}
+	transition: all 0.2s ease-out;
 	
 	.section-title {
-		text-transform: none;
-		font-size: 1.8em;
+		text-align: left;
+		margin-bottom: $space;
 	}
+	
+	.g {
+		margin-bottom: 0;
+	}
+	
+	.field-container {
+		margin-bottom: $space-half;
+	}
+}
+
+//Donate widget
+.donate-widget {
+	box-shadow: none;
+	
+	&:hover {
+		box-shadow: inset 0 0 60px 10px rgba(0,0,0,0.05);
+		background: $white;
+	}
+}
+
+//Donation page
+.donate-page {
+	background: $white;
+	border-top: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .donate-step {
@@ -32,17 +54,110 @@
 }
 
 .donate-step-legend {
+	font-size: 1.1em;
 	display: block;
 	width: 100%;
 	border-top: 1px solid $gray-light-3;
-	padding-top: $pad;
+	padding-top: $pad-double;
 	margin-bottom: $space;
+	margin-top: $space-double;
 }
 
 //Expose first donate step by default
 #donate-step-1 {
 	max-height: none;
+	
+	.donate-step-legend {
+		border-top: 0;
+		padding-top: 0;
+		margin-top: 0;
+	}
 }
+
+//Chicklet List
+.chicklet-list {
+	@extend .cf;
+	margin: 0 -0.5em;
+	
+	li {
+		float: left;
+		width: 50%;
+		padding: 0 0.5em;
+		margin-bottom: $space;
+		position: relative;
+		
+		&:last-child {
+			width: 100%;
+		}
+		
+		&:hover {
+			.hover-tooltip {
+				display: block;
+				opacity: 1;
+				bottom: 130%;
+			}
+		}
+		
+		@media all and (min-width: $bp-med) {
+			width: 20%;
+			
+			&:last-child {
+				width: 20%;
+			}
+		}
+	}
+	
+	a {
+		display: block;
+		font-size: $font-size-large;
+		background: $green;
+		color: $white;
+		padding: 0.5em;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+		border-radius: $border-radius;
+		transition: all 0.1s ease-out;
+		
+		&:hover, &:focus {
+			background: $green-light;
+			
+		}
+		
+		&.active {
+			background: $gold;
+			color: $black;
+			text-shadow: none;
+		}
+	}
+	
+	.input-container {
+		position: relative;
+		
+		.input-addon {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0.48em 0 0.48em 0.48em;
+			font-size: $font-size-large;
+			color: $green;
+		}
+	}
+	
+	input {
+		font-size: $font-size-large;
+		line-height: 1;
+		border: 2px solid $green;
+		padding: 0.55em 0.55em 0.55em 1.3em;
+		color: $green;
+	}
+}
+
+.no-js {
+	.chicklet-list {
+		display: none;
+	}
+}
+
 
 //Inline value of the donate message
 .donate-slider-amount {
@@ -184,3 +299,15 @@ div.ui-slider {
 	border-bottom-right-radius: 0;
 }
 
+.js .credit-card-group label {
+	display: none;
+}
+
+.payment-type {
+	margin-bottom: $space;
+	display: none;
+	
+	&.active {
+		display: block
+	}
+}

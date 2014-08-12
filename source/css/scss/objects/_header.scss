@@ -2,6 +2,7 @@
 	position: relative;
 	z-index: 2;
 	background: $green;
+	transition: opacity 0.2s ease-out;
 	
 	.lc {
 		@extend .cf;
