@@ -3,6 +3,7 @@
 		"title" : "Blog",
 		"intro" : "Latest news, upcoming events, stories, and more Lorem ipsum dolor sit."
 	},
+	"pageHeaderClass" : "tomatoes",
 	"postList" : [
 		{
 			"timestamp" : "April 18, 2014",

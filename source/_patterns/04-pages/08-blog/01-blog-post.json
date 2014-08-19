@@ -3,6 +3,7 @@
 		"title" : "Blog Post",
 		"intro" : "Posted April 15th, 2014 by Author Name"
 	},
+	"pageHeaderClass" : "tomatoes",
 	"sectionNav" : {
 		"headline" : {
 			"xs" : "Categories"

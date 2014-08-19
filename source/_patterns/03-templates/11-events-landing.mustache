@@ -2,8 +2,9 @@
 	{{> organisms-header }}
 	<div role="main">
 		{{> molecules-page-header }}
-		<div class="main-body l">
-			<div class="l-main">
+
+		<div class="l">
+			<div class="l-main lc lc-single">
 				<section class="section">
 					{{> molecules-tabs }}
 					<ul class="post-list event-list">
@@ -12,13 +13,14 @@
 						{{/ eventList }}
 					</ul>
 				</section>
-				{{> organisms-well-subscribe }}
 			</div><!--end .l-main-->
+			{{> organisms-well-subscribe }}
 			<div class="l-sidebar">
 				{{> organisms-sidebar-text-list }}
 				{{> organisms-sidebar-text }}
 			</div><!--end .l-sidebar-->
-		</div><!--end .l-3col-->
+		</div><!--end .l-->
+
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>

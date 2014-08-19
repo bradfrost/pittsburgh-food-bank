@@ -23,11 +23,30 @@
 					</div>
 				</div>
 			</div>
-			{{> organisms-split }}
-			<div class="lc">
-				<section class="section">
-					<h2 class="section-title">Contact Departments</h2>
-					<p class="section-desc">Please call <strong>(412) 460-3663</strong> and use the department's corresponding extension, or send an email.</p>
+			
+			<section class="section">
+				<div class="lc">
+					<div class="list-section list-section-get-help">
+						<h2 class="list-section-title">Get Help</h2>
+						<p>If you need emergency food, please contact the Hunger Services Network of the <a href="http://ulpgh.org">Urban League of Pittsburgh</a> at 412-325-0749</p>
+						<ul class="text-list">
+						</ul>
+					</div>
+					<div class="list-section list-section-give-help">
+						<h2 class="list-section-title">Give Help</h2>
+						<p>If you want to donate money, please <a href="/donate">donate online</a> or call <a href="tel:+14124603663">412-460-3663</a>.</p>
+						<ul class="text-list">
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-alt">
+				<div class="lc">
+					<header class="section-header">
+						<h2 class="section-title">Contact Departments</h2>
+						<p class="section-desc">Please call <strong>(412) 460-3663</strong> and use the department's corresponding extension, or send an email.</p>
+					</header>
 					<div class="g g-4up-linear">
 						{{# departmentList }}
 						<div class="gi">
@@ -35,14 +54,17 @@
 						</div>
 						{{/ departmentList }}
 					</div><!--end .g-4up-->
-				</section>
-				<hr />
-				<section class="section contact-form-section">
-					<h2 class="section-title">Send a Message</h2>
-					<p class="section-desc">Have a question? Need to Lorem ipsum dolor sit amet, consectetur adipisicing elit? Contact us</p>
+				</div>
+			</section>
+			<section class="section section-pad contact-form-section">
+				<div class="lc lc-single">
+					<header class="section-header">
+						<h2 class="section-title">Send a Message</h2>
+					</header>
 					{{> molecules-contact-form }}
-				</section>
-			</div><!--end .lc-->
+				</div>
+			</section>
+
 		</div><!--end main-body-->
 	</div><!--End role=main-->
 	{{> organisms-footer }}

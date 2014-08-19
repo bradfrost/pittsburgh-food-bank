@@ -22,6 +22,12 @@
 			color: $green;
 		}
 	}
+	
+	.b-title a {
+		&:hover, &:focus {
+			color: $green;
+		}
+	}
 }
 
 .b-img {
@@ -136,6 +142,23 @@
 
 //Block Event
 .block-event {
+	position: relative;
+	padding-left: 6em;
+	
+	.b-timestamp {
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $black;
+		border: 1px solid $gray-light-2;
+		border-radius: $border-radius;
+		font-style: normal;
+		display: block;
+		width: 5em;
+		height: 5em;
+		padding: 0.3em;
+	}
+	
 	.b-byline {
 		margin: 0;
 		font-style: italic;
@@ -143,6 +166,24 @@
 	
 	.tribe-events-gmap {
 		display: none;
+	}
+}
+
+.block-post {
+	position: relative;
+	padding-left: 6em;
+	
+	.b-timestamp {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $gold;
+		color: $black;
+		font-style: normal;
+		border-radius: 5em;
+		display: block;
+		width: 5em;
+		height: 5em;
 	}
 }
 

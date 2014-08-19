@@ -3,15 +3,15 @@
 	<div role="main">
 		{{> molecules-page-header }}
 		<div class="main-body l">
-			<div class="l-main">
+			<div class="l-main lc lc-single">
 				<ul class="post-list">
 					{{# postList }}
 					<li>{{> molecules-block-post }}</li>
 					{{/ postList }}
 					{{> molecules-pagination }}
-					{{> organisms-well-subscribe }}
 				</ul>
 			</div><!--end .l-main-->
+			{{> organisms-well-subscribe }}
 			<div class="l-sidebar">
 				{{> organisms-sidebar-text }}
 				{{> organisms-sidebar-event-list }}

@@ -4,6 +4,7 @@
 		"intro" : "95% of donated money goes directly to feeding the hungry lorem ipsum dolar"
 	},
 	"donate" : false,
+	"pageHeaderClass" : "peppers2",
 	"list" : [
 		{
 			"headline" : {

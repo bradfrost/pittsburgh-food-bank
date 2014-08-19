@@ -3,6 +3,7 @@
 		"title" : "Programs",
 		"intro" : "Our programs help x people Lorem ipsum dolor sit amet, consectetur"
 	},
+	"pageHeaderClass" : "pumpkins",
 	"list" : [
 		{
 			"headline" : {

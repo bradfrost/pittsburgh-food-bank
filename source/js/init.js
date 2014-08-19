@@ -151,8 +151,6 @@
 	
 	
 	//Payment Type Radio
-	$('#payment-type-bank').hide();
-	
 	$('#payment-type-radio').change(function() {
 		var $paymentTypeTarget = $(this).find('input:checked').attr('data-payment-type');
 		

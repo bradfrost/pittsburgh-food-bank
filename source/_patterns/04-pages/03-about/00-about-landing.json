@@ -3,6 +3,7 @@
 		"title" : "About the Greater Pittsburgh Community Food Bank",
 		"intro" : "Dedicated to eradicating hunger lorem ipsum dolor sit amet Lorem ipsum dolor"
 	},
+	"pageHeaderClass" : "eggs",
 	"list" : [
 		{
 			"headline" : {

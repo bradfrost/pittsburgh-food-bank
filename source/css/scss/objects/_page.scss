@@ -17,6 +17,58 @@
 		margin: 1em auto;
 	}
 	
+	&.carrots {
+		background-image: url(images/bg_hero_carrots.jpg);
+	}
+	
+	&.beets {
+		background-image: url(images/bg_hero_beets.jpg);
+	}
+	
+	&.corn {
+		background-image: url(images/bg_hero_corn.jpg);
+	}
+	
+	&.cucumbers {
+		background-image: url(images/bg_hero_cucumbers.jpg);
+	}
+	
+	&.eggs {
+		background-image: url(images/bg_hero_eggs.jpg);
+	}
+	
+	&.lettuce {
+		background-image: url(images/bg_hero_eggs.jpg);
+	}
+	
+	&.onions {
+		background-image: url(images/bg_hero_onions.jpg);
+	}
+	
+	&.peppers {
+		background-image: url(images/bg_hero_peppers.jpg);
+	}
+	
+	&.peppers2 {
+		background-image: url(images/bg_hero_peppersdos.jpg);
+	}
+	
+	&.potatoes {
+		background-image: url(images/bg_hero_potatoes.jpg);
+	}
+	
+	&.pumpkins {
+		background-image: url(images/bg_hero_pumpkins.jpg);
+	}
+	
+	&.squash {
+		background-image: url(images/bg_hero_squash.jpg);
+	}
+	
+	&.tomatoes {
+		background-image: url(images/bg_hero_tomatoes.jpg);
+	}
+	
 	@media all and (min-width: $bp-small-2) {
 		padding: $pad-double $pad;
 	}

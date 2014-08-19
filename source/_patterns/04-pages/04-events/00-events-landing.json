@@ -3,6 +3,7 @@
 		"title" : "Events",
 		"intro" : "Food distribution, fundraisers, lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, sint."
 	},
+	"pageHeaderClass" : "cucumbers",
 	"eventList" : [
 		{
 			"timestamp" : "March 5 - April 18, 2014",

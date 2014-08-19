@@ -23,13 +23,6 @@
 	}
 }
 
-/* Post List */
-.post-list {
-	li {
-		margin-bottom: $space;
-	}
-}
-
 /* Bullet List */
 .bullet-list {
 	list-style: square;
@@ -61,6 +54,10 @@
 		border-bottom: 1px solid $gray-light-2;
 		padding-bottom: $pad;
 		margin-bottom: $space;
+		
+		&:last-child {
+			border-bottom: 0;
+		}
 	}
 }
 

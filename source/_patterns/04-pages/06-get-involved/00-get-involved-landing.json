@@ -3,6 +3,7 @@
 		"title" : "Get Involved",
 		"intro" : "Help eradicate hunger in southwestern PA lorem ipsum dolor sit amet."
 	},
+	"pageHeaderClass" : "beets",
 	"hero" : {
 		"headline" : {
 			"short" : "Donate your time. Make a difference."

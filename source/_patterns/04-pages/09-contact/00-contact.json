@@ -3,6 +3,7 @@
 		"title" : "Contact",
 		"intro" : "Find help, reach our departments, volunteer, and more Lorem ipsum dolor."
 	},
+	"pageHeaderClass" : "peppers",
 	"ctaBanner" : {
 		"excerpt" : {
 			"short" : "If you need emergency food, please call Hunger Services Network of the Urban League of Pittsburgh at"
