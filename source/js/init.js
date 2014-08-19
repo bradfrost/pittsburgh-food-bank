@@ -55,18 +55,13 @@
 	//
 	// Donate Form
 	//
-	
-	$('.donate').hover(function() {
-		$('body').addClass('donatehover');
-	}, function() {
-		$('body').removeClass('donatehover');
-	});
 
 	//Set initial donate Step
 	var donateStep = 1;
 
 	//Hide steps 2 and 3
 	$('.donate-step').not('#donate-step-1').addClass('closed');
+	$('.field-container-city, .field-container-state').addClass('is-vishidden');
 	$('.donate-submit-text').text('Next Step');
 	
 	//Donation form submit action
@@ -166,6 +161,50 @@
 		}, 1000);
 		return false;
 	}
+	
+	function is_int(value){
+      if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+	
+	$("#donate-zip").keyup(function() {
+	  var el = $(this);
+	
+	  if ((el.val().length == 5) && (is_int(el.val()))) {
+	   
+	    // Make Ajax call to Ziptastic
+	    $.ajax({
+		  url: "http://zip.elevenbasetwo.com/v2",
+		  cache: false,
+		  dataType: "json",
+		  type: "GET",
+		  data: "zip=" + el.val(),
+		  success: function(result, success) {
+		    $('.field-container-city, .field-container-state').removeClass('is-vishidden'); /* Show the fields */
+		
+		    $("#donate-city").val(result.city); /* Fill the data */
+		    $("#donate-state").val(result.state);
+		
+		    $(".zip-error").hide(); /* In case they failed once before */
+		
+		    $("#donate-city").focus(); /* Put cursor where they need it */
+		
+		  },
+		  error: function(result, success) {
+			
+		    $('.field-container-city, .field-container-state').removeClass('is-vishidden');
+		
+		  }
+		
+		});
+	 
+	  }
+	
+	});
 
 	//Prevent links appearing within an accordion handle from firing
 	$('.acc-handle a').on('click',function(){

@@ -57,18 +57,17 @@
 				<input type="text" id="donate-address" placeholder="123 Main St, Apt 2" autocomplete="off" required data-parsley-error-message="Please enter your street address" name="billing.address.street1" />
 			</div>
 			<div class="field-container gi">
-				<label for="donate-city">City</label>
-				<input type="text" id="donate-city" placeholder="Pittsburgh" value="Pittsburgh" autocomplete="off" required data-parsley-error-message="Please enter your city" name="billing.address.city" />
-			</div>
-			<div class="field-container gi">
-				<label for="donate-city">State</label>
-				<input type="text" id="donate-city" placeholder="PA" value="PA" autocomplete="off" name="billing.address.state" required />
-			</div>
-			<div class="field-container gi">
-				<label for="donate-city">ZIP</label>
+				<label for="donate-zip">ZIP</label>
 				<input type="text" id="donate-zip" placeholder="15201" autocomplete="off" required data-parsley-error-message="Please enter a valid ZIP code" pattern="[0-9]*" name="billing.address.zip" />
 			</div>
-			
+			<div class="field-container gi field-container-city">
+				<label for="donate-city">City</label>
+				<input type="text" id="donate-city" placeholder="Pittsburgh" autocomplete="off" required data-parsley-error-message="Please enter your city" name="billing.address.city" />
+			</div>
+			<div class="field-container gi field-container-state">
+				<label for="donate-state">State</label>
+				<input type="text" id="donate-state" placeholder="PA" autocomplete="off" name="billing.address.state" required />
+			</div>
 		</div><!--end .g-2up-->
 	</fieldset><!--end .donate-step-->
 	
