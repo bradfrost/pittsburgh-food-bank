@@ -2,24 +2,32 @@
 	{{> organisms-header }}
 	<div role="main">
 		{{> organisms-hero-page-header-form }}
-		<div class="main-body">
-			<div class="directory-results">
-				<ul class="directory-list">
+		<div class="lc">
+			<div class="directory section">
+				<header class="section-header">
+					<h2 class="section-title">Food assistance closest to you</h2>
+					<p class="section-desc">These are the results closest to you lorem ipsum dolar</p>
+				</header>
+				
+				<div class="directory-list-container">
+				
+				<ol class="directory-list">
 					<li>
-						<div class="vcard">
-							<div class="adr">
-								<div class="org fn">
-									<h3 class="organization-name">{{ company.name }}</h3>
-								</div>
-								<div class="street-address">1 North Linden Street</div>
-								<span class="locality">Duquesne</span>, 
-								<abbr title="Pennsylvania" class="region">PA</abbr>
-								<span class="postal-code">15110</span>
-							</div>
-						</div>
-						<a href="#" class="text-btn">More info</a>
+						{{> molecules-block-directory }}
 					</li>
-				</ul>
+					<li>
+						{{> molecules-block-directory }}
+					</li>
+					<li>
+						{{> molecules-block-directory }}
+					</li>
+					<li>
+						{{> molecules-block-directory }}
+					</li>
+					<li>
+						{{> molecules-block-directory }}
+					</li>
+				</ol>
 			</div>
 			<div class="directory-map-container">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97183.46594409148!2d-79.98050050000002!3d40.43136844999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C+PA!5e0!3m2!1sen!2sus!4v1404788856245" width="600" height="450" frameborder="0" style="border:0" id="directory-map"></iframe>

@@ -1,6 +1,6 @@
 .header {
 	position: relative;
-	z-index: 2;
+	z-index: 4;
 	background: $green;
 	transition: opacity 0.2s ease-out;
 	
@@ -238,8 +238,11 @@
 
 //Simple Header, for use on third-party sites
 .header-simple {
+	padding: $pad-half 0 0;
+	
 	.logo-link {
 		position: relative;
 		display: inline-block;
+		float: left;
 	}
 }

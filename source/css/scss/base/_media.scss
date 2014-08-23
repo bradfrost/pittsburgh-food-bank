@@ -6,6 +6,7 @@
 img, video, object {
 	max-width: 100%;
 	height: auto;
+	border-radius: $border-radius;
 }
 
 iframe {
@@ -17,6 +18,7 @@ iframe {
 
 figure {
 	margin-bottom: $space;
+	
 	img {
 		margin-bottom: $space-quarter;
 	}

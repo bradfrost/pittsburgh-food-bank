@@ -38,6 +38,7 @@
 	border-top: 0;
 	padding-left: 0;
 	padding-right: 0;
+	margin-bottom: 12em;
 }
 
 .donate-step {
@@ -86,10 +87,6 @@
 		margin-bottom: $space;
 		position: relative;
 		
-		&:last-child {
-			width: 100%;
-		}
-		
 		&:hover {
 			.hover-tooltip {
 				display: block;
@@ -99,23 +96,21 @@
 		}
 		
 		@media all and (min-width: $bp-med) {
-			width: 20%;
-			
-			&:last-child {
-				width: 20%;
-			}
+			width: 16.6666%%;
 		}
 	}
 	
-	a {
+	label {
 		display: block;
 		font-size: $font-size-large;
+		font-weight: normal;
 		background: $green;
 		color: $white;
 		padding: 0.5em;
 		text-align: center;
 		text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 		border-radius: $border-radius;
+		cursor: pointer;
 		transition: all 0.1s ease-out;
 		
 		&:hover, &:focus {
@@ -130,6 +125,19 @@
 		}
 	}
 	
+	input[type=radio] {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	:checked  + label {
+		background: $gold;
+		color: $black;
+		text-shadow: none;
+	}	
+	
 	.input-container {
 		position: relative;
 		
@@ -137,7 +145,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			padding: 0.48em 0 0.48em 0.48em;
+			padding: 0.48em 0 0.48em 0.2em;
 			font-size: $font-size-large;
 			color: $green;
 		}
@@ -147,8 +155,24 @@
 		font-size: $font-size-large;
 		line-height: 1;
 		border: 2px solid $green;
-		padding: 0.55em 0.55em 0.55em 1.3em;
+		padding: 0.55em 0.55em 0.55em 0.8em;
 		color: $green;
+	}
+	
+	::-webkit-input-placeholder {
+	   line-height: 1;
+	}
+	
+	:-moz-placeholder { /* Firefox 18- */
+	   line-height: 1;  
+	}
+	
+	::-moz-placeholder {  /* Firefox 19+ */
+	   line-height: 1;  
+	}
+	
+	:-ms-input-placeholder {  
+	   line-height: 1;  
 	}
 }
 

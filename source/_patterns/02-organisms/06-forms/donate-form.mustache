@@ -11,20 +11,28 @@
 		
 		<ul class="chicklet-list">
 			<li>
-				<a href="#" data-amount="25" data-message="$25 can feed a person for a week">$25</a>
+				<input type="radio" id="donate-amount-1" name="donate-amount" />
+				<label for="donate-amount-1" data-amount="25" data-message="$25 can feed a family for a day">$25</label>
 			</li>
 			<li>
-				<a href="#" data-amount="50" data-message="$50 can feed a family for a week"  class="active">$50</a>
+				<input type="radio" id="donate-amount-2" name="donate-amount" checked="checked" />
+				<label for="donate-amount-2" data-amount="50" data-message="$50 can feed a family for a week">$50</label>
 			</li>
 			<li>
-				<a href="#" data-amount="100" data-message="$100 can feed a family of 4 for a week">$100</a>
+				<input type="radio" id="donate-amount-3" name="donate-amount" />
+				<label for="donate-amount-3" data-amount="100" data-message="$100 can feed a family of 4 for a week">$100</label>
 			</li>
 			<li>
-				<a href="#" data-amount="200" data-message="$200 can feed a family of 4 for two weeks">$200</a>
+				<input type="radio" id="donate-amount-4" name="donate-amount" />
+				<label for="donate-amount-4" data-amount="250" data-message="$250 can feed a family of 4 for two weeks">$250</label>
+			</li>
+			<li>
+				<input type="radio" id="donate-amount-5" name="donate-amount" />
+				<label for="donate-amount-5" data-amount="500" data-message="$500 can feed a family of 4 for four weeks">$500</label>
 			</li>
 			<li>
 				<div class="input-container" data-message="Every dollar you donate helps end hunger.">
-					<span class="input-addon">$</span><input type="text" id="other-amount" placeholder="Other" />
+					<span class="input-addon">$</span><input type="text" id="other-amount" placeholder="Other"  />
 				</div>
 			</li>
 		</ul>

@@ -5,6 +5,11 @@
 	$(w).resize(function(){
 		sw = document.body.clientWidth; //Update screen width
 	});
+	
+	//
+	// Primary Navigation
+	//
+	
 
 	//Navigation toggle for small screens
 	$('.nav-toggle-menu').click(function() {
@@ -113,28 +118,39 @@
 	$('.amount-container').hide();
 	
 	//Update message on hover
-	$('.chicklet-list a, .chicklet-list .input-container').hover(function(){
+	$('.chicklet-list label, .chicklet-list .input-container').hover(function(){
 		var $this = $(this),
 			$thisMessage = $this.attr('data-message'),
 			$messageContainer = $('#donate-step-1 .donate-step-message');
 			
 		$messageContainer.text($thisMessage);
+	},
+	function(){
+		var $activeMessage = $('.chicklet-list input:checked').next('label').attr('data-message'),
+			$messageContainer = $('#donate-step-1 .donate-step-message');
+		
+		if($('#other-amount').val()!=="") {
+			$messageContainer.text();
+		} else {
+			$messageContainer.text($activeMessage);
+		}
+		
 	});
 	
 	//Donate button list
-	$('.chicklet-list a').click(function(e){
+	$('.chicklet-list input:radio').change(function(){
 		var $this = $(this),
-			$thisMessage = $this.attr('data-message'),
-			$thisAmount = $this.attr('data-amount');
-		e.preventDefault();
-		$('.chicklet-list a').removeClass('active');
-		$(this).addClass('active');
+			$thisMessage = $this.next('label').attr('data-message'),
+			$thisAmount = $this.next('label').attr('data-amount'),
+			$messageContainer = $('#donate-step-1 .donate-step-message');
+			
 		$('#other-amount').val("");
 		$('#donation-amount').val($thisAmount);
+		$messageContainer.text($thisMessage);
 	});
 	
 	$('#other-amount').focus(function(){
-		$('.chicklet-list a').removeClass('active');
+		$('.chicklet-list input').prop('checked', false);
 	});
 	
 	$('#other-amount').blur(function(){
@@ -186,12 +202,12 @@
 		  success: function(result, success) {
 		    $('.field-container-city, .field-container-state').removeClass('is-vishidden'); /* Show the fields */
 		
-		    $("#donate-city").val(result.city); /* Fill the data */
-		    $("#donate-state").val(result.state);
+		    $("#donate-city").val(result.city).parsley(); /* Fill the data */
+		    $("#donate-state").val(result.state).parsley();
 		
 		    $(".zip-error").hide(); /* In case they failed once before */
 		
-		    $("#donate-city").focus(); /* Put cursor where they need it */
+		    $(".donate-submit").focus(); /* Put cursor where they need it */
 		
 		  },
 		  error: function(result, success) {
@@ -205,6 +221,10 @@
 	  }
 	
 	});
+	
+	//
+	// Accordion
+	//
 
 	//Prevent links appearing within an accordion handle from firing
 	$('.acc-handle a').on('click',function(){
@@ -223,10 +243,37 @@
 			return false;
 		}
 	});
+	
+	//
+	// Text Widows
+	//
     
     //Fix text widows http:/justinhileman.info/article/a-jquery-widont-snippet/
 	$('h1, .page-title, .page-intro, .b-title, .b-excerpt').each(function() {
         $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
     });
+    
+    //
+	// Get Help Directory
+	//
+	
+	$('.block-directory-extra').addClass('is-vishidden');
+	$('.block-directory').append('<a href="#" class="text-btn">More info</a>');
+	
+	$('.block-directory .text-btn').on('click', function(e) {
+		var $this = $(this),
+			$directoryExtra = $this.prev();
+		
+		e.preventDefault();
+		
+		if($directoryExtra.hasClass('is-vishidden')) {
+			$directoryExtra.removeClass('is-vishidden');
+			$this.text('Less Info');
+		} else {
+			$directoryExtra.addClass('is-vishidden');
+			$this.text('More Info');
+		}
+		
+	});
 
 })(this);

@@ -206,3 +206,13 @@
 		display: block;
 	}
 }
+
+.block-directory {
+	font-size: 90%;
+
+	.b-title {
+		font-size: $font-size-large;
+		font-weight: normal;
+		color: $green;
+	}
+}

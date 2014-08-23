@@ -91,13 +91,14 @@
 		float: left;
 		width: 50%;
 		background: $green-dark;
-		padding: 0.5em;
+		padding: 0.5em 0.2em;
 		font-weight: bold;
 		text-align: center;
 		color: $white;
 
 		[class^="icon-"] {
 			color: $green;
+			padding-right: 0;
 		}
 
 		&:last-child {
@@ -112,6 +113,8 @@
 				color: $white;
 			}
 		}
+		
+		
 
 		@media all and (min-width: $bp-small-2) {
 			padding: 0.875em;
