@@ -152,6 +152,10 @@ input[type="search"]::-webkit-search-decoration {
 .inline-form {
 	margin-bottom: $space;
 	
+	legend {
+		display: none;
+	}
+	
 	fieldset, .inline-container {
 		position: relative;
 		padding: 0;
@@ -162,9 +166,11 @@ input[type="search"]::-webkit-search-decoration {
 		position: absolute;
 		top: 0;
 		right: 0;
+		bottom: 0;
 		border: 1px solid $white;
 		z-index: 1;
 		width: auto;
+		padding: 1.15em 0.8em;
 		border-radius: $border-radius;
 	}
 }

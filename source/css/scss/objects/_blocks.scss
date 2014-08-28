@@ -1,13 +1,11 @@
 /* Generic FPO Block: REMOVE FOR PRODUCTION */
 .fpo {
-	background: #dcdddc;
+	background: red;
 	color: #888;
 	padding: $pad-double;
 	text-align: center;
 	font-weight: bold;
-	border-bottom: 1px solid $gray-light-2;
 }
-/* End FPO: REMOVE FOR PRODUCTION */
 
 /* Block */
 .block {
@@ -207,6 +205,8 @@
 	}
 }
 
+
+//For Get Help Directory
 .block-directory {
 	font-size: 90%;
 
@@ -214,5 +214,47 @@
 		font-size: $font-size-large;
 		font-weight: normal;
 		color: $green;
+	}
+}
+
+
+//Block Recipe
+.block-recipe {
+	display: block;
+	background: $white;
+	border: 1px solid $gray-light-3;
+	border-radius: $border-radius;
+	padding: $pad;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+	
+	.b-title {
+		font-size: 1.6em;
+		margin-bottom: 0.2em;
+		font-weight: normal;
+	}
+	
+	.b-desc {
+		font-size: 0.85em;
+		line-height: 1.4;
+		margin-bottom: 0.5em;
+		color: $gray-dark;
+	}
+	
+	.b-ingredients {
+		font-size: 0.75em;
+		line-height: 1.4;
+		color: $gray;
+		font-style: italic;
+	}
+	
+	a {
+		display: block;
+	}
+	
+	&:hover, &:focus {
+		border-color: $gray-light-3;
+		box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 	}
 }

@@ -1,0 +1,39 @@
+{
+	"page" : {
+		"title" : "Recipe Rainbow",
+		"intro" : "Make affordable and healthy meals, based on ingredients you already have"
+	},
+	"pageHeaderClass" : "squash",
+	"list" : [
+		{
+			"title" : "Beets Roesti",
+			"excerpt" : "Traditional Swiss patty, but made with beets! ",
+			"ingredientsHas" : "2",
+			"ingredientsTotal" : "5"
+		},
+		{
+			"title" : "Beet Home Fries",
+			"excerpt" : "Also Known as Beet Hash Browns",
+			"ingredientsHas" : "1",
+			"ingredientsTotal" : "6"
+		},
+		{
+			"title" : "Balsamic Glazed Beets",
+			"excerpt" : "A Hot Vegetarian Side Dish",
+			"ingredientsHas" : "3",
+			"ingredientsTotal" : "54"
+		},
+		{
+			"title" : "Beets Roesti",
+			"excerpt" : "Traditional Swiss patty, but made with beets! ",
+			"ingredientsHas" : "2",
+			"ingredientsTotal" : "5"
+		},
+		{
+			"title" : "Corn & Apple Skillet",
+			"excerpt" : "A Great Side to Chicken or Fish",
+			"ingredientsHas" : "2",
+			"ingredientsTotal" : "5"
+		}
+	]
+}

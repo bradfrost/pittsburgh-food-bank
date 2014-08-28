@@ -273,7 +273,18 @@
 			$directoryExtra.addClass('is-vishidden');
 			$this.text('More Info');
 		}
-		
 	});
+	
+	//
+	// Recipe Rainbow
+	//
+	$('.block-recipe').hover(
+		function(){
+			$(this).find('.btn').addClass('active');
+		}, 
+		function() {
+			$(this).find('.btn').removeClass('active');
+		}
+	);
 
 })(this);

@@ -1,0 +1,63 @@
+//Recipe Rainbow
+
+.recipe-rainbow {
+	@extend .cf;
+}
+
+.recipe-toolbar {
+	background: $info;
+	padding: $pad;
+	border-radius: $border-radius;
+	margin-bottom: $space;
+	
+	form {
+		margin-bottom: 0;
+	}
+	
+	@media all and (min-width: $bp-large) {
+		float: left;
+		width: 33%;
+	}
+}
+
+.ingredients-controls {
+	margin-top: $space-double;
+}
+
+//Ingredient List in toolbar
+.ingredient-list {
+	border-top: 1px solid rgba(0,0,0,0.1);;
+
+	li {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		padding: 0.5em 0;
+	}
+	
+	a {
+		float: right;
+		font-size: $font-size-sm;
+		padding-top: 0.3em;
+		
+		span {
+			display: inline-block;
+			margin-right: 0.3em;
+		}
+	}
+}
+
+//Recipe Results panel
+.recipe-results {
+	@media all and (min-width: $bp-large) {
+		margin-left: 33%;
+		padding-left: $pad;
+	}
+}
+
+.recipe-results-title {
+	font-size: 100%;
+	
+	strong {
+		font-weight: normal;
+		color: $green;
+	}
+}
