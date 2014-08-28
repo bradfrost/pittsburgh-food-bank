@@ -9,8 +9,10 @@
 		$ingredientControls = $('.ingredients-controls'),
 		$ingredientList = $('.ingredient-list');
 	
-	//Hide control list 
+	//Hide initially control list 
 	$ingredientControls.hide();	
+	
+	
 		
 	//Submit Ingredient Form
 	$ingredientForm.submit(function(e) {
@@ -41,6 +43,10 @@
 		$li.remove();
 		updateResults();
 		updateTitle($ingredient,"remove");
+		
+		if($('.ingredient-list li').length==0) {
+			$ingredientControls.hide();
+		}
 	});
 	
 	//Update Recipe Results Title
