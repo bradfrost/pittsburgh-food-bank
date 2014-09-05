@@ -9,20 +9,24 @@
 	background-size: cover;
 	color: $white;
 	text-align: center;
-	padding: 2em 0;
+	padding: 6em 0 2em;
+	
+	.lc {
+		max-width: 62em;
+	}
 
 	@media all and (min-width: $bp-med) {
-		padding: 4em 0;
+		padding: 4em 0 2em;
 	}
 	
 	@media all and (min-width: $bp-med) {
-		padding: 16em 0 4em;
+		padding: 16em 0 2em;
 	}
 }
 
 .banner-hero-text {
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 1.4em;
 	letter-spacing: -1px;
 	margin: 0;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
@@ -36,26 +40,28 @@
 	}
 	
 	@media all and (min-width: $bp-small-3) {
-		font-size: 3em;
+		font-size: 2.3em;
 		letter-spacing: -2px;
 	}
-
+	
 	@media all and (min-width: $bp-med) {
-		font-size: 4em;
+		font-size: 3em;
 	}
 }
 
 //CTA Banner
 .banner-cta {
 	color: $orange;
-	background: url(images/icon_help_plus.png) no-repeat 50% 1em;
+	background: url(images/icon_help_plus.svg) no-repeat 50% 1em;
+	background-size: 68px;
 	text-align: center;
 	padding: 5.5em $pad-half $pad-double;
-	margin: 0;
+	margin: 0 0 $space-double;
+	border-bottom: 1px solid $gray-light-2;
 
 	.banner-text {
 		font-size: $font-size-large;
-		max-width: 32em;
+		max-width: 19em;
 		margin: 0 auto;
 	}
 
@@ -65,42 +71,8 @@
 	}
 }
 
-//Pattern Banner
-.banner-pattern {
-	height: 4em;
-	background: url(images/patterns/pattern-tiles.png) #fbfef7;
-
-	//Stripe Pattern
-	&.stripes {
-		background: url(images/patterns/pattern-stripes.png) #fbfef7;
-	}
-	
-	//Tiles
-	&.tiles {
-		background: url(images/patterns/pattern-tiles.png) #fbfef7;
-	}
-
-	//Kiwi Pattern
-	&.kiwis {
-		background: url(images/patterns/pattern-kiwis.png) #f3f5d6;
-	}
-	
-	//Cooking Patter
-	&.cooking {
-		background: url(images/patterns/pattern-cooking.png) #fbfef7;
-	}
-	
-	//Gardening
-	&.gardening {
-		background: url(images/patterns/pattern-gardening.png) #fbfef7;
-	}
-	
-	//groceries
-	&.groceries {
-		background: url(images/patterns/pattern-groceries.png) #fbfef7;
-	}
-	
-	@media all and (min-width: $bp-med-2) {
-		height: 15em;
+.no-svg {
+	.banner-cta {
+		background-image: url(images/icon_help_plus.png);
 	}
 }

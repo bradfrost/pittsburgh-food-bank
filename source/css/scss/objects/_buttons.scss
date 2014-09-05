@@ -17,6 +17,11 @@
 	outline: 0;
 	transition: all 0.2s ease-out;
 	
+	.icon-arrow-right5 {
+		position: relative;
+		top: 1px;
+	}
+	
 	&:hover, &:focus, &.active {
 		color: $black;
 		background: $gold;
@@ -31,6 +36,16 @@
 	&.disabled {
 		background: $gray-light-2;
 		color: $gray-light-4;
+	}
+}
+
+.btn-alt {
+	background: $gray-light-3;
+	color: $gray;
+	border-bottom-color: $gray-light-4;
+	
+	&:hover, &:focus {
+		
 	}
 }
 

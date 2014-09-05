@@ -52,8 +52,8 @@
 .post-list {
 	> li {
 		border-bottom: 1px solid $gray-light-2;
-		padding-bottom: $pad;
-		margin-bottom: $space;
+		padding-bottom: $pad-double;
+		margin-bottom: $space-double;
 		
 		&:last-child {
 			border-bottom: 0;

@@ -6,7 +6,11 @@
 	"pageHeaderClass" : "tomatoes",
 	"postList" : [
 		{
-			"timestamp" : "April 18, 2014",
+			"timestamp" : {
+				"month" : "Apr",
+				"day" : "18",
+				"year" : "2014"
+			},
 			"headline" : {
 				"short" : "This is the latest blog post title"
 			},
@@ -15,7 +19,11 @@
 			}
 		},
 		{
-			"timestamp" : "April 18, 2014",
+			"timestamp" : {
+				"month" : "Apr",
+				"day" : "18",
+				"year" : "2014"
+			},
 			"headline" : {
 				"short" : "This is another blog post title"
 			},
@@ -24,7 +32,11 @@
 			}
 		},
 		{
-			"timestamp" : "April 18, 2014",
+			"timestamp" : {
+				"month" : "Apr",
+				"day" : "18",
+				"year" : "2014"
+			},
 			"headline" : {
 				"short" : "This could be a campaign update"
 			},
@@ -33,7 +45,11 @@
 			}
 		},
 		{
-			"timestamp" : "April 18, 2014",
+			"timestamp" : {
+				"month" : "Apr",
+				"day" : "30",
+				"year" : "2014"
+			},
 			"headline" : {
 				"short" : "Photos from a recent event"
 			},
@@ -42,7 +58,11 @@
 			}
 		},
 		{
-			"timestamp" : "April 18, 2014",
+			"timestamp" : {
+				"month" : "Apr",
+				"day" : "01",
+				"year" : "2014"
+			},
 			"headline" : {
 				"short" : "Agency update: Lorem ipsum dolor sit amet, consectetur."
 			},
@@ -51,7 +71,11 @@
 			}
 		},
 		{
-			"timestamp" : "April 18, 2014",
+			"timestamp" : {
+				"month" : "Apr",
+				"day" : "18",
+				"year" : "2014"
+			},
 			"headline" : {
 				"short" : "Important SNAP information Lorem ipsum dolor sit amet"
 			},

@@ -33,7 +33,7 @@
 }
 
 .b-title {
-	font-size: $font-size-large;
+	font-size: 1.4em;
 	margin: 0;
 }
 
@@ -102,9 +102,11 @@
 
 // Block Thumb with Summary
 .block-thumb {
+	padding: 0 1em;
+
 	.b-title {
 		font-weight: normal;
-		font-size: 1.6em;	
+		font-size: 1.4em;
 	}
 	
 	img {
@@ -118,6 +120,13 @@
 	
 	.b-title, .b-excerpt, .b-text {
 		text-align: center;
+	}
+	
+	.b-excerpt {
+		color: $gray-dark;
+		font-size: $font-size-sm-2;
+		line-height: 1.3;
+		margin-bottom: $space;
 	}
 	
 	a:hover, a:focus {
@@ -138,28 +147,52 @@
 	}
 }
 
-//Block Event
-.block-event {
+//Blog post block, Event post block
+.block-post, .block-event {
 	position: relative;
 	padding-left: 6em;
+	min-height: 6em;
+	
+	.b-byline {
+		margin: 0;
+		font-style: italic;
+	}
 	
 	.b-timestamp {
 		position: absolute;
 		top: 0;
 		left: 0;
+		background: $gray-light-2;
 		color: $black;
-		border: 1px solid $gray-light-2;
-		border-radius: $border-radius;
 		font-style: normal;
+		border-radius: 5em;
+		line-height: 1;
 		display: block;
+		padding: 1.15em;
 		width: 5em;
 		height: 5em;
-		padding: 0.3em;
+		text-align: center;
+		text-transform: uppercase;
+		
+		&:hover, &:focus {
+			background: $green;
+			color: $white;
+		}
 	}
 	
-	.b-byline {
-		margin: 0;
-		font-style: italic;
+	.b-timestamp-month {
+		display: block;
+		font-size: 80%;
+	}
+	
+	.b-timestamp-day {
+		display: block;
+		font-size: 140%;
+	}
+	
+	.b-timestamp-year {
+		display: block;
+		font-size: 70%;
 	}
 	
 	.tribe-events-gmap {
@@ -167,21 +200,15 @@
 	}
 }
 
-.block-post {
-	position: relative;
-	padding-left: 6em;
+//Text Block
+.block-text {
+	.b-title {
+		font-size: 1.2em;	
+	}
 	
-	.b-timestamp {
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: $gold;
-		color: $black;
-		font-style: normal;
-		border-radius: 5em;
-		display: block;
-		width: 5em;
-		height: 5em;
+	.b-excerpt {
+		font-size: $font-size-sm-2;
+		color: $gray;
 	}
 }
 

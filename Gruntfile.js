@@ -14,6 +14,8 @@ module.exports = function(grunt) {
 					'source/js/single-cc-field.js',
 					'source/js/parsley.js',
 					'source/js/init.js',
+					'source/js/luminateExtend.js',
+					'source/js/donate.js',
 					'!source/js/modernizr.js', // Exclude Modernizr,
 					'!source/js/recipe-rainbow.js' // Exclude Recipe Rainbow
 				],
@@ -65,7 +67,8 @@ module.exports = function(grunt) {
 		      { src:"source/js/modernizr.js", dest:"public/js/modernizr.js" },
 		      { src:"source/js/recipe-rainbow.js", dest:"public/js/recipe-rainbow.js" },
 		      { src:"public/style.css", dest:"../wordpress/wp-content/themes/pittsburghfoodbank/style.css" },
-		       { expand: true, cwd: 'public/', src:"images/*", dest:"../../wordpress/wp-content/themes/pittsburghfoodbank/" }
+		      { src:"public/js/production.min.js", dest:"../wordpress/wp-content/themes/pittsburghfoodbank/js/production.min.js" },
+		      { expand: true, cwd: 'public/', src:"images/*", dest:"../../wordpress/wp-content/themes/pittsburghfoodbank/" }
 		    ]
 		  }
 		},
@@ -97,7 +100,7 @@ module.exports = function(grunt) {
 			},
 			images: {
 				files: ['**/*.{png,jpg,gif}'],
-				tasks: ['imagemin'],
+				tasks: ['imagemin', 'copy'],
 				options: {
 					spawn: false
 				}

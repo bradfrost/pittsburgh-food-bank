@@ -6,7 +6,11 @@
 	"pageHeaderClass" : "cucumbers",
 	"eventList" : [
 		{
-			"timestamp" : "March 5 - April 18, 2014",
+			"timestamp" : {
+				"month" : "Mar",
+				"day" : "30",
+				"year" : "2014"
+			},
 			"headline" : {
 				"short" : "Corpus Christi Parish Fish Fry"
 			},
@@ -16,19 +20,74 @@
 			}
 		},
 		{
-			
+			"timestamp" : {
+				"month" : "Mar",
+				"day" : "30",
+				"year" : "2014"
+			},
+			"headline" : {
+				"short" : "Corpus Christi Parish Fish Fry"
+			},
+			"location" : "2515 Versailles Ave, McKeesport, PA 15132",
+			"excerpt" : {
+				"short" : "Parish Fish Fries abound during the Lenten season, but this one is extra special – 10% of the proceeds will benefit the Food Bank!"
+			}
 		},
 		{
-			
+			"timestamp" : {
+				"month" : "Mar",
+				"day" : "30",
+				"year" : "2014"
+			},
+			"headline" : {
+				"short" : "Corpus Christi Parish Fish Fry"
+			},
+			"location" : "2515 Versailles Ave, McKeesport, PA 15132",
+			"excerpt" : {
+				"short" : "Parish Fish Fries abound during the Lenten season, but this one is extra special – 10% of the proceeds will benefit the Food Bank!"
+			}
 		},
 		{
-			
+			"timestamp" : {
+				"month" : "Mar",
+				"day" : "30",
+				"year" : "2014"
+			},
+			"headline" : {
+				"short" : "Corpus Christi Parish Fish Fry"
+			},
+			"location" : "2515 Versailles Ave, McKeesport, PA 15132",
+			"excerpt" : {
+				"short" : "Parish Fish Fries abound during the Lenten season, but this one is extra special – 10% of the proceeds will benefit the Food Bank!"
+			}
 		},
 		{
-			
+			"timestamp" : {
+				"month" : "Mar",
+				"day" : "30",
+				"year" : "2014"
+			},
+			"headline" : {
+				"short" : "Corpus Christi Parish Fish Fry"
+			},
+			"location" : "2515 Versailles Ave, McKeesport, PA 15132",
+			"excerpt" : {
+				"short" : "Parish Fish Fries abound during the Lenten season, but this one is extra special – 10% of the proceeds will benefit the Food Bank!"
+			}
 		},
 		{
-			
+			"timestamp" : {
+				"month" : "Mar",
+				"day" : "30",
+				"year" : "2014"
+			},
+			"headline" : {
+				"short" : "Corpus Christi Parish Fish Fry"
+			},
+			"location" : "2515 Versailles Ave, McKeesport, PA 15132",
+			"excerpt" : {
+				"short" : "Parish Fish Fries abound during the Lenten season, but this one is extra special – 10% of the proceeds will benefit the Food Bank!"
+			}
 		}
 
 	],

@@ -44,6 +44,11 @@
 	"url" : "#",
 	"cta" : "Call to action",
 	"byline" : "byline",
+	"timestamp" : {
+		"month" : "Mar",
+		"day" : "30",
+		"year" : "2014"
+	},
 	"year" : {
 		"long": "2014",
 		"short": "14"

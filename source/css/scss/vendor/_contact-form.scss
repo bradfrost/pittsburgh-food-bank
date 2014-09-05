@@ -2,3 +2,10 @@ input[type="submit"].wpcf7-submit {
 	display: inline-block;
 	width: auto;
 }
+
+.wpcf7-response-output {
+	background: $gray-light-2;
+	border: 1px solid $gray-light-3;
+	border-radius: $border-radius;
+	padding: $pad-half;
+}

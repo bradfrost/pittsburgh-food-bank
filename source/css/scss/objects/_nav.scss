@@ -114,6 +114,12 @@
 			padding: 0.5em;
 		}
 	}
+	
+	.current-menu-item, .current_page_item, .current-menu-parent, .current_page_parent {
+		> a {
+			color: $gold;	
+		}
+	}
 
 	.menu-item-174 a {
 		color: $gold;
@@ -137,6 +143,11 @@
 			}
 		}
 	}
+}
+
+//Events nav active state
+.tribe-events-page-template #menu-item-1605 {
+	color: $gold;
 }
 
 .header .menu-item-has-children > a {
@@ -216,9 +227,25 @@
 }
 
 //Pagination
-.pagination {
+#nav-below {
 	overflow: hidden;
-	margin-bottom: $space;
+	margin-bottom: $space-double;
+	
+	.nav-previous {
+		float: left;
+	}
+	
+	.nav-next {
+		float: right;
+	}
+	
+	.meta-nav {}
+	
+	a {
+		@extend .btn;
+		@extend .btn-small;
+		@extend .btn-alt;
+	}
 }
 
 // Section Nav

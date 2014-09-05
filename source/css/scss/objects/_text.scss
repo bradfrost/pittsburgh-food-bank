@@ -32,6 +32,14 @@
 		}
 	}
 	
+	h2 {
+		margin-top: 1em;
+	}
+	
+	h3 {
+		margin-top: 2em;
+	}
+	
 	a {
 		color: $green;
 		text-decoration: underline;
@@ -46,6 +54,7 @@
 		margin: 0 0 $space 1.2em;
 
 		ul {
+			margin-top: 1em;
 			margin-bottom: 0;
 		}
 	}
@@ -54,7 +63,8 @@
 		list-style: decimal;
 		margin: 0 0 $space 1.5em;
 
-		ol {
+		ol {	
+			margin-top: 1em;
 			margin-bottom: 0;
 		}
 	}

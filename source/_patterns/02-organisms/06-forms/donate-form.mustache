@@ -1,6 +1,6 @@
 <form method="post" action="https://secure2.convio.net/gpcfb/site/CRDonationAPI" class="donate-form luminateApi donation-form" id="donate-form">
 	<input type="hidden" name="method" value="donate" />
-    <input type="hidden" name="form_id" value="4080" />
+    <input type="hidden" name="form_id" value="4080" data-monthly-id="600000" />
     <input type="hidden" name="validate" value="true" />
     <input type="hidden" name="df_preview" value="true" />
     <input type="hidden" name="billing.name.first" id="billing-first-name" value="" />
@@ -11,26 +11,27 @@
 		
 		<ul class="chicklet-list">
 			<li>
-				<input type="radio" id="donate-amount-1" name="donate-amount" />
+				<input type="radio" id="donate-amount-1" name="level_id" value="1" data-onetime-value="1" data-monthly-value="10" />
 				<label for="donate-amount-1" data-amount="25" data-message="$25 can feed a family for a day">$25</label>
 			</li>
 			<li>
-				<input type="radio" id="donate-amount-2" name="donate-amount" checked="checked" />
+				<input type="radio" id="donate-amount-2" name="level_id"  value="2" data-onetime-value="2" data-monthly-value="20" checked="checked" />
 				<label for="donate-amount-2" data-amount="50" data-message="$50 can feed a family for a week">$50</label>
 			</li>
 			<li>
-				<input type="radio" id="donate-amount-3" name="donate-amount" />
+				<input type="radio" id="donate-amount-3" name="level_id" value="3" data-onetime-value="3" data-monthly-value="30" />
 				<label for="donate-amount-3" data-amount="100" data-message="$100 can feed a family of 4 for a week">$100</label>
 			</li>
 			<li>
-				<input type="radio" id="donate-amount-4" name="donate-amount" />
+				<input type="radio" id="donate-amount-4" name="level_id"  value="4" data-onetime-value="4" data-monthly-value="40" />
 				<label for="donate-amount-4" data-amount="250" data-message="$250 can feed a family of 4 for two weeks">$250</label>
 			</li>
 			<li>
-				<input type="radio" id="donate-amount-5" name="donate-amount" />
+				<input type="radio" id="donate-amount-5" name="level_id"  value="5" data-onetime-value="5" data-monthly-value="50" />
 				<label for="donate-amount-5" data-amount="500" data-message="$500 can feed a family of 4 for four weeks">$500</label>
 			</li>
 			<li>
+				<input type="radio" id="donate-amount-other" name="level_id" value="100" data-onetime-value="100" data-monthly-value="" style="display: none;" />
 				<div class="input-container" data-message="Every dollar you donate helps end hunger.">
 					<span class="input-addon">$</span><input type="text" id="other-amount" placeholder="Other"  />
 				</div>
@@ -114,5 +115,5 @@
 			</div><!--end .g-2up-->
 		</div><!--end .payment-container-bank-->
 	</fieldset><!--end .donate-step-->
-	<button class="donate-submit btn"><span class="donate-submit-text">Donate</span> <span class="icon-arrow-right5"></span></button>
+	<button class="donate-submit btn btn-alt"><span class="donate-submit-text">Donate</span> <span class="icon-arrow-right5"></span></button>
 </form><!--end .donate-form-->

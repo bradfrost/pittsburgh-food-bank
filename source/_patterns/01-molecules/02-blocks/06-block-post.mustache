@@ -1,6 +1,10 @@
 <div class="block block-post">
 	<div class="b-body">
-		<a href="{{ url}}" class="b-timestamp">{{ timestamp }}</a>
+		<a href="{{ url}}" class="b-timestamp">
+			<span class="b-timestamp-month">{{ timestamp.month }}</span>
+			<span class="b-timestamp-day">{{ timestamp.day }}</span>
+			<span class="b-timestamp-year">{{ timestamp.year }}</span>	
+		</a>
 		<h3 class="b-title"><a href="{{ url}}">{{ headline.short }}</a></h3>
 		<p class="b-excerpt">{{ excerpt.short }}</p>
 	</div>

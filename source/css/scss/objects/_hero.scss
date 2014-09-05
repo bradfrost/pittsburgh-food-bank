@@ -30,6 +30,7 @@
 //Hero main 
 .hero-main {
 	@extend .cf;
+	margin-bottom: $space-double;
 
 	.hero-body {
 		padding: $pad 0 0;
@@ -59,26 +60,6 @@
 			float: left;
 			width: 50%;
 			padding: 0 $pad;
-		}
-	}
-
-	@media all and (min-width: $bp-xl) {
-		.eyebrow {
-			margin-bottom: $space;
-		}
-
-		.hero-img {
-			width: 66%;
-			
-			img {
-				display: block;
-				border-radius: $border-radius;
-			}
-		}
-
-		.hero-body {
-			width: 34%;
-			padding-top: $pad;
 		}
 	}
 }

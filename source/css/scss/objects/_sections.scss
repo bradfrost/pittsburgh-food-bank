@@ -89,12 +89,13 @@
 	
 	.section-title {
 		text-transform: none;
+		margin-bottom: 0.4em;
 	}
 	
 	.section-desc {
 		margin-bottom: $space;
 		max-width: 44em;
-		font-size: $font-size-large;
+		font-size: 1.2em;
 	}
 	
 	.text-list {
@@ -151,9 +152,21 @@
 }
 
 .list-section-get-help {
-	background: url(images/icon_help_plus_green.png) no-repeat 0 1em;
+	background: url(images/icon_help_plus_green.svg) no-repeat 0 1em;
+	background-size: 105px;
 }
 
 .list-section-give-help {
-	background: url(images/icon_help_heart_green.png) no-repeat 0 1em;
+	background: url(images/icon_help_heart_green.svg) no-repeat 0 1em;
+	background-size: 105px;
+}
+
+.no-svg {
+	.list-section-get-help {
+		background-image: url(images/icon_help_plus_green.png);
+	}
+	
+	.list-section-give-help {
+		background-image: url(images/icon_help_heart_green.png);
+	}
 }
