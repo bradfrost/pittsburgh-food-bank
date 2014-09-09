@@ -5,7 +5,7 @@
 	text-align: center;
 	color: $white;
 	margin-bottom: $space;
-	padding: $pad;
+	padding: $pad-double $pad;
 	
 	form {
 		margin: $space auto;
@@ -70,7 +70,6 @@
 	}
 	
 	@media all and (min-width: $bp-small-2) {
-		padding: $pad-double $pad;
 		margin-bottom: $space-double;
 	}
 	
@@ -87,7 +86,11 @@
 
 .page-title {
 	max-width: 20em;
-	margin: 0 auto $space-half;
+	margin: 0 auto 0.2em;
+	
+	@media all and (min-width: $bp-med) {
+		margin-bottom: 0.5em;
+	}
 }
 
 .page-intro {

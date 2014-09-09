@@ -47,6 +47,7 @@
 	}
 
 	hr {
+		border-bottom: 1px solid $green-dark;
 		margin: $space 0;
 
 		@media all and (max-width: $bp-med) {
@@ -58,7 +59,13 @@
 		margin-bottom: $space;
 
 		.b-timestamp {
-			color: $green-dark-2;
+			color: $green-dark;
+		}
+		
+		.b-title {
+			&:hover, &:focus {
+				color: $white;
+			}
 		}
 	}
 
@@ -92,12 +99,12 @@
 	padding: 0;
 
 	a {
-		font-size: $font-size-large;
 		display: block;
 		float: left;
 		width: 50%;
 		background: $green-dark;
-		padding: 0.5em 0.2em;
+		font-size: 1.1em;
+		padding: 0.8em 0.2em;
 		font-weight: bold;
 		text-align: center;
 		color: $white;
@@ -123,6 +130,7 @@
 		
 
 		@media all and (min-width: $bp-small-2) {
+			font-size: $font-size-large;
 			padding: 0.875em;
 		}
 

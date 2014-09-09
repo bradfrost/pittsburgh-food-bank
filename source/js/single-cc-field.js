@@ -99,7 +99,7 @@
 				}
 
 				// If the credit card value ever becomes empty, make sure the corresponding expiration date,
-				// CVV, and Zip Code values are also empty.
+				// CVV values are also empty.
 
 				if (el.val() === "") {
 					$("." + opts.fieldsetClass)
@@ -260,7 +260,7 @@
 
 			// This function is fired when the mask for CVV field is satisfied. We animate
 			// the credit card back from the CVV card image to the appropriate card type.
-			// We wait for the animation to finish and then focus on the zip field.
+			// We wait for the animation to finish and then validate.
 
 			cvvComplete: function () {
 
@@ -284,37 +284,6 @@
 						}
 					});
 
-				if (window.navigator.standalone || !Modernizr.touch) {
-					// Focus on the credit card expiration input.
-					$("." + opts.cardZipClass).focus();
-
-					// Update instruction message
-					helpers.updateInstruction(opts.messageZip);
-				}
-
-				
-
-
-			},
-
-			zipComplete: function () {
-
-				$("." + opts.cardZipClass)
-					.addClass("full")
-					.unbind("keydown blur")
-					.bind("keydown", function (e) {
-						if (e.keyCode === 8 && $(this).val() === "") {
-							$(this).removeClass("full");
-							if (window.navigator.standalone || !Modernizr.touch) {
-								$("." + opts.cardCvvClass).focus();
-
-								// Update instruction message
-								helpers.updateInstruction(opts.messageCVV);
-							}
-						}
-					})
-					.inputmask({ mask: "99999" });
-
 				$("." + opts.fieldsetClass)
 					.addClass('valid');
 
@@ -323,6 +292,9 @@
 
 				// Update instruction message with success message
 				helpers.updateInstruction(opts.messageSuccess);
+
+				
+
 
 			},
 
@@ -419,13 +391,6 @@
 							.blur(function () {
 								$("." + opts.cardImageClass).removeClass("cvv2");
 							})
-						.end()
-						.find("." + opts.cardZipClass)
-							.inputmask({
-								mask: "99999",
-								oncomplete: helpers.zipComplete
-							})
-							.addClass("hide")
 						.end();
 
 						if(opts.cardInstruction) {
@@ -464,7 +429,6 @@
 		cardImageClass: "card-image",
 		cardCvvClass: "card-cvv",
 		cardExpirationClass: "card-expiration",
-		cardZipClass: "card-zip",
 		cardNumberClass: "card-number",
 		cardInstruction : true,
 		cardInstructionClass: "card-instruction",
@@ -476,7 +440,6 @@
 		messageExpirationError : "Please enter a valid month and year",
 		messageCVV : "Please enter the three-digit CVV number found on the back of your card",
 		messageCVVAmEx : "Please enter your four-digit CVV number on the front of your card",
-		messageZip : "Please enter your billing zip code",
 		messageSuccess : "Hooray! You've successfully filled out your credit card information."
 	};
 

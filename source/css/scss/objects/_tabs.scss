@@ -4,9 +4,10 @@
 .tabs {
 	overflow: hidden;
 	margin-bottom: $space-double;
+	text-align: center;
 	
 	li {
-		float: left;
+		display: inline-block;
 		text-align: center;
 		background: $gray-light-3;
 		border: 1px solid $gray-light-3;

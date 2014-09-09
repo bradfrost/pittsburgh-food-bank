@@ -56,11 +56,13 @@
 	.text-btn {
 		margin: 1em 0 0;
 		color: #c14903;
+		display: block;
 	}
 	
 	@media all and (min-width: $bp-med) {
 		float: left;
 		width: 50%;
+		padding-right: 2em;
 	}
 }
 

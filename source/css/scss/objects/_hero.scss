@@ -45,12 +45,12 @@
 		font-weight: normal;
 		margin-bottom: 0.1em;
 
-		@media all and (min-width: $bp-large) {
+		@media all and (min-width: $bp-med) {
 			font-size: 3em;
 		}
 	}
 
-	@media all and (min-width: $bp-large) {
+	@media all and (min-width: $bp-med) {
 		.hero-img {
 			float: left;
 			width: 50%;

@@ -64,6 +64,10 @@ h2.tribe-events-page-title {
 	font-style: italic;
 }
 
-.tribe-events-ical {
+.tribe-events-ical, .tribe-events-gcal {
+	display: none !important;
+}
+
+.single-tribe_events .tribe-events-cal-links {
 	display: none !important;
 }

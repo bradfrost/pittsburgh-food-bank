@@ -13,11 +13,15 @@
 	}
 	
 	.g {
-		margin-bottom: 0;
+		margin-bottom: $space;
 	}
 	
 	.field-container {
 		margin-bottom: $space-half;
+	}
+	
+	@media all and (min-width: $bp-med) {
+		padding-top: 3em;
 	}
 }
 
@@ -53,6 +57,25 @@
 	}
 }
 
+//Field Step
+.form-step {
+	background: $gray-light-3;
+	color: $gray;
+	padding: 0.4em 0.5em;
+	margin: 0 auto 0.5em;
+	line-height: 1;
+	border-radius: 15px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	
+	@media all and (min-width: $bp-small-2) {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
 .donate-step-legend {
 	font-size: 1.1em;
 	display: block;
@@ -61,6 +84,7 @@
 	padding-top: $pad-double;
 	margin-bottom: $space;
 	margin-top: $space-double;
+	text-align: center;
 }
 
 //Expose first donate step by default
@@ -220,108 +244,6 @@
 	}
 }
 
-.ui-slider-track,
-.ui-slider-switch {
-	position: relative;
-	overflow: visible;
-	height: 15px;
-	margin: 0 15px 0 68px;
-}
-.ui-slider-track.ui-mini {
-	height: 12px;
-	top: 8px;
-}
-.ui-slider-bg {
-	border: none;
-	height: 100%;
-}
-
-.ui-slider-handle .ui-btn-inner {
-	padding: 0;
-	height: 100%;
-}
-
-select.ui-slider-switch {
-	display: none;
-}
-div.ui-slider-switch {
-	display: inline-block;
-	height: 32px;
-	width: 5.8em;
-	margin: .5em 0;
-	top: 0;
-}
-
-.ui-slider-switch.ui-mini .ui-slider-handle {
-	width: 25px;
-	height: 25px;
-	margin: 1px 0 0 -13px;
-	padding: 0;
-}
-.ui-slider-handle-snapping {
-	-webkit-transition: left 70ms linear;
-	-moz-transition: left 70ms linear;
-}
-
-div.ui-slider {
-	position: relative;
-	height: 30px;
-	margin: 2em 0;
-	zoom: 1;
-
-	.ui-slider-input {
-		display: none;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-	}
-}
-
-.ui-slider-handle {
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	width: 44px;
-	height: 70px;
-	margin: -49px 0 0 -20px;
-	outline: 0;
-	text-align: center;
-	font-weight: bold;
-	background: url(images/bg-donate-slider.png) no-repeat 0 100%;
-	background-size: 100% auto;
-	color: $green;
-	@include transition(width,0.3s,ease-out);
-
-	&:hover, &:focus {
-		color: $green-dark;
-	}
-}
-
-.ui-slider-track {
-	margin: 0;
-	background: $gray-light;
-	-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.4);
-	-webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.4);
-	box-shadow: inset 2px 2px 2px rgba(0,0,0,0.4);
-	height: 40px;
-	width: 100%;
-	border-radius: 2em;
-	border: 1px solid $gray-light-3;
-}
-
-.ui-slider-bg {
-	background: $green;
-	background: -moz-linear-gradient(top, $green-light 0%, $green-light 50%, $green 50%, $green 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$green-light), color-stop(50%,$green-light), color-stop(50%,$green), color-stop(100%,$green));
-	background: -webkit-linear-gradient(top, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
-	background: -o-linear-gradient(top, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
-	background: -ms-linear-gradient(top, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
-	background: linear-gradient(to bottom, $green-light 0%,$green-light 50%,$green 50%,$green 100%);
-	border-radius: 2em;
-	border-bottom-right-radius: 0;
-}
-
 .js .credit-card-group label {
 	display: none;
 }
@@ -333,4 +255,9 @@ div.ui-slider {
 	&.active {
 		display: block
 	}
+}
+
+.donate-submit {
+	display: block;
+	margin: 0 auto;
 }

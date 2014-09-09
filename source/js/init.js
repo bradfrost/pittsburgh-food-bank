@@ -55,8 +55,8 @@
 		return false;
 	});
 	
-	//Remove errenous nav active state for events
-	if ($('body').hasClass('tribe-events-page-template')) {
+	//Remove errenous nav active state for events, jobs
+	if ($('body').hasClass('tribe-events-page-template') || $('body').hasClass('page-template-single-job-php')) {
 		$('#menu-item-172').removeClass('current_page_parent');
 	}
 	

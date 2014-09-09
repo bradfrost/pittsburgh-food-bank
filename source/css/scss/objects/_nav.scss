@@ -167,8 +167,6 @@
 
 	&.active {
 		background: $green-dark;
-		border-top-left-radius: $border-radius;
-		border-top-right-radius: $border-radius;
 		color: $gold;
 
 		&:before {
@@ -190,6 +188,11 @@
 			-o-animation:      flip 0.2s forwards;
 			animation:         flip 0.2s forwards;
 		}
+		
+		@media all and (min-width: $bp-med) {
+			border-top-left-radius: $border-radius;
+			border-top-right-radius: $border-radius;
+		}
 	}
 
 	@media all and (max-width: $bp-med) {
@@ -206,6 +209,11 @@
 	&.active {
 		display: block;
 		background: $green;
+	}
+	
+	a {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
 	}
 
 	@media all and (min-width: $bp-med) {

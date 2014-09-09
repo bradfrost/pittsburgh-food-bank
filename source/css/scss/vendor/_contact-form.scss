@@ -1,3 +1,13 @@
+.text .wpcf7-form {
+	background: $info;
+	border-radius: $border-radius;
+	padding: $pad-half;
+	
+	@media all and (min-width: $bp-med) {
+		padding: $pad;
+	}	
+}
+
 input[type="submit"].wpcf7-submit {
 	display: inline-block;
 	width: auto;
@@ -8,4 +18,12 @@ input[type="submit"].wpcf7-submit {
 	border: 1px solid $gray-light-3;
 	border-radius: $border-radius;
 	padding: $pad-half;
+	
+	&.wpcf7-display-none {
+		display: none !important;
+	}
+}
+
+.wpcf7-checkbox label {
+	font-weight: normal;
 }

@@ -330,3 +330,37 @@
 		}
 	}
 }
+
+//Flexbox grid
+
+
+.flexbox {
+	.g-flex {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		
+		.gi {
+			float: none;
+			display: flex;
+			width: 100%;
+			
+			@media all and (min-width: $bp-small-2) {
+				width: 50%;
+			}
+			
+			@media all and (min-width: $bp-small-3) {
+				width: 33.33333%;
+			}
+			
+			@media all and (min-width: $bp-large) {
+				width: 25%;
+			}
+		}
+		
+		.block-contact {
+			flex: 1;
+			align-items: stretch;
+		}
+	}
+}
