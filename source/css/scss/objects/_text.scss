@@ -41,6 +41,7 @@
 	}
 	
 	form {
+	
 		h4 {
 			color: $black;
 			font-weight: bold;
@@ -50,6 +51,11 @@
 	
 	img, object, iframe {
 		margin-bottom: $space-double;
+	}
+	
+	.aligncenter {
+		display: block;
+		margin: 0 auto $space-double;
 	}
 	
 	a {
@@ -66,7 +72,7 @@
 		margin: 0 0 $space 1.2em;
 
 		ul {
-			margin-top: 1em;
+			margin-top: $space-half;
 			margin-bottom: 0;
 		}
 	}
@@ -75,14 +81,14 @@
 		list-style: decimal;
 		margin: 0 0 $space 1.5em;
 
-		ol {	
-			margin-top: 1em;
+		ol, ul {	
+			margin-top: $space-half;
 			margin-bottom: 0;
 		}
 	}
 	
 	li {
-		margin-bottom: $space;
+		margin-bottom: $space-half;
 	}
 	
 	.btn, .text-btn {
@@ -93,12 +99,23 @@
 		color: $white;
 	}
 	
+	:first-child {
+		margin-top: 0;
+	}
+	
+	:last-child {
+		margin-bottom: 0;
+		
+		img {
+			margin-bottom: 0;
+		}
+	}
+	
 	.post-footer {
 		border-top: 1px solid $gray-light-2;
 		padding-top: $pad;
 		color: $gray;
 		font-style: italic;
 		font-size: $font-size-sm-2;
-		
 	}
 }

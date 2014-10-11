@@ -19,3 +19,18 @@
 		}
 	}
 }
+
+.timeline-desc {
+	margin-top: -3px;
+}
+
+.timeline-timestamp {
+	font-style: italic;
+
+	@media all and (min-width: 52.75em) {
+		position: absolute;
+		left: -10em;
+		text-align: right;
+		width: 8em;
+	}
+}

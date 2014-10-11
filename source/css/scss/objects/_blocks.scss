@@ -125,6 +125,7 @@
 			display: block;
 			margin: 0 auto;
 			border-radius: 0;
+			width: 100%;
 		}
 	}
 	
@@ -267,12 +268,21 @@
 //For Get Help Directory
 .block-directory {
 	font-size: 90%;
+	transition: background 0.2 ease-out;
 
 	.b-title {
 		font-size: $font-size-large;
 		font-weight: normal;
 		color: $green;
 	}
+	
+	.vcard {
+		margin-bottom: $space-half;
+	}
+}
+
+.js .block-directory:hover, .js .block-directory:focus {
+	cursor: pointer;
 }
 
 

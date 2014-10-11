@@ -71,3 +71,8 @@ h2.tribe-events-page-title {
 .single-tribe_events .tribe-events-cal-links {
 	display: none !important;
 }
+
+.single-tribe_events .tribe-events-event-meta dl {
+	border-top: 1px solid $gray-light;
+	margin-bottom: $space !important;
+}

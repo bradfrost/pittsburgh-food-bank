@@ -30,27 +30,33 @@
 		background: url(images/bg_well_bottom.png) 50% 0 no-repeat;
 	}
 	
-	.lc {
+	.lc-single {
 		@media all and (max-width: $bp-med) {
 			padding-left: $pad;
 			padding-right: $pad;
 		}
+		
+		@media all and (min-width: $bp-large) {
+			min-height: 14em;
+			background: url(images/well_contact_icon.svg) no-repeat 2em -1em;
+			padding-left: 18em;
+			
+			
+		}
+	}
+	
+	&.well-newsletter {
+		.lc-single {
+			@media all and (min-width: $bp-large) {
+				background-image: url(images/well_newsletter_icon.svg);
+				background-position:  2em 0;
+			}
+		}
+		
 	}
 	
 	@media all and (min-width: $bp-large) {
 		padding: 3em 0;
-		
-		.lc {
-			min-height: 14em;
-			background: url(images/well_contact_icon.svg) no-repeat 2em 0;
-			padding-left: 18em;
-		}
-		
-		&.well-newsletter {
-			.lc {
-				background-image: url(images/well_newsletter_icon.svg);
-			}
-		}
 	}
 }
 
@@ -65,9 +71,4 @@
 			color: $green-dark;
 		}
 	}
-}
-
-// Info Box
-.info-box {
-	@extend .well;
 }

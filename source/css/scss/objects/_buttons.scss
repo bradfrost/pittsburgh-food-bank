@@ -49,12 +49,22 @@
 	}
 }
 
+.btn-alt-2 {
+	background: $gold;
+	color: $black !important;
+	border-bottom-color: $gold-dark;
+	
+	&:hover, &:focus {
+		background: $gold-dark;
+	}
+}
+
 .btn-wide {
 	padding: $pad $pad-double;
 }
 
 .btn-small {
-	font-size: $font-size-sm;
+	font-size: $font-size-sm-2;
 	padding: 0.85em 1em 0.7em;
 }
 

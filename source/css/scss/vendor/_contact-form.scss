@@ -24,6 +24,12 @@ input[type="submit"].wpcf7-submit {
 	}
 }
 
+.wpcf7-mail-sent-ok {
+	background: $valid-light;
+	border-color: $valid;
+	color: $valid;
+}
+
 .wpcf7-checkbox label {
 	font-weight: normal;
 }

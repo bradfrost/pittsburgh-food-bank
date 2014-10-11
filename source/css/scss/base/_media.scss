@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 /* Flexible Media */
-img, video, object {
+img, video {
 	max-width: 100%;
 	height: auto;
 	border: 0;
@@ -16,7 +16,7 @@ a img {
 
 iframe {
 	display: block;
-	max-width: 100%;
+	max-width: 100% !important;
 	margin-bottom: $space;
 	
 }

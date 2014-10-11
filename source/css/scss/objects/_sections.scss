@@ -1,6 +1,7 @@
 .section {
-	margin: 0 0 $space;
 	@extend .cf;
+	margin: 0 0 $space;
+	padding-top: $pad;
 	
 	.text-list {
 		text-align: center;
@@ -78,13 +79,14 @@
 
 //Homepage Give/Get Help section
 .section-shade-2 {
-	background: url(images/bg_section_shadow_2.png) no-repeat 50% 4em;
+	background: url(images/bg_section_shadow_2.png) no-repeat 50% 4.5em;
 	
 	.lc {
 		max-width: 62em;
 	}
 	
 	.section-intro {
+		font-size: 1.3em;
 		margin-bottom: $space-double;
 	}
 }
@@ -92,7 +94,7 @@
 //Homepage About Section
 .section-shade {
 	background: url(images/bg_section_shadow.png) no-repeat 50% 0;
-	padding-top: 2em;
+	padding-top: 1.5em;
 	
 	.section-title {
 		text-transform: none;
@@ -128,14 +130,14 @@
 	height: 234px;
 	background: url(images/icon_grocery_bag.png) no-repeat 50% 50%;
 	background-size: contain;
-	margin: 0 auto $space;
+	margin: 0 auto $space-half;
 }
 
 .icon-plate {
 	display: block;
 	width: 280px;
 	height: 232px;
-	background: url(images/icon_plate.png) no-repeat 50% 50%;
+	background: url(images/icon_plate.svg) no-repeat 50% 50%;
 	background-size: contain;
 	margin: 0 auto $space-double;
 	

@@ -79,7 +79,7 @@
 
 		@media all and (min-width: $bp-med) {
 			float:left;
-			width: 25%;
+			margin-right: 0.5em;
 
 			&:last-child {
 				margin-right: 0;
@@ -87,20 +87,19 @@
 		}
 
 		@media all and (min-width: 60em) {
-			width: auto;
-			margin-right: 0.5em;
+			margin-right: 0.8em;
 		}
 
 		@media all and (min-width: 66em) {
-			margin-right: 1em;
+			margin-right: 1.4em;
 		}
 
 		@media all and (min-width: 72em) {
 			margin-right: 2em;
 		}
 		
-		@media all and (min-width: 78em) {
-			margin-right: 2.5em;
+		@media all and (min-width: 75em) {
+			margin-right: 2.65em;
 		}
 	}
 

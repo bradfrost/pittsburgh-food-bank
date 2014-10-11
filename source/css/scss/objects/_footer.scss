@@ -17,6 +17,15 @@
 		}
 	}
 	
+	.block .b-title a {
+		color: $gold;
+		font-weight: normal;
+
+		&:hover, &:focus {
+			color: $white;
+		}
+	}
+	
 	.current_page_item {
 		a {
 			color: $white;
@@ -80,7 +89,17 @@
 		padding-right: 0.4em;
 		color: $green-dark;
 		position: relative;
-		top: 3px;
+		top: 1px;
+	}
+	
+	.btn {
+		background: $green-dark;
+		margin-bottom: $space;
+		color: $white;
+		
+		&:hover, &:focus {
+			background: $gold;
+		}
 	}
 }
 
@@ -126,7 +145,6 @@
 				color: $white;
 			}
 		}
-		
 		
 
 		@media all and (min-width: $bp-small-2) {
@@ -185,7 +203,7 @@
 
 		@media all and (min-width: $bp-med) {
 			padding: 0;
-			margin-bottom: 0.7em;
+			margin-bottom: 0.5em;
 
 			&.active {
 				background: none;
@@ -236,4 +254,5 @@
 .copyright {
 	font-size: $font-size-sm;
 	text-align: center;
+	line-height: 2;
 }
