@@ -147,8 +147,8 @@
 					if ((ccType === "amex" && uvalue.length === 15) || (ccType !== "amex" && uvalue.length === 16)) {
 
 						element
-							.data("ccNumber", uvalue)
-							.val(uvalue.substr(uvalue.length - 4, uvalue.length));
+							.data("ccNumber", uvalue);
+							//.val(uvalue.substr(uvalue.length - 4, uvalue.length));
 
 					}
 
@@ -157,7 +157,7 @@
 				// Once this function is fired, we need to add a "transitioning" class to credit
 				// card element so that we can take advantage of our CSS animations.
 
-				element.addClass("transitioning-out");
+				//element.addClass("transitioning-out");
 
 				// We have to set a timeout so that we give our animations time to finish. We have to
 				// blur the element as well to fix a bug where our credit card field was losing its
@@ -165,7 +165,7 @@
 
 				setTimeout(function () {
 
-					element.removeClass("transitioning-out");
+					// element.removeClass("transitioning-out");
 
 					if (!Modernizr.touch) {
 
@@ -181,7 +181,7 @@
 							});
 					}
 
-					element.addClass("full");
+					// element.addClass("full");
 
 				}, opts.animationWait);
 
@@ -230,11 +230,11 @@
 				$("." + opts.cardImageClass).addClass("cvv2");
 
 				$("." + opts.cardExpirationClass)
-					.addClass("full")
+					.addClass("parsley-success")
 					.unbind("keydown blur")
 					.bind("keydown", function (e) {
 						if (e.keyCode === 8 && $(this).val() === "") {
-							$(this).removeClass("full");
+							// $(this).removeClass("full");
 							if (window.navigator.standalone || !Modernizr.touch) {
 								$("." + opts.cardNumberClass).focus();
 
@@ -274,7 +274,7 @@
 							if ($(this).val() === "") {
 								$(this).removeClass("full");
 								if (window.navigator.standalone || !Modernizr.touch) {
-									$("." + opts.cardExpirationClass).focus();
+									//$("." + opts.cardExpirationClass).focus();
 
 									// Update instruction message
 									helpers.updateInstruction(opts.messageExpiration);
@@ -292,10 +292,7 @@
 
 				// Update instruction message with success message
 				helpers.updateInstruction(opts.messageSuccess);
-
-				
-
-
+				$('.donate-submit').focus();
 			},
 
 			// This function allows us to edit the credit card number once it's been entered.
@@ -338,8 +335,8 @@
 
 				// Hide the extraneous inputs until the credit card is filled out again.
 				$("." + opts.fieldsetClass)
-					.find("input:gt(0)")
-					.addClass("hide");
+					.find("input:gt(0)");
+					//.addClass("hide");
 
 			},
 
@@ -368,7 +365,7 @@
 
 					$(this)
 						.find("label")
-							.addClass("hide")
+							//.addClass("hide")
 						.end()
 						.find("." + opts.cardNumberClass)
 							.inputmask({ mask: "9999 9999 9999 9999" })
@@ -376,15 +373,14 @@
 						.end()
 						.find("." + opts.cardExpirationClass)
 							.inputmask({
-								mask: "m/q",
-								clearIncomplete: true,
+								mask: "m/y",
 								oncomplete: helpers.expirationComplete
 							})
-							.addClass("hide")
+							//.addClass("hide")
 						.end()
 						.find("." + opts.cardCvvClass)
 							.inputmask({ mask: "999" })
-							.addClass("hide")
+							//.addClass("hide")
 							.focus(function () {
 								$("." + opts.cardImageClass).addClass("cvv2");
 							})

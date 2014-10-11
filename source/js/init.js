@@ -1,10 +1,13 @@
 (function(w){
-	var sw = document.body.clientWidth;
-
-	//On Window Resize
-	$(w).resize(function(){
-		sw = document.body.clientWidth; //Update screen width
-	});
+	//SVG Fallback
+	if (!Modernizr.svg) {	
+		$("img[src$='.svg']").each(function(){
+			var $this = $(this),
+				$thisFallback = $this.attr('data-fallback');
+			
+			$this.attr('src', $thisFallback);
+		});
+	}
 	
 	//
 	// Primary Navigation
@@ -87,31 +90,18 @@
 	//
     
     //Fix text widows http:/justinhileman.info/article/a-jquery-widont-snippet/
-	$('h1, .page-title, .page-intro, .b-title, .b-excerpt').each(function() {
-        $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
-    });
+    if (window.screen.width > 460) {
+		$('h1, .page-title, .page-intro, .b-title, .b-excerpt').each(function() {
+        	$(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+		});
+    }
     
     //
-	// Get Help Directory
+	// Create Fluid Videos
 	//
-	
-	$('.block-directory-extra').addClass('is-vishidden');
-	$('.block-directory').append('<a href="#" class="text-btn">More info</a>');
-	
-	$('.block-directory .text-btn').on('click', function(e) {
-		var $this = $(this),
-			$directoryExtra = $this.prev();
-		
-		e.preventDefault();
-		
-		if($directoryExtra.hasClass('is-vishidden')) {
-			$directoryExtra.removeClass('is-vishidden');
-			$this.text('Less Info');
-		} else {
-			$directoryExtra.addClass('is-vishidden');
-			$this.text('More Info');
-		}
-	});
+    
+    
+    $('.text').fitVids();
 	
 	//
 	// Recipe Rainbow

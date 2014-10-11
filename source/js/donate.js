@@ -1,18 +1,3 @@
-//Initialize 
-(function($) {
-  /* define init variables for your organization */
-  luminateExtend({
-    apiKey: 'gpcfbapi567', 
-    path: {
-      nonsecure: 'http://friends.pittsburghfoodbank.org/site/', 
-      secure: 'https://secure2.convio.net/gpcfb/site/'
-    }
-  });
-      
-  /* bind any forms with the "luminateApi" class */
-  luminateExtend.api.bind();
-})(jQuery);
-
 (function(w){
 
 
@@ -21,7 +6,8 @@
 	//
 
 	//Set initial donate Step
-	var donateStep = 1,
+	var $donateForm = $('.donate-form'),
+		donateStep = 1,
 		initialFormID = $('input[name=form_id]').attr('value');
 
 	//Hide steps 2 and 3
@@ -39,6 +25,12 @@
 			updateDonateStep();
 			$('#donate-name').focus();
 			smoothScroll($('#donate-step-2'));
+			
+			if ($donateForm.requestAutocomplete) {
+			    $donateForm.requestAutocomplete();
+			} else {
+				return;
+			}
 		}
 		//If user is on the second step, advance to step three
 		else if (donateStep === 2) {
@@ -107,16 +99,21 @@
 		$('#other-amount').val("");
 		$('#donation-amount').val($thisAmount);
 		$messageContainer.text($thisMessage);
+		$('#donate-amount-other').prop('checked', false);
 	});
 	
 	$('#other-amount').focus(function(){
 		$('.chicklet-list input').prop('checked', false);
+		$('#donate-amount-other').attr('checked','checked');
 	});
 	
 	$('#other-amount').blur(function(){
 		$thisAmount = $(this).val();
 		if($thisAmount!=="") {
 			$('#donation-amount').val($thisAmount);
+			$('#donate-amount-other').attr('checked','checked');
+		} else {
+			$('#donate-amount-other').prop('checked', false);
 		}
 	});
 	
@@ -208,6 +205,5 @@
 		});
 	 
 	  }
-	
 	});
 })(this);
