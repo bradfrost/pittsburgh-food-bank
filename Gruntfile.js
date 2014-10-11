@@ -12,10 +12,11 @@ module.exports = function(grunt) {
 					'source/js/jquery.inputmask.js',
 					'source/js/jquery.inputmask.date.extensions.js',
 					'source/js/single-cc-field.js',
+					'source/js/jquery.fitvids.js',
 					'source/js/parsley.js',
 					'source/js/init.js',
-					'source/js/luminateExtend.js',
 					'source/js/donate.js',
+					'!source/js/luminateExtend.js',
 					'!source/js/modernizr.js', // Exclude Modernizr,
 					'!source/js/recipe-rainbow.js' // Exclude Recipe Rainbow
 				],
