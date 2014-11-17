@@ -182,10 +182,10 @@
 
 		> [class^="icon-"] {
 			color: $gold;
-			-webkit-animation: flip 0.2s forwards;
-			-moz-animation:    flip 0.2s forwards;
-			-o-animation:      flip 0.2s forwards;
-			animation:         flip 0.2s forwards;
+			-webkit-animation: flip $anim-fast forwards;
+			-moz-animation:    flip $anim-fast forwards;
+			-o-animation:      flip $anim-fast forwards;
+			animation:         flip $anim-fast forwards;
 		}
 		
 		@media all and (min-width: $bp-med) {

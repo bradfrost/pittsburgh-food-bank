@@ -6,7 +6,7 @@
 	position: relative;
 	z-index: 3;
 	margin: 0 auto;
-	transition: all 0.2s ease-out;
+	transition: all $anim-fast ease-out;
 	
 	.section-title {
 		margin-bottom: $space;
