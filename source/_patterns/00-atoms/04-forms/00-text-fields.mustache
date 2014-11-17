@@ -28,11 +28,13 @@
         <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
     </div>
     <div class="field-container">
-        <label class="ui-state-error">Error Input</label>
-        <input class="ui-state-error" type="text" placeholder="Text Input">
-    </div>
+				<label>Error Field</label>
+				<input type="text" class="parsley-error">
+				<ul class="parsley-errors-list filled" id="parsley-id-9236"><li class="parsley-custom-error-message">This is the error message</li></ul>
+			</div>
     <div class="field-container">
-        <label  class="valid">Valid</label>
-        <input  class="is-valid" type="text" placeholder="Text Input">
+        <label>Valid</label>
+        <input class="parsley-success" type="text">
+        <span class="card-instruction valid">This is a valid message</span>
     </div>
 </fieldset>
