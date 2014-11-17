@@ -24,6 +24,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
 .icon-mail:before {
 	content: "\e62d";
 }
@@ -50,6 +51,30 @@
 }
 .icon-arrow-right2:before {
 	content: "\e62b";
+}
+.icon-arrow-left3:before {
+	content: "\e62e";
+}
+.icon-arrow-down3:before {
+	content: "\e62f";
+}
+.icon-arrow-up3:before {
+	content: "\e630";
+}
+.icon-arrow-right3:before {
+	content: "\e631";
+}
+.icon-arrow-left4:before {
+	content: "\e632";
+}
+.icon-arrow-down4:before {
+	content: "\e633";
+}
+.icon-arrow-up4:before {
+	content: "\e634";
+}
+.icon-uniE635:before {
+	content: "\e635";
 }
 .icon-home:before {
 	content: "\e607";
@@ -81,6 +106,9 @@
 .icon-bubble2:before {
 	content: "\e606";
 }
+.icon-user:before {
+	content: "\e618";
+}
 .icon-quotes-left:before {
 	content: "\e60e";
 }
@@ -107,6 +135,9 @@
 }
 .icon-earth:before {
 	content: "\e604";
+}
+.icon-link:before {
+	content: "\e623";
 }
 .icon-flag:before {
 	content: "\e622";
@@ -144,8 +175,17 @@
 .icon-mail2:before {
 	content: "\e621";
 }
+.icon-mail3:before {
+	content: "\e636";
+}
 .icon-facebook:before {
 	content: "\e600";
+}
+.icon-instagram:before {
+	content: "\e617";
+}
+.icon-twitter:before {
+	content: "\e613";
 }
 .icon-youtube:before {
 	content: "\e602";
