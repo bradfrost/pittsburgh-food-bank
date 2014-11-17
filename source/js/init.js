@@ -40,7 +40,7 @@
 	});
 
 	//Append icon after subnav items
-	$('.menu-item-has-children > a').append('<span class="icon-arrow-down5"></span>');
+	$('.menu-item-has-children > a').append('<span class="icon-arrow-down3"></span>');
 	
 	$('.menu-item-has-children > a').on('click',function(){
 		var $this = $(this),
