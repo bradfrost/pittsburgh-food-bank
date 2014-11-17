@@ -13,7 +13,6 @@
 	// Primary Navigation
 	//
 	
-
 	//Navigation toggle for small screens
 	$('.nav-toggle-menu').click(function() {
 		$(this).toggleClass('active');

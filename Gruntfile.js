@@ -7,8 +7,6 @@ module.exports = function(grunt) {
         concat: {
             dist: {
 				src: [
-					'source/js/jquery.js', // A
-					'source/js/jquery.mobile.custom.js',
 					'source/js/jquery.inputmask.js',
 					'source/js/jquery.inputmask.date.extensions.js',
 					'source/js/single-cc-field.js',
@@ -16,7 +14,8 @@ module.exports = function(grunt) {
 					'source/js/parsley.js',
 					'source/js/init.js',
 					'source/js/donate.js',
-					'!source/js/luminateExtend.js',
+					'!source/js/luminateExtend.js', //Exclude luminateExtend
+					'!source/js/jquery.js',  //Exclude Jquery
 					'!source/js/modernizr.js', // Exclude Modernizr,
 					'!source/js/recipe-rainbow.js' // Exclude Recipe Rainbow
 				],

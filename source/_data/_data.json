@@ -5,20 +5,16 @@
 		"url" : "http://www.pittsburghfoodbank.org/"
 	},
 	"img": {
-		"landscape-4x3": {
-			"src": "../../images/fpo_4x3.png",
-			"alt": "4x3 Image"
-		},
 		"hero": {
-			"src": "../../images/fpo_hero.png",
+			"src": "http://placehold.it/560x373",
 			"alt": "Hero Image"
 		},
 		"thumb": {
-			"src": "../../images/fpo_thumb.png",
+			"src": "http://placehold.it/300x300",
 			"alt": "Thumb"
 		},
 		"square": {
-			"src": "../../images/fpo_square.png",
+			"src": "http://placehold.it/300x300",
 			"alt": "Square Thumbnail"
 		},
 		"avatar" : {
